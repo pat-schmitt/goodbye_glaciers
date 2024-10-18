@@ -1,4 +1,5 @@
 ---
+permalink: /regions/
 title: Regions
 ---
 # Region page

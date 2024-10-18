@@ -1,4 +1,5 @@
 ---
+permalink: /methods/
 title: Methods
 ---
 # Method page
