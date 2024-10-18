@@ -1,0 +1,9 @@
+main:
+  - title: "Glaciers"
+    url: /glaciers/
+  - title: "Regions"
+    url: /regions/
+  - title: "Events"
+    url: /events/
+  - title: "Methods"
+    url: /methods/

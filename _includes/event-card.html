@@ -1,0 +1,21 @@
+{% if event.website %}
+  <a href="{{ event.website }}" target="_blank" style="text-decoration: none; color: inherit;">
+{% endif %}
+<div class="event-card">
+  {% if event.image %}
+    <img src="{{ event.image }}" alt="{{ event.title }}" class="event-image">
+  {% else %}
+    <h2>{{ event.title }}</h2>
+  {% endif %}
+  <p>
+    {% if event.website %}
+      <strong>Website:</strong> {{ event.website }} <br>
+    {% endif %}
+    <strong>Date:</strong> {{ event.start_date | date: "%B %d, %Y" }} - {{ event.end_date | date: "%B %d, %Y" }}<br>
+    <strong>Location:</strong> {{ event.location }}
+  </p>
+</div>
+{% if event.website %}
+  </a>
+{% endif %}
+

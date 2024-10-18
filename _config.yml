@@ -1,0 +1,55 @@
+title: Goodby Glaciers
+email: patrick.schmitt@uibk.ac.at
+description: >- # this means to ignore newlines until "baseurl:"
+  Website for the goodby glaciers project.
+#twitter_username: username
+#github_username: username
+minimal_mistakes_skin: default # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+search: true
+
+# Build settings
+markdown: kramdown
+remote_theme: mmistakes/minimal-mistakes
+
+include:
+  - _pages
+
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jemoji
+  - jekyll-include-cache
+  - jekyll-remote-theme
+
+collections:
+  glaciers:
+    output: true
+  events:
+    output: true
+    sort_by: date
+
+footer:
+  links:
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/"
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      url: "https://instagram.com/"
+ 
+defaults:
+  - scope:
+      path: ""
+      type: "glaciers"
+    values:
+      layout: glacier
+  - scope:
+      path: ""
+    values:
+      layout: splash
+
