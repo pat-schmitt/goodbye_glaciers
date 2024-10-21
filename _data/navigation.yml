@@ -1,9 +1,9 @@
 main:
   - title: "Glaciers"
-    url: /{{ page.language }}/glaciers/
+    url: /glaciers/
   - title: "Regions"
-    url: /{{ page.language }}/regions/
+    url: /regions/
   - title: "Events"
-    url: /{{ page.language }}/events/
+    url: /events/
   - title: "Methods"
-    url: /{{ page.language }}/methods/
+    url: /methods/

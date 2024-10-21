@@ -53,12 +53,3 @@ defaults:
       path: ""
     values:
       layout: splash
-  - scope:
-      path: "de"
-    values:
-      language: de
-  - scope:
-      path: "en"
-    values:
-      language: en
-
