@@ -1,6 +1,40 @@
 ---
 layout: single
 ---
-{{ page.name }} has a volume of {{ page.volume_start }} km³ in 2020 and will be gone by {{ page.gone_by }} with + 2.7°C global warming.
+<h1>!!!Work in Progress!!!</h1>
 
-<img src="{{ site.baseurl }}{{ page.image_volume }}" alt="Volume evolution of {{ page.name }}" />
+<h2> Add 3D animation here! </h2>
+
+<p> If you want to learn how this animation was created check out the <a href="{{ site.baseurl }}/methods/">Methods</a></p>
+
+<div class="accordion">
+  <!-- Simple Analysis -->
+  <h3 class="accordion-header">Click for volume evolution for 2.7°C</h3>
+  <div class="accordion-content">
+    <p> {{ page.title }} has a volume of {{ page.vol2020_km3 }} km³ in 2020 and will be gone around {{ page.deglac_yr_2_7deg_10perc_q50 | floor }} (Range: {{ page.deglac_yr_2_7deg_10perc_q17 | floor }} - {{ page.deglac_yr_2_7deg_10perc_q83 | floor }}) with + 2.7°C global warming (
+<a href="https://climateactiontracker.org/global/cat-thermometer/">current policy prediction</a>). </p>
+    <img src="{{ site.baseurl }}{{ page.image_volume_simple }}" alt="Volume evolution of {{ page.name }} for 2.7°C." />
+  </div>
+
+  <!-- Intermediate Analysis -->
+  <h3 class="accordion-header">Click for more warming levels</h3>
+  <div class="accordion-content">
+    <p> Showing the volume evolution of {{ page.title }} for global warming levels of + 1.5°C, + 2.7°C and +4.0°C.</p>
+    <img src="{{ site.baseurl }}{{ page.image_volume_complex }}" alt="Volume complex of {{ page.name }}." />
+  </div>
+
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    var headers = document.querySelectorAll(".accordion-header");
+
+    headers.forEach(function(header) {
+      header.addEventListener("click", function() {
+        // Toggle the 'active' class to open/close the accordion content
+        var content = this.nextElementSibling;
+        content.style.display = content.style.display === "block" ? "none" : "block";
+      });
+    });
+  });
+</script>

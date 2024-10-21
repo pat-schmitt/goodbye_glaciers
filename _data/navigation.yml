@@ -1,9 +1,15 @@
 main:
   - title: "Glaciers"
     url: /glaciers/
+  - title: "Signposts"
+    url: /signposts/
   - title: "Regions"
     url: /regions/
   - title: "Events"
     url: /events/
   - title: "Methods"
     url: /methods/
+  - title: "Operators"
+    url: /operators/
+  - title: "Partners"
+    url: /partners/

@@ -40,3 +40,68 @@ search: false
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
+/* Default map height for desktop */
+#map {
+  width: 100%;
+  height: 500px; /* Default height for larger screens */
+}
+
+/* Map height for small screens (phones, smaller than 768px) */
+@media (max-width: 768px) {
+  #map {
+    height: 300px; /* Adjust height for smaller screens */
+  }
+}
+
+/* Map height for very small screens (phones smaller than 480px) */
+@media (max-width: 480px) {
+  #map {
+    height: 250px; /* Adjust height for very small phones */
+  }
+}
+
+.masthead {
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Ensures it stays on top of other content */
+  background-color: white; /* Maintain background color when sticky */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  /*Optional: Add slight shadow for better visibility */
+  transition: all 0.3s ease-in-out; /* Smooth transition when any property changes */
+}
+
+/* General accordion styling */
+.accordion {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.accordion-header {
+  background-color: #f7f7f7;
+  cursor: pointer;
+  padding: 15px;
+  font-size: 18px;
+  border-bottom: 1px solid #ddd;
+  margin: 0;
+  transition: background-color 0.3s ease;
+}
+
+.accordion-header:hover {
+  background-color: #e0e0e0;
+}
+
+.accordion-content {
+  padding: 15px;
+  display: none; /* Hidden by default */
+  background-color: #fff;
+}
+
+.accordion-content img {
+  max-width: 100%; /* Ensure images scale properly on mobile */
+  height: auto;
+  margin-bottom: 10px;
+}
+
+
+
