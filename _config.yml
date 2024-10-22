@@ -1,11 +1,11 @@
-title: Goodby Glaciers
+title: Goodbye Glaciers
 email: patrick.schmitt@uibk.ac.at
 description: >- # this means to ignore newlines until "baseurl:"
-  Website for the goodby glaciers project.
+  Website for the goodbye glaciers project.
 #twitter_username: username
 #github_username: username
 baseurl: ""
-url: "https://mountainscience.info"
+url: "https://goodbye-glaciers.info"
 minimal_mistakes_skin: default # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 search: true
 
@@ -36,7 +36,7 @@ footer:
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/pat-schmitt/goodby_glaciers/"
+      url: "https://github.com/pat-schmitt/goodbye_glaciers/"
 
 atom_feed:
   hide: true

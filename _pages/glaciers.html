@@ -5,7 +5,7 @@ collection: glaciers
 ---
 <h1>!!!Work in Progress!!!</h1>
 <h1>Supported Glaciers</h1>
-<div id="map" style="width: 100%; height: 500px;"></div>
+<div id="map"></div>
 
 <script>
   document.addEventListener("DOMContentLoaded", function() {
@@ -27,8 +27,8 @@ collection: glaciers
         title: "{{ glacier.title | escape }}",
         lat: {{ glacier.CenLat | default: 0 }},
         lng: {{ glacier.CenLon | default: 0 }},
-        url: "/goodby_glaciers{{ glacier.url | escape }}",
-        photo: "/goodby_glaciers/assets/images/{{ glacier.photo }}" // Prepend '/assets/images/' to the photo filename
+        url: "{{ glacier.url | escape }}",
+        photo: "/assets/images/{{ glacier.photo }}" // Prepend '/assets/images/' to the photo filename
       }{% unless forloop.last %},{% endunless %}
       {% endfor %}
     ];
@@ -61,7 +61,7 @@ collection: glaciers
     });
 
     // Fit the map to the bounds of the markers with some padding
-    map.fitBounds(bounds, { padding: [50, 50] });
+    map.fitBounds(bounds, { padding: [10, 10] });
   });
 </script>
 
@@ -78,7 +78,7 @@ collection: glaciers
       <h2>{{ group.name }}</h2> <!-- Country name -->
       <ul>
         {% for item in group.items %}
-          <li><a href="/goodby_glaciers{{ item.url }}">{{ item.title }}</a></li>
+          <li><a href="{{ item.url }}">{{ item.title }}</a></li>
         {% endfor %}
       </ul>
     </li>
