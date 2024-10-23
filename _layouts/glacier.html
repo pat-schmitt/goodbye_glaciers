@@ -20,10 +20,6 @@ layout: single
     video.setAttribute('controls', 'controls');
   });
 
-  // Optionally hide the controls when the video is playing
-  video.addEventListener('play', () => {
-    video.removeAttribute('controls');
-  });
 </script>
 
 <p> {{ page.title }} will be mostly gone by {{ page.deglac_yr_2_7deg_10perc_q50 | floor }} (Range: {{ page.deglac_yr_2_7deg_10perc_q17 | floor }} - {% if page.deglac_yr_2_7deg_10perc_q83 %}{{ page.deglac_yr_2_7deg_10perc_q83 | default: 0 | floor }}{% else %}after 2100{% endif %}
