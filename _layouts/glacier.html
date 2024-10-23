@@ -3,23 +3,30 @@ layout: single
 ---
 <h1>!!!Work in Progress!!!</h1>
 
-<h2> Add 3D animation here! </h2>
+<p> {{ page.title }} has an estimated volume of {{ page.vol2020_km3 }} km³ in 2020. </p>
 
-<p> If you want to learn how this animation was created check out the <a href="{{ site.baseurl }}/methods/">Methods</a></p>
+<div class="video-container">
+  <video autoplay loop muted controls playsinline>
+    <source src="{{ page.video_2_7 | relative_url }}" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
+
+<p> {{ page.title }} will be mostly gone by {{ page.deglac_yr_2_7deg_10perc_q50 | floor }} (Range: {{ page.deglac_yr_2_7deg_10perc_q17 | floor }} - {% if page.deglac_yr_2_7deg_10perc_q83 %}{{ page.deglac_yr_2_7deg_10perc_q83 | default: 0 | floor }}{% else %}after 2100{% endif %}
+) with + 2.7°C global warming (<a href="https://climateactiontracker.org/global/cat-thermometer/">current policy prediction</a>). This year, called the <b>deglaciation year</b>, marks the point when less than 10% of the glacier's 2020 volume is expected to remain.</p>
 
 <div class="accordion">
   <!-- Simple Analysis -->
-  <h3 class="accordion-header">Click for volume evolution for 2.7°C</h3>
+  <h3 class="accordion-header">Click for volume evolution for +2.7°C</h3>
   <div class="accordion-content">
-    <p> {{ page.title }} has a volume of {{ page.vol2020_km3 }} km³ in 2020 and will be gone around {{ page.deglac_yr_2_7deg_10perc_q50 | floor }} (Range: {{ page.deglac_yr_2_7deg_10perc_q17 | floor }} - {{ page.deglac_yr_2_7deg_10perc_q83 | floor }}) with + 2.7°C global warming (
-<a href="https://climateactiontracker.org/global/cat-thermometer/">current policy prediction</a>). </p>
+    <p> Showing the volume evolution of {{ page.title }} for a global warming level of +2.7°C.</p>
     <img src="{{ site.baseurl }}{{ page.image_volume_simple }}" alt="Volume evolution of {{ page.name }} for 2.7°C." />
   </div>
 
   <!-- Intermediate Analysis -->
-  <h3 class="accordion-header">Click for more warming levels</h3>
+  <h3 class="accordion-header">Click for volume evolution for +1.5°C, +2.7°C and +4.0°C</h3>
   <div class="accordion-content">
-    <p> Showing the volume evolution of {{ page.title }} for global warming levels of + 1.5°C, + 2.7°C and +4.0°C.</p>
+    <p> Showing the volume evolution of {{ page.title }} for global warming levels of +1.5°C, +2.7°C and +4.0°C.</p>
     <img src="{{ site.baseurl }}{{ page.image_volume_complex }}" alt="Volume complex of {{ page.name }}." />
   </div>
 
@@ -38,3 +45,5 @@ layout: single
     });
   });
 </script>
+
+<p>If you want to learn how this animation and the figures were created, out the <a href="{{ site.baseurl }}/methods/">Methods</a>.</p>

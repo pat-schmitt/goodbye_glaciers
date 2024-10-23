@@ -49,14 +49,14 @@ search: false
 /* Map height for small screens (phones, smaller than 768px) */
 @media (max-width: 768px) {
   #map {
-    height: 300px; /* Adjust height for smaller screens */
+    height: 350px; /* Adjust height for smaller screens */
   }
 }
 
 /* Map height for very small screens (phones smaller than 480px) */
 @media (max-width: 480px) {
   #map {
-    height: 250px; /* Adjust height for very small phones */
+    height: 300px; /* Adjust height for very small phones */
   }
 }
 
@@ -103,5 +103,15 @@ search: false
   margin-bottom: 10px;
 }
 
+.video-container {
+  position: relative;
+  width: 100%;
+  max-width: 800px; /* Optional: limit max width for large screens */
+  margin: 0 auto; /* Center the video on the page */
+}
 
+.video-container video {
+  width: 100%;
+  height: auto; /* Ensures the height adjusts based on the width to preserve aspect ratio */
+}
 
