@@ -6,11 +6,29 @@ layout: single
 <p> {{ page.title }} has an estimated volume of {{ page.vol2020_km3 }} km³ in 2020. </p>
 
 <div class="video-container">
-  <video autoplay loop muted controls playsinline>
+  <video class="myVideo" autoplay loop muted playsinline>
     <source src="{{ page.video_2_7 | relative_url }}" type="video/mp4">
     Your browser does not support the video tag.
   </video>
 </div>
+
+<script>
+  // Select all videos with the class 'myVideo'
+  const videos = document.querySelectorAll('.myVideo');
+
+  // Loop through each video and add event listeners
+  videos.forEach(video => {
+    video.addEventListener('click', () => {
+      if (video.paused) {
+        video.play();
+        video.removeAttribute('controls');
+      } else {
+        video.pause();
+        video.setAttribute('controls', 'controls');
+      }
+    });
+  });
+</script>
 
 <p> {{ page.title }} will be mostly gone by {{ page.deglac_yr_2_7deg_10perc_q50 | floor }} (Range: {{ page.deglac_yr_2_7deg_10perc_q17 | floor }} - {% if page.deglac_yr_2_7deg_10perc_q83 %}{{ page.deglac_yr_2_7deg_10perc_q83 | default: 0 | floor }}{% else %}after 2100{% endif %}
 ) with + 2.7°C global warming (<a href="https://climateactiontracker.org/global/cat-thermometer/">current policy prediction</a>). This year, called the <b>deglaciation year</b>, marks the point when less than 10% of the glacier's 2020 volume is expected to remain.</p>
