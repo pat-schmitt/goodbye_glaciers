@@ -6,27 +6,23 @@ layout: single
 <p> {{ page.title }} has an estimated volume of {{ page.vol2020_km3 }} km³ in 2020. </p>
 
 <div class="video-container">
-  <video class="myVideo" autoplay loop muted playsinline>
+  <video id="myVideo" autoplay loop muted playsinline>
     <source src="{{ page.video_2_7 | relative_url }}" type="video/mp4">
     Your browser does not support the video tag.
   </video>
 </div>
 
 <script>
-  // Select all videos with the class 'myVideo'
-  const videos = document.querySelectorAll('.myVideo');
+  const video = document.getElementById('myVideo');
 
-  // Loop through each video and add event listeners
-  videos.forEach(video => {
-    video.addEventListener('click', () => {
-      if (video.paused) {
-        video.play();
-        video.removeAttribute('controls');
-      } else {
-        video.pause();
-        video.setAttribute('controls', 'controls');
-      }
-    });
+  // Show controls when the user interacts (taps/clicks) with the video
+  video.addEventListener('click', () => {
+    video.setAttribute('controls', 'controls');
+  });
+
+  // Optionally hide the controls when the video is playing
+  video.addEventListener('play', () => {
+    video.removeAttribute('controls');
   });
 </script>
 
