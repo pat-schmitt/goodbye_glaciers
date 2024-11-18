@@ -35,20 +35,23 @@ The **2020 glacier volume**, **deglaciation year**, and **regional glacier volum
   - **Details:**  
     - CMIP5 and CMIP6 available.  
     - Includes less-used climate models and overshoot emission scenarios.  
-    - For +2.7±0.2°C: **n=14 climate scenarios**  
+    - For +2.7±0.2°C: n=14 climate scenarios 
+    - For +1.5±0.2°C: n=11 climate scenarios 
 - **PyGEM-OGGM**  
   - **Data:** [DOI](https://doi.org/10.5067/P8BN9VO9N5C7)  
   - **Documentation:** [PyGEM](https://pygem.readthedocs.io/en/latest/introduction.html)  
   - **Details:**  
     - CMIP5 and CMIP6 available.  
     - Same scenarios as presented in [Rounce et al., 2023](https://doi.org/10.1126/science.abo1324).  
-    - For +2.7±0.2°C: **n=7 climate scenarios**  
+    - For +2.7±0.2°C: n=7 climate scenarios  
+    - For +1.5±0.2°C: n=9 climate scenarios 
 - **GloGEM**  
   - **Data:** [DOI](https://doi.org/10.5281/zenodo.10908277)  
   - **Documentation:** [Huss & Hock (2015)](https://doi.org/10.3389/feart.2015.00054)  
   - **Details:**  
     - CMIP6 only.  
-    - For +2.7±0.2°C: **n=3 climate scenarios**  
+    - For +2.7±0.2°C: n=3 climate scenarios  
+    - For +1.5±0.2°C: n=4 climate scenarios 
 
 The **3D glacier thickness projections** are based solely on OGGM simulations and visualized using the [Glacier:3D-Viz](https://glacier3dviz.oggm.org/tutorials/welcome.html) tool. These 3D projections differ slightly from the other estimates, which are based on a combination of three glacier models.  
 

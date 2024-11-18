@@ -5,7 +5,10 @@ description: >- # this means to ignore newlines until "baseurl:"
 #twitter_username: username
 #github_username: username
 baseurl: ""
-url: "https://goodbye-glaciers.info"
+#url: "https://goodbye-glaciers.info"
+url: "https://lilianschuster.github.io" # Testing URL for GitHub Pages
+
+
 minimal_mistakes_skin: default # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 search: true
 
@@ -36,8 +39,8 @@ footer:
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/pat-schmitt/goodbye_glaciers/"
-
+      #url: "https://github.com/pat-schmitt/goodbye_glaciers/"
+      url: "https://github.com/lilianschuster/goodbye_glaciers/"
 atom_feed:
   hide: true
  
