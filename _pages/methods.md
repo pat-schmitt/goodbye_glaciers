@@ -61,3 +61,6 @@ The global warming above pre-industrial across all combinations of glacier model
 - **+1.57°C** for the **+1.5±0.2°C** range.  
 - **+2.71°C** for the **+2.7±0.2°C** range.  
 
+
+## Photo sources and licenses
+Link to all used photos on the website and their corresponding licenses -> TODO

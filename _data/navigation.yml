@@ -9,9 +9,5 @@ main:
     url: /events/
   - title: "Methods"
     url: /methods/
-  - title: "Photos"
-    url: /photos/
-  - title: "Operators"
-    url: /operators/
-  - title: "Partners"
-    url: /partners/
+  - title: "Collaborators"
+    url: /collaborators/
