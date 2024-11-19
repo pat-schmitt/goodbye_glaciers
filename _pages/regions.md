@@ -4,20 +4,34 @@ title: Regions
 ---
 # !!!Work in Progress!!!
 
-# Region page
+# Global and regional glacier projections
 
 
-<div style="display: flex; align-items: flex-start;">
+<div style="display: flex; align-items: flex-start; flex-wrap: wrap;">
   <!-- Text on the left side -->
-  <div style="flex: 1; margin-right: 20px;">
-    <p>Although many glaciers in the Alps are projected to vanish in the near future, even under +1.5°C global warming, for glaciers globally, every degree of warming matters. Select different regional projections to explore how much we can reduce glacier mass loss regionally by limiting global warming to +1.5°C:</p>
+  <div style="flex: 1; margin-right: 20px; min-width: 300px;">
+<p> Discover global and regional projections for the over 200,000 mountain glaciers (all glaciers excluding the Greenland and Antarctic ice sheets). Many glaciers in the Alps (Central Europe) are expected to disappear soon, even under +1.5°C global warming. However, for glaciers worldwide, every degree of warming makes a difference. </p>
+
+ <p> Explore the regional projections to see how limiting global warming to +1.5°C can help reduce glacier volume loss: </p> 
   </div>
 
   <!-- Image on the right side -->
-  <div>
-    <img src="/assets/images/global_map_rgi6_small.jpeg" alt="Global Map of RGI6" style="width: 850px; height: auto;" />
+  <div style="flex: 1; min-width: 300px;">
+    <img src="/assets/images/global_map_rgi6_small.jpeg" alt="Global Map of RGI6" style="width: 100%; height: auto;" />
   </div>
 </div>
+
+<!-- Add responsive CSS -->
+<style>
+  @media (max-width: 768px) {
+    div[style*="display: flex"] {
+      flex-direction: column; /* Stack items vertically */
+    }
+    div[style*="margin-right: 20px"] {
+      margin-right: 0; /* Remove the right margin for text */
+    }
+  }
+</style>
 
 <!-- Dropdown to select region -->
 <select id="regionSelect">
@@ -45,7 +59,7 @@ title: Regions
 </select>
 
 <!-- Image container -->
-<img id="regionImage" src="/assets/images/global_complex_en_three_glac_models_v1.png" alt="Volume evolution of all glaciers in European Alps for 1.5°C and 2.7°C." />
+<img id="regionImage" src="/assets/images/global_complex_en_three_glac_models_v1.png" alt="Volume evolution of all glaciers in selected region for 1.5°C and 2.7°C." />
 
 <script>
   document.getElementById("regionSelect").addEventListener("change", function() {
@@ -56,7 +70,7 @@ title: Regions
   });
 </script>
 
-By “glaciers”, we mean all glaciers outside of the two continental ice sheets (Greenland and Antarctica).
+
 
 ## Additional resources
 Are you further interested in the future of glaciers? You can discover their future projected evolution from the following resources: 

@@ -6,6 +6,8 @@ description: >- # this means to ignore newlines until "baseurl:"
 #github_username: username
 baseurl: ""
 url: "https://goodbye-glaciers.info"
+
+
 minimal_mistakes_skin: default # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 search: true
 
@@ -37,7 +39,6 @@ footer:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/pat-schmitt/goodbye_glaciers/"
-
 atom_feed:
   hide: true
  

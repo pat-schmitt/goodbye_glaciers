@@ -12,7 +12,7 @@ title: Collaborators
 <div style="display: flex; align-items: flex-start;">
   <!-- Text on the left side -->
   <div style="flex: 1; margin-right: 20px;">
-    <p>This website is build and maintained by the <a href="https://www.uibk.ac.at/de/alpinerraum/">'Forschungsschwerpunkt Alpiner Raum' of the Universität Innsbruck</a>.</p>
+    <p>This website is build and maintained by the <a href="https://www.uibk.ac.at/en/alpinerraum/">'Research Area Mountain Regions' of the Universität Innsbruck</a>.</p>
 
 <p>The main operators are <a href="https://www.uibk.ac.at/en/acinn/people/patrick-schmitt/">Patrick Schmitt</a>, <a href="https://www.uibk.ac.at/en/acinn/people/lilian-schuster/">Lilian Schuster</a>, and <a href="https://www.uibk.ac.at/en/acinn/people/wolfgang-gurgiser/">Wolfgang Gurgiser</a>.</p>
 
