@@ -4,13 +4,15 @@ title: Regions
 ---
 # !!!Work in Progress!!!
 
-# Region page
+# Global and regional glacier projections
 
 
 <div style="display: flex; align-items: flex-start; flex-wrap: wrap;">
   <!-- Text on the left side -->
   <div style="flex: 1; margin-right: 20px; min-width: 300px;">
-    <p>Although many glaciers in the Alps are projected to vanish in the near future, even under +1.5°C global warming, for glaciers globally, every degree of warming matters. Select different regional projections to explore how much we can reduce glacier mass loss regionally by limiting global warming to +1.5°C:</p>
+<p> Discover global and regional projections for the over 200,000 mountain glaciers (all glaciers excluding the Greenland and Antarctic ice sheets). Many glaciers in the Alps (Central Europe) are expected to disappear soon, even under +1.5°C global warming. However, for glaciers worldwide, every degree of warming makes a difference. </p>
+
+ <p> Explore the regional projections to see how limiting global warming to +1.5°C can help reduce glacier volume loss: </p> 
   </div>
 
   <!-- Image on the right side -->
@@ -68,7 +70,7 @@ title: Regions
   });
 </script>
 
-By “glaciers”, we mean all glaciers outside of the two continental ice sheets (Greenland and Antarctica).
+
 
 ## Additional resources
 Are you further interested in the future of glaciers? You can discover their future projected evolution from the following resources: 
