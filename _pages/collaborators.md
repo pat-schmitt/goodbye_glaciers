@@ -14,7 +14,7 @@ title: Collaborators
   <div style="flex: 1; margin-right: 20px;">
     <p>This website is build and maintained by the <a href="https://www.uibk.ac.at/en/alpinerraum/">'Research Area Mountain Regions' of the Universität Innsbruck</a>.</p>
 
-<p>The main operators are <a href="https://www.uibk.ac.at/en/acinn/people/patrick-schmitt/">Patrick Schmitt</a>, <a href="https://www.uibk.ac.at/en/acinn/people/lilian-schuster/">Lilian Schuster</a>, and <a href="https://www.uibk.ac.at/en/acinn/people/wolfgang-gurgiser/">Wolfgang Gurgiser</a>.</p>
+<p>The main operators are <a href="https://www.uibk.ac.at/en/acinn/people/patrick-schmitt/">Patrick Schmitt</a>, <a href="https://www.uibk.ac.at/en/acinn/people/lilian-schuster/">Lilian Schuster</a>, <a href="https://github.com/afisc">Alexander Fischer</a>, and <a href="https://www.uibk.ac.at/en/acinn/people/wolfgang-gurgiser/">Wolfgang Gurgiser</a>.</p>
 
 </div>
 
@@ -35,6 +35,6 @@ title: Collaborators
 
 
 ## Other Partners
-- Alpenkonvention <img src="/assets/images/logos/logo_alpenkonvention.png" alt="Logo Alpenkonvention" style="height: 50px; width: auto;" />
+- Alpine Convention <img src="/assets/images/logos/logo_alpenkonvention.png" alt="Logo Alpenkonvention" style="height: 50px; width: auto;" />
 
 
