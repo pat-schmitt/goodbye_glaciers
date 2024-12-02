@@ -1,0 +1,2 @@
+Info about filename-prefix:
+- first_signs: first collection of glaciers for testing sign layout
