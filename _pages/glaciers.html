@@ -75,7 +75,7 @@ collection: glaciers
 
 <br>
 <br>
-<h1>List by Country</h1>
+<h1 id="list-by-country">List by Country</h1>
 
 {% assign sorted_places = site.glaciers | sort: 'country' %}
 {% assign grouped_places = sorted_places | group_by: 'country' %}
@@ -83,7 +83,7 @@ collection: glaciers
 <ul>
   {% for group in grouped_places %}
     <li>
-      <h2>{{ group.name }}</h2> <!-- Country name -->
+      <h2 id="{{ group.name }}">{{ group.name }}</h2> <!-- Country name -->
       <ul>
         {% for item in group.items %}
           <li><a href="{{ item.url }}">{{ item.title }}</a>, mostly gone by {{ item.deglac_yr_2_7deg_10perc_q50 | floor }}</li>
