@@ -7,7 +7,7 @@ title: Signposts
 # Signposts page
 
 This is how we envision the signposts to look like: 
-<img src="/assets/images/signposts/prototype.png" alt="Signpost idea" style="width: 850px; height: auto;" />
+<img src="/assets/images/photos_signposts/prototype_idea.png" alt="Signpost idea" style="width: 850px; height: auto;" />
 
 
 

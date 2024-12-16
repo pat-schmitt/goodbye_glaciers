@@ -36,7 +36,7 @@ collection: glaciers
         lat: {{ glacier.CenLat | default: 0 }},
         lng: {{ glacier.CenLon | default: 0 }},
         url: "{{ glacier.url | escape }}",
-        photo: "/assets/images/{{ glacier.photo }}" // Prepend '/assets/images/' to the photo filename
+        photo: "{{ glacier.main_photo }}"
       }{% unless forloop.last %},{% endunless %}
       {% endfor %}
     ];
