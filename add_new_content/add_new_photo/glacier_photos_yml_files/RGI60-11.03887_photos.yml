@@ -1,0 +1,10 @@
+---
+rgi_id: RGI60-11.03887
+photo1:  # give each photo a unique name
+  filename: marmolada-20090724-huss.jpg  # should be saved in assets/images/photos_glaciers
+  photo_date: 24.07.2009  # day.month.year of month.year or year
+  photographer_name: Matthias Huss
+  photo_license: none  # if none will be ignored
+  photo_link: http://nsidc.org/data/glacier_photo/search/image_info/marmolada-20090724-huss  # if none will be ignored
+  citation: "Huss, Matthias. 2009. Marmolada Glacier: From the Glacier Photograph Collection. Boulder, Colorado USA: National Snow and Ice Data Center. Digital media."  # if none will be ignored
+  is_main_photo: true  # only one photo is allowed to be true, all others false

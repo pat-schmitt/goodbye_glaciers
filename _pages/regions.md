@@ -17,7 +17,7 @@ title: Regions
 
   <!-- Image on the right side -->
   <div style="flex: 1; min-width: 300px;">
-    <img src="/assets/images/global_map_rgi6_small.jpeg" alt="Global Map of RGI6" style="width: 100%; height: auto;" />
+    <img src="/assets/images/volume_evolution_regions/global_map_rgi6_small.jpeg" alt="Global Map of RGI6" style="width: 100%; height: auto;" />
   </div>
 </div>
 
@@ -59,13 +59,13 @@ title: Regions
 </select>
 
 <!-- Image container -->
-<img id="regionImage" src="/assets/images/global_complex_en_three_glac_models_v1.png" alt="Volume evolution of all glaciers in selected region for 1.5°C and 2.7°C." />
+<img id="regionImage" src="/assets/images/volume_evolution_regions/global_complex_en_three_glac_models_v1.png" alt="Volume evolution of all glaciers in selected region for 1.5°C and 2.7°C." />
 
 <script>
   document.getElementById("regionSelect").addEventListener("change", function() {
     var selectedRegion = this.value;
     var image = document.getElementById("regionImage");
-    image.src = "/assets/images/" + selectedRegion + "_complex_en_three_glac_models_v1.png";
+    image.src = "/assets/images/volume_evolution_regions/" + selectedRegion + "_complex_en_three_glac_models_v1.png";
     image.alt = "Volume evolution of glaciers in " + selectedRegion + " for 1.5°C and 2.7°C.";
   });
 </script>

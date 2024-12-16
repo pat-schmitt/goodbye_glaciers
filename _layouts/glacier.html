@@ -7,7 +7,7 @@ layout: single
 
 <div class="video-container">
   <video id="myVideo" autoplay loop muted playsinline>
-    <source src="{{ page.video_2_7 | relative_url }}" type="video/mp4">
+    <source src="{{ page.animation_simple | relative_url }}" type="video/mp4">
     Your browser does not support the video tag.
   </video>
 </div>
@@ -22,7 +22,7 @@ layout: single
 
 </script>
 
-<p> {{ page.title }} will be mostly gone by {{ page.deglac_yr_2_7deg_10perc_q50 | floor }} (<a href="http://goodbye-glaciers.info/methods/#likely-range">likely range</a>: {{ page.deglac_yr_2_7deg_10perc_q17 | floor }} - {% if page.deglac_yr_2_7deg_10perc_q83 %}{{ page.deglac_yr_2_7deg_10perc_q83 | default: 0 | floor }}{% else %}after 2100{% endif %}
+<p> {{ page.title }} will be mostly gone by {{ page.deglac_yr_2_7deg_10perc_q50 | floor }} (<a href="{{ site.baseurl }}/methods/#likely-range">likely range</a>: {{ page.deglac_yr_2_7deg_10perc_q17 | floor }} - {% if page.deglac_yr_2_7deg_10perc_q83 %}{{ page.deglac_yr_2_7deg_10perc_q83 | default: 0 | floor }}{% else %}after 2100{% endif %}
 ) with + 2.7°C global warming (<a href="https://climateactiontracker.org/global/cat-thermometer/">current policy prediction</a>). This year, called the <b>deglaciation year</b>, marks the point when less than 10% of the glacier's 2020 volume is expected to remain.</p>
 
 <div class="accordion">
@@ -30,14 +30,14 @@ layout: single
   <h3 class="accordion-header">Click for volume evolution for +2.7°C</h3>
   <div class="accordion-content">
     <p> Showing the volume evolution of {{ page.title }} for a global warming level of +2.7°C.</p>
-    <img src="{{ site.baseurl }}{{ page.image_volume_simple }}" alt="Volume evolution of {{ page.name }} for 2.7°C." />
+    <img src="{{ site.baseurl }}{{ page.volume_evolution_simple }}" alt="Volume evolution of {{ page.title }} for 2.7°C." />
   </div>
 
   <!-- Intermediate Analysis -->
   <h3 class="accordion-header">Click for volume evolution for +1.5°C and +2.7°C</h3>
   <div class="accordion-content">
     <p> Showing the volume evolution of {{ page.title }} for global warming levels of +1.5°C and +2.7°C.</p>
-    <img src="{{ site.baseurl }}{{ page.image_volume_complex }}" alt="Volume complex of {{ page.name }}." />
+    <img src="{{ site.baseurl }}{{ page.volume_evolution_complex }}" alt="Volume complex of {{ page.title }}." />
   </div>
 
 </div>

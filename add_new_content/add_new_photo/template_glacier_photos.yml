@@ -1,0 +1,10 @@
+---
+rgi_id: RGI60-00.00000
+photo1:  # give each photo a unique name
+  filename: template_glacier_photo_filename.jpg  # should be saved in assets/images/photos_glaciers
+  photo_date: 2020  # day.month.year of month.year or year
+  photographer_name: Max Muster
+  photo_license: none  # if none will be ignored
+  photo_link: none  # if none will be ignored
+  citation: none  # if none will be ignored
+  is_main_photo: true  # only one photo is allowed to be true, all others false

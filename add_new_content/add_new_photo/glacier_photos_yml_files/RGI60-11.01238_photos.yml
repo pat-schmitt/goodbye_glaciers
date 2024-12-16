@@ -1,0 +1,10 @@
+---
+rgi_id: RGI60-11.01238
+photo1:  # give each photo a unique name
+  filename: Rhonegletscher_Sept-2018a.jpeg  # should be saved in assets/images/photos_glaciers
+  photo_date: 08.10.2018  # day.month.year of month.year or year
+  photographer_name: Romeo Walser
+  photo_license: CC BY-SA 4.0  # if none will be ignored
+  photo_link: https://commons.wikimedia.org/wiki/File:Rhonegletscher_Sept-2018a.jpg  # if none will be ignored
+  citation: none  # if none will be ignored
+  is_main_photo: true  # only one photo is allowed to be true, all others false
