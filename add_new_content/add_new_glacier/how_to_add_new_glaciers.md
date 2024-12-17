@@ -15,5 +15,5 @@
 5. Create a yml file for glacier:
 	- Copy `template_glacier.yml` and adapt it (update `rgi_id`, `name` and `country`)
 	- Save as `{RGI_ID}.yml` inside  `add_new_content/add_new_glacier/glacier_yml_files`
-6. Run the script `create_glacier_md.py` or notebook `create_glacier_md.ipynp` to generate individual glacier markdown pages:
+6. Run the script [`create_glacier_md.py`](create_glacier_md.py) or notebook [`create_glacier_md.ipynb`](create_glacier_md.nbipy) to generate individual glacier markdown pages:
 	- The script or notebook will create markdown pages only for glaciers where all required information is available!

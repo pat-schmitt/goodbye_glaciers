@@ -1,0 +1,164 @@
+# ---
+# jupyter:
+#   jupytext:
+#     formats: ipynb,py:light
+#     text_representation:
+#       extension: .py
+#       format_name: light
+#       format_version: '1.5'
+#       jupytext_version: 1.16.5
+#   kernelspec:
+#     display_name: Python 3 (ipykernel)
+#     language: python
+#     name: python3
+# ---
+
+import yaml
+import os
+
+
+# # check if notebook or script
+
+# +
+# Function to detect if we're running in a Jupyter notebook
+def check_if_notebook():
+    try:
+        shell_name = get_ipython().__class__.__name__
+        if shell_name == 'ZMQInteractiveShell':
+            return True   # Jupyter notebook or JupyterLab
+        elif shell_name in ['TerminalInteractiveShell', 'InteractiveShell']:
+            return False  # IPython terminal or other interactive shells
+        else:
+            # Fallback or default behavior for unidentified environments
+            return False
+    except NameError:
+        return False      # Not in IPython, likely standard Python interpreter
+
+# Use this to conditionally execute tests/debugging
+if check_if_notebook():
+    is_notebook = True
+else:
+    is_notebook = False
+# -
+
+# # Define all filepaths
+
+# ## filepaths for opening input data for creation of md
+
+# +
+# go up until we are in the project base directory
+base_dir = os.getcwd()
+while base_dir.split('/')[-1] != 'goodbye_glaciers':
+    base_dir = os.path.normpath(os.path.join(base_dir, '..'))
+
+fp_signpost_yml = os.path.join(base_dir, 'add_new_content', 'add_new_signpost', 'signpost_yml_files')
+fp_photo_yml = os.path.join(base_dir, 'add_new_content', 'add_new_photo', 'signpost_photos_yml_files')
+
+
+# -
+
+def get_all_signpost_yml(fp=fp_signpost_yml):
+    return [file for file in os.listdir(fp)
+            if file.split('.')[-1] == 'yml']
+
+
+def read_yml(fp):
+    with open(fp) as stream:
+        yml_content = yaml.safe_load(stream)
+    return yml_content
+
+
+def check_file_exist(fp, signpost_id):
+    fp_total = f"{base_dir}{fp}"
+    if not os.path.exists(fp_total):
+        print(f'{signpost_id}: {fp} does not exist!')
+
+
+# ## filepaths used when deploying the website
+
+fp_signpost_photos = '/assets/images/photos_signposts/'
+fp_signpost_md = os.path.join(base_dir, '_signposts')
+
+
+# # Function creating signpost markdown sites
+
+def create_signpost_markdown(signpost_yml):
+
+    # start creating markdown
+    markdown_content = "---\n"
+
+    # add data from yml
+    signpost_yml_dict = read_yml(os.path.join(fp_signpost_yml, signpost_yml))
+    signpost_id = signpost_yml_dict['signpost_id']
+    markdown_content += f"signpost_id: {signpost_id}\n"
+    markdown_content += f"title: {signpost_yml_dict['title']}\n"
+    markdown_content += f"Lat: {signpost_yml_dict['current_location'][0]}\n"
+    markdown_content += f"Lon: {signpost_yml_dict['current_location'][1]}\n"
+    markdown_content += f"location_description: {signpost_yml_dict['current_location_description']}\n"
+    markdown_content += f"country: {signpost_yml_dict['current_country']}\n"
+    markdown_content += f"description: {signpost_yml_dict['description']}\n"
+    markdown_content += f"past_locations: {signpost_yml_dict['past_locations']}\n"
+    markdown_content += f"glaciers: {signpost_yml_dict['glaciers']}\n"
+
+    # add photos
+    photo_yml_dict = read_yml(os.path.join(fp_photo_yml, f'{signpost_id}_photos.yml'))
+    markdown_content += f"gallery:\n"
+    # find main photo
+    main_photo = None
+    for photo in photo_yml_dict:
+        if photo == 'signpost_id':
+            assert photo_yml_dict['signpost_id'] == signpost_id, 'signpost_id check photo yml file'
+            continue
+        elif photo_yml_dict[photo]['is_main_photo']:
+            if main_photo is not None:
+                raise ValueError(f"Main photo already defined as {main_photo}, "
+                                 f"but {photo} also wants to become main photo!")
+            main_photo = photo
+
+        # add photo to gallery
+        image_path = f"{fp_signpost_photos}{photo_yml_dict[photo]['filename']}"
+        check_file_exist(image_path, signpost_id)
+        markdown_content += f"  - url: {image_path}\n"
+        markdown_content += f"    image_path: {image_path}\n"
+        photo_credit = (f"Photo credit: {photo_yml_dict[photo]['photographer_name']}, "
+                        f"{photo_yml_dict[photo]['photo_date']}")
+        markdown_content += f'    alt: "{photo_credit}"\n'
+        markdown_content += f'    title: "{photo_yml_dict[photo]["photo_description"]} {photo_credit}"\n'
+
+    filename_main_photo = f"{fp_signpost_photos}{photo_yml_dict[main_photo]['filename']}"
+    main_photo_credit = (f"Photo credit: {photo_yml_dict[main_photo]['photographer_name']}, "
+                         f"{photo_yml_dict[main_photo]['photo_date']}")
+    markdown_content += f"main_photo: {filename_main_photo}\n"
+    markdown_content += "header:\n"
+    markdown_content += f"  overlay_image: {filename_main_photo}\n"
+    markdown_content += f"  teaser: {filename_main_photo}\n"
+    markdown_content += f'  caption: "{main_photo_credit}"\n'
+
+    # end file
+    markdown_content += "---\n"
+
+    # add contant what is visible below the heading
+    markdown_content += "Country: {{ page.country }}  <br>{{ page.location_description }}\n"
+
+    # save markdown file
+    with open(os.path.join(fp_signpost_md, f"{signpost_id}.md"), 'w') as file:
+        file.write(markdown_content)
+    
+    print(f"Markdown file {signpost_id} created.")
+
+
+# # Test for notebook
+
+if is_notebook:
+    signpost_yml = get_all_signpost_yml()[0]
+    create_signpost_markdown(signpost_yml)
+
+# # Run all
+
+for signpost_yml in get_all_signpost_yml():
+    try:
+        create_signpost_markdown(signpost_yml)
+    except Exception as error:
+        print(f"{signpost_yml} not working, error: {error}")
+
+

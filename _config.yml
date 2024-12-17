@@ -30,6 +30,8 @@ plugins:
 collections:
   glaciers:
     output: true
+  signposts:
+    output: true
   events:
     output: true
     sort_by: date
@@ -50,6 +52,11 @@ defaults:
       type: "glaciers"
     values:
       layout: glacier
+  - scope:
+      path: ""
+      type: "signposts"
+    values:
+      layout: signpost
   - scope:
       path: ""
     values:

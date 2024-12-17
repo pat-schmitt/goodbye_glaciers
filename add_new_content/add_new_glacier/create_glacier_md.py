@@ -8,9 +8,9 @@
 #       format_version: '1.5'
 #       jupytext_version: 1.16.5
 #   kernelspec:
-#     display_name: Python [conda env:oggm_env]
+#     display_name: Python 3 (ipykernel)
 #     language: python
-#     name: conda-env-oggm_env-py
+#     name: python3
 # ---
 
 import os
@@ -55,6 +55,7 @@ while base_dir.split('/')[-1] != 'goodbye_glaciers':
 fp_glacier_yml = os.path.join(base_dir, 'add_new_content', 'add_new_glacier', 'glacier_yml_files')
 fp_photo_yml = os.path.join(base_dir, 'add_new_content', 'add_new_photo', 'glacier_photos_yml_files')
 deglac_csv_file = os.path.join(base_dir, 'add_new_content', 'add_new_glacier', 'glacier_data_deglaciation.csv')
+fp_signpost_yml = os.path.join(base_dir, 'add_new_content', 'add_new_signpost', 'signpost_yml_files')
 
 
 # -
@@ -68,6 +69,12 @@ def read_yml(fp):
     with open(fp) as stream:
         yml_content = yaml.safe_load(stream)
     return yml_content
+
+
+def check_file_exist(fp, rgi_id):
+    fp_total = f"{base_dir}{fp}"
+    if not os.path.exists(fp_total):
+        print(f'{rgi_id}: {fp} does not exist!')
 
 
 # ## filepaths used when deploying the website
@@ -113,15 +120,24 @@ def create_glacier_markdown(glacier_yml):
         markdown_content += f"{csv_var.replace('.', '_')}: {rgi_id_csv[csv_var]}\n"
 
     # add volume evolution curves
-    markdown_content += f"volume_evolution_simple: {fp_glacier_volume}{rgi_id}_simple_en.png\n"
-    markdown_content += f"volume_evolution_complex: {fp_glacier_volume}{rgi_id}_complex_en.png\n"
+    fp_file = f"{fp_glacier_volume}{rgi_id}_simple_en.png"
+    check_file_exist(fp_file, rgi_id)
+    markdown_content += f"volume_evolution_simple: {fp_file}\n"
+    fp_file = f"{fp_glacier_volume}{rgi_id}_complex_en.png"
+    check_file_exist(fp_file, rgi_id)
+    markdown_content += f"volume_evolution_complex: {fp_file}\n"
 
     # add 3d animations
-    markdown_content += f"animation_simple: {fp_glacier_animations}{rgi_id}_simple_en.mp4\n"
-    markdown_content += f"animation_complex: {fp_glacier_animations}{rgi_id}_complex_en.mp4\n"
+    fp_file = f"{fp_glacier_animations}{rgi_id}_simple_en.mp4"
+    check_file_exist(fp_file, rgi_id)
+    markdown_content += f"animation_simple: {fp_file}\n"
+    fp_file = f"{fp_glacier_animations}{rgi_id}_complex_en.mp4"
+    check_file_exist(fp_file, rgi_id)
+    markdown_content += f"animation_complex: {fp_file}\n"
 
     # add photos
     photo_yml_dict = read_yml(os.path.join(fp_photo_yml, f'{rgi_id}_photos.yml'))
+    markdown_content += f"gallery:\n"
     # find main photo
     main_photo = None
     for photo in photo_yml_dict:
@@ -133,6 +149,17 @@ def create_glacier_markdown(glacier_yml):
                 raise ValueError(f"Main photo already defined as {main_photo}, "
                                  f"but {photo} also wants to become main photo!")
             main_photo = photo
+
+        # add photo to gallery
+        image_path = f"{fp_glacier_photos}{photo_yml_dict[photo]['filename']}"
+        check_file_exist(image_path, rgi_id)
+        markdown_content += f"  - url: {image_path}\n"
+        markdown_content += f"    image_path: {image_path}\n"
+        photo_credit = (f"Photo credit: {photo_yml_dict[photo]['photographer_name']}, "
+                        f"{photo_yml_dict[photo]['photo_date']}")
+        markdown_content += f'    alt: "{photo_credit}"\n'
+        markdown_content += f'    title: "{photo_credit}"\n'
+
     filename_main_photo = f"{fp_glacier_photos}{photo_yml_dict[main_photo]['filename']}"
     main_photo_credit = (f"Photo credit: {photo_yml_dict[main_photo]['photographer_name']}, "
                          f"{photo_yml_dict[main_photo]['photo_date']}")
@@ -141,6 +168,20 @@ def create_glacier_markdown(glacier_yml):
     markdown_content += f"  overlay_image: {filename_main_photo}\n"
     markdown_content += f"  teaser: {filename_main_photo}\n"
     markdown_content += f'  caption: "{main_photo_credit}"\n'
+
+    # add signposts to glacier
+    all_signpost_yml_files = get_all_glacier_yml(fp=fp_signpost_yml)
+    featured_signposts = None
+    for signpost_file in all_signpost_yml_files:
+        signpost_yml_dict = read_yml(os.path.join(fp_signpost_yml, signpost_file))
+    
+        if rgi_id in signpost_yml_dict['glaciers']:
+            if featured_signposts is None:
+                featured_signposts = [signpost_yml_dict['signpost_id']]
+            else:
+                featured_signposts.append(signpost_yml_dict['signpost_id'])
+    if featured_signposts:
+        markdown_content += f"signposts: {featured_signposts}\n"
 
     # end file
     markdown_content += "---\n"

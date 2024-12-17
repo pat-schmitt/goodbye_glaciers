@@ -1,0 +1,11 @@
+---
+signpost_id: template_signpost_id
+photo1:  # give each photo a unique name
+  filename: template_signpost_photo_filename.jpg  # should be saved in assets/images/photos_glaciers
+  photo_date: 2024  # day.month.year of month.year or year
+  photographer_name: Max Muster
+  photo_license: none  # if none will be ignored
+  photo_link: none  # if none will be ignored
+  photo_description: none  # if none will be ignored
+  citation: none  # if none will be ignored
+  is_main_photo: true  # only one photo is allowed to be true, all others false

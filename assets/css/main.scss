@@ -124,3 +124,49 @@ h1[id]::before, h2[id]::before, h3[id]::before {
   visibility: hidden; /* Hide the spacer */
 }
 
+/* Dark Carousel Indicators */
+.carousel-indicators button {
+  background-color: #000 !important; /* Dark grey color */
+  opacity: 0.5;
+}
+
+.carousel-indicators button.active {
+  opacity: 1;
+}
+
+/* Dark Carousel Navigation Arrows */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+  border-radius: 50%;
+  width: 3rem; /* Adjust arrow size */
+  height: 3rem;
+}
+
+.carousel-control-prev-icon::after,
+.carousel-control-next-icon::after {
+  content: "";
+  display: inline-block;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1); /* Makes the arrow icons dark */
+}
+
+.custom-carousel-caption {
+  background-color: #fff; /* White background for the caption */
+  color: #000; /* Black text color */
+  text-align: center; /* Center align the text */
+  padding: 10px 0; /* Vertical padding */
+  margin-top: -5px; /* Small adjustment to reduce spacing */
+  border-top: 1px solid #ddd; /* Optional: Add a thin line above the caption */
+}
+
+.carousel-inner img {
+  display: block;
+  width: 100%; /* Ensures image takes full width */
+  margin: 0; /* No extra margin */
+  border-bottom: none; /* Prevent border overlap */
+}
+

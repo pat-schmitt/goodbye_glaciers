@@ -1,0 +1,12 @@
+---
+signpost_id: template_signpost_id
+title: Template Signpost Name
+current_location: [template_latitude, template_longitude]
+current_location_description: Template Location
+current_country: template_country
+description: Add here some text which should be displayed on the individual site of the signpost.
+past_locations:
+    - none
+glaciers:
+    - RGI60-00.00001
+    - RGI60-00.00002

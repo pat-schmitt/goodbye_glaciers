@@ -1,0 +1,12 @@
+---
+signpost_id: prototype_draft
+title: Prototype Draft
+current_location: [47.264251, 11.384993]
+current_location_description: Campus Innrain, University of Innsbruck
+current_country: Austria
+description: This is the first draft how we envision the signpost could look like. It was drafted by Lilian, after an idea of Wolfgang.
+past_locations:
+    - none
+glaciers:
+    - RGI60-11.00897
+    - RGI60-11.00106
