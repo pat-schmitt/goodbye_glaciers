@@ -1,7 +1,7 @@
 ---
 layout: single
 ---
-<h1>!!!Work in Progress!!!</h1>
+<h1 style="margin-top: -50px;">!!!Work in Progress!!!</h1>
 
 <p> {{ page.title }} has an estimated volume of {{ page.vol2020_km3 }} km³ in 2020. </p>
 
@@ -60,3 +60,21 @@ layout: single
 </p>
 
 <p>If you want to learn how this animation and the figures were created, check out the <a href="{{ site.baseurl }}/methods/">Methods</a>.</p>
+
+{% if page.signposts %}
+  <h1 id="featured-glaciers">Featured Signposts</h1>
+  <ul>
+    {% for signpost_featured in page.signposts %}
+        {% for signpost in site.signposts %}
+          {% if signpost_featured == signpost.signpost_id %}
+            <li>
+              <a href="{{ signpost.url }}">{{ signpost.title }}</a>, {{ signpost.location_description }}
+            </li>
+          {% endif %}
+        {% endfor %}
+    {% endfor %}
+  </ul>
+{% endif %}
+
+<h1 id="photo-gallery">Photo Gallery</h1>
+{% include custom-gallery.html gallery=page.gallery %}
