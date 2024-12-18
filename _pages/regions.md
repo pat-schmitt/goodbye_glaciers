@@ -2,8 +2,6 @@
 permalink: /regions/
 title: Regions
 ---
-# !!!Work in Progress!!!
-
 # Global and regional glacier projections
 
 

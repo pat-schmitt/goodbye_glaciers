@@ -2,8 +2,6 @@
 permalink: /methods/
 title: Methods
 ---
-# !!!Work in Progress!!!
-
 # Methods
 
 This page describes the methodology used for estimating the deglaciation year and the glacier projection visualizations.

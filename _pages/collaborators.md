@@ -2,8 +2,6 @@
 permalink: /collaborators/
 title: Collaborators
 ---
-# !!!Work in Progress!!!
-
 # Collaborators page
 
 ## Scientific Operators
