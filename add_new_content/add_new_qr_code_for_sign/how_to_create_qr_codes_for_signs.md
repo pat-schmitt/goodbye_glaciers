@@ -2,7 +2,7 @@
 
 1. Create a markdown file for the new QR code:
    - Copy the file `template_qr_code_signs.md` and adapt it.
-   - Use a self-explanatory naming convention for the file. The prefix for all signs of a single signpost should be the same. Add the prefix to the [list below](list-of-filename-prefixes) for documentation.
+   - Use a self-explanatory naming convention for the file. The prefix for all signs of a single signpost should be the same. Add the prefix to the [list below](#list-of-filename-prefixes) for documentation.
    - Save the file in `_qr_codes`.
 2. Generate the QR Code:
    - Use the generator: [https://keremerkan.net/qr-code-and-2d-code-generator/](https://keremerkan.net/qr-code-and-2d-code-generator/).
