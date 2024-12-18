@@ -1,4 +1,4 @@
-<div id="gallery-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-touch="true">
+<div id="gallery-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-touch="true" data-bs-interval="2500">
   <!-- Indicators -->
   <div class="carousel-indicators">
     {% for image in page.gallery %}
@@ -13,7 +13,9 @@
     {% for image in page.gallery %}
       <div class="carousel-item {% if forloop.first %}active{% endif %}">
         <!-- Image -->
-        <img src="{{ image.url }}" class="d-block w-100" alt="{{ image.alt }}">
+        <a href="{{ image.url }}">
+          <img src="{{ image.url }}" class="d-block w-100" alt="{{ image.alt }}">
+        </a>
         <!-- Caption below the image -->
         {% if image.title %}
           <div class="custom-carousel-caption">
