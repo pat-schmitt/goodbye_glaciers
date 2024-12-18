@@ -17,22 +17,25 @@ title: Collaborators
 </div>
 
   <!-- Image on the right side -->
-  <div>
-    <img src="/assets/images/logos/logo_uibk.jpg" alt="Logo Innsbruck" style="width: 400px; height: auto;" />
+  <div style="flex: 1; min-width: 50px;">
+    <img src="/assets/images/logos/logo_uibk.jpg" alt="Logo Innsbruck" style="width: auto; height: 80px;" />
   </div>
 </div>
       
 ## Scientific Partners
-- Fabien Maussion (University of Bristol)
-<img src="/assets/images/logos/logo_bristol.svg" alt="Logo University of Bristol" style="height: 50px; width: auto;" />
-- Nicolas Champollion (Université Grenoble Alpes)
-<img src="/assets/images/logos/logo_grenoble.svg" alt="Logo Universite Grenoble Alpes" style="height: 50px; width: auto;" />
+- Fabien Maussion <a href="https://www.bristol.ac.uk/">
+<img src="/assets/images/logos/logo_bristol.svg" alt="Logo University of Bristol" style="height: 50px; width: auto;" /></a>
+- Nicolas Champollion <a href="https://www.univ-grenoble-alpes.fr/english/">
+<img src="/assets/images/logos/logo_grenoble.svg" alt="Logo Universite Grenoble Alpes" style="height: 50px; width: auto;" /></a>
+- Marin Kneib <a href="https://ethz.ch/en.html"> <img src="/assets/images/logos/logo_eth.png" alt="Logo ETH Zürich" style="height: 50px; width: auto;" /></a>
+- Michael Zemp <a href="https://wgms.ch/"> <img src="/assets/images/logos/wgms-logo.png" alt="Logo WGMS" style="height: 30px; width: auto;" /></a>
+<a href="https://www.uzh.ch/en.html"><img src="/assets/images/logos/Universität_Zürich_logo.png" alt="Logo Universität_Zürich" style="height: 50px; width: auto;" /></a>
 - More coming soon ...
 
 
 
 
 ## Other Partners
-- Alpine Convention <img src="/assets/images/logos/logo_alpenkonvention.png" alt="Logo Alpenkonvention" style="height: 50px; width: auto;" />
+- Alpine Convention <a href="https://www.alpconv.org/en/"><img src="/assets/images/logos/logo_alpenkonvention.png" alt="Logo Alpenkonvention" style="height: 50px; width: auto;" /></a>
 
 
