@@ -4,7 +4,7 @@ photo1:  # give each photo a unique name
   filename: 20240809_seekarles_strudlmarkus.JPG  # should be saved in assets/images/photos_glaciers
   photo_date: 09.08.2024  # day.month.year of month.year or year
   photographer_name: Markus Strudl
-  photo_license: none  # if none will be ignored
-  photo_link: none  # if none will be ignored
-  citation: none  # if none will be ignored
+  photo_license:  # leave blank if not applicable
+  photo_link:  # leave blank if not applicable
+  citation:  # leave blank if not applicable
   is_main_photo: true  # only one photo is allowed to be true, all others false

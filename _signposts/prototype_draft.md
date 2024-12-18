@@ -11,12 +11,12 @@ glaciers: ['RGI60-11.00897', 'RGI60-11.00106']
 gallery:
   - url: /assets/images/photos_signposts/prototype_idea.png
     image_path: /assets/images/photos_signposts/prototype_idea.png
-    alt: "Photo credit: Lilian Schuster, 2024"
-    title: "This is how we envision the signposts to look like. Photo credit: Lilian Schuster, 2024"
+    alt: Lilian Schuster, 2024
+    title: 'This is how we envision the signposts to look like. Photo credit: <a href="/methods/#prototype_draft_photo1">Lilian Schuster, 2024</a>'
 main_photo: /assets/images/photos_signposts/prototype_idea.png
 header:
   overlay_image: /assets/images/photos_signposts/prototype_idea.png
   teaser: /assets/images/photos_signposts/prototype_idea.png
-  caption: "Photo credit: Lilian Schuster, 2024"
+  caption: 'Photo credit: <a href="/methods/#prototype_draft_photo1">Lilian Schuster, 2024</a>'
 ---
 Country: {{ page.country }}  <br>{{ page.location_description }}

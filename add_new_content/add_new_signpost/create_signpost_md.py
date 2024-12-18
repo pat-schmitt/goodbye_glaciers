@@ -16,31 +16,6 @@
 import yaml
 import os
 
-
-# # check if notebook or script
-
-# +
-# Function to detect if we're running in a Jupyter notebook
-def check_if_notebook():
-    try:
-        shell_name = get_ipython().__class__.__name__
-        if shell_name == 'ZMQInteractiveShell':
-            return True   # Jupyter notebook or JupyterLab
-        elif shell_name in ['TerminalInteractiveShell', 'InteractiveShell']:
-            return False  # IPython terminal or other interactive shells
-        else:
-            # Fallback or default behavior for unidentified environments
-            return False
-    except NameError:
-        return False      # Not in IPython, likely standard Python interpreter
-
-# Use this to conditionally execute tests/debugging
-if check_if_notebook():
-    is_notebook = True
-else:
-    is_notebook = False
-# -
-
 # # Define all filepaths
 
 # ## filepaths for opening input data for creation of md
@@ -120,19 +95,30 @@ def create_signpost_markdown(signpost_yml):
         check_file_exist(image_path, signpost_id)
         markdown_content += f"  - url: {image_path}\n"
         markdown_content += f"    image_path: {image_path}\n"
-        photo_credit = (f"Photo credit: {photo_yml_dict[photo]['photographer_name']}, "
-                        f"{photo_yml_dict[photo]['photo_date']}")
-        markdown_content += f'    alt: "{photo_credit}"\n'
-        markdown_content += f'    title: "{photo_yml_dict[photo]["photo_description"]} {photo_credit}"\n'
+        photo_credit = (f"Photo credit: "
+                        f'<a href="/methods/#{signpost_id}_{photo}">'
+                        f"{photo_yml_dict[photo]['photographer_name']}, "
+                        f"{photo_yml_dict[photo]['photo_date']}"
+                        '</a>'
+                       )
+        markdown_content += (f"    alt: "
+                             f"{photo_yml_dict[photo]['photographer_name']}, "
+                             f"{photo_yml_dict[photo]['photo_date']}\n"
+                            )
+        markdown_content += f"    title: '{photo_yml_dict[photo]['photo_description']} {photo_credit}'\n"
 
     filename_main_photo = f"{fp_signpost_photos}{photo_yml_dict[main_photo]['filename']}"
-    main_photo_credit = (f"Photo credit: {photo_yml_dict[main_photo]['photographer_name']}, "
-                         f"{photo_yml_dict[main_photo]['photo_date']}")
+    main_photo_credit = (f"Photo credit: "
+                         f'<a href="/methods/#{signpost_id}_{main_photo}">'
+                         f"{photo_yml_dict[main_photo]['photographer_name']}, "
+                         f"{photo_yml_dict[main_photo]['photo_date']}"
+                         '</a>'
+                        )
     markdown_content += f"main_photo: {filename_main_photo}\n"
     markdown_content += "header:\n"
     markdown_content += f"  overlay_image: {filename_main_photo}\n"
     markdown_content += f"  teaser: {filename_main_photo}\n"
-    markdown_content += f'  caption: "{main_photo_credit}"\n'
+    markdown_content += f"  caption: '{main_photo_credit}'\n"
 
     # end file
     markdown_content += "---\n"
@@ -147,18 +133,17 @@ def create_signpost_markdown(signpost_yml):
     print(f"Markdown file {signpost_id} created.")
 
 
-# # Test for notebook
-
-if is_notebook:
-    signpost_yml = get_all_signpost_yml()[0]
-    create_signpost_markdown(signpost_yml)
-
 # # Run all
 
-for signpost_yml in get_all_signpost_yml():
-    try:
-        create_signpost_markdown(signpost_yml)
-    except Exception as error:
-        print(f"{signpost_yml} not working, error: {error}")
+def create_all_signpost_md():
+    for signpost_yml in get_all_signpost_yml():
+        try:
+            create_signpost_markdown(signpost_yml)
+        except Exception as error:
+            print(f"{signpost_yml} not working, error: {error}")
+
+
+if __name__ == '__main__':
+    create_all_signpost_md()
 
 
