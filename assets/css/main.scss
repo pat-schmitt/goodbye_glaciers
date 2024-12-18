@@ -116,7 +116,7 @@ search: false
 }
 
 /* Ensure links for headings are located below the top menu */
-h1[id]::before, h2[id]::before, h3[id]::before {
+h1[id]::before, h2[id]::before, h3[id]::before, li[id]::before {
   content: ''; /* Empty content for the pseudo-element */
   display: block; /* Make it behave like a block element */
   height: 100px; /* Match your menu height */

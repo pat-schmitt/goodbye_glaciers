@@ -4,7 +4,7 @@ photo1:  # give each photo a unique name
   filename: gebroulaz2014090402.jpg  # should be saved in assets/images/photos_glaciers
   photo_date: 04.09.2014  # day.month.year of month.year or year
   photographer_name: Stephan Peccini
-  photo_license: CC BY-NC-SA 4.0  # if none will be ignored
-  photo_link: http://nsidc.org/data/glacier_photo/search/image_info/gebroulaz2014090402  # if none will be ignored
-  citation: "Peccini, Stephan. 2014. Gebraoulaz Glacier: From the Glacier Photograph Collection. Boulder, Colorado USA: National Snow and Ice Data Center. Digital media."  # if none will be ignored
+  photo_license: CC BY-NC-SA 4.0  # leave blank if not applicable
+  photo_link: http://nsidc.org/data/glacier_photo/search/image_info/gebroulaz2014090402  # leave blank if not applicable
+  citation: "Peccini, Stephan. 2014. Gebraoulaz Glacier: From the Glacier Photograph Collection. Boulder, Colorado USA: National Snow and Ice Data Center. Digital media."  # leave blank if not applicable
   is_main_photo: true  # only one photo is allowed to be true, all others false

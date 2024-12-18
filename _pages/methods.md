@@ -66,4 +66,27 @@ The mean global warming above pre-industrial across all combinations of glacier 
 
 
 ## Photo sources and licenses
-Link to all used photos on the website and their corresponding licenses -> TODO
+<ul>
+  {% for photo in site.photos %}
+    <li id="{{ photo.photo_id }}">
+      <a href="{{ site.baseurl }}{{ photo.filename }}">
+        <img src="{{ site.baseurl }}{{ photo.filename }}" alt="{{ photo.photo_id }}" style="width: 100px; height: auto;">
+      </a>
+      {% if photo.photographer_name %}
+        <br><b>Photographer</b>: {{ photo.photographer_name }}
+      {% endif %}
+      {% if photo.photo_date %}
+        <br><b>Date</b>: {{ photo.photo_date }}
+      {% endif %}
+      {% if photo.photo_link %}
+        <br><b>Original URL</b>: <a href="{{ photo.photo_link }}">{{ photo.photo_link }}</a>
+      {% endif %}
+      {% if photo.citation %}
+        <br><b>Citation</b>: {{ photo.citation }}
+      {% endif %}
+      {% if photo.photo_license %}
+        <br><b>License</b>: <a href="{{ photo.photo_license_url }}">{{ photo.photo_license }}</a>
+      {% endif %}
+    </li>
+  {% endfor %}
+ </ul>

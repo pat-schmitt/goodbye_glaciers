@@ -37,6 +37,8 @@ collections:
     sort_by: date
   qr_codes:
     output: true
+  photos:
+    output: false
 
 footer:
   links:

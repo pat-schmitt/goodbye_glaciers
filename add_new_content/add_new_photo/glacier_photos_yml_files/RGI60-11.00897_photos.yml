@@ -4,15 +4,15 @@ photo1:  # give each photo a unique name
   filename: hintereisferner20060912.jpg  # should be saved in assets/images/photos_glaciers
   photo_date: 12.09.2006  # day.month.year of month.year or year
   photographer_name: Lambrecht A.
-  photo_license: none  # if none will be ignored
-  photo_link: http://nsidc.org/data/glacier_photo/search/image_info/hintereisferner20060912  # if none will be ignored
-  citation: "Lambrecht, A.. 2006. Hintereis Ferner Glacier: From the Glacier Photograph Collection. Boulder, Colorado USA: National Snow and Ice Data Center. Digital media."  # if none will be ignored
+  photo_license:  # leave blank if not applicable
+  photo_link: http://nsidc.org/data/glacier_photo/search/image_info/hintereisferner20060912  # leave blank if not applicable
+  citation: "Lambrecht, A.. 2006. Hintereis Ferner Glacier: From the Glacier Photograph Collection. Boulder, Colorado USA: National Snow and Ice Data Center. Digital media."  # leave blank if not applicable
   is_main_photo: true  # only one photo is allowed to be true, all others false
 photo2:  # give each photo a unique name
   filename: hintereisferner20140908.jpg  # should be saved in assets/images/photos_glaciers
   photo_date: 08.09.2014  # day.month.year of month.year or year
   photographer_name: Rainer Prinz
-  photo_license: none  # if none will be ignored
-  photo_link: http://nsidc.org/data/glacier_photo/search/image_info/hintereisferner20140908  # if none will be ignored
-  citation: "Prinz, Rainer. 2014. Hintereis Ferner Glacier: From the Glacier Photograph Collection. Boulder, Colorado USA: National Snow and Ice Data Center. Digital media."  # if none will be ignored
+  photo_license:   # leave blank if not applicable
+  photo_link: http://nsidc.org/data/glacier_photo/search/image_info/hintereisferner20140908  # leave blank if not applicable
+  citation: "Prinz, Rainer. 2014. Hintereis Ferner Glacier: From the Glacier Photograph Collection. Boulder, Colorado USA: National Snow and Ice Data Center. Digital media."  # leave blank if not applicable
   is_main_photo: false  # only one photo is allowed to be true, all others false

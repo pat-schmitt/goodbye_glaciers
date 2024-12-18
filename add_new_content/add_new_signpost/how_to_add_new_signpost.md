@@ -4,6 +4,4 @@
 2. Create a yml file for the signpost:
    - Copy `template_signpost.yml` and adapt it.
    - Save the file as `{SIGNPOST_ID}.yml` inside `add_new_content/add_new_signpost/signpost_yml_files`.
-3. Run the script [`create_signpost_md.py`](create_signpost_md.py) or notebook [`create_signpost_md.ipynb`](create_signpost_md.ipynb) to generate individual signpost markdown pages:
-   - The script or notebook will create markdown pages only for signposts where all required information is available.
-4. Run the script [`create_glacier_md.py`](../add_new_glacier/create_glacier_md.py) to link the signpost to the corresponding glaciers.
+3. Run the script [`update_website_with_new_content.py`](../update_website_with_new_content.py) or notebook [`update_website_with_new_content.ipynb`](../update_website_with_new_content.ipynb) to update the website with the new content.
