@@ -25,8 +25,8 @@ title: Collaborators
 ## Scientific Partners
 - Fabien Maussion <a href="https://www.bristol.ac.uk/">
 <img src="/assets/images/logos/logo_bristol.svg" alt="Logo University of Bristol" style="height: 50px; width: auto;" /></a>
-- Nicolas Champollion <a href="https://www.univ-grenoble-alpes.fr/english/">
-<img src="/assets/images/logos/logo_grenoble.svg" alt="Logo Universite Grenoble Alpes" style="height: 50px; width: auto;" /></a>
+- Nicolas Champollion <a href="https://www.ige-grenoble.fr/?lang=en">
+<img src="/assets/images/logos/logoIGE_Color.png" alt="Logo Universite Grenoble Alpes" style="height: 50px; width: auto;" /></a>
 - Marin Kneib <a href="https://ethz.ch/en.html"> <img src="/assets/images/logos/logo_eth.png" alt="Logo ETH Zürich" style="height: 50px; width: auto;" /></a>
 - Michael Zemp <a href="https://wgms.ch/"> <img src="/assets/images/logos/wgms-logo.png" alt="Logo WGMS" style="height: 30px; width: auto;" /></a>
 <a href="https://www.uzh.ch/en.html"><img src="/assets/images/logos/Universität_Zürich_logo.png" alt="Logo Universität_Zürich" style="height: 50px; width: auto;" /></a>
