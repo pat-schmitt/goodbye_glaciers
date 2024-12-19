@@ -6,21 +6,12 @@ title: Collaborators
 
 ## Scientific Operators
 
-
-<div style="display: flex; align-items: flex-start;">
-  <!-- Text on the left side -->
-  <div style="flex: 1; margin-right: 20px;">
-    <p>This website is build and maintained by the <a href="https://www.uibk.ac.at/en/alpinerraum/">'Research Area Mountain Regions' of the Universität Innsbruck</a>.</p>
+<p>This website is build and maintained by the <a href="https://www.uibk.ac.at/en/alpinerraum/">'Research Area Mountain Regions' of the Universität Innsbruck</a>.</p>
 
 <p>The main operators are <a href="https://www.uibk.ac.at/en/acinn/people/patrick-schmitt/">Patrick Schmitt</a>, <a href="https://www.uibk.ac.at/en/acinn/people/lilian-schuster/">Lilian Schuster</a>, <a href="https://github.com/afisc">Alexander Fischer</a>, and <a href="https://www.uibk.ac.at/en/acinn/people/wolfgang-gurgiser/">Wolfgang Gurgiser</a>.</p>
 
-</div>
+<a href="https://www.uibk.ac.at/en/"><img src="/assets/images/logos/logo_uibk.jpg" alt="Logo Innsbruck" style="width: auto; height: 80px;" /></a>
 
-  <!-- Image on the right side -->
-  <div style="flex: 1; min-width: 50px;">
-    <img src="/assets/images/logos/logo_uibk.jpg" alt="Logo Innsbruck" style="width: auto; height: 80px;" />
-  </div>
-</div>
       
 ## Scientific Partners
 - Fabien Maussion <a href="https://www.bristol.ac.uk/">
