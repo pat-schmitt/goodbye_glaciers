@@ -91,7 +91,13 @@ def create_glacier_markdown(glacier_yml):
                     'deglac_yr_2.7deg_10perc_q83',
                     'deglac_yr_1.5deg_10perc_q50',
                     'deglac_yr_1.5deg_10perc_q17',
-                    'deglac_yr_1.5deg_10perc_q83']:
+                    'deglac_yr_1.5deg_10perc_q83',
+                    '2100_perc_2.7deg_q17',
+                    '2100_perc_2.7deg_q83',
+                    '2100_perc_2.7deg_q50',
+                    '2100_perc_1.5deg_q50',
+                    '2100_perc_1.5deg_q17',
+                    '2100_perc_1.5deg_q83']:
         markdown_content += f"{csv_var.replace('.', '_')}: {rgi_id_csv[csv_var]}\n"
 
     # add volume evolution curves
@@ -174,8 +180,10 @@ def create_glacier_markdown(glacier_yml):
 
     # add contant what is visible below the heading
     markdown_content += ("Country: {{ page.country }}  <br>"
-                         "+2.7°C: Mostly gone by {{ page.deglac_yr_2_7deg_10perc_q50 | floor }} <br>"
-                         "+1.5°C: Mostly gone by  X2 <br>"
+                         "2.7°C: Mostly gone by {{ page.deglac_yr_2_7deg_10perc_q50 | floor }} <br>"
+                         "{% assign deglac_year = page.deglac_yr_1_5deg_10perc_q50 | plus: 0 %} {% if deglac_year > 0 %}"
+                         "1.5°C: Mostly gone by {{ deglac_year | floor }}"
+                         "{% else %} 1.5°C: {{ page['2100_perc_1_5deg_q50'] | floor | minus: page['2100_perc_2_7deg_q50'] | floor }}% more remains by 2100{% endif %} <br>"
                          "<b>Every 0.1°C avoided saves glaciers and limits impacts!</b>"
                         )
 
