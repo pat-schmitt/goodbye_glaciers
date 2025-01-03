@@ -4,12 +4,71 @@ title: Glaciers
 collection: glaciers
 ---
 <p>
-<div style="border: 2px solid #000; padding: 10px; background-color: #f9f9f9; width: fit-content;">
+<div style="border: 2px solid #000; padding: 10px; background-color:  #f7cccc; width: fit-content;">
 <strong>This website is under construction, but feel free to already explore. We plan to have a complete version with additional glaciers and different languages by end of January.</strong>
 </div>
 </p>
 
-<p> With <a href="https://climateactiontracker.org/global/cat-thermometer/">current policy leading to a warming of +2.7°C</a>, we are sadly saying goodbye to many glaciers in the Alps. Below, you can search for your favorite glacier on the map or from the list to see what its future might look like.</p>
+
+<!-- Content Container -->
+<p>
+<div style="border: 2px solid #000; padding: 10px;  width: fit-content;">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center;">
+  <!-- Text Content -->
+  <div style="flex: 1; padding-right: 20px;">
+    <strong>With <a href="https://climateactiontracker.org/global/cat-thermometer/">current policy leading to a warming of 2.7°C</a>, we are sadly saying goodbye to many glaciers in the Alps. </strong> <br> Of the approximately 3,900 glaciers in the Alps, only around 635 have an estimated volume above 0.01 km³ as of 2020, meaning their volume is larger than that of 4,000 Olympic-sized swimming pools. Under 2.7°C warming, more than 550 glaciers (85%) are estimated to deglaciate (<10% remains) before 2100. However, under 1.5°C warming, 166 fewer glaciers are estimated to deglaciate.
+  </div>
+
+  <!-- Image on the right side -->
+  <div style="flex: 1; min-width: 200px;">
+    <img src="/assets/images/others/histogram_deglaciation_comparison.png" alt="Histogram visualising deglaciation years of glaciers in the Alps" style="width: 100%; height: auto;max-width: 450px;" />
+  </div>
+</div>
+
+<!-- Add responsive CSS -->
+<style>
+  @media (max-width: 768px) {
+    div[style*="display: flex"] {
+      flex-direction: column; /* Stack items vertically on smaller screens */
+    }
+    div[style*="padding-right: 20px"] {
+      padding-right: 0; /* Remove padding for text when stacking vertically */
+    }
+  }
+  /* For larger screens, you can set the max-width for the image */
+  #histogram-image {
+    max-width: 450px; /* Limit the image size on wider screens */
+</style>
+
+<script>
+  function adjustLayout() {
+    var container = document.getElementById('content-container');
+    var image = document.getElementById('histogram-image');
+    var width = window.innerWidth;
+
+    if (width < 768) {
+      // Stack content vertically when the screen is small
+      container.style.flexDirection = 'column';
+      image.style.marginTop = '20px'; // Adds space between image and text
+    } else {
+      // Align content side by side when the screen is wide
+      container.style.flexDirection = 'row';
+      image.style.marginTop = '0'; // Remove the margin when side by side
+    }
+  }
+
+  // Run on page load
+  adjustLayout();
+
+  // Run on window resize
+  window.onresize = adjustLayout;
+</script>
+</div>
+</p>
+
+
+
+<p> Below, you can search for your favorite glacier on the map or from the list to see what its future might look like.</p>
 
 
 <div id="map"></div>
@@ -91,3 +150,10 @@ collection: glaciers
     </li>
   {% endfor %}
 </ul>
+
+
+
+
+
+
+

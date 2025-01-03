@@ -19,6 +19,9 @@ The **deglaciation year** is defined as the point when less than 10% of a glacie
 
 It is important to note that positive feedback mechanisms, such as localized warming due to glacier retreat, are not accounted for in large-scale glacier models.   
 
+##### 10% vs 5% threshold differences
+Changing the deglaciation year definition from a 10% threshold to a 5% threshold results in deglaciation years that are, on median, four years later, but the deglaciation year can be up to 34 years later. The deglaciation year can be as much as 34 years later. For approximately 40 glaciers, the remaining glacier mass in 2100 is between 5% and 10%, meaning no deglaciation year is recorded under the 5% threshold.  
+
 ### Likely range
 
 The **likely range** describes the spread of projections and is defined as the 17th to 83rd percentiles, consistent with [IPCC AR6](https://www.ipcc.ch/report/ar6/wg1/).  
@@ -53,6 +56,7 @@ The **2020 glacier volume**, **deglaciation year**, and **global and regional gl
 
 The **3D glacier thickness projections** are based solely on OGGM simulations and visualized using the [Glacier:3D-Viz](https://glacier3dviz.oggm.org/tutorials/welcome.html) tool. These 3D projections differ slightly from the other estimates, which are based on a combination of three glacier models.  
 
+Note that these glacier projections are based on global glacier models that use globally available glacier observation data and not use data that is only available for a few glaciers (i.e., only geodetic but no in-situ observations directly used). As a result, the models perform better on a global scale than at the individual glacier scale. Although some important processes at the individual glacier scale are not represented, we present individual glacier results here for educational purposes. In addition, the per-glacier and regional volume in 2020 is not an observed volume but a modelled volume. 
 
 ## Results aggregation
 
