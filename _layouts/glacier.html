@@ -36,19 +36,18 @@ layout: single
 </div>
 <br>
 
-<p>{{ page.title }} had an estimated volume of {{ page.vol2020_km3 }} km³ in 2020 and is expected to be mostly gone by {{ page.deglac_yr_2_7deg_10perc_q50 | floor }} (<a href="{{ site.baseurl }}/methods/#likely-range">likely range</a>: {{ page.deglac_yr_2_7deg_10perc_q17 | floor }} - {% if page.deglac_yr_2_7deg_10perc_q83 %}{{ page.deglac_yr_2_7deg_10perc_q83 | default: 0 | floor }}{% else %}after 2100{% endif %}) under 2.7°C global warming (<a href="https://climateactiontracker.org/global/cat-thermometer/">current policy prediction</a>). This year, called the <b>deglaciation year</b>, marks the point when less than 10% of the glacier's 2020 volume is expected to remain.<br><br>
+<p>{{ page.title }} had an estimated volume of {{ page.vol2020_km3 }} km³ in 2020 and is expected to be mostly gone by {{ page.deglac_yr_2_7deg_10perc_e-2km3_q50 | floor }} (<a href="{{ site.baseurl }}/methods/#likely-range">likely range</a>: {{ page.deglac_yr_2_7deg_10perc_e-2km3_q17 | floor }} - {% if page.deglac_yr_2_7deg_10perc_e-2km3_q83 %}{{ page.deglac_yr_2_7deg_10perc_e-2km3_q83 | default: 0 | floor }}{% else %}after 2100{% endif %}) under 2.7°C global warming (<a href="https://climateactiontracker.org/global/cat-thermometer/">current policy prediction</a>). This year, called the <b>deglaciation year</b>, marks the point when less than 10% of the glacier's 2020 volume or less than 0.01 km³ is expected to remain.<br><br>
 
 <!--Comment: only show the "years later" sentence if it deglaciates at 1.5°C   -->
 If global warming is limited to 1.5°C (<a href="https://unfccc.int/process-and-meetings/the-paris-agreement">Paris Agreement</a>), 
-<!-- If deglac_yr_1_5deg_10perc_q50 is greater than 0, show the full sentence -->
-{% assign deglac_year = page.deglac_yr_1_5deg_10perc_q50 | plus: 0 %}
+<!-- If deglac_yr_1_5deg_10perc_e-2km3_q50 is greater than 0, show the full sentence -->
+{% assign deglac_year = page.deglac_yr_1_5deg_10perc_e-2km3_q50 | plus: 0 %}
 {% if deglac_year > 0 %}
-  If global warming is limited to 1.5°C (<a href="https://unfccc.int/process-and-meetings/the-paris-agreement">Paris Agreement</a>), 
-  {{ page.title }} will be mostly gone by {{ deglac_year | floor }} ({{ deglac_year | floor | minus: page.deglac_yr_2_7deg_10perc_q50 | default: 0 | floor }} years later than under 2.7°C).
+  {{ page.title }} will be mostly gone by {{ deglac_year | floor }} ({{ deglac_year | floor | minus: page.deglac_yr_2_7deg_10perc_e-2km3_q50 | default: 0 | floor }} years later than under 2.7°C).
   By 2100, {{ page["2100_perc_1_5deg_q50"] | floor }}% of the 2020 volume is expected to remain 
   ({{ page["2100_perc_1_5deg_q50"] | floor | minus: page["2100_perc_2_7deg_q50"] | floor }}% more compared to 2.7°C).
 {% else %}
-  <!-- If deglac_yr_1_5deg_10perc_q50 is missing or 0, show just the 2100 volume difference -->
+  <!-- If deglac_yr_1_5deg_10perc_e-2km3_q50 is missing or 0, show just the 2100 volume difference -->
   by 2100, {{ page["2100_perc_1_5deg_q50"] | floor }}% of the 2020 volume is expected to remain 
   ({{ page["2100_perc_1_5deg_q50"] | floor | minus: page["2100_perc_2_7deg_q50"] | floor }}% more compared to 2.7°C).
 {% endif %}

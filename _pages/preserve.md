@@ -4,42 +4,55 @@ title: How to preserve?
 ---
 # How you can help preserve glacier ice?
 
+<div style="border: 2px solid #0096D6; padding: 10px; background-color: #E0F7FA; border-radius: 8px; margin: 20px 0;">
+  <strong>On the long-term, every kg of reduced CO2 emissions results in 16kg less global mountain glacier mass loss</strong> 
+  (<a href="https://doi.org/10.1038/s41558-018-0093-1" target="_blank">Marzeion et al., 2018</a>).
+</div>
+
+
 Giant blankets or artificial snow may slow down ice losses of individual glaciers, but these approaches are extremely cost and labour-expensive, and would only be feasible on a few selected glaciers. The funds would be better spent on addressing the root cause: greenhouse gas emissions.
 
 **Reducing greenhouse gas emissions is the most effective way to preserve glacier ice ([Huss et al., 2024](https://doi.org/10.1038/s44221-024-00269-8)).** 
 
-On the long-term, every kg of reduced CO2 emissions results in 16kg less global mountain glacier mass loss ([Marzeion et al., 2018](https://doi.org/10.1038/s41558-018-0093-1)). 
+We need to reduce climate emissions to reduce climate change impacts and one of these impacts are melting glaciers. Glacier loss contributes on the long-term to sea-level rise (<a href="https://doi.org/10.1038/s41586-021-03302-y" target="_blank">Edwards et al., 2021</a>) and can reduce the mountain water availability in dry periods or droughts (<a href="https://doi.org/10.5194/esd-13-935-2022" target="_blank">Ultee et al., 2022</a>). 
 
 
 ### **What can you do?**
 
-**1. Reduce your ecological CO2-footprint**
-<p>
-  Start by changing your lifestyle to minimize emissions. Find out how you can reduce your impact with the 
-  <a href="https://www.footprintcalculator.org/home/en" target="_blank">footprint calculator</a>.
-</p>
+**1. Reduce your ecological footprint**<br>
 
-**2. Enlarge your handprint**
-<div style="display: flex; align-items: flex-start; flex-wrap: wrap;">
-  <!-- Text on the left side -->
-  <div style="flex: 1; margin-right: 20px; min-width: 300px;">
-    <p>
-      Leaving positive traces by engaging in societal and political transformations for a socially and ecologically just future. Enlarging your handprint may be more effective than simply reducing your own ecological CO2 footprint as it improves the framework for sustainable behavior for many people.
-    </p> 
-    <p>
-      More under this 
-      <a href="https://www.handprint-hub.de/handprint-concept" target="_blank">handprint concept article</a>. 
-      If you are German-speaking, check out the 
-      <a href="https://www.handprint-hub.de/was-ist-der-handabdruck" target="_blank">Handprint Hub</a> and this 
-      <a href="https://www.handabdruck.eu/" target="_blank">Handprint Test</a>.
-    </p> 
-  </div>
 
-  <!-- Image on the right side -->
-  <div style="flex: 1; min-width: 300px;">
-    <img src="/assets/images/others/what_can_i_do_to_enlarge_my_handprint_english.jpg" 
-         alt="What can I do to enlarge my handprint" 
-         style="width: 100%; height: auto;" />
-  </div>
+Start making small changes in your daily life to lower your emissions! Use a <a href="https://www.footprintcalculator.org/home/en" target="_blank">footprint calculator</a> to explore where you can make the most impact.
+
+For example:
+
+- Avoid air travel as much as possible.
+- Choose public transport, biking, walking, or carpooling over driving solo.
+- Reduce your consumption of meat and dairy by incorporating more plant-based meals.
+
+
+If you want to visit some of the remaining glaciers in the Alps and live in Europe, you can still do so sustainably by traveling via public transport. Explore hiking tours in the Alps that are accessible by public transit on the <a href="https://www.zuugle.at" target="_blank">zuugle website (entire Alps, not available in English but in many other languages) </a> or <a href="https://www.bahn-zum-berg.at/" target="_blank">"Bahn-zum-Berg" website </a> (only for Austria, can be translated by your webbrowser to English). 
+<br>
+
+**2. Enlarge your handprint by engaging in transformations**<br>
+
+
+Want to make an even bigger difference? Your "handprint" represents the positive impact you create by contributing to societal and political transformations for a better future.
+
+Besides voting and going to a climate demonstration, you can find transformation-engaging activities that fit to your personality. For example:
+
+- Advocate for more plant-based meal options in your workplace cafeteria.
+- Organize a “walking bus” for kids in your community to promote sustainable commuting.
+
+Your efforts, especially when joined with others, can inspire meaningful change and create lasting impacts far beyond individual actions. <br> 
+
+Discover further the handprint under this <a href="https://www.handprint-hub.de/handprint-concept" target="_blank">handprint concept website</a>. <br> There are two German websites with even more information: the <a href="https://www.handprint-hub.de/was-ist-der-handabdruck" target="_blank">Handprint Hub</a> and <a href="https://www.handabdruck.eu/handabdruck-test" target="_blank">an interactive Handprint Test that finds ideas depending on your personality</a>. Both websites can be easily translated into English via your webbrowser. 
+
+
+<div style="flex: 1; min-width: 300px;">
+<img src="/assets/images/others/what_can_i_do_to_enlarge_my_handprint_english.jpg" 
+     alt="What can I do to enlarge my handprint?" 
+     style="width: 100%; height: auto;" />
 </div>
+
 

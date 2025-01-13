@@ -9,7 +9,7 @@ main:
     url: /events/
   - title: "Methods"
     url: /methods/
-  - title: "Collaborators"
-    url: /collaborators/
+  - title: "About"
+    url: /about/
   - title: "How to preserve?"
     url: /preserve/
