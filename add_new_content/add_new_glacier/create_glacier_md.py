@@ -82,22 +82,24 @@ def create_glacier_markdown(glacier_yml):
 
     # add data from csv
     try:
-        rgi_id_csv = df_deglac.loc[rgi_id]
+        rgi_id_csv = df_deglac.loc[rgi_id].copy()
     except KeyError:
         raise KeyError(f'{rgi_id} not included in glacier_data_deglaciation.csv!')
     for csv_var in ['CenLon', 'CenLat', 'vol2020_km3',
-                    'deglac_yr_2.7deg_10perc_q50',
-                    'deglac_yr_2.7deg_10perc_q17',
-                    'deglac_yr_2.7deg_10perc_q83',
-                    'deglac_yr_1.5deg_10perc_q50',
-                    'deglac_yr_1.5deg_10perc_q17',
-                    'deglac_yr_1.5deg_10perc_q83',
+                    'deglac_yr_2.7deg_10perc_e-2km3_q50',
+                    'deglac_yr_2.7deg_10perc_e-2km3_q17',
+                    'deglac_yr_2.7deg_10perc_e-2km3_q83',
+                    'deglac_yr_1.5deg_10perc_e-2km3_q50',
+                    'deglac_yr_1.5deg_10perc_e-2km3_q17',
+                    'deglac_yr_1.5deg_10perc_e-2km3_q83',
                     '2100_perc_2.7deg_q17',
                     '2100_perc_2.7deg_q83',
                     '2100_perc_2.7deg_q50',
                     '2100_perc_1.5deg_q50',
                     '2100_perc_1.5deg_q17',
                     '2100_perc_1.5deg_q83']:
+        if csv_var == 'vol2020_km3':
+            rgi_id_csv[csv_var] = rgi_id_csv[csv_var].round(2)
         markdown_content += f"{csv_var.replace('.', '_')}: {rgi_id_csv[csv_var]}\n"
 
     # add volume evolution curves
@@ -180,12 +182,13 @@ def create_glacier_markdown(glacier_yml):
 
     # add contant what is visible below the heading
     markdown_content += ("Country: {{ page.country }}  <br>"
-                         "2.7°C: Mostly gone by {{ page.deglac_yr_2_7deg_10perc_q50 | floor }} <br>"
-                         "{% assign deglac_year = page.deglac_yr_1_5deg_10perc_q50 | plus: 0 %} {% if deglac_year > 0 %}"
+                         "2.7°C: Mostly gone by {{ page.deglac_yr_2_7deg_10perc_e-2km3_q50 | floor }} <br>"
+                         "{% assign deglac_year = page.deglac_yr_1_5deg_10perc_e-2km3_q50 | plus: 0 %} {% if deglac_year > 0 %}"
                          "1.5°C: Mostly gone by {{ deglac_year | floor }}"
-                         "{% else %} 1.5°C: {{ page['2100_perc_1_5deg_q50'] | floor | minus: page['2100_perc_2_7deg_q50'] | floor }}% more remains by 2100{% endif %} <br>"
+                          "{% else %} 1.5°C: Not mostly gone by 2100{% endif %} <br>"
                          "<b>Every 0.1°C avoided saves glaciers and limits impacts!</b>"
                         )
+    #  "{% else %} 1.5°C: {{ page['2100_perc_1_5deg_q50'] | floor | minus: page['2100_perc_2_7deg_q50'] | floor }}% more remains by 2100{% endif %} <br>"
 
     # save markdown file
     with open(os.path.join(fp_glacier_md, f"{rgi_id}.md"), 'w') as file:

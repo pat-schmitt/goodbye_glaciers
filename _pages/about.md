@@ -1,8 +1,20 @@
 ---
-permalink: /collaborators/
-title: Collaborators
+permalink: /about/
+title: About
 ---
-# Collaborators page
+# About Goodbye Glaciers 2.0
+
+**A hiking signpost project to raise glacier loss awareness** <br>
+Linked to the International Year of Glaciers’ Preservation 2025, this "Goodbye Glaciers 2.0" project envisions signposts across Europe — from cities to mountain areas — pointing to glaciers and displaying the year when they will no longer be recognizable as glaciers under current climate policies. Each signpost includes a QR code linking to this website, featuring photos, and three-dimensional projections into the future under 1.5°C and 2.7°C. While we must say goodbye to many glaciers in Central Europe, ambitious emissions reductions can still preserve much glacier volume globally — this is the message we aim to share.
+
+##### Contact
+
+Do you have any feedback, ideas or questions? Don't hesitate to contact us! 
+
+- **Email us** at [patrick.schmitt[at]uibk.ac.at](mailto:patrick.schmitt@uibk.ac.at) or
+- Write an **issue** in our [GitHub repository](https://github.com/pat-schmitt/goodbye_glaciers/issues)
+
+---
 
 ## Scientific Operators
 
@@ -28,7 +40,7 @@ title: Collaborators
 
 
 
-## Other Partners
+## Regional Partners
 - Alpine Convention <a href="https://www.alpconv.org/en/"><img src="/assets/images/logos/logo_alpenkonvention.png" alt="Logo Alpenkonvention" style="height: 50px; width: auto;" /></a>
 
 
