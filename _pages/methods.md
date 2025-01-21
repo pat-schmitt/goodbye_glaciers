@@ -4,7 +4,7 @@ title: Methods
 ---
 # Methods
 
-This page describes the methodology used for estimating the deglaciation year and the glacier projection visualizations.
+This page describes the technical methodology used for estimating the year where the glacier is 'mostly gone' and the glacier projection visualizations. The detailed explanations provided below are somewhat technical and might be challenging for non-scientists, but we have included them here to ensure full transparency.
 
 ## Overview
 
@@ -13,16 +13,17 @@ We simulate individual glacier thickness and volume projections from 2000 to 210
 The warming levels are defined as the 2071–2100 global mean temperature difference relative to 1850–1900, with an added +0.69°C warming between 1850–1900 and 1986–2005 (ref. [IPCC AR6](https://www.ipcc.ch/report/ar6/wg1/)).  
 
 
-### Deglaciation year definition
+### Definition of a glacier being 'mostly gone'
+We define 'mostly gone' as the year when either less than 10% of the glacier's 2020 volume or less than 0.01 km³ is expected to remain - whichever threshold is crossed first. While small ice patches might persist beyond this year, the landscape will be very different compared to the current one. This 10%-threshold is considered appropriate for the Alps. Using both thresholds ensures we can define 'mostly gone' for both relatively large glaciers and those already very small today.
 
-The **deglaciation year** is defined as the point when less than 10% of a glacier's 2020 volume or when less than 0.01 km³ is expected to remain . While small ice patches might persist beyond this year, the landscape will be very different compared to the current one. This 10%-threshold is considered appropriate for the Alps. We use two threshold options to allow to give deglaciation years for both relatively large glaciers and already now very small glaciers.
-
-It is important to note that positive feedback mechanisms, such as localized warming due to glacier retreat, are not accounted for in large-scale glacier models.   
+It is important to note that positive feedback mechanisms, such as localized warming due to glacier retreat, are not accounted for in large-scale glacier models. This means that, while the glacier changes we use here are the most reliable projections available, the actual glacier retreat may occur faster. 
 
 ##### Threshold definition differences
-We find that the "deglaciation year" is, on median, 9 years earlier in the Alps when using the two thresholds (<10% or <0.01 km³) compared to just using <10%. On the maximum, it can be up to 73 years earlier or mean that a deglaciation year can be found while it is not found under just the 90% threshold. 
+We find that our definition of a glacier being 'mostly gone' is, in the median, 9 years earlier in the Alps when using the two thresholds (<10% or <0.01 km³) compared to just using <10%. Compared to using only the <10% threshold, the maximum difference can mean a glacier is mostly gone 73 years earlier and that fewer glaciers survive until the end of the century.
 
-Changing the deglaciation year definition from a 10% threshold to a 5% threshold results in deglaciation years that are, on median, four years later, but the deglaciation year can be up to 34 years later. The deglaciation year can be as much as 34 years later. For approximately 40 glaciers, the remaining glacier mass in 2100 is between 5% and 10%, meaning no deglaciation year is recorded under the 5% threshold.  
+Changing the definition from a 10% threshold to a 5% threshold results in glaciers being 'mostly gone', in the median, four years later, but this can be up to 34 years later.  For approximately 40 glaciers, the remaining glacier mass in 2100 is between 5% and 10%, meaning these glaciers would survive until the end of the century under the 5% threshold.
+
+
 
 ### Likely range
 
@@ -31,7 +32,7 @@ If the data follow a Gaussian distribution, this range corresponds approximately
 
 ## Glacier projection data sources and models
 
-The **2020 glacier volume**, **deglaciation year**, and **global and regional glacier volume change projections** are derived from these three glacier models (specific model versions and data further summarized in [Zekollari et al. (2024)](https://doi.org/10.5194/tc-18-5045-2024)) by simulating each of the >200,000 glaciers individually:
+The **2020 glacier volume**, **year where we estimate the glacier to be mostly gone**, and **global and regional glacier volume change projections** are derived from these three glacier models (specific model versions and data further summarized in [Zekollari et al. (2024)](https://doi.org/10.5194/tc-18-5045-2024)) by simulating each of the >200,000 glaciers individually:
 - **OGGM v1.6.1**  
   - **Data:** [DOI](https://doi.org/10.5281/zenodo.8286064)  
   - **Documentation:** [OGGM](https://oggm.org/)  
