@@ -3,12 +3,14 @@ permalink: /glaciers/
 title: Glaciers
 collection: glaciers
 ---
+
+{% comment %}
 <p>
 <div style="border: 2px solid #000; padding: 10px; background-color:  #f7cccc; width: fit-content;">
 <strong>This website is under construction, but feel free to already explore. We plan to have a complete version with additional glaciers and different languages by end of January.</strong>
 </div>
 </p>
-
+{% endcomment %}
 
 <!-- Content Container -->
 <p>
@@ -84,7 +86,7 @@ collection: glaciers
 
 <br>
 <br>
-<h1 id="list-by-country">List by Country</h1>
+<h2 id="list-by-country">List by Country</h2>
 
 {% assign sorted_places = site.glaciers | sort: 'country' %}
 {% assign grouped_places = sorted_places | group_by: 'country' %}
@@ -92,7 +94,7 @@ collection: glaciers
 <ul>
   {% for group in grouped_places %}
     <li>
-      <h2 id="{{ group.name }}">{{ group.name }}</h2> <!-- Country name -->
+      <h3 id="{{ group.name }}">{{ group.name }}</h3> <!-- Country name -->
       <ul>
         {% for item in group.items %}
           <li><a href="{{ item.url }}">{{ item.title }}</a>, mostly gone by {{ item.deglac_yr_2_7deg_10perc_e-2km3_q50 | floor }}</li>
@@ -108,14 +110,13 @@ collection: glaciers
   <div style="flex: 1; padding-right: 20px; margin-bottom: 0;">
  Of the approximately 3,900 glaciers in the Alps in Central Europe, only around 635 have an estimated volume above 0.01 km³ as of 2020, equivalent to water stored in 4,000 Olympic-sized swimming pools. <br> 
     <br> 
-    <strong> We call a glacier to be mostly gone at the point when less than 10% of the glacier's 2020 volume or less than 0.01 km³ is expected to remain. At that deglaciation year, the former glacier is no longer recognizable. </strong> <br>
-    <br>
-Under 2.7°C warming, more than 577 glaciers (91%) are estimated to deglaciate before 2100. <br> However, under 1.5°C warming, 103 fewer glaciers are estimated to deglaciate.
+    <strong> We define 'mostly gone' as the year when either less than 10% of the glacier's 2020 volume or less than 0.01 km³ is expected to remain - whichever threshold is crossed first. Past either of these thresholds, the former glacier will no longer be recognizable. </strong><br>
+    <br>Under 2.7°C warming, more than 577 glaciers (91%) are estimated to be mostly gone before 2100. <br>However, under 1.5°C warming, 103 more glaciers are estimate to survive. 
   </div>
 
   <!-- Image on the right side -->
   <div style="flex: 1; min-width: 200px; margin-top: 0;">
-    <img src="/assets/images/others/histogram_deglaciation_comparison_two_threshold_options_ink.svg" alt="Histogram visualising glacier volume distribution and deglaciation years of glaciers in Central Europe" style="width: 100%; height: auto; max-width: 500px;" />
+    <img src="/assets/images/others/histogram_deglaciation_comparison_two_threshold_options_ink.png" alt="Histogram visualising glacier volume distribution and years where glaciers are mostly gone in Central Europe" style="width: 100%; height: auto; max-width: 500px;" />
   </div>
 </div>
 </p>
