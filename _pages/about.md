@@ -2,9 +2,9 @@
 permalink: /about/
 title: About
 ---
-## About Goodbye Glaciers ?!
+## About Goodbye Glaciers !?
 
-An introduction to the "Goodbye Glaciers ?!" initiative is on the <a href="{{ site.baseurl }}/welcome/">Welcome page</a>. 
+An introduction to the "Goodbye Glaciers !?" initiative is on the <a href="{{ site.baseurl }}/welcome/">Welcome page</a>. 
 
 <p>This website is built and maintained by the <a href="https://www.uibk.ac.at/en/alpinerraum/">'Research Area Mountain Regions' of the Universität Innsbruck</a>.</p>
 
