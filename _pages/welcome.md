@@ -2,7 +2,7 @@
 permalink: /welcome/
 title: 
 ---
-# Goodbye Glaciers ?!
+# Goodbye Glaciers !?
 
 **A hiking signpost project to raise glacier loss awareness**
 <br>

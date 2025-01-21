@@ -82,6 +82,8 @@ title: Regions
 
 Do you want to preserve some glacier ice? Find some solutions under the <a href="{{ site.baseurl }}/preserve/">"How you can help preserve glacier ice?" page</a>.
 
+<br>
+
 ## Additional resources
 Are you further interested in the future of glaciers? You can discover their future projected evolution from the following resources: 
 - [OGGM-edu: global and regional glacier projections from PyGEM-OGGM for 1.5°C–4.0°C](https://edu.oggm.org/en/latest/global_future_glacier-app_rounce_delta_T_en.html)
