@@ -1,5 +1,4 @@
 ---
-permalink: /welcome/
 title: 
 ---
 # Goodbye Glaciers !?
@@ -18,7 +17,7 @@ Stimulated by the International Year of Glaciers’ Preservation 2025, the "Good
 Our initiative builds on previous activities and comprehensive knowledge about how global warming affects glaciers. It aims to engage the public and communicate, in simple terms, which glaciers—particularly in Central Europe—are expected to vanish in the coming decades and which might still be preserved by reducing greenhouse gas emissions, and thus, limiting global warming.
 
 The initiative consists of three pillars:
-- This website as central communication platform. Start with the <a href="{{ site.baseurl }}/signposts/">Glaciers</a> page to explore the key features.
+- This website as central communication platform. Start with the <a href="{{ site.baseurl }}/glaciers/">Glaciers</a> page to explore the key features.
 - <a href="{{ site.baseurl }}/signposts/">Signposts</a> to be placed wherever they can interact with people already familiar or not familiar with glaciers
 - <a href="{{ site.baseurl }}/events/">Public events</a> like exhibitions, guided tours or other activities
 
