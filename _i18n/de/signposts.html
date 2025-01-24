@@ -22,7 +22,7 @@
         title: "{{ signpost.title | escape }}",
         lat: {{ signpost.Lat | default: 0 }},
         lng: {{ signpost.Lon | default: 0 }},
-        url: "{{ signpost.url | escape }}",
+        url: "{{ site.baseurl }}{{ signpost.url | escape }}",
         photo: "{{ signpost.main_photo }}"
       }{% unless forloop.last %},{% endunless %}
       {% endfor %}
@@ -73,7 +73,7 @@
       <h3 id="{{ group.name }}">{{ group.name }}</h3> <!-- Country name -->
       <ul>
         {% for item in group.items %}
-          <li><a href="{{ item.url }}">{{ item.title }}</a>, {{ item.location_description }}</li>
+          <li><a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a>, {{ item.location_description }}</li>
         {% endfor %}
       </ul>
     </li>

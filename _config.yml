@@ -60,7 +60,12 @@ defaults:
       path: ""
       type: "signposts"
     values:
-      layout: signpost
+      layout: signposts
+  - scope:
+      path: ""
+      type: "glaciers"
+    values:
+      layout: glaciers
   - scope:
       path: ""
     values:
