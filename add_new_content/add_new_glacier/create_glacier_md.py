@@ -73,7 +73,6 @@ def create_glacier_markdown(glacier_yml):
     # start creating markdown
     markdown_content = "---\n"
     markdown_content += f"rgi_id: {rgi_id}\n"
-    markdown_content += f"layout: glaciers\n"
 
     # add data from yml
     glacier_yml_dict = read_yml(os.path.join(fp_glacier_yml, glacier_yml))

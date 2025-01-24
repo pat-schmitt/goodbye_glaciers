@@ -124,7 +124,13 @@ def create_signpost_markdown(signpost_yml):
     markdown_content += "---\n"
 
     # add contant what is visible below the heading
-    markdown_content += "Country: {{ page.country }}  <br>{{ page.location_description }}\n"
+    markdown_content += ("{% case site.lang %}"
+                         '{% when "de" %}'
+                         "{% include signpost_heading_de %}"
+                         '{% else %}'
+                         "{% include signpost_heading_en %}"
+                         '{% endcase %}'
+                        )
 
     # save markdown file
     with open(os.path.join(fp_signpost_md, f"{signpost_id}.md"), 'w') as file:
