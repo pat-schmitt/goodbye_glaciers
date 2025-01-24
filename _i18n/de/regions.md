@@ -1,13 +1,19 @@
 # DE: Global and regional glacier projections
 
 <div>
-    <p>Discover global and regional projections for the over 200,000 mountain glaciers (all glaciers excluding the Greenland and Antarctic ice sheets). Many glaciers in the Alps (Central Europe) are expected to disappear soon, even under 1.5°C global warming. However, for glaciers worldwide, every tenth of a degree of warming makes a difference.</p>
-    <p>Explore the regional projections to see how limiting global warming to 1.5°C can help reduce glacier volume loss:</p>
+  <p>
+    Discover global and regional projections for the over 200,000 mountain
+    glaciers (all glaciers excluding the Greenland and Antarctic ice sheets).
+    Many glaciers in the Alps (Central Europe) are expected to disappear soon,
+    even under 1.5°C global warming. However, for glaciers worldwide, every
+    tenth of a degree of warming makes a difference.
+  </p>
+  <p>
+    Explore the regional projections to see how limiting global warming to 1.5°C
+    can help reduce glacier volume loss:
+  </p>
  </div>
-<!-- Removed that part fornow.<div style="display: flex; align-items: flex-start; flex-wrap: wrap;">
-  <div style="flex: 1; margin-right: 20px; min-width: 300px;">
-</div>
--->
+
 <!-- Dropdown to select region -->
 
 <div>
@@ -72,15 +78,21 @@
 
 </div>
 
-Do you want to preserve some glacier ice? Find some solutions under the <a href="{{ site.baseurl }}/preserve/">"How you can help preserve glacier ice?" page</a>.
+Do you want to preserve some glacier ice? Find some solutions under the
+<a href="{{ site.baseurl }}/preserve/">"How you can help preserve glacier ice?" page</a>.
 
 <br>
 
 ## Additional resources
-Are you further interested in the future of glaciers? You can discover their future projected evolution from the following resources: 
+Are you further interested in the future of glaciers? You can discover their
+future projected evolution from the following resources: 
 - [OGGM-edu: global and regional glacier projections from PyGEM-OGGM for 1.5°C–4.0°C](https://edu.oggm.org/en/latest/global_future_glacier-app_rounce_delta_T_en.html)
 - [OGGM-edu: Central Europe's country-wide glacier projections from PyGEM-OGGM for 1.5°C–4.0°C](https://edu.oggm.org/en/latest/alps_future-app_rounce_delta_T_en.html)
 - [OGGM-edu: Learn about the world’s glaciers location, climate, and the ice they store](https://bokeh.oggm.org/explorer/app)
-- PROVIDE climate risk dashboard where glacier projections from OGGM can be selected for every country with glaciers: [link to glacier projections for Austria under 1.5°C and 2020 climate policies scenarios](https://climate-risk-dashboard.climateanalytics.org/impacts/explore?indicator=glacier-volume&geography=AUT&scenarios[0]=curpol&time=annual&reference=present-day-2020&spatial=area)
+- PROVIDE climate risk dashboard where glacier projections from OGGM can be
+  selected for every country with glaciers: [link to glacier projections for Austria under 1.5°C and 2020 climate policies scenarios](https://climate-risk-dashboard.climateanalytics.org/impacts/explore?indicator=glacier-volume&geography=AUT&scenarios[0]=curpol&time=annual&reference=present-day-2020&spatial=area)
     - Further explanations available from [this OGGM-edu site](https://edu.oggm.org/en/latest/provide_dashboard.html)
-- Most recent information on the *Cryosphere* (ice sheets, glaciers, snow, permafrost, sea ice and polar oceans) are summarised in the [*State of the Cryosphere Report 2024*](https://iccinet.org/statecryo24/). "The report describes how a combination of melting polar ice sheets, vanishing glaciers, and thawing permafrost will have rapid, irreversible, and disastrous impacts worldwide."
+- Most recent information on the *Cryosphere* (ice sheets, glaciers, snow, permafrost, sea ice and
+  polar oceans) are summarised in the [*State of the Cryosphere Report 2024*](https://iccinet.org/statecryo24/). "The report
+  describes how a combination of melting polar ice sheets, vanishing glaciers, and thawing
+  permafrost will have rapid, irreversible, and disastrous impacts worldwide."

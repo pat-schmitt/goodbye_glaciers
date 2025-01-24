@@ -1,7 +1,7 @@
 <div id="gallery-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-touch="true" data-bs-interval="2500">
   <!-- Indicators -->
   <div class="carousel-indicators">
-    {% for image in page.gallery %}
+    {% for image in gallery %}
       <button type="button" data-bs-target="#gallery-carousel" data-bs-slide-to="{{ forloop.index0 }}"
         class="{% if forloop.first %}active{% endif %}"
         aria-label="Slide {{ forloop.index }}"></button>
@@ -10,7 +10,7 @@
   
   <!-- Slides -->
   <div class="carousel-inner">
-    {% for image in page.gallery %}
+    {% for image in gallery %}
       <div class="carousel-item {% if forloop.first %}active{% endif %}">
         <!-- Image -->
         <a href="{{ image.url }}">

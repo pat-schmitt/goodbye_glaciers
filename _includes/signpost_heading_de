@@ -1,2 +1,2 @@
-Land: {{ page.country }}  <br>
+DE: Country: {{ page.country }}  <br>
 {{ page.location_description }}

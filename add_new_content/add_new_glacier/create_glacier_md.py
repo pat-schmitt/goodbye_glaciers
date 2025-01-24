@@ -85,7 +85,7 @@ def create_glacier_markdown(glacier_yml):
         rgi_id_csv = df_deglac.loc[rgi_id].copy()
     except KeyError:
         raise KeyError(f'{rgi_id} not included in glacier_data_deglaciation.csv!')
-    for csv_var in ['CenLon', 'CenLat', 'vol2020_km3',
+    for csv_var in ['Lon', 'Lat', 'vol2020_km3',
                     'deglac_yr_2.7deg_10perc_e-2km3_q50',
                     'deglac_yr_2.7deg_10perc_e-2km3_q17',
                     'deglac_yr_2.7deg_10perc_e-2km3_q83',
@@ -100,7 +100,10 @@ def create_glacier_markdown(glacier_yml):
                     '2100_perc_1.5deg_q83']:
         if csv_var == 'vol2020_km3':
             rgi_id_csv[csv_var] = rgi_id_csv[csv_var].round(2)
-        markdown_content += f"{csv_var.replace('.', '_')}: {rgi_id_csv[csv_var]}\n"
+        if csv_var in ['Lon', 'Lat']:
+            markdown_content += f"{csv_var.replace('.', '_')}: {rgi_id_csv[f'Cen{csv_var}']}\n"
+        else:
+            markdown_content += f"{csv_var.replace('.', '_')}: {rgi_id_csv[csv_var]}\n"
 
     # add volume evolution curves
     fp_file = f"{fp_glacier_volume}{rgi_id}_simple_en.png"

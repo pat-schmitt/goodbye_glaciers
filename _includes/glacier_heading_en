@@ -1,4 +1,4 @@
-Country: {{ page.country }} <br>
+EN: Country: {{ page.country }} <br>
 2.7°C: Mostly gone by {{ page.deglac_yr_2_7deg_10perc_e-2km3_q50 | floor }} <br>
 {% assign deglac_year = page.deglac_yr_1_5deg_10perc_e-2km3_q50 | plus: 0 %}
 {% if deglac_year > 0 %}
