@@ -3,9 +3,11 @@
 **A hiking signpost project to raise glacier loss awareness**
 <br>
 <div style="border: 2px solid #000; padding: 10px; background-color: #f7cccc; width: fit-content;">
-<strong>This website is under construction, but feel free to already explore. We 
-plan to have a complete version with additional glaciers and different languages 
-by end of January.</strong>
+    <strong>
+        This website is under construction, but feel free to already explore. We 
+        plan to have a complete version with additional glaciers and different
+        languages by end of January.
+    </strong>
 </div>
 <br>
 <img src="{{ site.baseurl }}/assets/images/others/landing_page_hef_picture.png"
@@ -29,9 +31,13 @@ expected to vanish in the coming decades and which might still be preserved by
 reducing greenhouse gas emissions, and thus, limiting global warming.
 
 The initiative consists of three pillars:
-- This website as central communication platform. Start with the <a href="{{ site.baseurl }}/glaciers/">Glaciers</a> page to explore the key features.
-- <a href="{{ site.baseurl }}/signposts/">Signposts</a> to be placed wherever they can interact with people already familiar or not familiar with glaciers
-- <a href="{{ site.baseurl }}/events/">Public events</a> like exhibitions, guided tours or other activities
+- This website as central communication platform. Start with the
+  <a href="{{ site.baseurl }}/glaciers/">Glaciers</a> page to explore the key
+  features.
+- <a href="{{ site.baseurl }}/signposts/">Signposts</a> to be placed wherever
+  they can interact with people already familiar or not familiar with glaciers
+- <a href="{{ site.baseurl }}/events/">Public events</a> like exhibitions,
+  guided tours or other activities
 
 We invite everyone to participate in or contribute to this initiative. 
 Please find our contacts <a href="{{ site.baseurl }}/about/">here</a>.

@@ -18,4 +18,5 @@
 </ul>
 
 <h1 id="photo-gallery">Photo Gallery</h1>
-{% include custom-gallery.html gallery=page.gallery %}
+{% assign gallery = page.gallery %}
+{% include custom-gallery.html gallery=gallery %}
