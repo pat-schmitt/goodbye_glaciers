@@ -40,7 +40,7 @@
                 {% if lang == site.lang %}selected{% endif %}
               >
                 {% assign lang_key = 'global.' | append: lang %}
-                {% t lang_key %}
+                {% translate lang_key %}
               </option>
             {%- endfor -%}
           </select>
