@@ -39,8 +39,16 @@
                 {% endif %}"
                 {% if lang == site.lang %}selected{% endif %}
               >
-                {% assign lang_key = 'global.' | append: lang %}
-                {% translate lang_key %}
+                {% case lang %}
+                {% when "de" %}
+                DE
+                {% when "it" %}
+                IT
+                {% when "fr" %}
+                FR
+                {% else %}
+                EN
+                {% endcase %}
               </option>
             {%- endfor -%}
           </select>
