@@ -1,14 +1,25 @@
 main:
-  - title: "Glaciers"
-    url: /glaciers/
-  - title: "Regions"
-    url: /regions/
-  - title: "How to preserve?"
-    url: /preserve/
-  - title: "Methods"
-    url: /methods/
-  - title: "About"
-    url: /about/
-  - title: "Events"
-    url: /events/
-
+  - url: /glaciers/
+    titles:
+      en: "Glaciers"
+      de: "Gletscher"
+  - url: /regions/
+    titles:
+      en: "Regions"
+      de: "Regionen"
+  - url: /preserve/
+    titles:
+      en: "How to preserve?"
+      de: "Wie schützen?"
+  - url: /methods/
+    titles:
+      en: "Methods"
+      de: "Methodik"
+  - url: /about/
+    titles:
+      en: "About"
+      de: "Info"
+  - url: /events/
+    titles:
+      en: "Events"
+      de: "Events"

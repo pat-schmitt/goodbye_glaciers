@@ -11,6 +11,12 @@ url: "https://goodbye-glaciers.info"
 minimal_mistakes_skin: default # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 search: true
 
+# Language stuff
+languages: ["en", "de"]
+default_lang: "en"
+exclude_from_localization:
+  - assets
+
 # Build settings
 markdown: kramdown
 remote_theme: mmistakes/minimal-mistakes
@@ -26,6 +32,7 @@ plugins:
   - jemoji
   - jekyll-include-cache
   - jekyll-remote-theme
+  - jekyll-multiple-languages-plugin
 
 collections:
   glaciers:
@@ -51,11 +58,6 @@ atom_feed:
 defaults:
   - scope:
       path: ""
-      type: "glaciers"
-    values:
-      layout: glacier
-  - scope:
-      path: ""
       type: "signposts"
     values:
       layout: signpost
@@ -63,3 +65,9 @@ defaults:
       path: ""
     values:
       layout: splash
+      lang: en
+  - scope:
+      path: "de"
+    values:
+      layout: splash
+      lang: en

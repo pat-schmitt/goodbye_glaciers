@@ -9,7 +9,11 @@ layout: single
       {% for glacier in site.glaciers %}
         {% if glacier_featured == glacier.rgi_id %}
           <li>
-            <a href="{{ glacier.url }}">{{ glacier.title }}</a>, mostly gone by {{ glacier.deglac_yr_2_7deg_10perc_q50 | floor }}
+            <a href="{% if site.lang == site.default_lang %}
+                       {{ site.url }}{{ glacier.url }}
+                     {% else %}
+                       {{ site.url }}/{{ site.lang }}{{ glacier.url }}
+                     {% endif %}">{{ glacier.title }}</a>, mostly gone by {{ glacier.deglac_yr_2_7deg_10perc_e-2km3_q50 | floor }}
           </li>
         {% endif %}
       {% endfor %}

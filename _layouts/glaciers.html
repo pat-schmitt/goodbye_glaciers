@@ -1,0 +1,9 @@
+---
+layout: single
+---
+{% case site.lang %}
+{% when "de" %}
+  {% include glaciers_de.html %}
+{% else %}
+  {% include glaciers_en.html %}
+{% endcase %}

@@ -18,7 +18,7 @@
                 href="{{ link.url | relative_url }}"
                 {% if link.description %} title="{{ link.description }}"{% endif %}
                 {% if link.target %} target="{{ link.target }}"{% endif %}
-              >{{ link.title }}</a>
+              >{{ link.titles[site.lang] }}</a>
             </li>
           {%- endfor -%}
         </ul>
@@ -28,6 +28,23 @@
           <i class="fas fa-search"></i>
         </button>
         {% endif %}
+        <div class="language-switcher">
+          <select id="language-switcher" onchange="switchLanguage()">
+            {%- for lang in site.languages -%}
+              <option
+                value="{% if lang == site.default_lang %}
+                  {{ site.url }}{{ page.url }}
+                {% else %}
+                  {{ site.url }}/{{ lang }}{{ page.url }}
+                {% endif %}"
+                {% if lang == site.lang %}selected{% endif %}
+              >
+                {% assign lang_key = 'global.' | append: lang %}
+                {% t lang_key %}
+              </option>
+            {%- endfor -%}
+          </select>
+        </div>
         <button class="greedy-nav__toggle hidden" type="button">
           <span class="visually-hidden">{{ site.data.ui-text[site.locale].menu_label | default: "Toggle menu" }}</span>
           <div class="navicon"></div>
@@ -37,3 +54,10 @@
     </div>
   </div>
 </div>
+
+<script>
+  function switchLanguage() {
+    const selectedLang = document.getElementById("language-switcher").value;
+    window.location.href = selectedLang;
+  }
+</script>

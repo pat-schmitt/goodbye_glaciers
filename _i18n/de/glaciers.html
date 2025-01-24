@@ -1,0 +1,176 @@
+{% comment %}
+<p>
+<div style="border: 2px solid #000; padding: 10px; background-color:  #f7cccc; width: fit-content;">
+<strong>This website is under construction, but feel free to already explore. We plan to have a complete version with additional glaciers and different languages by end of January.</strong>
+</div>
+</p>
+{% endcomment %}
+
+<!-- Content Container -->
+<p>
+<div style="border: 2px solid #000; padding: 10px;  width: fit-content;">
+  <!-- Text Content -->
+
+    <strong>With <a href="https://climateactiontracker.org/global/cat-thermometer/">current policy leading to a warming of 2.7°C</a>, we are sadly saying goodbye to many glaciers in the Alps. However, every tenth of a degree reduced in warming can help preserve <a href="{{ site.baseurl }}/regions/">glacier ice worldwide</a> and mitigate the impacts of climate change! </strong>
+</div>
+</p>
+
+<p>DE: Below, you can search for your favorite glacier on the map or from the list to see what its future might look like.</p>
+
+
+<div id="map"></div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    // Initialize the map with a default center and zoom level
+    var map = L.map('map').setView([46.8, 10.0], 6);
+
+    // Add OpenStreetMap tile layer
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+    // Create a bounds object to store the markers' bounds
+    var bounds = L.latLngBounds();
+
+    // Define the locations array and prepend '/assets/images/' to the photo field
+    var locations = [
+      {% for glacier in site.glaciers %}
+      {
+        title: "{{ glacier.title | escape }}",
+        lat: {{ glacier.CenLat | default: 0 }},
+        lng: {{ glacier.CenLon | default: 0 }},
+        url: "{{ glacier.url | escape }}",
+        photo: "{{ glacier.main_photo }}"
+      }{% unless forloop.last %},{% endunless %}
+      {% endfor %}
+    ];
+
+    // Loop through locations and create custom markers with photos and titles
+    locations.forEach(function(location) {
+      if (location.lat !== 0 && location.lng !== 0) { // Only include valid locations
+        // Create a custom DivIcon with the image and title as content
+        var photoMarker = L.divIcon({
+          html: '<div style="position: relative; text-align: center;">' +
+                '<img src="' + location.photo + '" style="width: 50px; height: 50px; border-radius: 50%; object-fit: cover;" />' +
+                '<div style="position: absolute; top: 60%; left: 50%; transform: translateX(-50%); font-size: 10px; color: white; font-weight: bold; background-color: rgba(0,0,0,0.5); border-radius: 3px; padding: 2px 5px;">' + location.title + '</div>' +
+                '</div>',
+          className: 'photo-marker', // Custom class for further styling
+          iconSize: [50, 50], // Size of the icon (matches the image size)
+          iconAnchor: [25, 25] // Anchor point (center the image)
+        });
+
+        // Create the marker using the custom DivIcon
+        var marker = L.marker([location.lat, location.lng], { icon: photoMarker }).addTo(map);
+
+        // Make the marker clickable and redirect to the glacier's URL
+        marker.on('click', function() {
+          window.location.href = location.url;
+        });
+
+        // Extend bounds to include this marker's location
+        bounds.extend([location.lat, location.lng]);
+      }
+    });
+
+    // Fit the map to the bounds of the markers with some padding
+    map.fitBounds(bounds, { padding: [15, 15] });
+  });
+</script>
+
+<br>
+<br>
+<h2 id="list-by-country">List by Country</h2>
+
+{% assign sorted_places = site.glaciers | sort: 'country' %}
+{% assign grouped_places = sorted_places | group_by: 'country' %}
+
+<ul>
+  {% for group in grouped_places %}
+    <li>
+      <h3 id="{{ group.name }}">{{ group.name }}</h3> <!-- Country name -->
+      <ul>
+        {% for item in group.items %}
+          <li><a href="{{ item.url }}">{{ item.title }}</a>, mostly gone by {{ item.deglac_yr_2_7deg_10perc_e-2km3_q50 | floor }}</li>
+        {% endfor %}
+      </ul>
+    </li>
+  {% endfor %}
+</ul>
+
+
+<p>
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start;">
+  <div style="flex: 1; padding-right: 20px; margin-bottom: 0;">
+ Of the approximately 3,900 glaciers in the Alps in Central Europe, only around 635 have an estimated volume above 0.01 km³ as of 2020, equivalent to water stored in 4,000 Olympic-sized swimming pools. <br>
+    <br>
+    <strong> We define 'mostly gone' as the year when either less than 10% of the glacier's 2020 volume or less than 0.01 km³ is expected to remain - whichever threshold is crossed first. Past either of these thresholds, the former glacier will no longer be recognizable. </strong><br>
+    <br>Under 2.7°C warming, more than 577 glaciers (91%) are estimated to be mostly gone before 2100. <br>However, under 1.5°C warming, 103 more glaciers are estimate to survive.
+  </div>
+
+  <!-- Image on the right side -->
+  <div style="flex: 1; min-width: 200px; margin-top: 0;">
+    <img src="/assets/images/others/histogram_deglaciation_comparison_two_threshold_options_ink.png" alt="Histogram visualising glacier volume distribution and years where glaciers are mostly gone in Central Europe" style="width: 100%; height: auto; max-width: 500px;" />
+  </div>
+</div>
+</p>
+
+<!-- Add responsive CSS -->
+<style>
+  @media (max-width: 768px) {
+    div[style*="display: flex"] {
+      flex-direction: column; /* Stack items vertically on smaller screens */
+      align-items: flex-start; /* Keep the items aligned to the top */
+    }
+
+    div[style*="padding-right: 20px"] {
+      padding-right: 5px; /* Remove padding for text when stacking vertically */
+    }
+
+    div[style*="min-width: 200px"] {
+      margin-top: 5px; /* Remove space above the image when stacked vertically */
+    }
+
+    div[style*="flex: 1;"] {
+      margin-bottom: 0; /* Remove margin below the text */
+    }
+  }
+
+  /* For larger screens, adjust the alignment to top */
+  @media (min-width: 769px) {
+    div[style*="display: flex"] {
+      align-items: flex-start; /* Align items to the top */
+    }
+  }
+
+  /* For larger screens, you can set the max-width for the image */
+  #histogram-image {
+    max-width: 450px; /* Limit the image size on wider screens */
+  }
+</style>
+
+<script>
+  function adjustLayout() {
+    var container = document.getElementById('content-container');
+    var image = document.getElementById('histogram-image');
+    var width = window.innerWidth;
+
+    if (width < 768) {
+      // Stack content vertically when the screen is small
+      container.style.flexDirection = 'column';
+      image.style.marginTop = '0'; // Ensure no extra margin
+    } else {
+      // Align content side by side when the screen is wide
+      container.style.flexDirection = 'row';
+      image.style.marginTop = '0'; // Remove the margin when side by side
+    }
+  }
+
+  // Run on page load
+  adjustLayout();
+
+  // Run on window resize
+  window.onresize = adjustLayout;
+</script>
+</div>
+</p>
