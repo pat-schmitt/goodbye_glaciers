@@ -1,30 +1,7 @@
 ---
-permalink: /events/
 title: Events
+namespace: events
+permalink: /events/
 ---
-<h1>Upcoming Events</h1>
 
-{% assign now = "now" | date: "%s" %}
-
-<div class="events-grid">
-  {% assign upcoming_events = site.events | sort: 'start_date' %}
-  {% for event in upcoming_events %}
-    {% assign event_end = event.end_date | date: "%s" %}
-    {% if event_end >= now %}
-      {% include event-card.html event=event %}
-     {% endif %}
-  {% endfor %}
-</div>
-
-
-<h1>Past Events</h1>
-
-<div class="events-grid">
-  {% assign upcoming_events = site.events | sort: 'start_date' %}
-  {% for event in upcoming_events %}
-    {% assign event_end = event.end_date | date: "%s" %}
-    {% if event_end < now %}
-      {% include event-card.html event=event %}
-     {% endif %}
-  {% endfor %}
-</div>
+{% translate_file events.html %}

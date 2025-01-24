@@ -73,6 +73,7 @@ def create_glacier_markdown(glacier_yml):
     # start creating markdown
     markdown_content = "---\n"
     markdown_content += f"rgi_id: {rgi_id}\n"
+    markdown_content += f"layout: glaciers\n"
 
     # add data from yml
     glacier_yml_dict = read_yml(os.path.join(fp_glacier_yml, glacier_yml))
@@ -181,18 +182,17 @@ def create_glacier_markdown(glacier_yml):
     markdown_content += "---\n"
 
     # add contant what is visible below the heading
-    markdown_content += ("Country: {{ page.country }}  <br>"
-                         "2.7°C: Mostly gone by {{ page.deglac_yr_2_7deg_10perc_e-2km3_q50 | floor }} <br>"
-                         "{% assign deglac_year = page.deglac_yr_1_5deg_10perc_e-2km3_q50 | plus: 0 %} {% if deglac_year > 0 %}"
-                         "1.5°C: Mostly gone by {{ deglac_year | floor }}"
-                          "{% else %} 1.5°C: Still surviving in 2100{% endif %} <br>"
-                         "<b>Every 0.1°C avoided saves glaciers and limits impacts!</b>"
+    markdown_content += ("{% case site.lang %}"
+                         '{% when "de" %}'
+                         "{% include glacier_heading_de %}"
+                         '{% else %}'
+                         "{% include glacier_heading_en %}"
+                         '{% endcase %}'
                         )
-    #  "{% else %} 1.5°C: {{ page['2100_perc_1_5deg_q50'] | floor | minus: page['2100_perc_2_7deg_q50'] | floor }}% more remains by 2100{% endif %} <br>"
 
     # save markdown file
     with open(os.path.join(fp_glacier_md, f"{rgi_id}.md"), 'w') as file:
-        file.write(markdown_content)
+            file.write(markdown_content)
     
     print(f"Markdown file {rgi_id} created.")
 

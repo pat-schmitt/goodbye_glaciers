@@ -4,12 +4,18 @@
 <!doctype html>
 {% include copyright.html %}
 <html lang="{{ site.locale | replace: "_", "-" | default: "en" }}" class="no-js">
+  <!-- Dynamically set title from navigation language -->
+  {%- for link in site.data.navigation.main -%}
+    {%- if link.url == page.permalink and link.titles[site.lang] -%}
+      <title>{{ link.titles[site.lang] }} - {{ site.title }}</title>
+    {%- endif -%}
+  {%- endfor -%}
   <head>
     {% include head.html %}
     {% include head/custom.html %}
   
     <!-- Leaflet CSS -->
-    <link rel="stylesheet" href="{{ '/assets/css/leaflet.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/leaflet.css' }}">
   </head>
 
   <body class="layout--{{ page.layout | default: layout.layout }}
@@ -17,7 +23,7 @@
       {{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}
     {% endif %}" dir="{% if site.rtl %}rtl{% else %}ltr{% endif %}">
     {% include_cached skip-links.html %}
-    {% include_cached masthead.html %}
+    {% include masthead.html %}
 
     <div class="initial-content">
       {{ content }}
@@ -40,6 +46,6 @@
     {% include scripts.html %}
     
     <!-- Leaflet JS -->
-    <script src="{{ '/assets/js/leaflet.js' | relative_url }}"></script>
+    <script src="{{ '/assets/js/leaflet.js' }}"></script>
   </body>
 </html>
