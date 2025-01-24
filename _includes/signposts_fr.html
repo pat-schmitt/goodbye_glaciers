@@ -1,0 +1,22 @@
+<p>FR: {{ page.description }}  </p>
+
+<h1 id="featured-glaciers">Featured Glaciers</h1>
+<ul>
+  {% for glacier_featured in page.glaciers %}
+      {% for glacier in site.glaciers %}
+        {% if glacier_featured == glacier.rgi_id %}
+          <li>
+            <a href="{% if site.lang == site.default_lang %}
+                       {{ site.url }}{{ glacier.url }}
+                     {% else %}
+                       {{ site.url }}/{{ site.lang }}{{ glacier.url }}
+                     {% endif %}">{{ glacier.title }}</a>, mostly gone by {{ glacier.deglac_yr_2_7deg_10perc_e-2km3_q50 | floor }}
+          </li>
+        {% endif %}
+      {% endfor %}
+  {% endfor %}
+</ul>
+
+<h1 id="photo-gallery">Photo Gallery</h1>
+{% assign gallery = page.gallery %}
+{% include custom-gallery.html gallery=gallery %}

@@ -19,4 +19,4 @@ header:
   teaser: /assets/images/photos_signposts/prototype_idea.png
   caption: 'Photo credit: <a href="/methods/#prototype_draft_photo1">Lilian Schuster, 2024</a>'
 ---
-{% case site.lang %}{% when "de" %}{% include signpost_heading_de %}{% else %}{% include signpost_heading_en %}{% endcase %}
+{% case site.lang %}{% when "de" %}{% include signpost_heading_de %}{% when "it" %}{% include signpost_heading_it %}{% when "fr" %}{% include signpost_heading_fr %}{% else %}{% include signpost_heading_en %}{% endcase %}

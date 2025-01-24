@@ -3,23 +3,35 @@ main:
     titles:
       en: "Glaciers"
       de: "Gletscher"
+      it: "Glaciers"
+      fr: "Glaciers"
   - url: /regions/
     titles:
       en: "Regions"
       de: "Regionen"
+      it: "Regions"
+      fr: "Regions"
   - url: /preserve/
     titles:
       en: "How to preserve?"
       de: "Wie schützen?"
+      it: "How to preserve?"
+      fr: "How to preserve?"
   - url: /methods/
     titles:
       en: "Methods"
       de: "Methodik"
+      it: "Methods"
+      fr: "Methods"
   - url: /about/
     titles:
       en: "About"
       de: "Info"
+      it: "About"
+      fr: "About"
   - url: /events/
     titles:
       en: "Events"
       de: "Events"
+      it: "Events"
+      fr: "Events"

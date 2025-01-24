@@ -1,0 +1,26 @@
+<p>
+    IT: Here you will find a map and a list of currently installed signposts. If
+    you are interested to put up a signpost, write an e-mail to:
+    <a href="mailto:wolfgang.gurgiser@uibk.ac.at">wolfgang.gurgiser[at]uibk.ac.at</a>
+</p>
+
+{% assign map_items = site.signposts %}
+{% include custom-map.html %}
+
+<br>
+<br>
+<h2 id="list-by-country">List by Country</h2>
+
+{% assign sorted_places = site.signposts | sort: 'country' %}
+{% assign grouped_places = sorted_places | group_by: 'country' %}
+
+<ul>
+  {% for group in grouped_places %}
+      <h3 id="{{ group.name }}">{{ group.name }}</h3> <!-- Country name -->
+      <ul>
+        {% for item in group.items %}
+          <li><a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a>, {{ item.location_description }}</li>
+        {% endfor %}
+      </ul>
+  {% endfor %}
+</ul>

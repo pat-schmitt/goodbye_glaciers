@@ -187,6 +187,10 @@ def create_glacier_markdown(glacier_yml):
     markdown_content += ("{% case site.lang %}"
                          '{% when "de" %}'
                          "{% include glacier_heading_de %}"
+                         '{% when "it" %}'
+                         "{% include glacier_heading_it %}"
+                         '{% when "fr" %}'
+                         "{% include glacier_heading_fr %}"
                          '{% else %}'
                          "{% include glacier_heading_en %}"
                          '{% endcase %}'

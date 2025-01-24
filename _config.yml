@@ -12,7 +12,7 @@ minimal_mistakes_skin: default # "air", "aqua", "contrast", "dark", "dirt", "neo
 search: true
 
 # Language stuff
-languages: ["en", "de"]
+languages: ["en", "de", "it", "fr"]
 default_lang: "en"
 exclude_from_localization:
   - assets
@@ -73,6 +73,16 @@ defaults:
       lang: en
   - scope:
       path: "de"
+    values:
+      layout: splash
+      lang: en
+  - scope:
+      path: "it"
+    values:
+      layout: splash
+      lang: en
+  - scope:
+      path: "fr"
     values:
       layout: splash
       lang: en
