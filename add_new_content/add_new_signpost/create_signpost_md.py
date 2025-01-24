@@ -127,6 +127,10 @@ def create_signpost_markdown(signpost_yml):
     markdown_content += ("{% case site.lang %}"
                          '{% when "de" %}'
                          "{% include signpost_heading_de %}"
+                         '{% when "it" %}'
+                         "{% include signpost_heading_it %}"
+                         '{% when "fr" %}'
+                         "{% include signpost_heading_fr %}"
                          '{% else %}'
                          "{% include signpost_heading_en %}"
                          '{% endcase %}'

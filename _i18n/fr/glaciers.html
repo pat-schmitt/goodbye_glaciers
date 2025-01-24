@@ -1,0 +1,138 @@
+<!-- Text in box -->
+<p>
+<div style="border: 2px solid #000; padding: 10px;  width: fit-content;">
+  <strong>
+      FR: With <a href="https://climateactiontracker.org/global/cat-thermometer/">
+      current policy leading to a warming of 2.7°C</a>, we are sadly saying
+      goodbye to many glaciers in the Alps. However, every tenth of a degree
+      reduced in warming can help preserve
+      <a href="{{ site.baseurl }}/regions/">glacier ice worldwide</a>
+      and mitigate the impacts of climate change!
+  </strong>
+</div>
+</p>
+
+<p>
+    Below, you can search for your favorite glacier on the map or from the
+    list to see what its future might look like.
+</p>
+
+ <!-- Add map -->
+{% assign map_items = site.glaciers %}
+{% include custom-map.html %}
+
+<!-- list by Country -->
+<br>
+<br>
+<h2 id="list-by-country">List by Country</h2>
+
+{% assign sorted_places = site.glaciers | sort: 'country' %}
+{% assign grouped_places = sorted_places | group_by: 'country' %}
+
+<ul>
+  {% for group in grouped_places %}
+      <h3 id="{{ group.name }}">{{ group.name }}</h3> <!-- Country name -->
+      <ul>
+        {% for item in group.items %}
+          <li>
+              <a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a>,
+              mostly gone by {{ item.deglac_yr_2_7deg_10perc_e-2km3_q50 | floor }}
+          </li>
+        {% endfor %}
+      </ul>
+  {% endfor %}
+</ul>
+
+<!-- Statistics for the Alps -->
+<h2 id="alps-statistic">Statistics for the Alps</h2>
+<p>
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start;">
+  <div style="flex: 1; padding-right: 20px; margin-bottom: 0;">
+      Of the approximately 3,900 glaciers in the Alps in Central Europe, only
+      around 635 have an estimated volume above 0.01 km³ as of 2020, equivalent
+      to water stored in 4,000 Olympic-sized swimming pools.
+      <br>
+      <br>
+      <strong>
+          We define 'mostly gone' as the year when either less than 10% of the
+          glacier's 2020 volume or less than 0.01 km³ is expected to remain -
+          whichever threshold is crossed first. Past either of these thresholds,
+          the former glacier will no longer be recognizable.
+      </strong>
+      <br>
+      <br>
+      Under 2.7°C warming, more than 577 glaciers (91%) are estimated to be
+      mostly gone before 2100.
+      <br>
+      However, under 1.5°C warming, 103 more
+      glaciers are estimate to survive.
+      <br>
+      <br>
+  </div>
+
+  <!-- Image on the right side -->
+  <div style="flex: 1; min-width: 200px; margin-top: 0;">
+    <img src="/assets/images/others/histogram_deglaciation_comparison_two_threshold_options_ink.png" alt="Histogram visualising glacier volume distribution and years where glaciers are mostly gone in Central Europe" style="width: 100%; height: auto; max-width: 500px;" />
+  </div>
+</div>
+</p>
+
+<!-- Make Image placement flexible -->
+<style>
+  @media (max-width: 768px) {
+    div[style*="display: flex"] {
+      flex-direction: column; /* Stack items vertically on smaller screens */
+      align-items: flex-start; /* Keep the items aligned to the top */
+    }
+
+    div[style*="padding-right: 20px"] {
+      padding-right: 5px; /* Remove padding for text when stacking vertically */
+    }
+
+    div[style*="min-width: 200px"] {
+      margin-top: 5px; /* Remove space above the image when stacked vertically */
+    }
+
+    div[style*="flex: 1;"] {
+      margin-bottom: 0; /* Remove margin below the text */
+    }
+  }
+
+  /* For larger screens, adjust the alignment to top */
+  @media (min-width: 769px) {
+    div[style*="display: flex"] {
+      align-items: flex-start; /* Align items to the top */
+    }
+  }
+
+  /* For larger screens, you can set the max-width for the image */
+  #histogram-image {
+    max-width: 450px; /* Limit the image size on wider screens */
+  }
+</style>
+
+<script>
+  function adjustLayout() {
+    var container = document.getElementById('content-container');
+    var image = document.getElementById('histogram-image');
+    var width = window.innerWidth;
+
+    if (width < 768) {
+      // Stack content vertically when the screen is small
+      container.style.flexDirection = 'column';
+      image.style.marginTop = '0'; // Ensure no extra margin
+    } else {
+      // Align content side by side when the screen is wide
+      container.style.flexDirection = 'row';
+      image.style.marginTop = '0'; // Remove the margin when side by side
+    }
+  }
+
+  // Run on page load
+  adjustLayout();
+
+  // Run on window resize
+  window.onresize = adjustLayout;
+</script>
+</div>
+</p>
