@@ -1,7 +1,7 @@
 # EN: Methods
 
-This page describes the technical methodology used for estimating the year where
-the glacier is 'mostly gone' and the glacier projection visualizations. The
+This page describes the methodologies used for estimating the year where
+the glacier is 'mostly gone' and for the glacier projection visualizations. The
 detailed explanations provided below are somewhat technical and might be
 challenging for non-scientists, but we have included them here to ensure full
 transparency.
@@ -17,17 +17,17 @@ also include projections under the **+1.5°C target** of the Paris Agreement. We
 chose climate scenarios with a range of ±0.2°C from +1.5°C or +2.7°C. 
 
 The warming levels are defined as the 2071–2100 global mean temperature
-difference relative to 1850–1900, with an added +0.69°C warming between
-1850–1900 and 1986–2005 (ref. [IPCC AR6](https://www.ipcc.ch/report/ar6/wg1/)).  
+difference relative to 1850–1900, with a +0.69°C warming from
+1850–1900 to 1986–2005 (ref. [IPCC AR6](https://www.ipcc.ch/report/ar6/wg1/)).  
 
 
 ### Definition of a glacier being 'mostly gone'
 We define 'mostly gone' as the year when either less than 10% of the glacier's
-2020 volume or less than 0.01 km³ is expected to remain - whichever threshold is
+2020 volume or less than 0.01 km³ is expected to be left - whichever threshold is
 crossed first. While small ice patches might persist beyond this year, the
 landscape will be very different compared to the current one. This 10%-threshold
-is considered appropriate for the Alps. Using both thresholds ensures we can
-define 'mostly gone' for both relatively large glaciers and those already very
+is considered appropriate for the Alps and regions with similar glaciers in terms of geometry. Using both thresholds ensures we can
+define 'mostly gone' for both, relatively large Alpine glaciers and those already very
 small today.
 
 It is important to note that positive feedback mechanisms, such as localized
@@ -43,8 +43,7 @@ maximum difference can mean a glacier is mostly gone 73 years earlier and that
 fewer glaciers survive until the end of the century.
 
 Changing the definition from a 10% threshold to a 5% threshold results in
-glaciers being 'mostly gone', in the median, four years later, but this can be
-up to 34 years later.  For approximately 40 glaciers, the remaining glacier mass
+glaciers being 'mostly gone', in the median, four years later, and max. 34 years later.  For approximately 40 glaciers, the remaining glacier volume
 in 2100 is between 5% and 10%, meaning these glaciers would survive until the
 end of the century under the 5% threshold.
 
@@ -94,9 +93,9 @@ slightly from the other estimates, which are based on a combination of three
 glacier models.  
 
 Note that these glacier projections are based on global glacier models that use
-globally available glacier observation data and not use data that is only
+globally available glacier observation data. Data that are only
 available for a few glaciers (i.e., only geodetic but no in-situ observations
-directly used). As a result, the models perform better on a global scale than at
+directly used) is not included. As a result, the models perform better on a global scale than at
 the individual glacier scale. Although some important processes at the individual
 glacier scale are not represented, we present individual glacier results here
 for educational purposes. In addition, the per-glacier and regional volume in
