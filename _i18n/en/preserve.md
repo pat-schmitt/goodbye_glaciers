@@ -11,13 +11,10 @@
 </div>
 
 
-Giant blankets or artificial snow may slow down ice losses of individual
-glaciers, but these approaches are extremely cost and labour-expensive, and
-would only be feasible on a few selected glaciers. The funds would be better
-spent on addressing the root cause: greenhouse gas emissions. In addition, these
+Giant blankets or technical snow may slow down ice losses, but these approaches are cost and labour-expensive, and
+are only feasable on small scales. The only option to save entire glaciers is addressing the root cause of their melting: greenhouse gas emissions. In addition,
 geoengineering options also impact the local environment through e.g. plastic
-degradation for the tarps or necessary artificial water reservoirs and change
-the landscape enormously. 
+degradation for the tarps or necessary artificial water reservoirs. 
 
 
 **Reducing greenhouse gas emissions is the most effective way to preserve
@@ -26,8 +23,8 @@ glacier ice ([Huss et al., 2024](https://doi.org/10.1038/s44221-024-00269-8)).**
 We need to reduce climate emissions to reduce climate change impacts, one of
 which is melting glaciers. Glacier loss contributes in the long-term to sea-level
 rise (<a href="https://doi.org/10.1038/s41586-021-03302-y" target="_blank">
-Edwards et al., 2021</a>) and can reduce the mountain water availability in dry
-periods or droughts (<a href="https://doi.org/10.5194/esd-13-935-2022" target="_blank">
+Edwards et al., 2021</a>) and reduces the  water availability in dry
+seasons or during droughts (<a href="https://doi.org/10.5194/esd-13-935-2022" target="_blank">
 Ultee et al., 2022</a>). 
 
 
@@ -36,7 +33,7 @@ Ultee et al., 2022</a>).
 **1. Reduce your ecological footprint**<br>
 
 
-Start making small changes in your daily life to lower your emissions! Use a
+Start making small changes in your daily life to lower your emissions: Use a
 <a href="https://www.footprintcalculator.org/home/en" target="_blank">footprint calculator</a>
 to explore where you can make the most impact.
 
@@ -50,7 +47,7 @@ For example:
 
 If you want to visit some of the remaining glaciers in the Alps and live in
 Europe, you can still do so sustainably by traveling via public transport.
-Explore hiking tours in the Alps that are accessible by public transit on the
+Explore hiking tours in the Alps that are accessible by public transport on the
 <a href="https://www.zuugle.at" target="_blank">zuugle website (entire Alps,
 not available in English but in many other languages) </a> or
 <a href="https://www.bahn-zum-berg.at/" target="_blank">"Bahn-zum-Berg" website </a>
@@ -64,7 +61,7 @@ Want to make an even bigger difference? Your "handprint" represents the positive
 impact you create by contributing to societal and political transformations for
 a better future.
 
-Besides voting and going to a climate demonstration, you can find
+Besides voting or going to a climate demonstration, you can find
 transformation-engaging activities that fit to your personality. For example:
 
 - Advocate for more plant-based meal options in your workplace cafeteria.
