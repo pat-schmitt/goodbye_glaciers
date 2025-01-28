@@ -1,7 +1,6 @@
-## EN: About Goodbye Glaciers !?
+## About Goodbye Glaciers !?
 
-An introduction to the "Goodbye Glaciers !?" initiative is on the
-<a href="{{ site.baseurl }}/welcome/">Welcome page</a>. 
+An introduction to the "Goodbye Glaciers !?" initiative is on the <a href="{{ site.baseurl }}/">welcome page</a>.
 
 <p>
   This website is built and maintained by the
@@ -11,9 +10,10 @@ An introduction to the "Goodbye Glaciers !?" initiative is on the
 
 <p>
   The main scientific operators are
-  <a href="https://www.uibk.ac.at/en/acinn/people/patrick-schmitt/">Patrick Schmitt</a>,
-  <a href="https://lilianschuster.github.io/">Lilian Schuster</a>,
+  <strong> <a href="https://www.uibk.ac.at/en/acinn/people/patrick-schmitt/">Patrick Schmitt</a>,
+  <a href="https://lilianschuster.github.io/">Lilian Schuster</a>, </strong>
   <a href="https://github.com/afisc">Alexander Fischer</a>,
+  <a href="https://www.uibk.ac.at/en/alpinerraum/team/irmgard-juen/">Irmgard Juen</a>,
   and <a href="https://www.uibk.ac.at/en/acinn/people/wolfgang-gurgiser/">Wolfgang Gurgiser</a>.
 </p>
 
@@ -68,4 +68,7 @@ Do you have any feedback, ideas or questions? Don't hesitate to contact us!
 - Alpine Convention
   <a href="https://www.alpconv.org/en/">
     <img src="/assets/images/logos/logo_alpenkonvention.png" alt="Logo Alpenkonvention" style="height: 50px; width: auto;" />
+  </a>
+- Municipal Museum Absam <a href="https://www.absammuseum.at/">
+    <img src="/assets/images/logos/Museum_Absam_Logo.png" alt="Logo Municipal Museum Absam" style="height: 50px; width: auto;" />
   </a>

@@ -65,7 +65,6 @@ df_deglac = pd.read_csv(deglac_csv_file, index_col=0)
 
 
 # # Function creating glacier markdown sites
-
 def create_glacier_markdown(glacier_yml):
 
     rgi_id = glacier_yml.replace('.yml', '')
@@ -78,7 +77,28 @@ def create_glacier_markdown(glacier_yml):
     glacier_yml_dict = read_yml(os.path.join(fp_glacier_yml, glacier_yml))
     assert glacier_yml_dict['rgi_id'] == rgi_id, 'rgi_id check glacier yml file'
     markdown_content += f"title: {glacier_yml_dict['name']}\n"
+    
+    if glacier_yml_dict['country'] == 'Switzerland':
+        glacier_yml_dict['country_de'] = 'Schweiz'
+        glacier_yml_dict['country_it'] = 'Svizzera'
+        glacier_yml_dict['country_fr'] = 'Suisse'
+    elif glacier_yml_dict['country'] == 'Italy':
+        glacier_yml_dict['country_de'] = 'Italien'
+        glacier_yml_dict['country_it'] = 'Italia'
+        glacier_yml_dict['country_fr'] = 'Italie'
+    elif glacier_yml_dict['country'] == 'France':
+        glacier_yml_dict['country_de'] = 'Frankreich'
+        glacier_yml_dict['country_it'] = 'Francia'
+        glacier_yml_dict['country_fr'] = 'France'
+    elif glacier_yml_dict['country'] == 'Austria':
+        glacier_yml_dict['country_de'] = 'Österreich'
+        glacier_yml_dict['country_it'] = 'Austria'
+        glacier_yml_dict['country_fr'] = 'Autriche'
+    
     markdown_content += f"country: {glacier_yml_dict['country']}\n"
+    markdown_content += f"country_de: {glacier_yml_dict['country_de']}\n"
+    markdown_content += f"country_it: {glacier_yml_dict['country_it']}\n"
+    markdown_content += f"country_fr: {glacier_yml_dict['country_fr']}\n"
 
     # add data from csv
     try:
@@ -201,6 +221,7 @@ def create_glacier_markdown(glacier_yml):
             file.write(markdown_content)
     
     print(f"Markdown file {rgi_id} created.")
+
 
 
 # # Run all

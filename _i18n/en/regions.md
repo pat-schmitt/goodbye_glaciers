@@ -1,4 +1,4 @@
-# EN: Global and regional glacier projections
+# Global and regional glacier projections
 
 <div>
   <p>
@@ -78,18 +78,17 @@
 
 </div>
 
-Do you want to preserve some glacier ice? Find some solutions under the
-<a href="{{ site.baseurl }}/preserve/">"How you can help preserve glacier ice?" page</a>.
+Do you want to preserve some glacier ice? Find some solutions under the page <a href="{{ site.baseurl }}/preserve/">"How to preserve?"</a>.
 
 <br>
 
-## Additional resources
-Are you further interested in the future of glaciers? You can discover their
-future projected evolution from the following resources: 
-- [OGGM-edu: global and regional glacier projections from PyGEM-OGGM for 1.5°C–4.0°C](https://edu.oggm.org/en/latest/global_future_glacier-app_rounce_delta_T_en.html)
-- [OGGM-edu: Central Europe's country-wide glacier projections from PyGEM-OGGM for 1.5°C–4.0°C](https://edu.oggm.org/en/latest/alps_future-app_rounce_delta_T_en.html)
+## Additional resources 
+Are you further interested in the future of glaciers? You can learn more on the following websites:
+
+- [OGGM-edu: global and regional glacier projections from a single glacier model (PyGEM-OGGM) for 1.5°C–4.0°C](https://edu.oggm.org/en/latest/global_future_glacier-app_rounce_delta_T_en.html)
+- [OGGM-edu: Central Europe's country-wide glacier projections from a single glacier model PyGEM-OGGM for 1.5°C–4.0°C](https://edu.oggm.org/en/latest/alps_future-app_rounce_delta_T_en.html)
 - [OGGM-edu: Learn about the world’s glaciers location, climate, and the ice they store](https://bokeh.oggm.org/explorer/app)
-- PROVIDE climate risk dashboard where glacier projections from OGGM can be
+- PROVIDE climate risk dashboard where glacier projections from a single glacier model (OGGM) can be
   selected for every country with glaciers: [link to glacier projections for Austria under 1.5°C and 2020 climate policies scenarios](https://climate-risk-dashboard.climateanalytics.org/impacts/explore?indicator=glacier-volume&geography=AUT&scenarios[0]=curpol&time=annual&reference=present-day-2020&spatial=area)
     - Further explanations available from [this OGGM-edu site](https://edu.oggm.org/en/latest/provide_dashboard.html)
 - Most recent information on the *Cryosphere* (ice sheets, glaciers, snow, permafrost, sea ice and

@@ -1,43 +1,31 @@
-# FR: Goodbye Glaciers !?
-
-**A hiking signpost project to raise glacier loss awareness**
-<br>
-<div style="border: 2px solid #000; padding: 10px; background-color: #f7cccc; width: fit-content;">
-    <strong>
-        This website is under construction, but feel free to already explore. We 
-        plan to have a complete version with additional glaciers and different
-        languages by end of January.
-    </strong>
+<div style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+    <div style="text-align: left;">
+        <h1>Goodbye Glaciers !?</h1>
+        <strong>Un projet de panneaux de signalisation pour sensibiliser à la disparition des glaciers</strong>
+    </div>
+    <a href="https://www.un-glaciers.org/fr" style="display: flex; justify-content: center; align-items: center;">
+        <img src="/assets/images/logos/logo_iygp_en.svg" alt="Logo International Year of Glaciers' Preservation" style="height: 100px; width: auto;">
+    </a>
 </div>
-<br>
-<img src="{{ site.baseurl }}/assets/images/others/landing_page_hef_picture.png"
-alt="Landing Page Glacier Picture" style="width: 100%; max-width: 1400px; margin: 0 auto; display: block;">
 
+<br>  
+<div style="border: 2px solid #000; padding: 10px; background-color: #f7cccc; width: fit-content;">  
+    <strong>  
+        Ce site web est en construction, mais n'hésitez pas à explorer dès maintenant. Nous prévoyons d'avoir une version complète avec des glaciers supplémentaires d'ici fin janvier.  
+    </strong>  
+</div>  
+<br>  
+<img src="{{ site.baseurl }}/assets/images/others/landing_page_hef_picture.png"  
+alt="Landing Page Glacier Picture" style="width: 100%; max-width: 1400px; margin: 0 auto; display: block;">  
 
-Stimulated by the International Year of Glaciers’ Preservation 2025, the 
-"Goodbye Glaciers ?!" project envisions signposts across Europe — from cities to 
-mountain areas — pointing to glaciers and displaying the year when they will no 
-longer be recognizable under current climate policies. Each signpost includes a 
-QR code linking to this website, featuring photos, and three-dimensional 
-projections into the future under 1.5°C and 2.7°C global warming. While we must 
-say goodbye to many glaciers in Central Europe, ambitious emissions reductions 
-can still preserve much glacier volume globally — this is the message we aim to 
-share.
+Stimulé par l'[Année internationale de la préservation des glaciers 2025](https://www.un-glaciers.org/fr), le projet "Goodbye Glaciers !?" prévoit des panneaux de signalisation à travers l'Europe — des villes aux zones montagneuses — pointant vers les glaciers et affichant l'année où ils ne seront plus reconnaissables sous les politiques climatiques actuelles. Chaque panneau comprend un code QR qui mène à ce site web, présentant des photos et des projections tridimensionnelles dans l'avenir avec un réchauffement mondial de 1,5°C et 2,7°C. Bien que nous devions dire adieu à de nombreux glaciers en Europe centrale, des réductions ambitieuses des émissions peuvent encore préserver une grande partie du volume des glaciers à l'échelle mondiale — voici le message que nous souhaitons partager.
 
-Our initiative builds on previous activities and comprehensive knowledge about 
-how global warming affects glaciers. It aims to engage the public and 
-communicate, in simple terms, which glaciers—particularly in Central Europe—are 
-expected to vanish in the coming decades and which might still be preserved by 
-reducing greenhouse gas emissions, and thus, limiting global warming.
+Notre initiative repose sur des activités antérieures et des connaissances approfondies sur la manière dont le réchauffement climatique affecte les glaciers. Elle vise à sensibiliser le public et à expliquer, en termes simples, quels glaciers — en particulier en Europe centrale — devraient disparaître dans les décennies à venir et lesquels pourraient encore être préservés en réduisant les émissions de gaz à effet de serre, limitant ainsi le réchauffement climatique.
 
-The initiative consists of three pillars:
-- This website as central communication platform. Start with the
-  <a href="{{ site.baseurl }}/glaciers/">Glaciers</a> page to explore the key
-  features.
-- <a href="{{ site.baseurl }}/signposts/">Signposts</a> to be placed wherever
-  they can interact with people already familiar or not familiar with glaciers
-- <a href="{{ site.baseurl }}/events/">Public events</a> like exhibitions,
-  guided tours or other activities
+L'initiative repose sur trois piliers :  
+- Ce site web comme plateforme de communication centrale. Commencez par la page <a href="{{ site.baseurl }}/glaciers/">Glaciers</a> pour explorer les principales fonctionnalités.  
+- <a href="{{ site.baseurl }}/signposts/">Panneaux de signalisation</a> qui seront placés là où ils peuvent interagir avec des personnes déjà familières avec les glaciers ou non.  
+- <a href="{{ site.baseurl }}/events/">Événements publics</a> tels que des expositions, des visites guidées ou d'autres activités.
 
-We invite everyone to participate in or contribute to this initiative. 
-Please find our contacts <a href="{{ site.baseurl }}/about/">here</a>.
+Nous invitons tout le monde à participer ou à contribuer à cette initiative.  
+Veuillez trouver nos contacts <a href="{{ site.baseurl }}/about/">ici</a>.

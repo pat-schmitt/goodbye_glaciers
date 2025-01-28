@@ -1,90 +1,49 @@
-# FR: How you can help preserve glacier ice?
+# Comment pouvez-vous aider à préserver la glace des glaciers ?
 
 <div style="border: 2px solid #0096D6; padding: 10px; background-color: #E0F7FA; border-radius: 8px; margin: 20px 0;">
-  <strong>
-    In the long-term, every kg of reduced CO2 emissions results in 16kg less
-    global mountain glacier mass loss
-  </strong> 
-  (<a href="https://doi.org/10.1038/s41558-018-0093-1" target="_blank">
-     Marzeion et al., 2018
-   </a>).
+  <strong> À long terme, chaque kg d'émissions de CO2 réduites entraîne une perte de 16 kg de masse de glacier mondial
+  </strong>
+  (<a href="https://doi.org/10.1038/s41558-018-0093-1" target="_blank">Marzeion et al., 2018</a>).
 </div>
 
+Les grandes couvertures ou la neige artificielle peuvent ralentir les pertes de glace, mais ces approches sont coûteuses et très intensives en main-d'œuvre, et ne sont réalisables qu'à une échelle réduite. La seule option pour sauver des glaciers entiers est de s'attaquer à la cause principale de leur fonte : les émissions de gaz à effet de serre. De plus, ces options de géo-ingénierie ont également un impact négatif sur l'environnement local, par exemple à travers la dégradation du plastique pour les bâches ou les réservoirs d'eau artificiels nécessaires.
 
-Giant blankets or artificial snow may slow down ice losses of individual
-glaciers, but these approaches are extremely cost and labour-expensive, and
-would only be feasible on a few selected glaciers. The funds would be better
-spent on addressing the root cause: greenhouse gas emissions. In addition, these
-geoengineering options also impact the local environment through e.g. plastic
-degradation for the tarps or necessary artificial water reservoirs and change
-the landscape enormously. 
+**Réduire les émissions de gaz à effet de serre est la manière la plus efficace de préserver la glace des glaciers ([Huss et al., 2024](https://doi.org/10.1038/s44221-024-00269-8)).**
 
+Nous devons réduire les émissions de gaz à effet de serre pour limiter les impacts du changement climatique, dont la fonte des glaciers fait partie. La perte des glaciers contribue, à long terme, à l'élévation du niveau de la mer ([Edwards et al., 2021](https://doi.org/10.1038/s41586-021-03302-y)) et réduit la disponibilité de l'eau régionale lors des saisons sèches ou en période de sécheresse ([Ultee et al., 2022](https://doi.org/10.5194/esd-13-935-2022)).
 
-**Reducing greenhouse gas emissions is the most effective way to preserve
-glacier ice ([Huss et al., 2024](https://doi.org/10.1038/s44221-024-00269-8)).** 
+### Que pouvez-vous faire ?
 
-We need to reduce climate emissions to reduce climate change impacts, one of
-which is melting glaciers. Glacier loss contributes in the long-term to sea-level
-rise (<a href="https://doi.org/10.1038/s41586-021-03302-y" target="_blank">
-Edwards et al., 2021</a>) and can reduce the mountain water availability in dry
-periods or droughts (<a href="https://doi.org/10.5194/esd-13-935-2022" target="_blank">
-Ultee et al., 2022</a>). 
+**1. Réduisez votre empreinte carbone**  
 
+Commencez à apporter de petites modifications dans votre quotidien pour réduire votre empreinte carbone.
 
-### **What can you do?**
+Par exemple :
 
-**1. Reduce your ecological footprint**<br>
+- Réduisez les kilomètres parcourus pour ce que vous consommez.
+- Évitez les voyages en avion autant que possible.
+- Préférez les transports publics, le vélo, la marche ou le covoiturage au lieu de conduire seul.
+- Réduisez votre consommation de viande et de produits laitiers en intégrant davantage de repas à base de plantes, de préférence préparés avec des ingrédients locaux et saisonniers.
 
 
-Start making small changes in your daily life to lower your emissions! Use a
-<a href="https://www.footprintcalculator.org/home/en" target="_blank">footprint calculator</a>
-to explore where you can make the most impact.
+Vous pouvez calculer votre empreinte carbone avec les calculateurs suivants en fonction de votre lieu de résidence :
+- <a href="https://nosgestesclimat.fr/" target="_blank">France (Calculateur climatique de NosGestesClimat)</a>
+- <a href="https://www.wwf.ch/fr/vie-durable/calculateur-d-empreinte-ecologique" target="_blank">Suisse (Calculateur climatique WWF)</a>
+Toutes les actions pour une planète saine sont également résumées sur [ce site web des Nations Unies](https://www.un.org/fr/actnow/ten-actions).
 
-For example:
+Si vous souhaitez visiter certains des glaciers restants dans les Alpes et que vous vivez en Europe, vous pouvez le faire de manière durable en utilisant les transports publics. Explorez des randonnées dans les Alpes accessibles en transports publics sur le [site web de zuugle (Alpes complètes)](https://www.zuugle.fr). 
 
-- Minimise transport miles of what you consume.
-- Avoid air travel as much as possible.
-- Choose public transport, biking, walking, or carpooling over driving solo.
-- Reduce your consumption of meat and dairy by incorporating more plant-based
-  meals, preferably made from locally and seasonally produced ingredients.
+**2. Agrandissez votre empreinte positive en vous engageant dans des transformations**  
 
-If you want to visit some of the remaining glaciers in the Alps and live in
-Europe, you can still do so sustainably by traveling via public transport.
-Explore hiking tours in the Alps that are accessible by public transit on the
-<a href="https://www.zuugle.at" target="_blank">zuugle website (entire Alps,
-not available in English but in many other languages) </a> or
-<a href="https://www.bahn-zum-berg.at/" target="_blank">"Bahn-zum-Berg" website </a>
-(only for Austria, can be translated by your webbrowser to English). 
-<br>
+Vous souhaitez avoir un impact encore plus grand ? Votre ["empreinte de la main"](https://www.klimaneutral.unibe.ch/contribution/projets_empreinte_de_la_main/index_fra.html) représente l'impact positif que vous créez en contribuant aux transformations sociales et politiques pour un avenir meilleur.
 
-**2. Enlarge your handprint by engaging in transformations**<br>
+En plus de voter ou de participer à une manifestation pour le climat, vous pouvez trouver des activités qui correspondent à votre personnalité et qui contribuent à cette transformation. Par exemple :
 
+- Plaidez en faveur de plus d'options de repas végétaux dans la cafétéria de votre lieu de travail.
+- Organisez un ["bus pédestre / pédibus"](https://positivr.fr/le-pedibus-deja-populaire-a-letranger-simpose-progressivement-en-france/) pour les enfants de votre communauté afin de promouvoir les trajets durables.
 
-Want to make an even bigger difference? Your "handprint" represents the positive
-impact you create by contributing to societal and political transformations for
-a better future.
+Vos efforts, surtout lorsqu'ils sont joints à ceux d'autres, peuvent inspirer un changement significatif et créer des impacts durables bien au-delà des actions individuelles.  
 
-Besides voting and going to a climate demonstration, you can find
-transformation-engaging activities that fit to your personality. For example:
+Découvrez davantage l'empreinte de la main sur ce [site web](https://fr.wirsindzukunft.ch/articles/103119741-dein-okologischer-handabdruck-ist-wichtiger-als-dein-fussabdruck).  
+Il existe deux sites web allemands avec encore plus d'informations : le [Handprint Hub](https://www.handprint-hub.de/was-ist-der-handabdruck) et un [test interactif du Handprint qui propose des idées selon votre personnalité](https://www.handabdruck.eu/handabdruck-test). Ces deux sites peuvent être facilement traduits en francais via votre navigateur web.
 
-- Advocate for more plant-based meal options in your workplace cafeteria.
-- Organize a “walking bus” for kids in your community to promote sustainable
-  commuting.
-
-Your efforts, especially when joined with others, can inspire meaningful change
-and create lasting impacts far beyond individual actions. <br> 
-
-Discover further the handprint under this
-<a href="https://www.handprint-hub.de/handprint-concept" target="_blank">handprint concept website</a>.
-<br> There are two German websites with even more information: the
-<a href="https://www.handprint-hub.de/was-ist-der-handabdruck" target="_blank">Handprint Hub</a>
-and <a href="https://www.handabdruck.eu/handabdruck-test" target="_blank">an
-interactive Handprint Test that finds ideas depending on your personality</a>.
-Both websites can be easily translated into English via your webbrowser. 
-
-
-<div style="flex: 1; min-width: 300px;">
-<img src="/assets/images/others/what_can_i_do_to_enlarge_my_handprint_english.jpg" 
-     alt="What can I do to enlarge my handprint?" 
-     style="width: 100%; height: auto;" />
-</div>

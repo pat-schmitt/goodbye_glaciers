@@ -2,19 +2,17 @@
 <p>
 <div style="border: 2px solid #000; padding: 10px;  width: fit-content;">
   <strong>
-      DE: With <a href="https://climateactiontracker.org/global/cat-thermometer/">
-      current policy leading to a warming of 2.7°C</a>, we are sadly saying
-      goodbye to many glaciers in the Alps. However, every tenth of a degree
-      reduced in warming can help preserve
-      <a href="{{ site.baseurl }}/regions/">glacier ice worldwide</a>
-      and mitigate the impacts of climate change!
+      Mit der <a href="https://climateactiontracker.org/global/cat-thermometer/">
+      aktuellen Klimapolitik, die zu einer Erwärmung von 2,7°C führt</a>, sagen wir leider
+      vielen Gletschern in den Alpen Lebewohl. Jede noch so kleine Verringerung der Erwärmung
+      kann jedoch helfen, <a href="{{ site.baseurl }}/regions/">Gletschereis weltweit</a>
+      zu bewahren und die Auswirkungen des Klimawandels abzumildern!
   </strong>
 </div>
 </p>
 
 <p>
-    Below, you can search for your favorite glacier on the map or from the
-    list to see what its future might look like.
+    Unten kannst du einen aufgeführten Gletscher auswählen, um zu sehen, wie seine Zukunft aussehen könnte.
 </p>
 
  <!-- Add map -->
@@ -24,19 +22,19 @@
 <!-- list by Country -->
 <br>
 <br>
-<h2 id="list-by-country">List by Country</h2>
+<h2 id="list-by-country">Liste nach Ländern</h2>
 
-{% assign sorted_places = site.glaciers | sort: 'country' %}
-{% assign grouped_places = sorted_places | group_by: 'country' %}
+{% assign sorted_places = site.glaciers | sort: 'country_de' %}
+{% assign grouped_places = sorted_places | group_by: 'country_de' %}
 
 <ul>
   {% for group in grouped_places %}
-      <h3 id="{{ group.name }}">{{ group.name }}</h3> <!-- Country name -->
+      <h3 id="{{ group.name }}">{{ group.name }}</h3> <!-- Landname -->
       <ul>
         {% for item in group.items %}
           <li>
               <a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a>,
-              mostly gone by {{ item.deglac_yr_2_7deg_10perc_e-2km3_q50 | floor }}
+              fast verschwunden bis {{ item.deglac_yr_2_7deg_10perc_e-2km3_q50 | floor }}
           </li>
         {% endfor %}
       </ul>
@@ -44,35 +42,34 @@
 </ul>
 
 <!-- Statistics for the Alps -->
-<h2 id="alps-statistic">Statistics for the Alps</h2>
+<h2 id="alps-statistic">Statistiken für die Alpen</h2>
 <p>
 <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start;">
   <div style="flex: 1; padding-right: 20px; margin-bottom: 0;">
-      Of the approximately 3,900 glaciers in the Alps in Central Europe, only
-      around 635 have an estimated volume above 0.01 km³ as of 2020, equivalent
-      to water stored in 4,000 Olympic-sized swimming pools.
+      Von den etwa 3.900 Gletschern in den Alpen in Mitteleuropa haben nur
+      rund 635 ein geschätztes Volumen von mehr als 0,01 km³ im Jahr 2020, was dem Wasser
+      in 4.000 olympischen Schwimmbecken entspricht.
       <br>
       <br>
       <strong>
-          We define 'mostly gone' as the year when either less than 10% of the
-          glacier's 2020 volume or less than 0.01 km³ is expected to remain -
-          whichever threshold is crossed first. Past either of these thresholds,
-          the former glacier will no longer be recognizable.
+          Wir definieren 'fast verschwunden' als das Jahr, in dem entweder weniger als 10%
+          des Volumens des Gletschers von 2020 oder weniger als 0,01 km³ übrig bleibt –
+          je nachdem, welcher Schwellenwert zuerst überschritten wird. Nach dem Überschreiten eines dieser
+          Schwellenwerte wird der Gletscher nicht mehr als der Gletscher wahrgenommen, der er einmal war.
       </strong>
       <br>
       <br>
-      Under 2.7°C warming, more than 577 glaciers (91%) are estimated to be
-      mostly gone before 2100.
+      Unter einer Erwärmung von 2,7°C wird erwartet, dass mehr als 577 (91%) Gletscher in den Alpen
+      vor dem Jahr 2100 fast verschwinden.
       <br>
-      However, under 1.5°C warming, 103 more
-      glaciers are estimate to survive.
+      Unter einer Erwärmung von 1,5°C wird erwartet, dass 103 dieser 577 Gletscher überleben.
       <br>
       <br>
   </div>
 
   <!-- Image on the right side -->
   <div style="flex: 1; min-width: 200px; margin-top: 0;">
-    <img src="/assets/images/others/histogram_deglaciation_comparison_two_threshold_options_ink.png" alt="Histogram visualising glacier volume distribution and years where glaciers are mostly gone in Central Europe" style="width: 100%; height: auto; max-width: 500px;" />
+    <img src="/assets/images/others/histogram_deglaciation_comparison_two_threshold_options_de.png" alt="Histogramm zur Visualisierung der Gletscher-Volumenverteilung und der Jahre, in denen Gletscher in Mitteleuropa fast verschwunden sind" style="width: 100%; height: auto; max-width: 500px;" />
   </div>
 </div>
 </p>
@@ -81,33 +78,33 @@
 <style>
   @media (max-width: 768px) {
     div[style*="display: flex"] {
-      flex-direction: column; /* Stack items vertically on smaller screens */
-      align-items: flex-start; /* Keep the items aligned to the top */
+      flex-direction: column; /* Staple die Elemente auf kleineren Bildschirmen */
+      align-items: flex-start; /* Halte die Elemente am oberen Rand ausgerichtet */
     }
 
     div[style*="padding-right: 20px"] {
-      padding-right: 5px; /* Remove padding for text when stacking vertically */
+      padding-right: 5px; /* Entferne das Padding für den Text beim vertikalen Stapeln */
     }
 
     div[style*="min-width: 200px"] {
-      margin-top: 5px; /* Remove space above the image when stacked vertically */
+      margin-top: 5px; /* Entferne den Abstand über dem Bild, wenn es vertikal gestapelt wird */
     }
 
     div[style*="flex: 1;"] {
-      margin-bottom: 0; /* Remove margin below the text */
+      margin-bottom: 0; /* Entferne den unteren Abstand unter dem Text */
     }
   }
 
-  /* For larger screens, adjust the alignment to top */
+  /* Für größere Bildschirme, richte die Elemente oben aus */
   @media (min-width: 769px) {
     div[style*="display: flex"] {
-      align-items: flex-start; /* Align items to the top */
+      align-items: flex-start; /* Richten Sie die Elemente oben aus */
     }
   }
 
-  /* For larger screens, you can set the max-width for the image */
+  /* Für größere Bildschirme, können Sie die maximale Breite für das Bild festlegen */
   #histogram-image {
-    max-width: 450px; /* Limit the image size on wider screens */
+    max-width: 450px; /* Begrenze die Bildgröße auf breiteren Bildschirmen */
   }
 </style>
 
@@ -118,21 +115,22 @@
     var width = window.innerWidth;
 
     if (width < 768) {
-      // Stack content vertically when the screen is small
+      // Staple den Inhalt vertikal, wenn der Bildschirm klein ist
       container.style.flexDirection = 'column';
-      image.style.marginTop = '0'; // Ensure no extra margin
+      image.style.marginTop = '0'; // Sicherstellen, dass kein extra Abstand vorhanden ist
     } else {
-      // Align content side by side when the screen is wide
+      // Richte den Inhalt nebeneinander aus, wenn der Bildschirm groß ist
       container.style.flexDirection = 'row';
-      image.style.marginTop = '0'; // Remove the margin when side by side
+      image.style.marginTop = '0'; // Entferne den Abstand, wenn sie nebeneinander sind
     }
   }
 
-  // Run on page load
+  // Beim Laden der Seite ausführen
   adjustLayout();
 
-  // Run on window resize
+  // Beim Ändern der Fenstergröße ausführen
   window.onresize = adjustLayout;
 </script>
 </div>
 </p>
+

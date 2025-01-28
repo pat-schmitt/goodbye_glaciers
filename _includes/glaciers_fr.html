@@ -1,136 +1,134 @@
 <p>
-    FR: The <b><a href="https://climateactiontracker.org/global/cat-thermometer/">
-    current policy prediction</a></b> estimates global warming at <b>2.7°C</b>,
-    far above the <b><a href="https://unfccc.int/process-and-meetings/the-paris-agreement">
-    Paris Agreement</a></b> goal of limiting warming to <b>1.5°C</b>.
+    Le <b><a href="https://climateactiontracker.org/global/cat-thermometer/">
+    prévision actuelle des politiques</a></b> estime que le réchauffement climatique atteindra <b>2,7°C</b> d'ici 2100,
+    bien au-dessus de l'objectif de l'<b><a href="https://unfccc.int/process-and-meetings/the-paris-agreement">
+    Accord de Paris</a></b> de limiter le réchauffement à <b>1,5°C</b>.
 </p>
-
 
 <div class="tab-container" id="container1">
     <!-- Tab buttons -->
     <div class="tabs">
-        <button class="tab-button active" onclick="openTab(event, 'Video1', 'container1')">2.7°C</button>
-        <button class="tab-button" onclick="openTab(event, 'Video2', 'container1')">1.5°C</button>
-        <button class="tab-button" onclick="openTab(event, 'Video3', 'container1')">1.5°C vs. 2.7°C</button>
+        <button class="tab-button active" onclick="openTab(event, 'Video1', 'container1')">2,7°C</button>
+        <button class="tab-button" onclick="openTab(event, 'Video2', 'container1')">1,5°C</button>
+        <button class="tab-button" onclick="openTab(event, 'Video3', 'container1')">1,5°C vs. 2,7°C</button>
     </div>
 
     <!-- Tab content -->
     <div id="Video1" class="tab-content">
         <video width="100%" autoplay loop muted playsinline>
             <source src="{{ page.animation_simple }}" type="video/mp4">
-            Your browser does not support the video tag.
+            Votre navigateur ne prend pas en charge la balise vidéo.
         </video>
     </div>
     <div id="Video2" class="tab-content" style="display: none;">
         <video width="100%" autoplay loop muted playsinline>
             <source src="{{ page.animation_simple }}" type="video/mp4">
-            Your browser does not support the video tag.
+            Votre navigateur ne prend pas en charge la balise vidéo.
         </video>
-        <p>1.5°C COMING SOON!</p>
+        <p>1,5°C ARRIVANT BIENTÔT!</p>
     </div>
     <div id="Video3" class="tab-content" style="display: none;">
         <video width="100%" autoplay loop muted playsinline>
             <source src="{{ page.animation_simple }}" type="video/mp4">
-            Your browser does not support the video tag.
+            Votre navigateur ne prend pas en charge la balise vidéo.
         </video>
-        <p>1.5°C vs. 2.7°C COMING SOON!</p>
+        <p>1,5°C vs. 2,7°C ARRIVANT BIENTÔT!</p>
     </div>
 </div>
 <br>
 
 <p>
-    {{ page.title }} had an estimated volume of {{ page.vol2020_km3 }} km³ in
-    2020 and is expected to be mostly gone by
+    {{ page.title }} avait un volume estimé de {{ page.vol2020_km3 }} km³ en
+    2020 et devrait être presque disparu d'ici
     {{ page.deglac_yr_2_7deg_10perc_e-2km3_q50 | floor }}
-    (<a href="{{ site.baseurl }}/methods/#likely-range">likely range</a>:
+    (<a href="{{ site.baseurl }}/methods/#likely-range">plage probable</a> :
     {{ page.deglac_yr_2_7deg_10perc_e-2km3_q17 | floor }} -
     {% if page.deglac_yr_2_7deg_10perc_e-2km3_q83 %}
         {{ page.deglac_yr_2_7deg_10perc_e-2km3_q83 | default: 0 | floor }}
     {% else %}
-        after 2100
+        après 2100
     {% endif %})
-    under 2.7°C global warming
-    (<a href="https://climateactiontracker.org/global/cat-thermometer/">current policy prediction</a>).
-    We define <b>'mostly gone'</b> as the year when either less than 10% of the
-    glacier's 2020 volume or less than 0.01 km³ is expected to remain - whichever
-    threshold is crossed first.<br><br>
+    sous un réchauffement climatique de 2,7°C
+    (<a href="https://climateactiontracker.org/global/cat-thermometer/">prévision des politiques actuelles</a>).
+    Nous définissons <b>'presque disparu'</b> comme l'année où moins de 10% du
+    volume du glacier de 2020 ou moins de 0,01 km³ devrait rester - quelle que soit
+    la première limite franchie.<br><br>
 
-    <!--Comment: only show the "years later" sentence if it deglaciates at 1.5°C   -->
-    If global warming is limited to 1.5°C
-    (<a href="https://unfccc.int/process-and-meetings/the-paris-agreement">Paris Agreement</a>),
-    <!-- If deglac_yr_1_5deg_10perc_e-2km3_q50 is greater than 0, show the full sentence -->
+    <!--Commentaire : n'afficher la phrase "plus tard" que si la déglaciation se produit à 1,5°C   -->
+    Si le réchauffement climatique est limité à 1,5°C
+    (<a href="https://unfccc.int/process-and-meetings/the-paris-agreement">Accord de Paris</a>),
+    <!-- Si deglac_yr_1_5deg_10perc_e-2km3_q50 est supérieur à 0, afficher la phrase complète -->
     {% assign deglac_year = page.deglac_yr_1_5deg_10perc_e-2km3_q50 | plus: 0 %}
     {% if deglac_year > 0 %}
-        {{ page.title }} will be mostly gone by {{ deglac_year | floor }}
+        {{ page.title }} sera presque disparu d'ici {{ deglac_year | floor }}
         ({{ deglac_year | floor | minus: page.deglac_yr_2_7deg_10perc_e-2km3_q50 | default: 0 | floor }}
-        years later than under 2.7°C).
-        By 2100, {{ page["2100_perc_1_5deg_q50"] | floor }}% of the 2020 volume
-        is expected to remain
+        années plus tard que sous 2,7°C).
+        D'ici 2100, {{ page["2100_perc_1_5deg_q50"] | floor }}% du volume de 2020
+        devrait rester
         ({{ page["2100_perc_1_5deg_q50"] | floor | minus: page["2100_perc_2_7deg_q50"] | floor }}%
-        more compared to 2.7°C).
+        de plus par rapport à 2,7°C).
     {% else %}
-        <!-- If deglac_yr_1_5deg_10perc_e-2km3_q50 is missing or 0, show just the 2100 volume difference -->
-        by 2100, {{ page["2100_perc_1_5deg_q50"] | floor }}% of the 2020 volume
-        is expected to remain
+        <!-- Si deglac_yr_1_5deg_10perc_e-2km3_q50 est manquant ou égal à 0, afficher uniquement la différence de volume en 2100 -->
+        d'ici 2100, {{ page["2100_perc_1_5deg_q50"] | floor }}% du volume de 2020
+        devrait rester
         ({{ page["2100_perc_1_5deg_q50"] | floor | minus: page["2100_perc_2_7deg_q50"] | floor }}%
-        more compared to 2.7°C).
+        de plus par rapport à 2,7°C).
     {% endif %}
 </p>
 
 <p>
 <div style="border: 2px solid #000; padding: 10px; background-color: #f9f9f9; width: fit-content;">
-<strong>Every 0.1°C avoided saves glaciers and limits impacts!</strong>
+<strong>Chaque 0,1°C évité sauve les glaciers et limite les impacts!</strong>
 </div>
 </p>
 
 <div class="tab-container" id="container2">
     <!-- Tab buttons -->
     <div class="tabs">
-        <button class="tab-button active" onclick="openTab(event, 'Volume1', 'container2')">2.7°C</button>
-        <button class="tab-button" onclick="openTab(event, 'Volume2', 'container2')">1.5°C and 2.7°C</button>
+        <button class="tab-button active" onclick="openTab(event, 'Volume1', 'container2')">2,7°C</button>
+        <button class="tab-button" onclick="openTab(event, 'Volume2', 'container2')">1,5°C et 2,7°C</button>
     </div>
 
     <!-- Tab content -->
     <div id="Volume1" class="tab-content" style="outline: 2px solid #e1e1e1;">
       <figure style="text-align: center; margin: 0;">
-        <img src="{{ site.baseurl }}{{ page.volume_evolution_simple | replace: 'en', site.lang  }}" alt="Volume evolution of {{ page.title }} for 2.7°C." style="width:100%; padding:0;"/>
+        <img src="{{ site.baseurl }}{{ page.volume_evolution_simple | replace: 'en', site.lang  }}" alt="Évolution du volume de {{ page.title }} pour 2,7°C." style="width:100%; padding:0;"/>
         <figcaption style="font-size: 14px; color: #555; margin-top: -20px;">
-            Showing the volume evolution of {{ page.title }} for a global warming
-            level of 2.7°C.
+            Montrant l'évolution du volume de {{ page.title }} pour un réchauffement global
+            de 2,7°C.
         </figcaption>
       </figure>
     </div>
     <div id="Volume2" class="tab-content" style="display: none; outline: 2px solid #e1e1e1;">
       <figure style="text-align: center; margin: 0;">
-        <img src="{{ site.baseurl }}{{ page.volume_evolution_complex | replace: 'en', site.lang }}" alt="Volume complex of {{ page.title }}." />
+        <img src="{{ site.baseurl }}{{ page.volume_evolution_complex | replace: 'en', site.lang }}" alt="Volume complexe de {{ page.title }}." />
       <figcaption style="font-size: 14px; color: #555; margin-top: -20px;">
-          Showing the volume evolution of {{ page.title }} for global warming
-          levels of 1.5°C and 2.7°C.
+          Montrant l'évolution du volume de {{ page.title }} pour les niveaux de réchauffement global
+          de 1,5°C et 2,7°C.
       </figcaption>
     </div>
 </div>
 <br>
 
-<h3 id="methods">Global Projections</h3>
+<h3 id="methods">Projections Globales</h3>
 <p>
-    The projections for Central Europe are not promising, even under 1.5°C
-    warming. However, there are regions worldwide with a much larger potential
-    for saving glacier ice. Visit the
-    <a href="{{ site.baseurl }}/regions/">Regions page</a> to explore other
-    areas around the globe and visit the
-    <a href="{{ site.baseurl }}/preserve/">"How you can help preserve glacier
-        ice?" page</a> to get active.
+    Les projections pour l'Europe centrale ne sont pas prometteuses, même sous un réchauffement de 1,5°C.
+    Cependant, il existe des régions dans le monde avec un potentiel beaucoup plus grand
+    pour sauver la glace des glaciers. Visitez la
+    <a href="{{ site.baseurl }}/regions/">page des "Régions"</a> pour explorer d'autres
+    zones autour du monde et visitez la
+    <a href="{{ site.baseurl }}/preserve/">page "Comment préserver?"</a> pour vous impliquer.
 </p>
 
-<h3 id="methods">Methods</h3>
+<h3 id="methods">Méthodes</h3>
 <p>
-    If you're curious about how this animation and the figures were created,
-    visit the <a href="{{ site.baseurl }}/methods/">Methods</a> page.
+    Si vous êtes curieux de savoir comment cette animation et les chiffres ont été créés,
+    visitez la page <a href="{{ site.baseurl }}/methods/">Méthodes</a>.
 </p>
 
 {% comment %}
 {% if page.signposts %}
-  <h3 id="featured-glaciers">Featured Signposts</h3>
+  <h3 id="featured-glaciers">Panneaux de signalisation mis en avant</h3>
   <ul>
     {% for signpost_featured in page.signposts %}
         {% for signpost in site.signposts %}
@@ -145,57 +143,9 @@
 {% endif %}
 {% endcomment %}
 
-<h3 id="photo-gallery">Photo Gallery</h3>
+<h3 id="photo-gallery">Galerie Photo</h3>
 {% assign gallery = page.gallery %}
 {% include custom-gallery.html gallery=gallery %}
 
 <script>
-  // Select all video elements on the page
-  const videos = document.querySelectorAll('video');
-  // const video = document.getElementById('myVideo');
-
-  // Loop through each video and add an event listener
-  videos.forEach((video) => {
-    // Show controls when the user interacts (taps/clicks) with the video
-    video.addEventListener('click', () => {
-      video.setAttribute('controls', 'controls');
-    });
-  });
-
-</script>
-
-<script>
-    function openTab(event, tabId, containerId) {
-        // Get the container element
-        const container = document.getElementById(containerId);
-
-        // Hide all tab contents in the current container
-        const tabContents = container.querySelectorAll(".tab-content");
-        tabContents.forEach((content) => {
-            content.style.display = "none"; // Hide all tab contents
-        });
-
-        // Remove active class from all tab buttons in the current container
-        const tabButtons = container.querySelectorAll(".tab-button");
-        tabButtons.forEach((button) => {
-            button.classList.remove("active"); // Remove active state
-        });
-
-        // Show the selected tab content and set the active button
-        container.querySelector(`#${tabId}`).style.display = "block"; // Show current tab content
-        event.currentTarget.classList.add("active"); // Highlight active button
-    }
-
-    // Initialize each tab container on page load
-    document.addEventListener("DOMContentLoaded", () => {
-        const tabContainers = document.querySelectorAll(".tab-container");
-
-        tabContainers.forEach((container) => {
-            const defaultTabButton = container.querySelector(".tab-button.active");
-            if (defaultTabButton) {
-                const defaultTabId = defaultTabButton.getAttribute("onclick").split("'")[1];
-                container.querySelector(`#${defaultTabId}`).style.display = "block"; // Show default tab
-            }
-        });
-    });
-</script>
+  // Sélectionner tous les éléments vidéo

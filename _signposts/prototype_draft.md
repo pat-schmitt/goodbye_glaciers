@@ -5,6 +5,9 @@ Lat: 47.264251
 Lon: 11.384993
 location_description: Campus Innrain, University of Innsbruck
 country: Austria
+country_de: Österreich
+country_it: Austria
+country_fr: Autriche
 description: This is the first draft how we envision the signpost could look like. It was drafted by Lilian, after an idea of Wolfgang.
 past_locations: ['none']
 glaciers: ['RGI60-11.00897', 'RGI60-11.00106']
