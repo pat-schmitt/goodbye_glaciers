@@ -1,58 +1,54 @@
-# FR: Global and regional glacier projections
+# Projections mondiales et régionales des glaciers
 
 <div>
   <p>
-    Discover global and regional projections for the over 200,000 mountain
-    glaciers (all glaciers excluding the Greenland and Antarctic ice sheets).
-    Many glaciers in the Alps (Central Europe) are expected to disappear soon,
-    even under 1.5°C global warming. However, for glaciers worldwide, every
-    tenth of a degree of warming makes a difference.
+    Découvrez les projections mondiales et régionales pour plus de 200 000 glaciers de montagne (tous les glaciers à l'exception des calottes glaciaires du Groenland et de l'Antarctique).
+    De nombreux glaciers des Alpes (Europe centrale) devraient disparaître rapidement, même avec un réchauffement mondial de 1,5°C. Cependant, pour les glaciers du monde entier, chaque dixième de degré de réchauffement fait une différence.
   </p>
   <p>
-    Explore the regional projections to see how limiting global warming to 1.5°C
-    can help reduce glacier volume loss:
+    Explorez les projections régionales pour voir comment limiter le réchauffement mondial à 1,5°C peut aider à réduire la perte de volume des glaciers :
   </p>
- </div>
+</div>
 
 <!-- Dropdown to select region -->
 
 <div>
 <select id="regionSelect" style="font-size: 24px; padding: 10px; border: 2px solid #FF5733; border-radius: 5px; background-color: #f8d7da; width: auto; min-width: 200px;">
-  <option value="RGI11" selected>Central Europe (11)</option>
+  <option value="RGI11" selected>Europe Centrale (11)</option>
   <option value="global">Global</option>
   <option value="RGI01">Alaska (01)</option>
-  <option value="RGI02">Western Canada and U.S. (02)</option>
-  <option value="RGI03">Arctic Canada North (03)</option>
-  <option value="RGI04">Arctic Canada South (04)</option>
-  <option value="RGI05">Greenland Periphery (05)</option>
-  <option value="RGI06">Iceland (06)</option>
+  <option value="RGI02">Canada Occidental et États-Unis (02)</option>
+  <option value="RGI03">Arctique Canadien Nord (03)</option>
+  <option value="RGI04">Arctique Canadien Sud (04)</option>
+  <option value="RGI05">Périphérie du Groenland (05)</option>
+  <option value="RGI06">Islande (06)</option>
   <option value="RGI07">Svalbard (07)</option>
-  <option value="RGI08">Scandinavia (08)</option>
-  <option value="RGI09">Russian Arctic (09)</option>
-  <option value="RGI10">North Asia (10)</option>
-  <option value="RGI12">Caucasus and Middle East (12)</option>
-  <option value="RGI13">Central Asia (13)</option>
-  <option value="RGI14">South Asia West (14)</option>
-  <option value="RGI15">South Asia East (15)</option>
-  <option value="RGI13-14-15">High-Mountain Asia (13-14-15)</option>
-  <option value="RGI16">Low Latitudes (16)</option>
-  <option value="RGI17">Southern Andes (17)</option>
-  <option value="RGI18">New Zealand (18)</option>
-  <option value="RGI19">Subantarctic and Antarctic Islands (19)</option>
+  <option value="RGI08">Scandinavie (08)</option>
+  <option value="RGI09">Arctique Russe (09)</option>
+  <option value="RGI10">Asie du Nord (10)</option>
+  <option value="RGI12">Caucase et Moyen-Orient (12)</option>
+  <option value="RGI13">Asie Centrale (13)</option>
+  <option value="RGI14">Asie du Sud-Ouest (14)</option>
+  <option value="RGI15">Asie du Sud-Est (15)</option>
+  <option value="RGI13-14-15">Asie de Haute Montagne (13-14-15)</option>
+  <option value="RGI16">Basses Latitudes (16)</option>
+  <option value="RGI17">Andes Méridionales (17)</option>
+  <option value="RGI18">Nouvelle-Zélande (18)</option>
+  <option value="RGI19">Îles Subantarctiques et Antarctiques (19)</option>
 </select>
 
 <!-- Image containers for both figures -->
-<img id="worldmapImage" src="/assets/images/volume_evolution_regions/RGI11_worldmap_en.png" alt="Map of selected glaciers" />
-<img id="complexImage" src="/assets/images/volume_evolution_regions/RGI11_complex_en.png" alt="Volume evolution of glaciers in Central Europe for 1.5°C and 2.7°C." />
+<img id="worldmapImage" src="/assets/images/volume_evolution_regions/RGI11_worldmap_fr.png" alt="Carte des glaciers sélectionnés" />
+<img id="complexImage" src="/assets/images/volume_evolution_regions/RGI11_complex_fr.png" alt="Évolution du volume des glaciers en Europe Centrale pour 1,5°C et 2,7°C." />
 
 <!-- Add responsive CSS -->
 <style>
   @media (max-width: 768px) {
     div[style*="display: flex"] {
-      flex-direction: column; /* Stack items vertically */
+      flex-direction: column; /* Empile les éléments verticalement */
     }
     div[style*="margin-right: 20px"] {
-      margin-right: 0; /* Remove the right margin for text */
+      margin-right: 0; /* Supprime la marge droite pour le texte */
     }
   }
 </style>
@@ -66,33 +62,34 @@
     var complexImage = document.getElementById("complexImage");
     
     // Update world map image source
-    worldmapImage.src = "/assets/images/volume_evolution_regions/" + selectedRegion + "_worldmap_en.png";
-    worldmapImage.alt = "Map of selected glaciers in " + selectedRegion;
+    worldmapImage.src = "/assets/images/volume_evolution_regions/" + selectedRegion + "_worldmap_fr.png";
+    worldmapImage.alt = "Carte des glaciers sélectionnés dans " + selectedRegion;
 
     // Update complex model image source
-    complexImage.src = "/assets/images/volume_evolution_regions/" + selectedRegion + "_complex_en.png";
-    complexImage.alt = "Volume evolution of glaciers in " + selectedRegion + " for 1.5°C and 2.7°C.";
+    complexImage.src = "/assets/images/volume_evolution_regions/" + selectedRegion + "_complex_fr.png";
+    complexImage.alt = "Évolution du volume des glaciers dans " + selectedRegion + " pour 1,5°C et 2,7°C.";
   });
 </script>
 
 
 </div>
 
-Do you want to preserve some glacier ice? Find some solutions under the
-<a href="{{ site.baseurl }}/preserve/">"How you can help preserve glacier ice?" page</a>.
+Vous voulez préserver de la glace de glacier ? Trouvez des solutions sous la page
+<a href="{{ site.baseurl }}/preserve/">"Comment préserver ?"</a>.
 
 <br>
 
-## Additional resources
-Are you further interested in the future of glaciers? You can discover their
-future projected evolution from the following resources: 
-- [OGGM-edu: global and regional glacier projections from PyGEM-OGGM for 1.5°C–4.0°C](https://edu.oggm.org/en/latest/global_future_glacier-app_rounce_delta_T_en.html)
-- [OGGM-edu: Central Europe's country-wide glacier projections from PyGEM-OGGM for 1.5°C–4.0°C](https://edu.oggm.org/en/latest/alps_future-app_rounce_delta_T_en.html)
+## Ressources supplémentaires
+Vous souhaitez en savoir plus sur l'avenir des glaciers ? Vous pouvez en apprendre davantage sur les sites web suivants (uniquement en anglais, mais votre navigateur peut probablement le traduire assez bien):
+
+- [OGGM-edu: global and regional glacier projections from a single glacier model (PyGEM-OGGM) for 1.5°C–4.0°C](https://edu.oggm.org/en/latest/global_future_glacier-app_rounce_delta_T_en.html)
+- [OGGM-edu: Central Europe's country-wide glacier projections from a single glacier model PyGEM-OGGM for 1.5°C–4.0°C](https://edu.oggm.org/en/latest/alps_future-app_rounce_delta_T_en.html)
 - [OGGM-edu: Learn about the world’s glaciers location, climate, and the ice they store](https://bokeh.oggm.org/explorer/app)
-- PROVIDE climate risk dashboard where glacier projections from OGGM can be
+- PROVIDE climate risk dashboard where glacier projections from a single glacier model (OGGM) can be
   selected for every country with glaciers: [link to glacier projections for Austria under 1.5°C and 2020 climate policies scenarios](https://climate-risk-dashboard.climateanalytics.org/impacts/explore?indicator=glacier-volume&geography=AUT&scenarios[0]=curpol&time=annual&reference=present-day-2020&spatial=area)
     - Further explanations available from [this OGGM-edu site](https://edu.oggm.org/en/latest/provide_dashboard.html)
 - Most recent information on the *Cryosphere* (ice sheets, glaciers, snow, permafrost, sea ice and
   polar oceans) are summarised in the [*State of the Cryosphere Report 2024*](https://iccinet.org/statecryo24/). "The report
   describes how a combination of melting polar ice sheets, vanishing glaciers, and thawing
   permafrost will have rapid, irreversible, and disastrous impacts worldwide."
+

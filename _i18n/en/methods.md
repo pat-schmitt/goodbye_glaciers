@@ -1,4 +1,4 @@
-# EN: Methods
+# Methods
 
 This page describes the methodologies used for estimating the year where
 the glacier is 'mostly gone' and for the glacier projection visualizations. The
@@ -10,14 +10,14 @@ transparency.
 
 We simulate individual glacier thickness and volume projections from 2000 to
 2100 using climate scenarios (climate models and emission scenarios) from CMIP5
-and CMIP6 and large-scale glacier models. We primarily focus on **+2.7°C**
+and CMIP6 and large-scale glacier models. We primarily focus on **2.7°C**
 global warming above pre-industrial by 2100, as this represents the predicted
 real-world outcome of [current policies and actions](https://climateactiontracker.org/global/cat-thermometer/). For comparison, we
-also include projections under the **+1.5°C target** of the Paris Agreement. We
-chose climate scenarios with a range of ±0.2°C from +1.5°C or +2.7°C. 
+also include projections under the **1.5°C target** of the Paris Agreement. We
+chose climate scenarios with a range of ±0.2°C from 1.5°C or 2.7°C. 
 
 The warming levels are defined as the 2071–2100 global mean temperature
-difference relative to 1850–1900, with a +0.69°C warming from
+difference relative to 1850–1900, with a 0.69°C warming from
 1850–1900 to 1986–2005 (ref. [IPCC AR6](https://www.ipcc.ch/report/ar6/wg1/)).  
 
 
@@ -69,23 +69,23 @@ glaciers individually:
   - **Details:**  
     - CMIP5 and CMIP6 available.  
     - Includes less-used climate models and overshoot emission scenarios.  
-    - For +2.7±0.2°C: n=14 climate scenarios 
-    - For +1.5±0.2°C: n=11 climate scenarios 
+    - For 2.7±0.2°C: n=14 climate scenarios 
+    - For 1.5±0.2°C: n=11 climate scenarios 
 - **PyGEM-OGGM**  
   - **Data:** [DOI](https://doi.org/10.5067/P8BN9VO9N5C7)  
   - **Documentation:** [PyGEM](https://pygem.readthedocs.io/en/latest/introduction.html)  
   - **Details:**  
     - CMIP5 and CMIP6 available.  
     - Same scenarios as presented in [Rounce et al., 2023](https://doi.org/10.1126/science.abo1324).  
-    - For +2.7±0.2°C: n=7 climate scenarios  
-    - For +1.5±0.2°C: n=9 climate scenarios 
+    - For 2.7±0.2°C: n=7 climate scenarios  
+    - For 1.5±0.2°C: n=9 climate scenarios 
 - **GloGEM**  
   - **Data:** [DOI](https://doi.org/10.5281/zenodo.10908277)  
   - **Documentation:** [Huss & Hock (2015)](https://doi.org/10.3389/feart.2015.00054)  
   - **Details:**  
     - CMIP6 only.  
-    - For +2.7±0.2°C: n=3 climate scenarios  
-    - For +1.5±0.2°C: n=4 climate scenarios 
+    - For 2.7±0.2°C: n=3 climate scenarios  
+    - For 1.5±0.2°C: n=4 climate scenarios 
 
 The **3D glacier thickness projections** are based solely on OGGM simulations
 and visualized using the [Glacier:3D-Viz](https://glacier3dviz.oggm.org/tutorials/welcome.html) tool. These 3D projections differ
@@ -112,8 +112,8 @@ to the overall results.
 
 The mean global warming above pre-industrial across all combinations of glacier
 models and climate scenarios is:  
-- **+1.57°C** for the **+1.5±0.2°C** range.  
-- **+2.71°C** for the **+2.7±0.2°C** range.  
+- **1.57°C** for the **1.5±0.2°C** range.  
+- **2.71°C** for the **2.7±0.2°C** range.  
 
 
 ## Photo sources and licenses

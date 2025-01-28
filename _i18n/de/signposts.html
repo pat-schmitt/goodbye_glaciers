@@ -1,6 +1,6 @@
 <p>
-    DE: Here you will find a map and a list of currently installed signposts. If
-    you are interested to put up a signpost, write an e-mail to:
+    Hier findest du eine Karte und eine Liste der derzeit installierten Wegweiser. 
+    Wenn du daran interessiert bist, einen Wegweiser aufzustellen, schreib eine E-Mail an: 
     <a href="mailto:wolfgang.gurgiser@uibk.ac.at">wolfgang.gurgiser[at]uibk.ac.at</a>
 </p>
 
@@ -9,10 +9,10 @@
 
 <br>
 <br>
-<h2 id="list-by-country">List by Country</h2>
+<h2 id="list-by-country">Liste nach Ländern</h2>
 
-{% assign sorted_places = site.signposts | sort: 'country' %}
-{% assign grouped_places = sorted_places | group_by: 'country' %}
+{% assign sorted_places = site.signposts | sort: 'country_de' %}
+{% assign grouped_places = sorted_places | group_by: 'country_de' %}
 
 <ul>
   {% for group in grouped_places %}

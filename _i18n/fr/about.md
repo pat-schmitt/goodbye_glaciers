@@ -1,36 +1,36 @@
-## FR: About Goodbye Glaciers !?
+## À propos de "Goodbye Glaciers !?"  
 
-An introduction to the "Goodbye Glaciers !?" initiative is on the
-<a href="{{ site.baseurl }}/welcome/">Welcome page</a>. 
+Une introduction au projet "Goodbye Glaciers !?" ("Adieu Glaciers !?") est disponible sur la  
+<a href="{{ site.baseurl }}/">page d'accueil</a>.  
 
-<p>
-  This website is built and maintained by the
-  <a href="https://www.uibk.ac.at/en/alpinerraum/">'Research Area Mountain
-  Regions' of the Universität Innsbruck</a>.
-</p>
+<p>  
+  Ce site web est créé et maintenu par la  
+  <a href="https://www.uibk.ac.at/en/alpinerraum/">'Research Area Mountain Regions' de l'Université d'Innsbruck</a>.  
+</p>  
 
-<p>
-  The main scientific operators are
-  <a href="https://www.uibk.ac.at/en/acinn/people/patrick-schmitt/">Patrick Schmitt</a>,
-  <a href="https://lilianschuster.github.io/">Lilian Schuster</a>,
-  <a href="https://github.com/afisc">Alexander Fischer</a>,
-  and <a href="https://www.uibk.ac.at/en/acinn/people/wolfgang-gurgiser/">Wolfgang Gurgiser</a>.
-</p>
+<p>  
+  Les principaux responsables scientifiques sont  
+  <strong> <a href="https://www.uibk.ac.at/en/acinn/people/patrick-schmitt/">Patrick Schmitt</a>,  
+  <a href="https://lilianschuster.github.io/">Lilian Schuster</a>, </strong>  
+  <a href="https://github.com/afisc">Alexander Fischer</a>,  
+  <a href="https://www.uibk.ac.at/de/alpinerraum/team/irmgard-juen/">Irmgard Juen</a>,  
+  et <a href="https://www.uibk.ac.at/en/acinn/people/wolfgang-gurgiser/">Wolfgang Gurgiser</a>.  
+</p>  
 
-<a href="https://www.uibk.ac.at/en/">
-  <img src="/assets/images/logos/logo_uibk.jpg" alt="Logo Innsbruck" style="width: auto; height: 80px;" />
-</a>
+<a href="https://www.uibk.ac.at/en/">  
+  <img src="/assets/images/logos/logo_uibk.jpg" alt="Logo Innsbruck" style="width: auto; height: 80px;" />  
+</a>  
 
-##### Contact
+##### Contact  
 
-Do you have any feedback, ideas or questions? Don't hesitate to contact us! 
+Vous avez des retours, des idées ou des questions ? N'hésitez pas à nous contacter !  
 
-- **Email us** at [patrick.schmitt[at]uibk.ac.at](mailto:patrick.schmitt@uibk.ac.at) or
-- Write an **issue** in our [GitHub repository](https://github.com/pat-schmitt/goodbye_glaciers/issues)
+- **Envoyez-nous un email** à [patrick.schmitt[at]uibk.ac.at](mailto:patrick.schmitt@uibk.ac.at) ou  
+- Écrivez un **ticket** dans notre [répertoire GitHub](https://github.com/pat-schmitt/goodbye_glaciers/issues)  
 
 -----
       
-### Scientific Partners
+### Partenaires scientifiques  
 - Nicolas Champollion
   <a href="https://www.ige-grenoble.fr/?lang=en">
     <img src="/assets/images/logos/logoIGE_Color.png" alt="Logo Universite Grenoble Alpes" style="height: 50px; width: auto;" />
@@ -62,10 +62,10 @@ Do you have any feedback, ideas or questions? Don't hesitate to contact us!
     <img src="/assets/images/logos/Universität_Zürich_logo.png" alt="Logo Universität_Zürich" style="height: 50px; width: auto;" />
   </a>
 
-- More coming soon ...
+- D'autres partenaires à venir...
 
-### Regional Partners
-- Alpine Convention
-  <a href="https://www.alpconv.org/en/">
-    <img src="/assets/images/logos/logo_alpenkonvention.png" alt="Logo Alpenkonvention" style="height: 50px; width: auto;" />
+### Partenaires régionaux  
+- Convention alpine <a href="https://www.alpconv.org/fr/"><img src="/assets/images/logos/logo_alpenkonvention.png" alt="Logo Alpenkonvention" style="height: 50px; width: auto;" />
+  </a>
+- Musée municipale d'Absam <a href="https://www.absammuseum.at/"><img src="/assets/images/logos/Museum_Absam_Logo.png" alt="Logo Municipal Museum Absam" style="height: 50px; width: auto;" />
   </a>

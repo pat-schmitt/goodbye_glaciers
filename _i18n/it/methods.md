@@ -1,123 +1,80 @@
-# IT: Methods
+# Metodi
 
-This page describes the technical methodology used for estimating the year where
-the glacier is 'mostly gone' and the glacier projection visualizations. The
-detailed explanations provided below are somewhat technical and might be
-challenging for non-scientists, but we have included them here to ensure full
-transparency.
+Questa pagina descrive le metodologie utilizzate per stimare l'anno in cui
+il ghiacciaio sarà 'quasi scomparso' e per le visualizzazioni delle proiezioni dei ghiacciai. Le spiegazioni dettagliate fornite di seguito sono piuttosto tecniche e potrebbero risultare difficili per i non-scienziati, ma le abbiamo incluse qui per garantire la piena trasparenza.
 
-## Overview
+## Panoramica
 
-We simulate individual glacier thickness and volume projections from 2000 to
-2100 using climate scenarios (climate models and emission scenarios) from CMIP5
-and CMIP6 and large-scale glacier models. We primarily focus on **+2.7°C**
-global warming above pre-industrial by 2100, as this represents the predicted
-real-world outcome of [current policies and actions](https://climateactiontracker.org/global/cat-thermometer/). For comparison, we
-also include projections under the **+1.5°C target** of the Paris Agreement. We
-chose climate scenarios with a range of ±0.2°C from +1.5°C or +2.7°C. 
+Simuliamo le proiezioni dello spessore e del volume dei singoli ghiacciai dal 2000 al 2100 utilizzando scenari climatici (modelli climatici e scenari di emissione) provenienti da CMIP5 e CMIP6 e modelli globali dei ghiacciai. Ci concentriamo principalmente sul riscaldamento globale di **2,7°C** sopra i livelli pre-industriali entro il 2100, poiché rappresenta l'esito previsto del mondo reale delle [politiche e azioni attuali](https://climateactiontracker.org/global/cat-thermometer/). A scopo comparativo, includiamo anche le proiezioni sotto l'**obiettivo di 1,5°C** dell'Accordo di Parigi. Abbiamo scelto scenari climatici con una gamma di ±0,2°C da 1,5°C o 2,7°C.
 
-The warming levels are defined as the 2071–2100 global mean temperature
-difference relative to 1850–1900, with an added +0.69°C warming between
-1850–1900 and 1986–2005 (ref. [IPCC AR6](https://www.ipcc.ch/report/ar6/wg1/)).  
+I livelli di riscaldamento sono definiti come la differenza di temperatura media globale dal 2071 al 2100 rispetto al periodo 1850-1900, con un riscaldamento di 0,69°C dal 1850-1900 al 1986-2005 (rif. [IPCC AR6](https://www.ipcc.ch/report/ar6/wg1/)).
 
+### Definizione di un ghiacciaio 'quasi scomparso'
+Definiamo 'quasi scomparso' come l'anno in cui si prevede che rimanga meno del 10% del volume del ghiacciaio del 2020 o meno di 0,01 km³ - a seconda di quale soglia venga superata per prima. Sebbene piccole macchie di ghiaccio possano persistere oltre questo anno, il paesaggio sarà molto diverso rispetto a quello attuale. Questa soglia del 10% è considerata appropriata per le Alpi e le regioni con ghiacciai simili in termini di geometria. L'uso di entrambe le soglie ci consente di definire 'quasi scomparso' sia per i ghiacciai alpini relativamente grandi che per quelli già molto piccoli oggi.
 
-### Definition of a glacier being 'mostly gone'
-We define 'mostly gone' as the year when either less than 10% of the glacier's
-2020 volume or less than 0.01 km³ is expected to remain - whichever threshold is
-crossed first. While small ice patches might persist beyond this year, the
-landscape will be very different compared to the current one. This 10%-threshold
-is considered appropriate for the Alps. Using both thresholds ensures we can
-define 'mostly gone' for both relatively large glaciers and those already very
-small today.
+È importante notare che i meccanismi di feedback positivi, come il riscaldamento localizzato dovuto al ritiro dei ghiacciai, non sono considerati nei modelli globali dei ghiacciai. Ciò significa che, sebbene i cambiamenti nei ghiacciai che utilizziamo qui siano le proiezioni più affidabili disponibili, il ritiro effettivo dei ghiacciai potrebbe avvenire più rapidamente.
 
-It is important to note that positive feedback mechanisms, such as localized
-warming due to glacier retreat, are not accounted for in large-scale glacier
-models. This means that, while the glacier changes we use here are the most
-reliable projections available, the actual glacier retreat may occur faster. 
+##### Differenze nelle definizioni delle soglie
+Abbiamo constatato che la nostra definizione di un ghiacciaio 'quasi scomparso' è, in media, 9 anni prima nelle Alpi quando si utilizzano le due soglie (<10% o <0,01 km³) rispetto all'uso della sola soglia <10%. Rispetto all'uso esclusivo della soglia <10%, la differenza massima può significare che un ghiacciaio sia 'quasi scomparso' 73 anni prima e che meno ghiacciai sopravvivano fino alla fine del secolo.
 
-##### Threshold definition differences
-We find that our definition of a glacier being 'mostly gone' is, in the median,
-9 years earlier in the Alps when using the two thresholds (<10% or <0.01 km³)
-compared to just using <10%. Compared to using only the <10% threshold, the
-maximum difference can mean a glacier is mostly gone 73 years earlier and that
-fewer glaciers survive until the end of the century.
-
-Changing the definition from a 10% threshold to a 5% threshold results in
-glaciers being 'mostly gone', in the median, four years later, but this can be
-up to 34 years later.  For approximately 40 glaciers, the remaining glacier mass
-in 2100 is between 5% and 10%, meaning these glaciers would survive until the
-end of the century under the 5% threshold.
-
+Cambiare la definizione da una soglia del 10% a una soglia del 5% comporta che i ghiacciai siano 'quasi scomparsi', in media, quattro anni dopo e, al massimo, 34 anni dopo. Per circa 40 ghiacciai, il volume residuo del ghiacciaio nel 2100 è compreso tra il 5% e il 10%, il che significa che questi ghiacciai sopravviverebbero fino alla fine del secolo con la soglia del 5%.
 
 ### Likely range
 
-The **likely range** describes the spread of projections and is defined as the
-17th to 83rd percentiles, consistent with [IPCC AR6](https://www.ipcc.ch/report/ar6/wg1/).  
-If the data follow a Gaussian distribution, this range corresponds approximately
-to **one standard deviation** (±1σ) from the mean, capturing about 68% of the
-available projections.
+L'**intervallo probabile** ("likely range") descrive la diffusione delle proiezioni ed è definito come il 17° e 83° percentile, coerente con [IPCC AR6](https://www.ipcc.ch/report/ar6/wg1/). Se i dati seguono una distribuzione gaussiana, questa gamma corrisponde approssimativamente a **una deviazione standard** (±1σ) dalla media, catturando circa il 68% delle proiezioni disponibili.
 
-## Glacier projection data sources and models
+## Fonti di dati e modelli delle proiezioni dei ghiacciai
 
-The **2020 glacier volume**, **year where we estimate the glacier to be mostly
-gone**, and **global and regional glacier volume change projections** are
-derived from these three glacier models (specific model versions and data
-further summarized in [Zekollari et al. (2024)](https://doi.org/10.5194/tc-18-5045-2024)) by simulating each of the >200,000
-glaciers individually:
+Il **volume dei ghiacciai nel 2020**, l'**anno in cui stimiamo che il ghiacciaio sarà quasi scomparso** e le **proiezioni dei cambiamenti del volume dei ghiacciai globali e regionali** sono derivati da questi tre modelli di ghiacciai (versioni specifiche dei modelli e dati ulteriormente riassunti in [Zekollari et al. (2024)](https://doi.org/10.5194/tc-18-5045-2024)) simulando ciascuno dei >200.000 ghiacciai individualmente:
 - **OGGM v1.6.1**  
-  - **Data:** [DOI](https://doi.org/10.5281/zenodo.8286064)  
-  - **Documentation:** [OGGM](https://oggm.org/)  
-  - **Details:**  
-    - CMIP5 and CMIP6 available.  
-    - Includes less-used climate models and overshoot emission scenarios.  
-    - For +2.7±0.2°C: n=14 climate scenarios 
-    - For +1.5±0.2°C: n=11 climate scenarios 
+  - **Dati:** [DOI](https://doi.org/10.5281/zenodo.8286064)  
+  - **Documentazione:** [OGGM](https://oggm.org/)  
+  - **Dettagli:**  
+    - Disponibile CMIP5 e CMIP6.  
+    - Include modelli climatici meno utilizzati e scenari di emissione di overshoot.  
+    - Per 2.7±0.2°C: n=14 scenari climatici  
+    - Per 1.5±0.2°C: n=11 scenari climatici  
 - **PyGEM-OGGM**  
-  - **Data:** [DOI](https://doi.org/10.5067/P8BN9VO9N5C7)  
-  - **Documentation:** [PyGEM](https://pygem.readthedocs.io/en/latest/introduction.html)  
-  - **Details:**  
-    - CMIP5 and CMIP6 available.  
-    - Same scenarios as presented in [Rounce et al., 2023](https://doi.org/10.1126/science.abo1324).  
-    - For +2.7±0.2°C: n=7 climate scenarios  
-    - For +1.5±0.2°C: n=9 climate scenarios 
+  - **Dati:** [DOI](https://doi.org/10.5067/P8BN9VO9N5C7)  
+  - **Documentazione:** [PyGEM](https://pygem.readthedocs.io/en/latest/introduction.html)  
+  - **Dettagli:**  
+    - Disponibile CMIP5 e CMIP6.  
+    - Gli stessi scenari presentati in [Rounce et al., 2023](https://doi.org/10.1126/science.abo1324).  
+    - Per 2.7±0.2°C: n=7 scenari climatici  
+    - Per 1.5±0.2°C: n=9 scenari climatici  
 - **GloGEM**  
-  - **Data:** [DOI](https://doi.org/10.5281/zenodo.10908277)  
-  - **Documentation:** [Huss & Hock (2015)](https://doi.org/10.3389/feart.2015.00054)  
-  - **Details:**  
-    - CMIP6 only.  
-    - For +2.7±0.2°C: n=3 climate scenarios  
-    - For +1.5±0.2°C: n=4 climate scenarios 
+  - **Dati:** [DOI](https://doi.org/10.5281/zenodo.10908277)  
+  - **Documentazione:** [Huss & Hock (2015)](https://doi.org/10.3389/feart.2015.00054)  
+  - **Dettagli:**  
+    - Solo CMIP6.  
+    - Per 2.7±0.2°C: n=3 scenari climatici  
+    - Per 1.5±0.2°C: n=4 scenari climatici  
 
-The **3D glacier thickness projections** are based solely on OGGM simulations
-and visualized using the [Glacier:3D-Viz](https://glacier3dviz.oggm.org/tutorials/welcome.html) tool. These 3D projections differ
-slightly from the other estimates, which are based on a combination of three
-glacier models.  
+Le **proiezioni 3D dello spessore dei ghiacciai** si basano esclusivamente sulle simulazioni OGGM
+e sono visualizzate utilizzando lo strumento [Glacier:3D-Viz](https://glacier3dviz.oggm.org/tutorials/welcome.html). Queste proiezioni 3D differiscono
+lievemente dalle altre stime, che si basano su una combinazione di tre
+modelli di ghiacciai.
 
-Note that these glacier projections are based on global glacier models that use
-globally available glacier observation data and not use data that is only
-available for a few glaciers (i.e., only geodetic but no in-situ observations
-directly used). As a result, the models perform better on a global scale than at
-the individual glacier scale. Although some important processes at the individual
-glacier scale are not represented, we present individual glacier results here
-for educational purposes. In addition, the per-glacier and regional volume in
-2020 is not an observed volume but a modelled volume (it is the glacier model
-median estimate of the multi-climate-model medians). 
+Si noti che queste proiezioni dei ghiacciai si basano su modelli globali che utilizzano
+dati di osservazione dei ghiacciai disponibili a livello globale. I dati disponibili solo
+per alcuni ghiacciai (cioè solo osservazioni geodetiche ma nessuna osservazione in-situ
+direttamente utilizzata) non sono inclusi. Di conseguenza, i modelli funzionano meglio su scala globale rispetto alla
+scala di singoli ghiacciai. Sebbene alcuni processi importanti a livello del singolo
+ghiacciaio non siano rappresentati, presentiamo qui i risultati dei singoli ghiacciai
+a scopo educativo. Inoltre, il volume per singolo ghiacciaio e regionale nel
+2020 non è un volume osservato, ma un volume modellato (è la stima mediana del modello di ghiacciaio
+delle mediane dei modelli climatici multipli).
 
-## Results aggregation
+## Aggregazione dei risultati
 
-For the **2020 glacier volume**, **deglaciation year**, and **regional glacier
-volume change projections**, we present the **median** and the **likely range**
-across all available combinations of glacier models and climate scenarios. Since
-OGGM includes more climate scenarios, its projections contribute the most weight
-to the overall results.  
+Per il **volume dei ghiacciai nel 2020**, l'**anno di deglaciazione** e le **proiezioni di cambiamento del volume dei ghiacciai regionali**, presentiamo la **mediana** e l'**intervallo probabile**
+across all combinations of glacier models and climate scenarios. Since OGGM includes more climate scenarios, its projections contribute the most weight to the overall results.  
 
-The mean global warming above pre-industrial across all combinations of glacier
-models and climate scenarios is:  
-- **+1.57°C** for the **+1.5±0.2°C** range.  
-- **+2.71°C** for the **+2.7±0.2°C** range.  
+La media del riscaldamento globale rispetto ai livelli pre-industriali per tutte le combinazioni di modelli climatici e scenari climatici è:  
+- **1.57°C** per la gamma **1,5±0,2°C**.  
+- **2.71°C** per la gamma **2,7±0,2°C**.  
 
-
-## Photo sources and licenses
+## Fonti fotografiche e licenze
 <style>
   .photo-container {
     display: flex;
@@ -160,21 +117,22 @@ models and climate scenarios is:
       </a>
       <div class="text-content">
         {% if photo.photographer_name %}
-          <b>Photographer:</b> {{ photo.photographer_name }}
+          <b>Fotografo:</b> {{ photo.photographer_name }}
         {% endif %}
         {% if photo.photo_date %}
-          <br><b>Date:</b> {{ photo.photo_date }}
+          <br><b>Data:</b> {{ photo.photo_date }}
         {% endif %}
         {% if photo.photo_link %}
-          <br><b>Original URL:</b> <a href="{{ photo.photo_link }}">{{ photo.photo_link }}</a>
+          <br><b>URL originale:</b> <a href="{{ photo.photo_link }}">{{ photo.photo_link }}</a>
         {% endif %}
         {% if photo.citation %}
-          <br><b>Citation:</b> {{ photo.citation }}
+          <br><b>Citazione:</b> {{ photo.citation }}
         {% endif %}
         {% if photo.photo_license %}
-          <br><b>License:</b> <a href="{{ photo.photo_license_url }}">{{ photo.photo_license }}</a>
+          <br><b>Licenza:</b> <a href="{{ photo.photo_license_url }}">{{ photo.photo_license }}</a>
         {% endif %}
       </div>
     </div>
   {% endfor %}
 </div>
+

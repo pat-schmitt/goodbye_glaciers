@@ -3,35 +3,36 @@ main:
     titles:
       en: "Glaciers"
       de: "Gletscher"
-      it: "Glaciers"
+      it: "Ghiacciai"
       fr: "Glaciers"
   - url: /regions/
     titles:
       en: "Regions"
       de: "Regionen"
-      it: "Regions"
-      fr: "Regions"
+      it: "Regioni"
+      fr: "Régions"
   - url: /preserve/
     titles:
       en: "How to preserve?"
       de: "Wie schützen?"
-      it: "How to preserve?"
-      fr: "How to preserve?"
+      it: "Come preservare?"
+      fr: "Comment préserver?"
   - url: /methods/
     titles:
       en: "Methods"
-      de: "Methodik"
-      it: "Methods"
-      fr: "Methods"
+      de: "Methoden"
+      it: "Metodi"
+      fr: "Méthodes"
   - url: /about/
     titles:
       en: "About"
-      de: "Info"
-      it: "About"
-      fr: "About"
+      de: "Über"
+      it: "Info" # "Informazioni"--> too long
+      fr: "À propos"
   - url: /events/
     titles:
       en: "Events"
       de: "Events"
-      it: "Events"
-      fr: "Events"
+      it: "Eventi"
+      fr: "Événements"
+

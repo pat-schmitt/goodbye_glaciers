@@ -56,7 +56,6 @@ fp_signpost_md = os.path.join(base_dir, '_signposts')
 
 
 # # Function creating signpost markdown sites
-
 def create_signpost_markdown(signpost_yml):
 
     # start creating markdown
@@ -70,7 +69,28 @@ def create_signpost_markdown(signpost_yml):
     markdown_content += f"Lat: {signpost_yml_dict['current_location'][0]}\n"
     markdown_content += f"Lon: {signpost_yml_dict['current_location'][1]}\n"
     markdown_content += f"location_description: {signpost_yml_dict['current_location_description']}\n"
+    
+    if signpost_yml_dict['current_country'] == 'Switzerland':
+        signpost_yml_dict['country_de'] = 'Schweiz'
+        signpost_yml_dict['country_it'] = 'Svizzera'
+        signpost_yml_dict['country_fr'] = 'Suisse'
+    elif signpost_yml_dict['current_country'] == 'Italy':
+        signpost_yml_dict['country_de'] = 'Italien'
+        signpost_yml_dict['country_it'] = 'Italia'
+        signpost_yml_dict['country_fr'] = 'Italie'
+    elif signpost_yml_dict['current_country'] == 'France':
+        signpost_yml_dict['country_de'] = 'Frankreich'
+        signpost_yml_dict['country_it'] = 'Francia'
+        signpost_yml_dict['country_fr'] = 'France'
+    elif signpost_yml_dict['current_country'] == 'Austria':
+        signpost_yml_dict['country_de'] = 'Österreich'
+        signpost_yml_dict['country_it'] = 'Austria'
+        signpost_yml_dict['country_fr'] = 'Autriche'
     markdown_content += f"country: {signpost_yml_dict['current_country']}\n"
+    markdown_content += f"country_de: {signpost_yml_dict['country_de']}\n"
+    markdown_content += f"country_it: {signpost_yml_dict['country_it']}\n"
+    markdown_content += f"country_fr: {signpost_yml_dict['country_fr']}\n"
+    
     markdown_content += f"description: {signpost_yml_dict['description']}\n"
     markdown_content += f"past_locations: {signpost_yml_dict['past_locations']}\n"
     markdown_content += f"glaciers: {signpost_yml_dict['glaciers']}\n"
@@ -141,6 +161,7 @@ def create_signpost_markdown(signpost_yml):
         file.write(markdown_content)
     
     print(f"Markdown file {signpost_id} created.")
+
 
 
 # # Run all

@@ -1,154 +1,98 @@
-# DE: Methods
+# Methoden
 
-This page describes the technical methodology used for estimating the year where
-the glacier is 'mostly gone' and the glacier projection visualizations. The
-detailed explanations provided below are somewhat technical and might be
-challenging for non-scientists, but we have included them here to ensure full
-transparency.
+Diese Seite beschreibt die Methoden, die zur Visualisierung der 3D-Gletscherprojektionen und der Ermittlung des Jahres verwendet werden, in dem der Gletscher "fast verschwunden" ist. Die nachfolgenden detaillierten Erklärungen sind technisch und könnten für Nicht-Wissenschaftler herausfordernd sein, aber wir haben sie hier aufgenommen, um vollständige Transparenz zu gewährleisten.
 
-## Overview
+## Überblick
 
-We simulate individual glacier thickness and volume projections from 2000 to
-2100 using climate scenarios (climate models and emission scenarios) from CMIP5
-and CMIP6 and large-scale glacier models. We primarily focus on **+2.7°C**
-global warming above pre-industrial by 2100, as this represents the predicted
-real-world outcome of [current policies and actions](https://climateactiontracker.org/global/cat-thermometer/). For comparison, we
-also include projections under the **+1.5°C target** of the Paris Agreement. We
-chose climate scenarios with a range of ±0.2°C from +1.5°C or +2.7°C. 
+Wir simulieren die Projektionen der Dicke und des Volumens einzelner Gletscher von 2000 bis 2100 unter Verwendung von Klimaszenarien (Klimamodelle und Emissionsszenarien) aus CMIP5 und CMIP6 sowie großräumigen Gletschermodellen. Wir konzentrieren uns hauptsächlich auf einer globalen Erwärmung von **2,7°C**  im Vergleich zu vorindustriellen Werten bis 2100, da dies das voraussichtliche Ergebnis der [aktuellen politischen Maßnahmen](https://climateactiontracker.org/global/cat-thermometer/) darstellt. Zum Vergleich enthalten wir auch Projektionen unter dem **1,5°C Ziel** des Pariser Abkommens. Wir wählten Klimaszenarien mit einem Bereich von ±0,2°C um 1,5°C oder 2,7°C.
 
-The warming levels are defined as the 2071–2100 global mean temperature
-difference relative to 1850–1900, with an added +0.69°C warming between
-1850–1900 and 1986–2005 (ref. [IPCC AR6](https://www.ipcc.ch/report/ar6/wg1/)).  
+Die Erwärmungsniveaus sind als die globale Mitteltemperaturdifferenz für den Zeitraum 2071–2100 im Vergleich zu 1850–1900 definiert, mit einer Erwärmung von 0,69°C von 1850–1900 bis 1986–2005 (siehe [IPCC AR6](https://www.ipcc.ch/report/ar6/wg1/)).
 
+### Definition eines "fast verschwundenen" Gletschers
+Wir definieren "fast verschwunden" als das Jahr, in dem entweder weniger als 10% des Gletschervolumens von 2020 oder weniger als 0,01 km³ übrig sein wird – je nachdem, welcher Schwellenwert zuerst erreicht wird. Während kleine Eisflächen über dieses Jahr hinaus bestehen bleiben könnten, wird die Landschaft im Vergleich zu der aktuellen sehr unterschiedlich sein. Dieser 10%-Schwellenwert ist für die Alpen und andere Regionen mit ähnlicher Geometrie geeignet. Die Verwendung beider Schwellenwerte stellt sicher, dass wir "fast verschwunden" sowohl für relativ große Alpen-Gletscher als auch für jene, die heute bereits sehr klein sind, definieren können.
 
-### Definition of a glacier being 'mostly gone'
-We define 'mostly gone' as the year when either less than 10% of the glacier's
-2020 volume or less than 0.01 km³ is expected to remain - whichever threshold is
-crossed first. While small ice patches might persist beyond this year, the
-landscape will be very different compared to the current one. This 10%-threshold
-is considered appropriate for the Alps. Using both thresholds ensures we can
-define 'mostly gone' for both relatively large glaciers and those already very
-small today.
+Es ist wichtig zu beachten, dass positive Rückkopplungsmechanismen, wie z.B. lokalisierte Erwärmung aufgrund des Gletscherrückzugs, in großräumigen Gletschermodellen nicht berücksichtigt werden. Das bedeutet, dass der tatsächliche Gletscherrückzug möglicherweise schneller erfolgen könnte als die projizierten Veränderungen.
 
-It is important to note that positive feedback mechanisms, such as localized
-warming due to glacier retreat, are not accounted for in large-scale glacier
-models. This means that, while the glacier changes we use here are the most
-reliable projections available, the actual glacier retreat may occur faster. 
+##### Unterschiede in der Schwellenwert-Definition
+Wir stellen fest, dass unsere Definition eines "fast verschwundenen" Gletschers im Median 9 Jahre früher in den Alpen erreicht wird, wenn beide Schwellenwerte (<10% oder <0,01 km³) verwendet werden, im Vergleich zur Verwendung nur des <10%-Schwellenwerts. Im Vergleich zur Verwendung nur des <10%-Schwellenwerts kann der maximale Unterschied dazu führen, dass ein Gletscher 73 Jahre früher als "fast verschwunden" gilt und dass weniger Gletscher bis zum Ende des Jahrhunderts überleben.
 
-##### Threshold definition differences
-We find that our definition of a glacier being 'mostly gone' is, in the median,
-9 years earlier in the Alps when using the two thresholds (<10% or <0.01 km³)
-compared to just using <10%. Compared to using only the <10% threshold, the
-maximum difference can mean a glacier is mostly gone 73 years earlier and that
-fewer glaciers survive until the end of the century.
-
-Changing the definition from a 10% threshold to a 5% threshold results in
-glaciers being 'mostly gone', in the median, four years later, but this can be
-up to 34 years later.  For approximately 40 glaciers, the remaining glacier mass
-in 2100 is between 5% and 10%, meaning these glaciers would survive until the
-end of the century under the 5% threshold.
-
+Die Änderung der Definition von einem 10%-Schwellenwert auf einen 5%-Schwellenwert führt dazu, dass Gletscher im Median vier Jahre später als "fast verschwunden" gelten und maximal 34 Jahre später. Für ungefähr 40 Gletscher liegt das verbleibende Gletschervolumen im Jahr 2100 zwischen 5% und 10%, was bedeutet, dass diese Gletscher unter dem 5%-Schwellenwert bis zum Ende des Jahrhunderts überleben würden.
 
 ### Likely range
 
-The **likely range** describes the spread of projections and is defined as the
-17th to 83rd percentiles, consistent with [IPCC AR6](https://www.ipcc.ch/report/ar6/wg1/).  
-If the data follow a Gaussian distribution, this range corresponds approximately
-to **one standard deviation** (±1σ) from the mean, capturing about 68% of the
-available projections.
+Der **wahrscheinliche Bereich** (likely range) beschreibt die Streuung der Projektionen und ist als der 17. bis 83. Perzentilbereich definiert, im Einklang mit dem [IPCC AR6](https://www.ipcc.ch/report/ar6/wg1/). Wenn die Daten einer Gaußschen Verteilung folgen, entspricht dieser Bereich ungefähr **einer Standardabweichung** (±1σ) vom Mittelwert, was etwa 68% der verfügbaren Projektionen erfasst.
 
-## Glacier projection data sources and models
+## Datenquellen und Modelle für die Gletscherprojektionen
 
-The **2020 glacier volume**, **year where we estimate the glacier to be mostly
-gone**, and **global and regional glacier volume change projections** are
-derived from these three glacier models (specific model versions and data
-further summarized in [Zekollari et al. (2024)](https://doi.org/10.5194/tc-18-5045-2024)) by simulating each of the >200,000
-glaciers individually:
+Das **2020 Gletschervolumen**, das **Jahr, in dem wir schätzen, dass der Gletscher fast verschwunden ist**, und die **globalen und regionalen Projektionen der Gletschervolumenänderung** stammen aus diesen drei Gletschermodellen (spezifische Modellversionen und Daten sind weiter zusammengefasst in [Zekollari et al. (2024)](https://doi.org/10.5194/tc-18-5045-2024)) durch die Simulation jedes der >200.000 Gletscher einzeln:
 - **OGGM v1.6.1**  
-  - **Data:** [DOI](https://doi.org/10.5281/zenodo.8286064)  
-  - **Documentation:** [OGGM](https://oggm.org/)  
+  - **Daten:** [DOI](https://doi.org/10.5281/zenodo.8286064)  
+  - **Dokumentation:** [OGGM](https://oggm.org/)  
   - **Details:**  
-    - CMIP5 and CMIP6 available.  
-    - Includes less-used climate models and overshoot emission scenarios.  
-    - For +2.7±0.2°C: n=14 climate scenarios 
-    - For +1.5±0.2°C: n=11 climate scenarios 
+    - CMIP5 und CMIP6 verfügbar.  
+    - Beinhaltet weniger genutzte Klimamodelle und Overshoot-Emissionsszenarien.  
+    - Für 2,7±0,2°C: n=14 Klimaszenarien 
+    - Für 1,5±0,2°C: n=11 Klimaszenarien 
 - **PyGEM-OGGM**  
-  - **Data:** [DOI](https://doi.org/10.5067/P8BN9VO9N5C7)  
-  - **Documentation:** [PyGEM](https://pygem.readthedocs.io/en/latest/introduction.html)  
+  - **Daten:** [DOI](https://doi.org/10.5067/P8BN9VO9N5C7)  
+  - **Dokumentation:** [PyGEM](https://pygem.readthedocs.io/en/latest/introduction.html)  
   - **Details:**  
-    - CMIP5 and CMIP6 available.  
-    - Same scenarios as presented in [Rounce et al., 2023](https://doi.org/10.1126/science.abo1324).  
-    - For +2.7±0.2°C: n=7 climate scenarios  
-    - For +1.5±0.2°C: n=9 climate scenarios 
+    - CMIP5 und CMIP6 verfügbar.  
+    - Dieselben Szenarien wie in [Rounce et al., 2023](https://doi.org/10.1126/science.abo1324).  
+    - Für 2,7±0,2°C: n=7 Klimaszenarien  
+    - Für 1,5±0,2°C: n=9 Klimaszenarien 
 - **GloGEM**  
-  - **Data:** [DOI](https://doi.org/10.5281/zenodo.10908277)  
-  - **Documentation:** [Huss & Hock (2015)](https://doi.org/10.3389/feart.2015.00054)  
+  - **Daten:** [DOI](https://doi.org/10.5281/zenodo.10908277)  
+  - **Dokumentation:** [Huss & Hock (2015)](https://doi.org/10.3389/feart.2015.00054)  
   - **Details:**  
-    - CMIP6 only.  
-    - For +2.7±0.2°C: n=3 climate scenarios  
-    - For +1.5±0.2°C: n=4 climate scenarios 
+    - Nur CMIP6.  
+    - Für 2,7±0,2°C: n=3 Klimaszenarien  
+    - Für 1,5±0,2°C: n=4 Klimaszenarien 
 
-The **3D glacier thickness projections** are based solely on OGGM simulations
-and visualized using the [Glacier:3D-Viz](https://glacier3dviz.oggm.org/tutorials/welcome.html) tool. These 3D projections differ
-slightly from the other estimates, which are based on a combination of three
-glacier models.  
+Die **3D Gletscherprojektionen der Eisdicke** basieren ausschließlich auf OGGM-Simulationen und werden mit dem [Glacier:3D-Viz](https://glacier3dviz.oggm.org/tutorials/welcome.html) Tool visualisiert. Diese 3D-Projektionen weichen leicht von den anderen Schätzungen ab, die auf einer Kombination von drei Gletschermodellen basieren.
 
-Note that these glacier projections are based on global glacier models that use
-globally available glacier observation data and not use data that is only
-available for a few glaciers (i.e., only geodetic but no in-situ observations
-directly used). As a result, the models perform better on a global scale than at
-the individual glacier scale. Although some important processes at the individual
-glacier scale are not represented, we present individual glacier results here
-for educational purposes. In addition, the per-glacier and regional volume in
-2020 is not an observed volume but a modelled volume (it is the glacier model
-median estimate of the multi-climate-model medians). 
+Beachten Sie, dass diese Gletscherprojektionen auf globalen Gletschermodellen basieren, die weltweit verfügbare Beobachtungsdaten von Gletschern verwenden. Daten, die nur für einige wenige Gletscher verfügbar sind (d.h. nur geodätische, aber keine direkten In-situ-Beobachtungen werden verwendet), sind nicht enthalten. Daher performen die Modelle auf globaler Ebene besser als auf der Ebene einzelner Gletscher. Obwohl einige wichtige Prozesse auf der Ebene einzelner Gletscher nicht dargestellt sind, präsentieren wir hier Ergebnisse für einzelne Gletscher zu Bildungszwecken. Zudem ist das individuelle Gletscher und regionale Volumen im Jahr 2020 kein beobachtetes Gletschervolumen, sondern ein modelliertes Volumen (es handelt sich um die Median-Schätzung des Gletschermodells der Multi-Klimamodell-Mediane).
 
-## Results aggregation
+## Ergebnisaggregation
 
-For the **2020 glacier volume**, **deglaciation year**, and **regional glacier
-volume change projections**, we present the **median** and the **likely range**
-across all available combinations of glacier models and climate scenarios. Since
-OGGM includes more climate scenarios, its projections contribute the most weight
-to the overall results.  
+Für das **2020 Gletschervolumen**, das **Abschmelzjahr** und die **globalen und regionalen Projektionen der Gletschervolumenänderung** präsentieren wir den **Median** und den **wahrscheinlichen Bereich** über alle verfügbaren Kombinationen von Gletschermodellen und Klimaszenarien. Da OGGM mehr Klimaszenarien umfasst, tragen seine Projektionen am meisten zum Gesamtergebnis bei.
 
-The mean global warming above pre-industrial across all combinations of glacier
-models and climate scenarios is:  
-- **+1.57°C** for the **+1.5±0.2°C** range.  
-- **+2.71°C** for the **+2.7±0.2°C** range.  
+Die durchschnittliche globale Erwärmung über vorindustrielle Werte bei allen Kombinationen von Gletschermodellen und Klimaszenarien beträgt:  
+- **1,57°C** für den **1,5±0,2°C** Bereich.  
+- **2,71°C** für den **2,7±0,2°C** Bereich.
 
-
-## Photo sources and licenses
+## Fotoquellen und Lizenzen
 <style>
   .photo-container {
     display: flex;
     align-items: flex-start;
-    border: 1px solid #ddd; /* Adds a light gray border around each photo block */
-    padding: 10px; /* Adds space between the content and the border */
-    margin-bottom: 10px; /* Adds space between each photo block */
-    border-radius: 5px; /* Rounds the corners of the border */
-    background-color: #f9f9f9; /* Light background color for better contrast */
+    border: 1px solid #ddd; /* Fügt jedem Fotoblock einen hellgrauen Rand hinzu */
+    padding: 10px; /* Fügt Abstand zwischen Inhalt und Rand hinzu */
+    margin-bottom: 10px; /* Fügt Abstand zwischen Fotoblocks hinzu */
+    border-radius: 5px; /* Abrundung der Ecken des Rands */
+    background-color: #f9f9f9; /* Helle Hintergrundfarbe für besseren Kontrast */
   }
 
   .photo-container img {
-    margin-right: 10px; /* Adds space between the image and the text */
-    width: 100px; /* Fixes image width */
-    height: auto; /* Maintains aspect ratio */
-    border-radius: 5px; /* Optional: adds rounded corners to the image */
+    margin-right: 10px; /* Fügt Abstand zwischen dem Bild und dem Text hinzu */
+    width: 100px; /* Fixiert die Bildbreite */
+    height: auto; /* Bewahrt das Seitenverhältnis */
+    border-radius: 5px; /* Optional: Fügt den Bildern abgerundete Ecken hinzu */
     min-width: 100px;
   }
 
   .photo-container .text-content {
     display: block;
-    flex-direction: column; /* Stacks text content vertically */
+    flex-direction: column; /* Stapelt den Textinhalt vertikal */
   }
 
   .photo-container a {
-    color: #0073e6; /* Makes links visually distinct */
-    text-decoration: none; /* Removes underline from links */
+    color: #0073e6; /* Macht Links visuell auffällig */
+    text-decoration: none; /* Entfernt die Unterstreichung von Links */
   }
 
   .photo-container a:hover {
-    text-decoration: underline; /* Adds underline on hover for clarity */
+    text-decoration: underline; /* Fügt eine Unterstreichung hinzu, wenn der Mauszeiger darüber schwebt */
   }
 
 </style>
@@ -178,3 +122,4 @@ models and climate scenarios is:
     </div>
   {% endfor %}
 </div>
+
