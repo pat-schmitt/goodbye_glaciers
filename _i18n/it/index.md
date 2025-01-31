@@ -11,7 +11,9 @@
 <br>  
 <div style="border: 2px solid #000; padding: 10px; background-color: #f7cccc; width: fit-content;">  
     <strong>  
-        Questo sito è in costruzione, ma sentitevi liberi di esplorarlo già ora. Prevediamo di avere una versione completa con ghiacciai aggiuntivi entro la fine di gennaio.  
+        Questo sito è in costruzione, ma sentitevi liberi di esplorarlo già ora
+        e apprezziamo il vostro
+        <a href="{{ site.baseurl }}/about/">feedback</a>. 
     </strong>  
 </div>  
 <br>  

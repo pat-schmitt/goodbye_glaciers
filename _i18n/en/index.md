@@ -10,8 +10,9 @@
 
 <div style="border: 2px solid #000; padding: 10px; background-color: #f7cccc; width: fit-content;">
     <strong>
-        This website is under construction, but feel free to already explore. We 
-        plan to have a complete version with additional glaciers by end of January.
+        This website is under construction, but feel free to already explore
+        and we appreciate your
+        <a href="{{ site.baseurl }}/about/">feedback</a>.
     </strong>
 </div>
 <br>

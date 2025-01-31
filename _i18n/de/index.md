@@ -12,7 +12,9 @@
 <br>  
 <div style="border: 2px solid #000; padding: 10px; background-color: #f7cccc; width: fit-content;">  
     <strong>  
-        Diese Webseite befindet sich im Aufbau, aber du kannst sie schon erkunden. Wir planen, eine vollständige Version mit zusätzlichen Gletschern bis Ende Januar bereitzustellen.  
+        Diese Webseite befindet sich im Aufbau, aber du kannst sie schon erkunden
+        und wir freuen uns über
+        <a href="{{ site.baseurl }}/about/">Feedback</a>. 
     </strong>  
 </div>  
 <br>  

@@ -11,7 +11,9 @@
 <br>  
 <div style="border: 2px solid #000; padding: 10px; background-color: #f7cccc; width: fit-content;">  
     <strong>  
-        Ce site web est en construction, mais n'hésitez pas à explorer dès maintenant. Nous prévoyons d'avoir une version complète avec des glaciers supplémentaires d'ici fin janvier.  
+        Ce site web est en construction, mais n’hésitez pas à l’explorer dès
+        maintenant et à
+        <a href="{{ site.baseurl }}/about/">nous donner votre avis</a>.
     </strong>  
 </div>  
 <br>  
