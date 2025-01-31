@@ -14,25 +14,26 @@
     </div>
 
     <!-- Tab content -->
-    <div id="Video1" class="tab-content">
-        <video width="100%" autoplay loop muted playsinline>
-            <source src="{{ page.animation_simple }}" type="video/mp4">
-            Votre navigateur ne prend pas en charge la balise vidéo.
+    <div id="Video1" class="tab-content"
+         style="height: calc(100vh - 150px);">
+        <video height="100%" width="auto" autoplay loop muted playsinline controls>
+            <source src="{{ page.animation_27 }}" type="video/mp4">
+            Your browser does not support the video tag.
         </video>
     </div>
-    <div id="Video2" class="tab-content" style="display: none;">
-        <video width="100%" autoplay loop muted playsinline>
-            <source src="{{ page.animation_simple }}" type="video/mp4">
-            Votre navigateur ne prend pas en charge la balise vidéo.
+    <div id="Video2" class="tab-content"
+         style="height: calc(100vh - 150px); display: none;">
+        <video height="100%" width="auto" autoplay loop muted playsinline controls>
+            <source src="{{ page.animation_15 }}" type="video/mp4">
+            Your browser does not support the video tag.
         </video>
-        <p>1,5°C ARRIVANT BIENTÔT!</p>
     </div>
     <div id="Video3" class="tab-content" style="display: none;">
-        <video width="100%" autoplay loop muted playsinline>
-            <source src="{{ page.animation_simple }}" type="video/mp4">
-            Votre navigateur ne prend pas en charge la balise vidéo.
+        <video width="100%" autoplay loop muted playsinline controls>
+            <source src="{{ page.animation_both }}" type="video/mp4">
+            Your browser does not support the video tag.
         </video>
-        <p>1,5°C vs. 2,7°C ARRIVANT BIENTÔT!</p>
+        <p>Tip: Turn your phone sideways.</p>
     </div>
 </div>
 <br>
@@ -147,5 +148,38 @@
 {% assign gallery = page.gallery %}
 {% include custom-gallery.html gallery=gallery %}
 
-<script>
-  // Sélectionner tous les éléments vidéo
+<<script>
+    function openTab(event, tabId, containerId) {
+        // Get the container element
+        const container = document.getElementById(containerId);
+
+        // Hide all tab contents in the current container
+        const tabContents = container.querySelectorAll(".tab-content");
+        tabContents.forEach((content) => {
+            content.style.display = "none"; // Hide all tab contents
+        });
+
+        // Remove active class from all tab buttons in the current container
+        const tabButtons = container.querySelectorAll(".tab-button");
+        tabButtons.forEach((button) => {
+            button.classList.remove("active"); // Remove active state
+        });
+
+        // Show the selected tab content and set the active button
+        container.querySelector(`#${tabId}`).style.display = "block"; // Show current tab content
+        event.currentTarget.classList.add("active"); // Highlight active button
+    }
+
+    // Initialize each tab container on page load
+    document.addEventListener("DOMContentLoaded", () => {
+        const tabContainers = document.querySelectorAll(".tab-container");
+
+        tabContainers.forEach((container) => {
+            const defaultTabButton = container.querySelector(".tab-button.active");
+            if (defaultTabButton) {
+                const defaultTabId = defaultTabButton.getAttribute("onclick").split("'")[1];
+                container.querySelector(`#${defaultTabId}`).style.display = "block"; // Show default tab
+            }
+        });
+    });
+</script>

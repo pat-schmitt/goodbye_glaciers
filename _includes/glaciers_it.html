@@ -14,25 +14,26 @@
     </div>
 
     <!-- Tab content -->
-    <div id="Video1" class="tab-content">
-        <video width="100%" autoplay loop muted playsinline>
-            <source src="{{ page.animation_simple }}" type="video/mp4">
-            Il tuo browser non supporta il tag video.
+    <div id="Video1" class="tab-content"
+         style="height: calc(100vh - 150px);">
+        <video height="100%" width="auto" autoplay loop muted playsinline controls>
+            <source src="{{ page.animation_27 }}" type="video/mp4">
+            Your browser does not support the video tag.
         </video>
     </div>
-    <div id="Video2" class="tab-content" style="display: none;">
-        <video width="100%" autoplay loop muted playsinline>
-            <source src="{{ page.animation_simple }}" type="video/mp4">
-            Il tuo browser non supporta il tag video.
+    <div id="Video2" class="tab-content"
+         style="height: calc(100vh - 150px); display: none;">
+        <video height="100%" width="auto" autoplay loop muted playsinline controls>
+            <source src="{{ page.animation_15 }}" type="video/mp4">
+            Your browser does not support the video tag.
         </video>
-        <p>1,5°C IN ARRIVO!</p>
     </div>
     <div id="Video3" class="tab-content" style="display: none;">
-        <video width="100%" autoplay loop muted playsinline>
-            <source src="{{ page.animation_simple }}" type="video/mp4">
-            Il tuo browser non supporta il tag video.
+        <video width="100%" autoplay loop muted playsinline controls>
+            <source src="{{ page.animation_both }}" type="video/mp4">
+            Your browser does not support the video tag.
         </video>
-        <p>1,5°C vs. 2,7°C IN ARRIVO!</p>
+        <p>Tip: Turn your phone sideways.</p>
     </div>
 </div>
 <br>
@@ -127,21 +128,6 @@
 <h3 id="photo-gallery">Galleria fotografica</h3>
 {% assign gallery = page.gallery %}
 {% include custom-gallery.html gallery=gallery %}
-
-<script>
-  // Seleziona tutti gli elementi video nella pagina
-  const videos = document.querySelectorAll('video');
-  // const video = document.getElementById('myVideo');
-
-  // Cicla su ogni video e aggiungi un event listener
-  videos.forEach((video) => {
-    // Mostra i controlli quando l'utente interagisce (clicca/tocca) con il video
-    video.addEventListener('click', () => {
-      video.setAttribute('controls', 'controls');
-    });
-  });
-
-</script>
 
 <script>
     function openTab(event, tabId, containerId) {

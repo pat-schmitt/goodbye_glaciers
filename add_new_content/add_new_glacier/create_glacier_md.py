@@ -65,6 +65,7 @@ df_deglac = pd.read_csv(deglac_csv_file, index_col=0)
 
 
 # # Function creating glacier markdown sites
+
 def create_glacier_markdown(glacier_yml):
 
     rgi_id = glacier_yml.replace('.yml', '')
@@ -134,12 +135,15 @@ def create_glacier_markdown(glacier_yml):
     markdown_content += f"volume_evolution_complex: {fp_file}\n"
 
     # add 3d animations
-    fp_file = f"{fp_glacier_animations}{rgi_id}_simple_en.mp4"
+    fp_file = f"{fp_glacier_animations}{rgi_id}_+1.5°C.mp4"
     check_file_exist(fp_file, rgi_id)
-    markdown_content += f"animation_simple: {fp_file}\n"
-    fp_file = f"{fp_glacier_animations}{rgi_id}_complex_en.mp4"
+    markdown_content += f"animation_15: {fp_file}\n"
+    fp_file = f"{fp_glacier_animations}{rgi_id}_+2.7°C.mp4"
     check_file_exist(fp_file, rgi_id)
-    markdown_content += f"animation_complex: {fp_file}\n"
+    markdown_content += f"animation_27: {fp_file}\n"
+    fp_file = f"{fp_glacier_animations}{rgi_id}_both.mp4"
+    check_file_exist(fp_file, rgi_id)
+    markdown_content += f"animation_both: {fp_file}\n"
 
     # add photos
     photo_yml_dict = read_yml(os.path.join(fp_photo_yml, f'{rgi_id}_photos.yml'))
@@ -221,7 +225,6 @@ def create_glacier_markdown(glacier_yml):
             file.write(markdown_content)
     
     print(f"Markdown file {rgi_id} created.")
-
 
 
 # # Run all
