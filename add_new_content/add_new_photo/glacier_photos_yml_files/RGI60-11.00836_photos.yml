@@ -1,0 +1,10 @@
+---
+rgi_id: RGI60-11.00836
+photo1:  # give each photo a unique name
+  filename: Gaisbergferner_2016_-1.jpg
+  photo_date: 07.09.2016
+  photographer_name: Steffen Flaischlen
+  photo_license: CC BY-SA 4.0 
+  photo_link: https://de.wikipedia.org/wiki/Datei:Gaisbergferner_2016_-1.jpg
+  citation: 
+  is_main_photo: true  # only one photo is allowed to be true, all others false

@@ -1,0 +1,10 @@
+---
+rgi_id: RGI60-11.03674
+photo1:  # give each photo a unique name
+  filename: RGI60-11.03674_Glacier_de_St_Sorlin_BrunoJourdain_20190801.JPG
+  photo_date: 01.08.2019
+  photographer_name: Bruno Jourdain
+  photo_license: CC BY-SA 4.0 
+  photo_link: 
+  citation: 
+  is_main_photo: true  # only one photo is allowed to be true, all others false

@@ -1,0 +1,10 @@
+---
+rgi_id: RGI60-11.01509
+photo1:  # give each photo a unique name
+  filename: oberaar2013092801.jpg
+  photo_date: 28.09.2013
+  photographer_name: Michael Zemp
+  photo_license: 
+  photo_link: https://nsidc.org/data/glacier_photo/search/image_info/oberaar2013092801
+  citation: "Zemp, Michael. 2013. Oberaar Glacier: From the Glacier Photograph Collection. Boulder, Colorado USA: National Snow and Ice Data Center. Digital media."
+  is_main_photo: true  # only one photo is allowed to be true, all others false

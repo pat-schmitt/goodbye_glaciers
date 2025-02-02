@@ -1,0 +1,10 @@
+---
+rgi_id: RGI60-11.00843
+photo1:  # give each photo a unique name
+  filename: RGI60-11.00843_Clariden_MarinKneib_202409.jpg
+  photo_date: 09.2024
+  photographer_name: Marin Kneib
+  photo_link: 
+  photo_license: CC BY-SA 4.0
+  citation: 
+  is_main_photo: true  # only one photo is allowed to be true, all others false

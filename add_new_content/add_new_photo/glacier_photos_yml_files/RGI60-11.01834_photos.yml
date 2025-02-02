@@ -1,0 +1,10 @@
+---
+rgi_id: RGI60-11.01834
+photo1:  # give each photo a unique name
+  filename: Ghiacciaio_del_Careser.jpg
+  photo_date: 16.08.2011
+  photographer_name: Ste Valentini
+  photo_license: CC BY-SA 3.0
+  photo_link: https://commons.wikimedia.org/wiki/File:Ghiacciaio_del_Careser.jpg
+  citation: 
+  is_main_photo: true  # only one photo is allowed to be true, all others false

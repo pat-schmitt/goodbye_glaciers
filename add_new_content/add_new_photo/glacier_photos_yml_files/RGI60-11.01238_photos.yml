@@ -7,4 +7,13 @@ photo1:  # give each photo a unique name
   photo_license: CC BY-SA 4.0  # leave blank if not applicable
   photo_link: https://commons.wikimedia.org/wiki/File:Rhonegletscher_Sept-2018a.jpg  # leave blank if not applicable
   citation:  # leave blank if not applicable
-  is_main_photo: true  # only one photo is allowed to be true, all others false
+  is_main_photo: false  # only one photo is allowed to be true, all others false
+photo2:
+  filename: Rhone_AndreaKneibWalter_202409.jpg
+  photo_date: 09.2024
+  photographer_name: Andrea Kneib Walter
+  photo_link: 
+  photo_license: CC BY-SA 4.0
+  citation: 
+  is_main_photo: true
+

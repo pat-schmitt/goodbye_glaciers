@@ -1,0 +1,10 @@
+---
+rgi_id: RGI60-11.02507
+photo1:  # give each photo a unique name
+  filename: RGI60-11.02507_BruneggGletscher_20200919.jpg
+  photo_date: 19.09.2020
+  photographer_name: Marin Kneib
+  photo_link: 
+  photo_license: CC BY-SA 4.0
+  citation: 
+  is_main_photo: true  # only one photo is allowed to be true, all others false

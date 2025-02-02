@@ -1,0 +1,10 @@
+---
+rgi_id: RGI60-11.03684
+photo1:  # give each photo a unique name
+  filename: RGI60-11.03684_GlacierBlanc_PierreZeiger_202308.JPG
+  photo_date: 08.2023
+  photographer_name: Pierre Zeiger
+  photo_license: CC BY-SA 4.0 
+  photo_link: 
+  citation: 
+  is_main_photo: true  # only one photo is allowed to be true, all others false
