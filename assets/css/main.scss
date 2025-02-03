@@ -175,7 +175,10 @@ h1[id]::before, h2[id]::before, h3[id]::before, li[id]::before {
 
 /* Tab content */
 .tab-content {
-    margin: 0;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    display: block;
     padding: 0;
     border: none; /* No border around the video */
     background-color: transparent;

@@ -15,26 +15,24 @@
     </div>
 
     <!-- Tab content -->
-    <div id="Video1" class="tab-content"
-         style="height: calc(100vh - 150px);">
-        <video height="100%" width="auto" autoplay loop muted playsinline controls>
+    <div id="Video1" class="tab-content" style="max-width: 500px;">
+        <video autoplay loop muted playsinline controls>
             <source src="{{ page.animation_27 }}" type="video/mp4">
             Your browser does not support the video tag.
         </video>
     </div>
-    <div id="Video2" class="tab-content"
-         style="height: calc(100vh - 150px); display: none;">
-        <video height="100%" width="auto" autoplay loop muted playsinline controls>
+    <div id="Video2" class="tab-content" style="max-width: 500px; display: none;">
+        <video autoplay loop muted playsinline controls>
             <source src="{{ page.animation_15 }}" type="video/mp4">
             Your browser does not support the video tag.
         </video>
     </div>
     <div id="Video3" class="tab-content" style="display: none;">
-        <video width="100%" autoplay loop muted playsinline controls>
+        <video autoplay loop muted playsinline controls>
             <source src="{{ page.animation_both }}" type="video/mp4">
             Your browser does not support the video tag.
         </video>
-        <p>Tip: Turn your phone sideways.</p>
+        <i>Tip: Rotate your phone and go fullscreen for the best experience.</i>
     </div>
 </div>
 <br>
@@ -92,7 +90,8 @@
     </div>
 
     <!-- Tab content -->
-    <div id="Volume1" class="tab-content" style="outline: 2px solid #e1e1e1;">
+    <div id="Volume1" class="tab-content"
+         style="max-width: 800px; outline: 2px solid #e1e1e1;">
       <figure style="text-align: center; margin: 0;">
         <img src="{{ site.baseurl }}{{ page.volume_evolution_simple | replace: 'en', site.lang  }}" alt="Volume evolution of {{ page.title }} for 2.7°C." style="width:100%; padding:0;"/>
         <figcaption style="font-size: 14px; color: #555; margin-top: -20px;">
@@ -101,7 +100,8 @@
         </figcaption>
       </figure>
     </div>
-    <div id="Volume2" class="tab-content" style="display: none; outline: 2px solid #e1e1e1;">
+    <div id="Volume2" class="tab-content"
+         style="max-width: 800px; display: none; outline: 2px solid #e1e1e1;">
       <figure style="text-align: center; margin: 0;">
         <img src="{{ site.baseurl }}{{ page.volume_evolution_complex | replace: 'en', site.lang }}" alt="Volume complex of {{ page.title }}." />
       <figcaption style="font-size: 14px; color: #555; margin-top: -20px;">
