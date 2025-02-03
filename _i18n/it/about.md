@@ -32,6 +32,9 @@ Hai domande, idee o feedback? Contattaci!
 -----
       
 ### Partner scientifici  
+- Mattia Callegari   <a href="https://www.eurac.edu/it">
+    <img src="/assets/images/logos/Eurac_Research_logo.png" alt="Logo Eurac Research" style="height: 50px; width: auto;" />
+  </a>
 - Nicolas Champollion
   <a href="https://www.ige-grenoble.fr/?lang=en">
     <img src="/assets/images/logos/logoIGE_Color.png" alt="Logo Universite Grenoble Alpes" style="height: 50px; width: auto;" />
