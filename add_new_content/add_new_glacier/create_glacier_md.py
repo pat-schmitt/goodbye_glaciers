@@ -16,6 +16,7 @@
 import os
 import pandas as pd
 import yaml
+import json
 
 # # Define all filepaths
 
@@ -58,6 +59,7 @@ fp_glacier_volume = '/assets/images/volume_evolution_glaciers/'
 fp_glacier_animations = '/assets/videos/glacier_animations/'
 fp_glacier_photos = '/assets/images/photos_glaciers/'
 fp_glacier_md = os.path.join(base_dir, '_glaciers')
+fp_glacier_list = '/assets/glaciers.json'
 
 # # Open data needed by all
 
@@ -66,7 +68,7 @@ df_deglac = pd.read_csv(deglac_csv_file, index_col=0)
 
 # # Function creating glacier markdown sites
 
-def create_glacier_markdown(glacier_yml):
+def create_glacier_markdown(glacier_yml, glacier_location_list):
 
     rgi_id = glacier_yml.replace('.yml', '')
 
@@ -226,15 +228,27 @@ def create_glacier_markdown(glacier_yml):
     
     print(f"Markdown file {rgi_id} created.")
 
+    # add glacier to glacier list for compass functionality
+    glacier_location_list.append(
+        {
+            'name': glacier_yml_dict['name'],
+            'latitude': rgi_id_csv['CenLat'],
+            'longitude': rgi_id_csv['CenLon'],
+        }
+    )
+
 
 # # Run all
 
 def create_all_glacier_md():
+    glacier_location_list = []
     for glacier_yml in get_all_glacier_yml():
         try:
-            create_glacier_markdown(glacier_yml)
+            create_glacier_markdown(glacier_yml, glacier_location_list)
         except Exception as error:
             print(f"{glacier_yml} not working, error: {error}")
+    with open(f"{base_dir}{fp_glacier_list}", 'w') as file:
+        json.dump(glacier_location_list, file)
 
 
 if __name__ == '__main__':

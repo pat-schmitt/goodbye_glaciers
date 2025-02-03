@@ -1,0 +1,121 @@
+---
+namespace: directions
+permalink: /directions/
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glacier Direction Tool</title>
+    <style>
+        .input-group {
+            display: flex;
+            gap: 5px;
+            margin-bottom: 5px;
+        }
+        .input-group input {
+            width: 60px;
+            text-align: center;
+        }
+    </style>
+    <script>
+        let glaciers = [];
+        let userLat = null, userLon = null, userHeading = null;
+
+        fetch('/assets/glaciers.json')
+            .then(response => response.json())
+            .then(data => { glaciers = data; updateGlacierDirections(); })
+            .catch(error => console.error('Error loading glacier data:', error));
+
+        function getLocation() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(position => {
+                    userLat = position.coords.latitude;
+                    userLon = position.coords.longitude;
+                    updateGlacierDirections();
+                }, error => {
+                    console.warn("Location access denied. Use manual input.");
+                });
+            }
+        }
+
+        function getCompassHeading(event) {
+            if (event.alpha !== null) {
+                userHeading = event.alpha;
+                updateGlacierDirections();
+            }
+        }
+
+        if (window.DeviceOrientationEvent) {
+            window.addEventListener("deviceorientation", getCompassHeading, true);
+        }
+
+        function calculateBearing(lat1, lon1, lat2, lon2) {
+            const toRadians = deg => deg * (Math.PI / 180);
+            const toDegrees = rad => rad * (180 / Math.PI);
+
+            let dLon = toRadians(lon2 - lon1);
+            let y = Math.sin(dLon) * Math.cos(toRadians(lat2));
+            let x = Math.cos(toRadians(lat1)) * Math.sin(toRadians(lat2)) -
+                    Math.sin(toRadians(lat1)) * Math.cos(toRadians(lat2)) * Math.cos(dLon);
+            let brng = toDegrees(Math.atan2(y, x));
+            return (brng + 360) % 360;
+        }
+
+        function updateGlacierDirections() {
+            if (userLat === null || userLon === null) return;
+            let output = "<h3>Glacier Directions</h3><ul>";
+            glaciers.forEach(glacier => {
+                let bearing = calculateBearing(userLat, userLon, glacier.latitude, glacier.longitude);
+                let relativeBearing = userHeading !== null ? (bearing - userHeading + 360) % 360 : bearing;
+                output += `<li>${glacier.name}: ${bearing.toFixed(1)}° (Current compass mismatch: ${relativeBearing.toFixed(1)}°)</li>`;
+            });
+            output += "</ul>";
+            document.getElementById("glacierDirections").innerHTML = output;
+        }
+
+        function setManualLocation() {
+            let dLat = parseFloat(document.getElementById("lat-deg").value) || 0;
+            let mLat = parseFloat(document.getElementById("lat-min").value) || 0;
+            let sLat = parseFloat(document.getElementById("lat-sec").value) || 0;
+            let dLon = parseFloat(document.getElementById("lon-deg").value) || 0;
+            let mLon = parseFloat(document.getElementById("lon-min").value) || 0;
+            let sLon = parseFloat(document.getElementById("lon-sec").value) || 0;
+
+            if (dLat < 0 || dLat > 90 || mLat < 0 || mLat > 59 || sLat < 0 || sLat > 59 ||
+                dLon < 0 || dLon > 180 || mLon < 0 || mLon > 59 || sLon < 0 || sLon > 59) {
+                document.getElementById("error-message").textContent = "Invalid latitude or longitude values.";
+                return;
+            }
+
+            userLat = dLat + (mLat / 60) + (sLat / 3600);
+            userLon = dLon + (mLon / 60) + (sLon / 3600);
+
+            document.getElementById("error-message").textContent = "";
+            updateGlacierDirections();
+        }
+    </script>
+</head>
+<body onload="getLocation()">
+    <h2>Glacier Direction Tool</h2>
+    <p>Your current location will be used, or set manually below.</p>
+    <h3>Manual Location Input</h3>
+    <div class="input-group">
+        <label>Latitude:</label>
+        <input type="number" id="lat-deg" min="0" max="90" placeholder="°">
+        <input type="number" id="lat-min" min="0" max="59" placeholder="′">
+        <input type="number" id="lat-sec" min="0" max="59" placeholder="″">
+    </div>
+    <div class="input-group">
+        <label>Longitude:</label>
+        <input type="number" id="lon-deg" min="0" max="180" placeholder="°">
+        <input type="number" id="lon-min" min="0" max="59" placeholder="′">
+        <input type="number" id="lon-sec" min="0" max="59" placeholder="″">
+    </div>
+    <button onclick="setManualLocation()">Set Location</button>
+    <p id="error-message" style="color: red;"></p>
+    
+    <div id="glacierDirections"></div>
+</body>
+</html>
