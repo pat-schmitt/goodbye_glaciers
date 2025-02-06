@@ -8,24 +8,28 @@ permalink: /directions/
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Glacier Direction Tool</title>
+    <link rel="stylesheet" href="/assets/css/leaflet.css" />
+    <script src="/assets/js/leaflet.js"></script>
     <style>
+        #map { height: 400px; margin-bottom: 10px; }
         .input-group {
             display: flex;
             gap: 5px;
             margin-bottom: 5px;
         }
         .input-group input {
-            width: 60px;
+            width: 50px;
             text-align: center;
         }
     </style>
     <script>
         let glaciers = [];
         let userLat = null, userLon = null, userHeading = null;
+        let map, userMarker;
 
         fetch('/assets/glaciers.json')
             .then(response => response.json())
-            .then(data => { glaciers = data; updateGlacierDirections(); })
+            .then(data => { glaciers = data; initializeMap(); updateGlacierDirections(); })
             .catch(error => console.error('Error loading glacier data:', error));
 
         function getLocation() {
@@ -33,22 +37,64 @@ permalink: /directions/
                 navigator.geolocation.getCurrentPosition(position => {
                     userLat = position.coords.latitude;
                     userLon = position.coords.longitude;
+                    updateUserMarker();
                     updateGlacierDirections();
                 }, error => {
-                    console.warn("Location access denied. Use manual input.");
+                    console.warn("Location access denied. Use manual input or map.");
                 });
             }
         }
 
-        function getCompassHeading(event) {
-            if (event.alpha !== null) {
-                userHeading = event.alpha;
+        function initializeMap() {
+            map = L.map('map').setView([0, 0], 2);
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '© OpenStreetMap contributors'
+            }).addTo(map);
+
+            // Define the default Leaflet marker icon
+            const defaultIcon = L.icon({
+                iconUrl: 'https://unpkg.com/leaflet@1.7.1/dist/images/marker-icon.png',
+                iconSize: [25, 41],  // Size of the icon
+                iconAnchor: [12, 41], // Anchor point of the icon
+                popupAnchor: [1, -34], // Popup anchor point
+                shadowUrl: 'https://unpkg.com/leaflet@1.7.1/dist/images/marker-shadow.png',
+                shadowSize: [41, 41]
+            });
+
+            glaciers.forEach(glacier => {
+                L.marker([glacier.latitude, glacier.longitude],
+                    { icon: defaultIcon }
+                ).addTo(map)
+                    .bindPopup(glacier.name);
+            });
+
+            map.on('click', function (e) {
+                userLat = e.latlng.lat;
+                userLon = e.latlng.lng;
+                updateUserMarker();
                 updateGlacierDirections();
-            }
+            });
         }
 
-        if (window.DeviceOrientationEvent) {
-            window.addEventListener("deviceorientation", getCompassHeading, true);
+        function updateUserMarker() {
+            const userIcon = L.icon({
+                iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
+                iconSize: [25, 41],
+                iconAnchor: [12, 41],
+                popupAnchor: [1, -34],
+                shadowUrl: 'https://unpkg.com/leaflet@1.7.1/dist/images/marker-shadow.png',
+                shadowSize: [41, 41]
+            });
+
+            if (userLat !== null && userLon !== null) {
+                if (userMarker) {
+                    userMarker.setLatLng([userLat, userLon]).setIcon(userIcon).bindPopup("Selected Location").openPopup();
+                } else {
+                    userMarker = L.marker([userLat, userLon], { icon: userIcon }).addTo(map)
+                        .bindPopup("Selected Location").openPopup();
+                }
+                map.setView([userLat, userLon], 6);
+            }
         }
 
         function calculateBearing(lat1, lon1, lat2, lon2) {
@@ -65,57 +111,24 @@ permalink: /directions/
 
         function updateGlacierDirections() {
             if (userLat === null || userLon === null) return;
+            let positionInfo = `<h3>Current Position: ${userLat.toFixed(5)}, ${userLon.toFixed(5)}</h3>`;
             let output = "<h3>Glacier Directions</h3><ul>";
             glaciers.forEach(glacier => {
                 let bearing = calculateBearing(userLat, userLon, glacier.latitude, glacier.longitude);
-                let relativeBearing = userHeading !== null ? (bearing - userHeading + 360) % 360 : bearing;
-                output += `<li>${glacier.name}: ${bearing.toFixed(1)}° (Current compass mismatch: ${relativeBearing.toFixed(1)}°)</li>`;
+                output += `<li>${glacier.name}: ${bearing.toFixed(1)}° N</li>`;
             });
             output += "</ul>";
-            document.getElementById("glacierDirections").innerHTML = output;
-        }
-
-        function setManualLocation() {
-            let dLat = parseFloat(document.getElementById("lat-deg").value) || 0;
-            let mLat = parseFloat(document.getElementById("lat-min").value) || 0;
-            let sLat = parseFloat(document.getElementById("lat-sec").value) || 0;
-            let dLon = parseFloat(document.getElementById("lon-deg").value) || 0;
-            let mLon = parseFloat(document.getElementById("lon-min").value) || 0;
-            let sLon = parseFloat(document.getElementById("lon-sec").value) || 0;
-
-            if (dLat < 0 || dLat > 90 || mLat < 0 || mLat > 59 || sLat < 0 || sLat > 59 ||
-                dLon < 0 || dLon > 180 || mLon < 0 || mLon > 59 || sLon < 0 || sLon > 59) {
-                document.getElementById("error-message").textContent = "Invalid latitude or longitude values.";
-                return;
-            }
-
-            userLat = dLat + (mLat / 60) + (sLat / 3600);
-            userLon = dLon + (mLon / 60) + (sLon / 3600);
-
-            document.getElementById("error-message").textContent = "";
-            updateGlacierDirections();
+            document.getElementById("glacierDirections").innerHTML = positionInfo + output;
         }
     </script>
 </head>
 <body onload="getLocation()">
     <h2>Glacier Direction Tool</h2>
-    <p>Your current location will be used, or set manually below.</p>
-    <h3>Manual Location Input</h3>
-    <div class="input-group">
-        <label>Latitude:</label>
-        <input type="number" id="lat-deg" min="0" max="90" placeholder="°">
-        <input type="number" id="lat-min" min="0" max="59" placeholder="′">
-        <input type="number" id="lat-sec" min="0" max="59" placeholder="″">
-    </div>
-    <div class="input-group">
-        <label>Longitude:</label>
-        <input type="number" id="lon-deg" min="0" max="180" placeholder="°">
-        <input type="number" id="lon-min" min="0" max="59" placeholder="′">
-        <input type="number" id="lon-sec" min="0" max="59" placeholder="″">
-    </div>
-    <button onclick="setManualLocation()">Set Location</button>
-    <p id="error-message" style="color: red;"></p>
-    
+    <p>Your current location will be used, or select manually below, by
+        clicking on the map. After defining the location, you can find the
+        direction of all glaciers below the map.
+    </p>
+    <div id="map"></div>
     <div id="glacierDirections"></div>
 </body>
 </html>
