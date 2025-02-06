@@ -2,18 +2,15 @@
 
 <script>
   document.addEventListener("DOMContentLoaded", function() {
-    // Initialize the map with a default center and zoom level
     var map = L.map('map').setView([46.8, 10.0], 6);
 
-    // Add OpenStreetMap tile layer
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     }).addTo(map);
 
-    // Create a bounds object to store the markers' bounds
     var bounds = L.latLngBounds();
+    var markers = L.markerClusterGroup(); // Create a cluster group
 
-    // Define the locations array and prepend '/assets/images/' to the photo field
     var locations = [
       {% for item in map_items %}
       {
@@ -26,34 +23,30 @@
       {% endfor %}
     ];
 
-    // Loop through locations and create custom markers with photos and titles
     locations.forEach(function(location) {
-      if (location.lat !== 0 && location.lng !== 0) { // Only include valid locations
-        // Create a custom DivIcon with the image and title as content
+      if (location.lat !== 0 && location.lng !== 0) {
         var photoMarker = L.divIcon({
           html: '<div style="position: relative; text-align: center;">' +
                 '<img src="' + location.photo + '" style="width: 50px; height: 50px; border-radius: 50%; object-fit: cover;" />' +
                 '<div style="position: absolute; top: 60%; left: 50%; transform: translateX(-50%); font-size: 10px; color: white; font-weight: bold; background-color: rgba(0,0,0,0.5); border-radius: 3px; padding: 2px 5px;">' + location.title + '</div>' +
                 '</div>',
-          className: 'photo-marker', // Custom class for further styling
-          iconSize: [50, 50], // Size of the icon (matches the image size)
-          iconAnchor: [25, 25] // Anchor point (center the image)
+          className: 'photo-marker',
+          iconSize: [50, 50],
+          iconAnchor: [25, 25]
         });
 
-        // Create the marker using the custom DivIcon
-        var marker = L.marker([location.lat, location.lng], { icon: photoMarker }).addTo(map);
+        var marker = L.marker([location.lat, location.lng], { icon: photoMarker });
 
-        // Make the marker clickable and redirect to the items's URL
         marker.on('click', function() {
           window.location.href = location.url;
         });
 
-        // Extend bounds to include this marker's location
+        markers.addLayer(marker); // Add marker to the cluster group
         bounds.extend([location.lat, location.lng]);
       }
     });
 
-    // Fit the map to the bounds of the markers with some padding
+    map.addLayer(markers); // Add the cluster group to the map
     map.fitBounds(bounds, { padding: [15, 15] });
   });
 </script>
