@@ -1,25 +1,3 @@
-<div style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
-    <div style="text-align: left;">
-        <h1>Goodbye Glaciers !?</h1>
-        <strong>A hiking signpost project to raise glacier loss awareness</strong>
-    </div>
-    <a href="https://www.un-glaciers.org/en" style="display: flex; justify-content: center; align-items: center;">
-        <img src="/assets/images/logos/logo_iygp_en.svg" alt="Logo International Year of Glaciers' Preservation" style="height: 100px; width: auto;">
-    </a>
-</div>
-
-<div style="border: 2px solid #000; padding: 10px; background-color: #f7cccc; width: fit-content;">
-    <strong>
-        This website is under construction, but feel free to already explore
-        and we appreciate your
-        <a href="{{ site.baseurl }}/about/">feedback</a>.
-    </strong>
-</div>
-<br>
-<img src="{{ site.baseurl }}/assets/images/others/landing_page_hef_picture.png"
-alt="Landing Page Glacier Picture" style="width: 100%; max-width: 1400px; margin: 0 auto; display: block;">
-
-
 Stimulated by the [International Year of Glaciers’ Preservation 2025](https://www.un-glaciers.org/en), 
 the "Goodbye Glaciers !?" project envisions signposts across Europe — from cities to 
 mountain areas — pointing to glaciers and displaying the year when they will no 

@@ -13,3 +13,4 @@ This repository contains the website [goodbye-glaciers.info](https://goodbye-gla
 - individual heading text (on top of images) for glaciers and signposts: `/_includes/glacier_heading_{language}` or `/_includes/signpost_heading_{language}`
 - individual body text (below images) for glaciers and signposts: `/_includes/glaciers_{language}` or `/_includes/signposts_{language}`
 - menu text: `/_data/navigation.yml`
+- welcome page heading (text overlay of the image): `index.md`
