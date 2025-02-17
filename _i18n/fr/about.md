@@ -23,7 +23,7 @@ Une introduction au projet "Goodbye Glaciers !?" ("Adieu Glaciers !?") est dispo
 
 ##### Contact  
 
-Vous avez des retours, des idées ou des questions ? N'hésitez pas à nous contacter !  
+Vous avez des remarques, des idées ou des questions ? N'hésitez pas à nous contacter !  
 
 - **Envoyez-nous un email** à [patrick.schmitt[at]uibk.ac.at](mailto:patrick.schmitt@uibk.ac.at) ou  
 - Écrivez un **ticket** dans notre [répertoire GitHub](https://github.com/pat-schmitt/goodbye_glaciers/issues)  
@@ -66,6 +66,12 @@ Vous avez des retours, des idées ou des questions ? N'hésitez pas à nous cont
   </a>
 
 - D'autres partenaires à venir...
+
+### Partenaires régionaux  
+- Convention alpine <a href="https://www.alpconv.org/fr/"><img src="/assets/images/logos/logo_alpenkonvention.png" alt="Logo Alpenkonvention" style="height: 50px; width: auto;" />
+  </a>
+- Musée municipale d'Absam <a href="https://www.absammuseum.at/"><img src="/assets/images/logos/Museum_Absam_Logo.png" alt="Logo Municipal Museum Absam" style="height: 50px; width: auto;" />
+  </a>
 
 ### Partenaires régionaux  
 - Convention alpine <a href="https://www.alpconv.org/fr/"><img src="/assets/images/logos/logo_alpenkonvention.png" alt="Logo Alpenkonvention" style="height: 50px; width: auto;" />
