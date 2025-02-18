@@ -2,7 +2,7 @@
     Unter der <b><a href="https://climateactiontracker.org/global/cat-thermometer/">
     aktuellen politischen Entwicklung</a></b> schätzt man die globale Erwärmung bis 2100 auf <b>2,7°C</b> ein,
     weit über dem Ziel des <b><a href="https://unfccc.int/process-and-meetings/the-paris-agreement">
-    Pariser Abkommens</a></b>, die Erwärmung auf <b>1,5°C</b> zu begrenzen.
+    Pariser Klimaabkommens</a></b>, die Erwärmung auf <b>1,5°C</b> zu begrenzen.
 </p>
 
 
@@ -41,7 +41,7 @@
     {{ page.title }} hatte im Jahr 2020 ein geschätztes Volumen von {{ page.vol2020_km3 }} km³
     und wird voraussichtlich bis
     {{ page.deglac_yr_2_7deg_10perc_e-2km3_q50 | floor }}
-    (<a href="{{ site.baseurl }}/methods/#likely-range">wahrscheinlicher Bereich</a>:
+    (<a href="{{ site.baseurl }}/methods/#likely-range">Schwankungsbreite</a>:
     {{ page.deglac_yr_2_7deg_10perc_e-2km3_q17 | floor }} -
     {% if page.deglac_yr_2_7deg_10perc_e-2km3_q83 %}
         {{ page.deglac_yr_2_7deg_10perc_e-2km3_q83 | default: 0 | floor }}
@@ -56,7 +56,7 @@
 
     <!--Comment: only show the "years later" sentence if it deglaciates at 1.5°C   -->
     Wenn die globale Erwärmung auf 1,5°C begrenzt wird
-    (<a href="https://unfccc.int/process-and-meetings/the-paris-agreement">Pariser Abkommen</a>),
+    (<a href="https://unfccc.int/process-and-meetings/the-paris-agreement">Pariser Klimaabkommen</a>),
     <!-- If deglac_yr_1_5deg_10perc_e-2km3_q50 is greater than 0, show the full sentence -->
     {% assign deglac_year = page.deglac_yr_1_5deg_10perc_e-2km3_q50 | plus: 0 %}
     {% if deglac_year > 0 %}

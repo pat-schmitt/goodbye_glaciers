@@ -9,7 +9,7 @@
    </a>).
 </div>
 
-Riesige Decken oder künstliche Beschneiung können den Eisverlust verlangsamen, aber diese Ansätze sind kosten- und arbeitsintensiv und nur in kleinem Maßstab realisierbar. Die einzige Möglichkeit, gesamte Gletscher zu retten, besteht darin, die zugrunde liegende Ursache ihres Schmelzens anzugehen: die Treibhausgasemissionen. Zudem haben “Geo-Engineering”-Aktivitäten auch negative Auswirkungen auf die lokale Umwelt, wie z.B. die Zersetzung von Plastik für die Planen oder notwendige künstliche Wasserspeicher.
+Riesige Decken oder künstliche Beschneiung können den Eisverlust verlangsamen, aber diese Ansätze sind kosten- und arbeitsintensiv und nur in kleinem Maßstab realisierbar. Die einzige Möglichkeit, gesamte Gletscher zu retten, besteht darin, die zugrunde liegende Ursache ihres Schmelzens anzugehen: die Treibhausgasemissionen. Zudem haben “Geo-Engineering”-Aktivitäten auch negative Auswirkungen auf die lokale Umwelt, wie z.B. die Zersetzung vom Plastik der Planen oder notwendige künstliche Wasserspeicher.
 
 **Die Reduzierung der Treibhausgasemissionen ist der effektivste Weg, um Gletschereis zu bewahren
 ([Huss et al., 2024](https://doi.org/10.1038/s44221-024-00269-8)).**
@@ -30,7 +30,7 @@ Beispielsweise:
 - Verringere die Transportstrecke von dem, was du konsumierst.
 - Vermeide Flugreisen, wann immer es möglich ist.
 - Nimm öffentliche Verkehrsmittel, fahr mit dem Fahrrad, geh zu Fuß oder bilde eine Fahrgemeinschaft, anstatt alleine mit dem Auto zu fahren.
-- Reduziere Deinen Fleisch- und Milchprodukten, indem Du mehr pflanzliche Mahlzeiten in Deine Ernährung integrierst, idealerweise aus lokal und saisonal produzierten Zutaten.
+- Reduziere deinen Konsum von Fleisch- und Milchprodukten, indem du mehr pflanzliche Mahlzeiten in deine Ernährung integrierst, idealerweise aus lokalen und saisonalen Zutaten.
 
 Deinen CO2-Fußabdruck könnt ihr zum Beispiel bei den folgenden Rechnern für den jeweiligen Wohnort ermitteln:
 
@@ -38,25 +38,25 @@ Deinen CO2-Fußabdruck könnt ihr zum Beispiel bei den folgenden Rechnern für d
 - <a href="https://www.mein-fussabdruck.at" target="_blank">Österreich (BMK in Zusammenarbeit mit footprint-consult)</a>
 - <a href="https://www.wwf.ch/de/nachhaltig-leben/footprintrechner" target="_blank">Schweiz (WWF-Klimarechner)</a>
 
-Dort findest Du auch nützliche Tipps, wie Du deinen CO2-Fußabdruck reduzieren kannst. 
+Dort findest du auch nützliche Tipps, wie du deinen CO2-Fußabdruck reduzieren kannst. 
 
-Wenn Du einige der verbleibenden Gletscher in den Alpen besuchen möchtest und in Europa lebst, kannst Du dies nachhaltig tun, indem Du öffentliche Verkehrsmittel nutzt.
+Wenn du einige der verbleibenden Gletscher in den Alpen besuchen möchtest und in Europa lebst, kannst du dies nachhaltig tun, indem du öffentliche Verkehrsmittel nutzt.
 Entdecke Wanderungen in den Alpen, die mit öffentlichen Verkehrsmitteln erreichbar sind, auf der
 <a href="https://www.zuugle.at" target="_blank">zuugle Webseite (ganzes Alpengebiet)</a> oder
 <a href="https://www.bahn-zum-berg.at/" target="_blank">"Bahn-zum-Berg" Webseite </a>
 (nur für Österreich).
 <br>
 
-**2. Vergrößere Deinen Handabdruck, indem Du Dich für Veränderungen einsetzt**<br>
+**2. Vergrößere Deinen Handabdruck, indem du dich für Veränderungen einsetzt**<br>
 
-Möchtest Du noch einen größeren Unterschied machen? Dein "Handabdruck" repräsentiert den positiven Einfluss, den Du schaffst, indem Du zur gesellschaftlichen und politischen Transformation für eine bessere Zukunft beiträgst.
+Möchtest du noch einen größeren Unterschied machen? Dein "Handabdruck" repräsentiert den positiven Einfluss, den du schaffst, indem du zur gesellschaftlichen und politischen Transformation für eine bessere Zukunft beiträgst.
 
-Neben dem Wählen oder dem Besuch einer Klimademonstration kannst Du Aktivitäten finden, die Deiner Persönlichkeit entsprechen und zur Transformation beitragen. Zum Beispiel:
+Neben dem Wählen oder dem Besuch einer Klimademonstration kannst du Aktivitäten finden, die deiner Persönlichkeit entsprechen und zur Transformation beitragen. Zum Beispiel:
 
-- Setze Dich für mehr pflanzliche Mahlzeitenoptionen in der Kantine Deines Arbeitsplatzes ein.
-- Organisiere einen [„Walking Bus“](https://www.landesverkehrswacht-nrw.de/unsere-themen/fur-schuler/walking-bus/) für Kinder in Deiner Gemeinde, um nachhaltige Pendelmöglichkeiten zu fördern.
+- Setze dich für mehr pflanzliche Mahlzeitenoptionen in der Kantine deines Arbeitsplatzes ein.
+- Organisiere einen [„Walking Bus“](https://www.landesverkehrswacht-nrw.de/unsere-themen/fur-schuler/walking-bus/) für Kinder in deiner Gemeinde, um nachhaltige Pendelmöglichkeiten zu fördern.
 
-Solche Bemühungen Deinen Handandruck zu vergrößern können bedeutende Veränderungen und nachhaltige Auswirkungen schaffen, die weit über individuelle Reduktionen Deines Fußabdruckes gehen. <br>
+Solche Bemühungen deinen Handandruck zu vergrößern können bedeutende Veränderungen und nachhaltige Auswirkungen schaffen, die weit über individuelle Reduktionen deines Fußabdruckes gehen. <br>
 
 Entdecke den Handabdruck weiter auf dieser
 <a href="https://www.handprint-hub.de/was-ist-der-handabdruck" target="_blank">Handabdruck-Konzept-Webseite</a> oder mit diesem <a href="https://www.handabdruck.eu/handabdruck-test" target="_blank">
