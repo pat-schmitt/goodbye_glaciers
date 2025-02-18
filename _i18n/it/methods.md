@@ -5,7 +5,7 @@ il ghiacciaio sarà 'quasi scomparso' e per le visualizzazioni delle proiezioni 
 
 ## Panoramica
 
-Simuliamo le proiezioni dello spessore e del volume dei singoli ghiacciai dal 2000 al 2100 utilizzando scenari climatici (modelli climatici e scenari di emissione) provenienti da CMIP5 e CMIP6 e modelli globali dei ghiacciai. Ci concentriamo principalmente sul riscaldamento globale di **2,7°C** sopra i livelli pre-industriali entro il 2100, poiché rappresenta l'esito previsto del mondo reale delle [politiche e azioni attuali](https://climateactiontracker.org/global/cat-thermometer/). A scopo comparativo, includiamo anche le proiezioni sotto l'**obiettivo di 1,5°C** dell'Accordo di Parigi. Abbiamo scelto scenari climatici con una gamma di ±0,2°C da 1,5°C o 2,7°C.
+Simuliamo le proiezioni dello spessore e del volume dei singoli ghiacciai dal 2000 al 2100 utilizzando scenari climatici (modelli climatici e scenari di emissione) provenienti da CMIP5 e CMIP6 e modelli globali dei ghiacciai. Ci concentriamo principalmente sul riscaldamento globale di **2,7°C** sopra i livelli pre-industriali entro il 2100, poiché rappresenta l'esito previsto in base alle [politiche e azioni attuali](https://climateactiontracker.org/global/cat-thermometer/). A scopo comparativo, includiamo anche le proiezioni relative all'**obiettivo di 1,5°C** dell'Accordo di Parigi. Abbiamo scelto scenari climatici con una variazione di ±0,2°C rispetto ai valori di 1,5°C o 2,7°C.
 
 I livelli di riscaldamento sono definiti come la differenza di temperatura media globale dal 2071 al 2100 rispetto al periodo 1850-1900, con un riscaldamento di 0,69°C dal 1850-1900 al 1986-2005 (rif. [IPCC AR6](https://www.ipcc.ch/report/ar6/wg1/)).
 
@@ -61,18 +61,18 @@ per alcuni ghiacciai (cioè solo osservazioni geodetiche ma nessuna osservazione
 direttamente utilizzata) non sono inclusi. Di conseguenza, i modelli funzionano meglio su scala globale rispetto alla
 scala di singoli ghiacciai. Sebbene alcuni processi importanti a livello del singolo
 ghiacciaio non siano rappresentati, presentiamo qui i risultati dei singoli ghiacciai
-a scopo educativo. Inoltre, il volume per singolo ghiacciaio e regionale nel
+a scopo didattico. Inoltre, il volume per singolo ghiacciaio e regionale nel
 2020 non è un volume osservato, ma un volume modellato (è la stima mediana del modello di ghiacciaio
 delle mediane dei modelli climatici multipli).
 
 ## Aggregazione dei risultati
 
 Per il **volume dei ghiacciai nel 2020**, l'**anno di deglaciazione** e le **proiezioni di cambiamento del volume dei ghiacciai regionali**, presentiamo la **mediana** e l'**intervallo probabile**
-across all combinations of glacier models and climate scenarios. Since OGGM includes more climate scenarios, its projections contribute the most weight to the overall results.  
+su tutte le combinazioni disponibili di modelli di ghiacciai e scenari climatici. Poiché OGGM include più scenari climatici, le sue proiezioni contribuiscono maggiormente al peso complessivo dei risultati. 
 
 La media del riscaldamento globale rispetto ai livelli pre-industriali per tutte le combinazioni di modelli climatici e scenari climatici è:  
-- **1.57°C** per la gamma **1,5±0,2°C**.  
-- **2.71°C** per la gamma **2,7±0,2°C**.  
+- **1.57°C** per l'intervallo **1,5±0,2°C**.  
+- **2.71°C** per l'intervallo **2,7±0,2°C**.  
 
 ## Fonti fotografiche e licenze
 <style>
