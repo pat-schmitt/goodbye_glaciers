@@ -1,6 +1,6 @@
 ## Informazioni su "Goodbye Glaciers!?"  
 
-Una introduzione all'iniziativa "Goodbye Glaciers!?" ("Addio ghiacciai!?") è disponibile sulla  
+Un'introduzione all'iniziativa "Goodbye Glaciers!?" ("Addio ghiacciai!?") è disponibile sulla  
 <a href="{{ site.baseurl }}/">pagina di benvenuto</a>.  
 
 <p>  
