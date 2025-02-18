@@ -23,7 +23,7 @@ Une introduction au projet "Goodbye Glaciers !?" ("Adieu Glaciers !?") est dispo
 
 ##### Contact  
 
-Vous avez des retours, des idées ou des questions ? N'hésitez pas à nous contacter !  
+Vous avez des remarques, des idées ou des questions ? N'hésitez pas à nous contacter !  
 
 - **Envoyez-nous un email** à [patrick.schmitt[at]uibk.ac.at](mailto:patrick.schmitt@uibk.ac.at) ou  
 - Écrivez un **ticket** dans notre [répertoire GitHub](https://github.com/pat-schmitt/goodbye_glaciers/issues)  

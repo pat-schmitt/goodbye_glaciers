@@ -20,7 +20,7 @@ Die Änderung der Definition von einem 10%-Schwellenwert auf einen 5%-Schwellenw
 
 ### Likely range
 
-Der **wahrscheinliche Bereich** (likely range) beschreibt die Streuung der Projektionen und ist als der 17. bis 83. Perzentilbereich definiert, im Einklang mit dem [IPCC AR6](https://www.ipcc.ch/report/ar6/wg1/). Wenn die Daten einer Gaußschen Verteilung folgen, entspricht dieser Bereich ungefähr **einer Standardabweichung** (±1σ) vom Mittelwert, was etwa 68% der verfügbaren Projektionen erfasst.
+Die **Schwankungsbreite** (likely range) beschreibt die Streuung der Projektionen und ist als der 17. bis 83. Perzentilbereich definiert, im Einklang mit dem [IPCC AR6](https://www.ipcc.ch/report/ar6/wg1/). Wenn die Daten einer Gaußschen Verteilung folgen, entspricht dieser Bereich ungefähr **einer Standardabweichung** (±1σ) vom Mittelwert, was etwa 68% der verfügbaren Projektionen erfasst.
 
 ## Datenquellen und Modelle für die Gletscherprojektionen
 

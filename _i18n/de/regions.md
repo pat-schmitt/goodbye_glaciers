@@ -3,7 +3,7 @@
 <div>
   <p>
     Entdecke globale und regionale Projektionen für die mehr als 200.000
-    Berggletscher (alle Gletscher außer den Eisschilden von Grönland und der Antarktis).
+    Berggletscher (alle Gletscher außerhalb der Eisschilde von Grönland und der Antarktis).
     Viele Gletscher in den Alpen (Mitteleuropa) werden voraussichtlich bald verschwinden,
     selbst bei einer globalen Erwärmung von nur 1,5°C. Für Gletscher weltweit jedoch macht
     jeder Bruchteil eines Grad an Erwärmung einen Unterschied.
@@ -81,7 +81,7 @@ Möchtest du etwas Gletschereis bewahren? Finde Lösungen auf der <a href="{{ si
 <br>
 
 ## Zusätzliche Informationen
-Bist du weiter an der Zukunft der Gletscher interessiert? Auf den folgenden Webseiten kannst du mehr erfahren (nur auf Englisch, aber dein Browser kann es wahrscheinlich ganz gut übersetzen):
+Bist du noch mehr an der Zukunft der Gletscher interessiert? Auf den folgenden Webseiten kannst du mehr erfahren (nur auf Englisch, aber dein Browser kann es wahrscheinlich ganz gut übersetzen):
 
 - [OGGM-edu: global and regional glacier projections from a single glacier model (PyGEM-OGGM) for 1.5°C–4.0°C](https://edu.oggm.org/en/latest/global_future_glacier-app_rounce_delta_T_en.html)
 - [OGGM-edu: Central Europe's country-wide glacier projections from a single glacier model PyGEM-OGGM for 1.5°C–4.0°C](https://edu.oggm.org/en/latest/alps_future-app_rounce_delta_T_en.html)
