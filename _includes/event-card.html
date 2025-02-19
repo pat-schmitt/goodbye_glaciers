@@ -3,7 +3,7 @@
 {% endif %}
 <div class="event-card">
   {% if event.image %}
-    <img src="{{ event.image }}" alt="{{ event.title }}" class="event-image">
+    <img style="max-height: 180px; max-width: 100%; width: auto; height: auto; object-fit: contain;" src="{{ event.image }}" alt="{{ event.title }}" class="event-image">
   {% else %}
     <h2>{{ event.title }}</h2>
   {% endif %}
