@@ -13,7 +13,10 @@
 <!-- Dropdown to select region -->
 
 <div>
-<select id="regionSelect" style="font-size: 24px; padding: 10px; border: 2px solid #FF5733; border-radius: 5px; background-color: #f8d7da; width: auto; min-width: 200px;">
+<select id="regionSelect"
+  style="font-size: 24px; padding: 10px; border: 2px solid #FF5733;
+       border-radius: 5px; background-color: #f8d7da; max-width: 100%;
+       overflow: hidden; text-overflow: ellipsis;">
   <option value="RGI11" selected>Europa Centrale (11)</option>
   <option value="global">Globale</option>
   <option value="RGI01">Alaska (01)</option>
