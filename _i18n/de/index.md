@@ -1,6 +1,6 @@
 Angeregt durch das [Internationale Jahr zum Erhalt der Gletscher 2025](https://www.un-glaciers.org/en),
 stellt das Projekt "Goodbye Glaciers !?" Wegweiser in ganz Europa, von Städten
-bis zu Bergregionen, auf, die in Richtung von Gletscher zeigen und das Jahr
+bis zu Bergregionen, auf, die in Richtung von Gletschern zeigen und das Jahr
 angeben, in dem diese unter den aktuellen Klimaschutzmaßnahmen nicht mehr
 erkennbar sein werden. Auf jedem Wegweiser befindet sich ein QR-Code, der zu
 dieser Webseite führt und wo Fotos sowie dreidimensionale Projektionen in die
