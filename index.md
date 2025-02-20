@@ -6,7 +6,7 @@ header:
 ---
 {% case site.lang %}
     {% when "de" %}
-        {% assign tagline = "Ein Projekt mit Wegweiser, das auf den Verlust von Gletschern aufmerksam macht" %}
+        {% assign tagline = "Ein Projekt mit Wegweisern, die auf den Verlust von Gletschern aufmerksam machen" %}
     {% when "it" %}
         {% assign tagline = "Un progetto di cartelli escursionistici per sensibilizzare sulla perdita dei ghiacciai" %}
     {% when "fr" %}
