@@ -1,4 +1,4 @@
-# Wie kannst Du helfen, Gletschereis zu bewahren?
+# Wie kannst du helfen, Gletschereis zu bewahren?
 
 <div style="border: 2px solid #0096D6; padding: 10px; background-color: #E0F7FA; border-radius: 8px; margin: 20px 0;">
   <strong>
@@ -18,11 +18,11 @@ Wir müssen die Treibhausgasemissionen verringern, um die Auswirkungen des Klima
 Edwards et al., 2021</a>) und verringert die regionale Wasserverfügbarkeit in Trockenzeiten oder während Dürreperioden (<a href="https://doi.org/10.5194/esd-13-935-2022" target="_blank">
 Ultee et al., 2022</a>).
 
-### **Was kannst Du tun?**
+### **Was kannst du tun?**
 
-**1. Reduziere Deinen CO2-Fußabdruck**<br>
+**1. Reduziere deinen CO2-Fußabdruck**<br>
 
-Beginne, kleine Änderungen in Deinem Alltag vorzunehmen, um Deine Emissionen zu senken. 
+Beginne, kleine Änderungen in deinem Alltag vorzunehmen, um deine Emissionen zu senken. 
 
 
 Beispielsweise:
@@ -47,7 +47,7 @@ Entdecke Wanderungen in den Alpen, die mit öffentlichen Verkehrsmitteln erreich
 (nur für Österreich).
 <br>
 
-**2. Vergrößere Deinen Handabdruck, indem du dich für Veränderungen einsetzt**<br>
+**2. Vergrößere deinen Handabdruck, indem du dich für Veränderungen einsetzt**<br>
 
 Möchtest du noch einen größeren Unterschied machen? Dein "Handabdruck" repräsentiert den positiven Einfluss, den du schaffst, indem du zur gesellschaftlichen und politischen Transformation für eine bessere Zukunft beiträgst.
 

@@ -1,6 +1,6 @@
 ## Über "Goodbye Glaciers!?"  
 
-Eine Einleitung in die Initiative "Goodbye Glaciers!?" ("Pfiati Gletscher!?") findest Du auf der  
+Eine Einleitung in die Initiative "Goodbye Glaciers!?" ("Pfiati Gletscher!?") findest du auf der  
 <a href="{{ site.baseurl }}/">Willkommensseite</a>.  
 
 <p>  
