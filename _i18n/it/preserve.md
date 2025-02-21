@@ -27,7 +27,7 @@ Ad esempio:
 
 Puoi calcolare la tua impronta di carbonio con i seguenti strumenti <a href="https://www.wwf.ch/it/vivere-sostenibile/calcolatore-dell-impronta-ecologica" target="_blank"> (Calcolatore climatico WWF)</a>. Si tratta di una stima approssimativa, poiché presume che tu viva in Svizzera.
 
-Se desideri visitare alcuni dei ghiacciai rimasti nelle Alpi e vivi in Europa, puoi farlo in modo sostenibile utilizzando i mezzi pubblici. Esplora escursioni nelle Alpi accessibili con i mezzi pubblici sul [sito web di zuugle (Alpi complete)](https://www.zuugle.it). 
+Se desideri visitare alcuni dei ghiacciai rimasti nelle Alpi e vivi in Europa, puoi farlo in modo sostenibile utilizzando i mezzi pubblici. Esplora escursioni nelle Alpi accessibili con i mezzi pubblici sul [sito web di zuugle.it <img src="/assets/images/logos/logo_zuugle_small.png" alt="Logo Zuugle.it" style="height: 20px; width: auto;"/> (Alpi complete)](https://www.zuugle.it). 
 
 **2. Espandi la tua handprint positiva impegnandoti in trasformazioni**  
 

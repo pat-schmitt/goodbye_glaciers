@@ -42,15 +42,14 @@ For example:
 - Reduce your consumption of meat and dairy by incorporating more plant-based
   meals, preferably made from locally and seasonally produced ingredients.
 
-This <a href="https://www.bbc.com/news/science-environment-58171814" target="_blank">BBC news article</a> describes further how you can make the most impact. All actions for a healty Planet are also summarised on <a href="https://www.un.org/en/actnow/ten-actions" target="_blank">this United Nations website</a>. 
+This <a href="https://www.bbc.com/news/science-environment-58171814" target="_blank">BBC news article</a> describes further how you can make the most impact. All actions for a healthy Planet are also summarised on <a href="https://www.un.org/en/actnow/ten-actions" target="_blank">this United Nations website</a>. 
 
 If you want to visit some of the remaining glaciers in the Alps and live in
 Europe, you can still do so sustainably by traveling via public transport.
 Explore hiking tours in the Alps that are accessible by public transport on the
-<a href="https://www.zuugle.at" target="_blank">zuugle website (entire Alps,
-not available in English but in many other languages) </a> or
-<a href="https://www.bahn-zum-berg.at/" target="_blank">"Bahn-zum-Berg" website </a>
-(only for Austria, can be translated by your webbrowser to English). 
+[Zuugle.at <img src="/assets/images/logos/logo_zuugle_small.png" alt="Logo Zuugle.at" style="height: 20px; width: auto;" /> ](https://www.zuugle.at) website (entire Alps,
+not available in English but in many other languages) or on the 
+<a href="https://www.bahn-zum-berg.at"><img src="/assets/images/logos/logo_bahn_zum_berg.png" alt="Logo Bahn zum Berg" style="height: 35px; width: auto;" /> "Bahn zum Berg" website</a> (only for tours in Austria, South Tirol, or Bavaria, can be translated by your webbrowser to English). 
 <br>
 
 **2. Enlarge your handprint by engaging in transformations**<br>

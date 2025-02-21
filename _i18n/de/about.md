@@ -17,9 +17,12 @@ Eine Einleitung in die Initiative "Goodbye Glaciers!?" ("Pfiati Gletscher!?") fi
   und <a href="https://www.uibk.ac.at/de/acinn/people/wolfgang-gurgiser/">Wolfgang Gurgiser</a>.  
 </p>  
 
-<a href="https://www.uibk.ac.at/en/">  
-  <img src="/assets/images/logos/logo_uibk.jpg" alt="Logo Innsbruck" style="width: auto; height: 80px;" />  
-</a>  
+<div style="display: flex; align-items: center; gap: 10px;">
+  <a href="https://www.uibk.ac.at/de/">  
+    <img src="/assets/images/logos/logo_uibk.jpg" alt="Logo Innsbruck" style="height: 80px; width: auto;" />  
+  </a>  
+  <img src="/assets/images/logos/logo_mcc_ibk.png" alt="Logo Mountain Competence Center" style="height: 70px; width: auto;" />  
+</div>
 
 ##### Kontakt  
 
@@ -70,6 +73,10 @@ Haben Sie Feedback, Ideen oder Fragen? Kontaktiere uns!
 ---
 
 ### Regionale Partner  
+- Bahn zum Berg <a href="https://www.bahn-zum-berg.at"><img src="/assets/images/logos/logo_bahn_zum_berg.png" alt="Logo Bahn zum Berg" style="height: 50px; width: auto;" />  
+  </a> [Zuugle.at <img src="/assets/images/logos/logo_zuugle_small.png" alt="Logo Zuugle.at" style="height: 20px; width: auto;" /> ](https://www.zuugle.at)  
+[Zuugle.ch <img src="/assets/images/logos/logo_zuugle_small.png" alt="Logo Zuugle.at" style="height: 20px; width: auto;" /> ](https://www.zuugle.ch)  
+[Zuugle.de <img src="/assets/images/logos/logo_zuugle_small.png" alt="Logo Zuugle.at" style="height: 20px; width: auto;" /> ](https://www.zuugle.de)  
 - Alpenkonvention <a href="https://www.alpconv.org/de/"><img src="/assets/images/logos/logo_alpenkonvention.png" alt="Logo Alpenkonvention" style="height: 50px; width: auto;"/></a>  
 
 - Gemeindemuseum Absam <a href="https://www.absammuseum.at/"><img src="/assets/images/logos/Museum_Absam_Logo.png" alt="Logo Gemeindemuseum Absam" style="height: 50px; width: auto;"/></a>
