@@ -41,10 +41,7 @@ Deinen CO2-Fußabdruck könnt ihr zum Beispiel bei den folgenden Rechnern für d
 Dort findest du auch nützliche Tipps, wie du deinen CO2-Fußabdruck reduzieren kannst. 
 
 Wenn du einige der verbleibenden Gletscher in den Alpen besuchen möchtest und in Europa lebst, kannst du dies nachhaltig tun, indem du öffentliche Verkehrsmittel nutzt.
-Entdecke Wanderungen in den Alpen, die mit öffentlichen Verkehrsmitteln erreichbar sind, auf der
-<a href="https://www.zuugle.at" target="_blank">zuugle Webseite (ganzes Alpengebiet)</a> oder
-<a href="https://www.bahn-zum-berg.at/" target="_blank">"Bahn-zum-Berg" Webseite </a>
-(nur für Österreich).
+Entdecke Wanderungen in den Alpen, die mit öffentlichen Verkehrsmitteln erreichbar sind, in der [Zuugle.at <img src="/assets/images/logos/logo_zuugle_small.png" alt="Logo Zuugle.at" style="height: 20px; width: auto;" /> ](https://www.zuugle.at) Suchmaschine (ganzes Alpengebiet)</a> oder dem Öffi-Tourenportal <a href="https://www.bahn-zum-berg.at"><img src="/assets/images/logos/logo_bahn_zum_berg.png" alt="Logo Bahn zum Berg" style="height: 35px; width: auto;" /> "Bahn zum Berg"</a> (Touren in Österreich, Südtirol und Bayern). 
 <br>
 
 **2. Vergrößere deinen Handabdruck, indem du dich für Veränderungen einsetzt**<br>

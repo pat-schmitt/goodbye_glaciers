@@ -31,7 +31,7 @@ Vous pouvez calculer votre empreinte carbone avec les calculateurs suivants en f
 - <a href="https://www.wwf.ch/fr/vie-durable/calculateur-d-empreinte-ecologique" target="_blank">Suisse (Calculateur climatique WWF)</a>
 Toutes les actions pour une planète saine sont également résumées sur [ce site web des Nations Unies](https://www.un.org/fr/actnow/ten-actions).
 
-Si vous souhaitez visiter certains des glaciers des Alpes et que vous vivez en Europe, vous pouvez le faire de manière durable en utilisant les transports publics. Explorez des randonnées dans les Alpes accessibles en transports publics sur le [site web de zuugle (Pour toutes les Alpes)](https://www.zuugle.fr). 
+Si vous souhaitez visiter certains des glaciers des Alpes et que vous vivez en Europe, vous pouvez le faire de manière durable en utilisant les transports publics. Explorez des randonnées dans les Alpes accessibles en transports publics sur le [site web de zuugle.fr <img src="/assets/images/logos/logo_zuugle_small.png" alt="Logo Zuugle.fr" style="height: 20px; width: auto;"/>(Pour toutes les Alpes)](https://www.zuugle.fr). 
 
 **2. Augmentez votre empreinte positive en vous mobilisant**  
 

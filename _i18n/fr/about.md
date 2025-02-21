@@ -17,9 +17,12 @@ Une introduction au projet "Goodbye Glaciers !?" ("Adieu Glaciers !?") est dispo
   et <a href="https://www.uibk.ac.at/en/acinn/people/wolfgang-gurgiser/">Wolfgang Gurgiser</a>.  
 </p>  
 
-<a href="https://www.uibk.ac.at/en/">  
-  <img src="/assets/images/logos/logo_uibk.jpg" alt="Logo Innsbruck" style="width: auto; height: 80px;" />  
-</a>  
+<div style="display: flex; align-items: center; gap: 10px;">
+  <a href="https://www.uibk.ac.at/en/">  
+    <img src="/assets/images/logos/logo_uibk.jpg" alt="Logo Innsbruck" style="height: 80px; width: auto;" />  
+  </a>  
+  <img src="/assets/images/logos/logo_mcc_ibk.png" alt="Logo Mountain Competence Center" style="height: 70px; width: auto;" />  
+</div>
 
 ##### Contact  
 
@@ -68,6 +71,8 @@ Vous avez des remarques, des idées ou des questions ? N'hésitez pas à nous co
 - D'autres partenaires à venir...
 
 ### Partenaires régionaux  
+- Bahn zum Berg <a href="https://www.bahn-zum-berg.at"><img src="/assets/images/logos/logo_bahn_zum_berg.png" alt="Logo Bahn zum Berg" style="height: 50px; width: auto;" />  
+  </a> [Zuugle.fr <img src="/assets/images/logos/logo_zuugle_small.png" alt="Logo Zuugle.it" style="height: 20px; width: auto;" /> ](https://www.zuugle.fr)  
 - Convention alpine <a href="https://www.alpconv.org/fr/"><img src="/assets/images/logos/logo_alpenkonvention.png" alt="Logo Alpenkonvention" style="height: 50px; width: auto;" />
   </a>
 - Musée municipale d'Absam <a href="https://www.absammuseum.at/"><img src="/assets/images/logos/Museum_Absam_Logo.png" alt="Logo Municipal Museum Absam" style="height: 50px; width: auto;" />
