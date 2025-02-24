@@ -68,7 +68,6 @@ Hai domande, idee o feedback? Contattaci!
   <a href="https://www.uzh.ch/en.html">
     <img src="/assets/images/logos/Universität_Zürich_logo.png" alt="Logo Universität_Zürich" style="height: 50px; width: auto;" />
   </a>
-- Altri partner in arrivo...
 
 ### Partner regionali  
 - Bahn zum Berg <a href="https://www.bahn-zum-berg.at"><img src="/assets/images/logos/logo_bahn_zum_berg.png" alt="Logo Bahn zum Berg" style="height: 50px; width: auto;" />  
