@@ -68,8 +68,6 @@ Haben Sie Feedback, Ideen oder Fragen? Kontaktiere uns!
     <img src="/assets/images/logos/Universität_Zürich_logo.png" alt="Logo Universität_Zürich" style="height: 50px; width: auto;" />
   </a>
 
-- Weitere folgen in Kürze...  
-
 ---
 
 ### Regionale Partner  
