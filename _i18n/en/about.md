@@ -69,8 +69,6 @@ Do you have any feedback, ideas or questions? Don't hesitate to contact us!
     <img src="/assets/images/logos/Universität_Zürich_logo.png" alt="Logo Universität_Zürich" style="height: 50px; width: auto;" />
   </a>
 
-- More coming soon ...
-
 ### Regional Partners
 - Bahn zum Berg <a href="https://www.bahn-zum-berg.at"><img src="/assets/images/logos/logo_bahn_zum_berg.png" alt="Logo Bahn zum Berg" style="height: 50px; width: auto;" />  
   </a> [Zuugle.at <img src="/assets/images/logos/logo_zuugle_small.png" alt="Logo Zuugle.at" style="height: 20px; width: auto;" /> ](https://www.zuugle.at)  
