@@ -1,6 +1,6 @@
 ## À propos de "Goodbye Glaciers !?"  
 
-Une introduction au projet "Goodbye Glaciers !?" ("Adieu Glaciers !?") est disponible sur la  
+Une introduction au projet "Goodbye Glaciers !?" est disponible sur la  
 <a href="{{ site.baseurl }}/">page d'accueil</a>.  
 
 <p>  
@@ -24,7 +24,7 @@ Une introduction au projet "Goodbye Glaciers !?" ("Adieu Glaciers !?") est dispo
   <img src="/assets/images/logos/logo_mcc_ibk.png" alt="Logo Mountain Competence Center" style="height: 70px; width: auto;" />  
 </div>
 
-##### Contact  
+##### Contacts  
 
 Vous avez des remarques, des idées ou des questions ? N'hésitez pas à nous contacter !  
 
