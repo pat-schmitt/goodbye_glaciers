@@ -3,10 +3,10 @@
 <div>
   <p>
     Découvrez les projections mondiales et régionales pour plus de 200 000 glaciers de montagne (tous les glaciers à l'exception des calottes glaciaires du Groenland et de l'Antarctique).
-    De nombreux glaciers des Alpes (Europe centrale) devraient disparaître rapidement, même avec un réchauffement mondial de 1,5°C. Cependant, pour les glaciers du monde entier, chaque dixième de degré de réchauffement fait une différence.
+    De nombreux glaciers des Alpes (Europe centrale) devraient disparaître rapidement, même avec un réchauffement mondial limité à 1,5°C. Cependant, pour les autres glaciers du monde entier, chaque dixième de degré de réchauffement fait une différence.
   </p>
   <p>
-    Explorez les projections régionales pour voir comment limiter le réchauffement mondial à 1,5°C peut aider à réduire la perte de volume des glaciers :
+    Explorez les projections régionales pour voir comment la limitation du réchauffement mondial à 1,5°C aide à réduire la perte de volume des glaciers :
   </p>
 </div>
 
@@ -77,22 +77,20 @@
 
 </div>
 
-Vous voulez préserver de la glace de glacier ? Trouvez des solutions sous la page
+Vous voulez préserver les glaciers ? Trouvez des solutions à la page
 <a href="{{ site.baseurl }}/preserve/">"Comment préserver ?"</a>.
 
 <br>
 
 ## Ressources supplémentaires
-Vous souhaitez en savoir plus sur l'avenir des glaciers ? Vous pouvez en apprendre davantage sur les sites web suivants (uniquement en anglais, mais votre navigateur peut probablement le traduire assez bien):
+Vous souhaitez en savoir plus sur l'avenir des glaciers ? Vous pouvez en apprendre davantage sur les sites web suivants (uniquement en anglais, mais votre navigateur peut probablement faire une traduction correcte):
 
 - [OGGM-edu: global and regional glacier projections from a single glacier model (PyGEM-OGGM) for 1.5°C–4.0°C](https://edu.oggm.org/en/latest/global_future_glacier-app_rounce_delta_T_en.html)
 - [OGGM-edu: Central Europe's country-wide glacier projections from a single glacier model PyGEM-OGGM for 1.5°C–4.0°C](https://edu.oggm.org/en/latest/alps_future-app_rounce_delta_T_en.html)
 - [OGGM-edu: Learn about the world’s glaciers location, climate, and the ice they store](https://bokeh.oggm.org/explorer/app)
-- PROVIDE climate risk dashboard where glacier projections from a single glacier model (OGGM) can be
-  selected for every country with glaciers: [link to glacier projections for Austria under 1.5°C and 2020 climate policies scenarios](https://climate-risk-dashboard.climateanalytics.org/impacts/explore?indicator=glacier-volume&geography=AUT&scenarios[0]=curpol&time=annual&reference=present-day-2020&spatial=area)
-    - Further explanations available from [this OGGM-edu site](https://edu.oggm.org/en/latest/provide_dashboard.html)
-- Most recent information on the *Cryosphere* (ice sheets, glaciers, snow, permafrost, sea ice and
-  polar oceans) are summarised in the [*State of the Cryosphere Report 2024*](https://iccinet.org/statecryo24/). "The report
-  describes how a combination of melting polar ice sheets, vanishing glaciers, and thawing
-  permafrost will have rapid, irreversible, and disastrous impacts worldwide."
+- Le tableau de bord du projet PROVIDE sur les risques climatiques où les projections glaciaires issues du modèle OGGM peuvent être sélectionnées pour l'ensemble des régions montagneuses englacées: [link to glacier projections for Austria under 1.5°C and 2020 climate policies scenarios](https://climate-risk-dashboard.climateanalytics.org/impacts/explore?indicator=glacier-volume&geography=AUT&scenarios[0]=curpol&time=annual&reference=present-day-2020&spatial=area)
+    - De plus amples informations ici [this OGGM-edu site](https://edu.oggm.org/en/latest/provide_dashboard.html)
+- Les informations les plus récentes sur la *Cryosphère* (calottes glaciaires, glaciers, neige, pergélisol, glace de mer et océans polaires) sont résumés
+  dans ce rapport [*State of the Cryosphere Report 2024*](https://iccinet.org/statecryo24/). " Le rapport décrit comment la fonte
+  des calottes polaires, la disparition des glaciers et le dégel du pergélisol sera rapide, irréversible et avec des impacts désastreux dans le monde entier."
 
