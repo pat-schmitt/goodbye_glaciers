@@ -1,6 +1,6 @@
 <p>
-    Le <b><a href="https://climateactiontracker.org/global/cat-thermometer/">
-    prévision actuelle des politiques</a></b> estime que le réchauffement climatique atteindra <b>2,7°C</b> d'ici 2100,
+    L'<b><a href="https://climateactiontracker.org/global/cat-thermometer/">
+    impact des politiques actuelles</a></b> estime que le réchauffement climatique atteindra <b>2,7°C</b> d'ici 2100,
     bien au-dessus de l'objectif de l'<b><a href="https://unfccc.int/process-and-meetings/the-paris-agreement">
     Accord de Paris</a></b> de limiter le réchauffement à <b>1,5°C</b>.
 </p>
@@ -37,8 +37,8 @@
 <br>
 
 <p>
-    {{ page.title }} avait un volume estimé de {{ page.vol2020_km3 }} km³ en
-    2020 et devrait être presque disparu d'ici
+    Le {{ page.title }} avait un volume estimé à {{ page.vol2020_km3 }} km³ en
+    2020 et devrait avoir presque disparu d'ici
     {{ page.deglac_yr_2_7deg_10perc_e-2km3_q50 | floor }}
     (<a href="{{ site.baseurl }}/methods/#likely-range">plage probable</a> :
     {{ page.deglac_yr_2_7deg_10perc_e-2km3_q17 | floor }} -
@@ -47,37 +47,37 @@
     {% else %}
         après 2100
     {% endif %})
-    sous un réchauffement climatique de 2,7°C
-    (<a href="https://climateactiontracker.org/global/cat-thermometer/">prévision des politiques actuelles</a>).
-    Nous définissons <b>'presque disparu'</b> comme l'année où moins de 10% du
-    volume du glacier de 2020 ou moins de 0,01 km³ devrait rester - quelle que soit
+    pour un réchauffement climatique de 2,7°C
+    (<a href="https://climateactiontracker.org/global/cat-thermometer/">politiques actuelles</a>).
+    Nous définissons <b>'presque disparu'</b> comme l'année où une des deux limites suivantes est franchie: moins de 10% du
+    volume glaciaire de 2020 ou moins de 0,01 km³ - quelle que soit
     la première limite franchie.<br><br>
 
     <!--Commentaire : n'afficher la phrase "plus tard" que si la déglaciation se produit à 1,5°C   -->
-    Si le réchauffement climatique est limité à 1,5°C
+    Si le réchauffement climatique est limité à 1,5°C en 2100,
     (<a href="https://unfccc.int/process-and-meetings/the-paris-agreement">Accord de Paris</a>),
     <!-- Si deglac_yr_1_5deg_10perc_e-2km3_q50 est supérieur à 0, afficher la phrase complète -->
     {% assign deglac_year = page.deglac_yr_1_5deg_10perc_e-2km3_q50 | plus: 0 %}
     {% if deglac_year > 0 %}
-        {{ page.title }} sera presque disparu d'ici {{ deglac_year | floor }}
+        le {{ page.title }} aura presque disparu d'ici {{ deglac_year | floor }}
         ({{ deglac_year | floor | minus: page.deglac_yr_2_7deg_10perc_e-2km3_q50 | default: 0 | floor }}
-        années plus tard que sous 2,7°C).
+        années plus tard que pour un réchauffement de 2,7°C).
         D'ici 2100, {{ page["2100_perc_1_5deg_q50"] | floor }}% du volume de 2020
         devrait rester
         ({{ page["2100_perc_1_5deg_q50"] | floor | minus: page["2100_perc_2_7deg_q50"] | floor }}%
-        de plus par rapport à 2,7°C).
+        de plus par rapport à un réchauffement 2,7°C).
     {% else %}
         <!-- Si deglac_yr_1_5deg_10perc_e-2km3_q50 est manquant ou égal à 0, afficher uniquement la différence de volume en 2100 -->
-        d'ici 2100, {{ page["2100_perc_1_5deg_q50"] | floor }}% du volume de 2020
+        {{ page["2100_perc_1_5deg_q50"] | floor }}% du volume de 2020
         devrait rester
         ({{ page["2100_perc_1_5deg_q50"] | floor | minus: page["2100_perc_2_7deg_q50"] | floor }}%
-        de plus par rapport à 2,7°C).
+        de plus par rapport à un réchauffement de 2,7°C).
     {% endif %}
 </p>
 
 <p>
 <div style="border: 2px solid #000; padding: 10px; background-color: #f9f9f9; width: fit-content;">
-<strong>Chaque 0,1°C évité sauve les glaciers et limite les impacts!</strong>
+<strong>Chaque 0,1°C évité préserve les glaciers et limite les impacts!</strong>
 </div>
 </p>
 
@@ -113,17 +113,16 @@
 
 <h3 id="methods">Projections Globales</h3>
 <p>
-    Les projections pour l'Europe centrale ne sont pas prometteuses, même sous un réchauffement de 1,5°C.
-    Cependant, il existe des régions dans le monde avec un potentiel beaucoup plus grand
-    pour sauver la glace des glaciers. Visitez la
-    <a href="{{ site.baseurl }}/regions/">page des "Régions"</a> pour explorer d'autres
-    zones autour du monde et visitez la
-    <a href="{{ site.baseurl }}/preserve/">page "Comment préserver?"</a> pour vous impliquer.
+    Les projections pour l'Europe centrale ne sont pas prometteuses, même pour un réchauffement limité à 1,5°C.
+    Cependant, il existe des régions dans le monde où la possibilité de préserver les glaciers est beaucoup plus grande. Visitez la page des 
+    <a href="{{ site.baseurl }}/regions/">"Régions"</a> pour explorer d'autres
+    régions du monde et visitez la page 
+    <a href="{{ site.baseurl }}/preserve/">"Comment préserver?"</a> pour vous impliquer.
 </p>
 
 <h3 id="methods">Méthodes</h3>
 <p>
-    Si vous êtes curieux de savoir comment cette animation et les chiffres ont été créés,
+    Si vous êtes curieux de comprendre comment cette animation et ces chiffres ont été obtenus,
     visitez la page <a href="{{ site.baseurl }}/methods/">Méthodes</a>.
 </p>
 
