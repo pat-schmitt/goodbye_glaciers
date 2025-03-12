@@ -79,3 +79,6 @@ Do you have any feedback, ideas or questions? Don't hesitate to contact us!
 - Municipal Museum Absam <a href="https://www.absammuseum.at/">
     <img src="/assets/images/logos/Museum_Absam_Logo.png" alt="Logo Municipal Museum Absam" style="height: 50px; width: auto;" />
   </a>
+- Civil Protection Agency – South Tyrol <a href="https://bevoelkerungsschutz.provinz.bz.it/de/home">
+    <img src="/assets/images/logos/bevoelkerungsschutz_bozen_logo.png" alt="Civil Protection Agency – South Tyrol" style="height: 60px; width: auto;" />
+  </a>

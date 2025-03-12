@@ -79,3 +79,6 @@ Haben Sie Feedback, Ideen oder Fragen? Kontaktiere uns!
 
 - Gemeindemuseum Absam <a href="https://www.absammuseum.at/"><img src="/assets/images/logos/Museum_Absam_Logo.png" alt="Logo Gemeindemuseum Absam" style="height: 50px; width: auto;"/></a>
 
+- Agentur für Bevölkerungsschutz – Südtirol <a href="https://bevoelkerungsschutz.provinz.bz.it/de/home">
+    <img src="/assets/images/logos/bevoelkerungsschutz_bozen_logo.png" alt="Agentur für Bevölkerungsschutz – Südtirol" style="height: 60px; width: auto;" />
+  </a>

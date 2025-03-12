@@ -78,4 +78,6 @@ Hai domande, idee o feedback? Contattaci!
 - Museo comunale di Absam <a href="https://www.absammuseum.at/"><img src="/assets/images/logos/Museum_Absam_Logo.png" alt="Logo Museo Comunale di Absam" style="height: 50px; width: auto;" />  
   </a>  
 
-
+- Agenzia per la Protezione civile – Alto Adige <a href="https://bevoelkerungsschutz.provinz.bz.it/it/home">
+    <img src="/assets/images/logos/bevoelkerungsschutz_bozen_logo.png" alt="Agenzia per la Protezione civile – Alto Adige" style="height: 60px; width: auto;" />
+  </a>
