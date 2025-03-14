@@ -17,66 +17,66 @@
 <!-- Dropdown zur Regionenauswahl -->
 
 <div>
-  <select id="regionSelect"
-  style="font-size: 24px; padding: 10px; border: 2px solid #FF5733;
-       border-radius: 5px; background-color: #f8d7da; max-width: 100%;
-       overflow: hidden; text-overflow: ellipsis;">
-    <option value="RGI11" selected>Mitteleuropa (11)</option>
-    <option value="global">Global</option>
-    <option value="RGI01">Alaska (01)</option>
-    <option value="RGI02">Westkanada und USA (02)</option>
-    <option value="RGI03">Arktisches Kanada Nord (03)</option>
-    <option value="RGI04">Arktisches Kanada Süd (04)</option>
-    <option value="RGI05">Grönland Peripherie (05)</option>
-    <option value="RGI06">Island (06)</option>
-    <option value="RGI07">Svalbard (07)</option>
-    <option value="RGI08">Skandinavien (08)</option>
-    <option value="RGI09">Russische Arktis (09)</option>
-    <option value="RGI10">Nordasien (10)</option>
-    <option value="RGI12">Kaukasus und Naher Osten (12)</option>
-    <option value="RGI13">Zentralasien (13)</option>
-    <option value="RGI14">Südasien West (14)</option>
-    <option value="RGI15">Südasien Ost (15)</option>
-    <option value="RGI13-14-15">Hochgebirgsasien (13-14-15)</option>
-    <option value="RGI16">Tropische Breiten (16)</option>
-    <option value="RGI17">Südliche Anden (17)</option>
-    <option value="RGI18">Neuseeland (18)</option>
-    <option value="RGI19">Subantarktische und Antarktische Inseln (19)</option>
-  </select>
+<select id="regionSelect"
+style="font-size: 24px; padding: 10px; border: 2px solid #FF5733;
+   border-radius: 5px; background-color: #f8d7da; max-width: 100%;
+   overflow: hidden; text-overflow: ellipsis;">
+<option value="RGI11" selected>Mitteleuropa (11)</option>
+<option value="global">Global</option>
+<option value="RGI01">Alaska (01)</option>
+<option value="RGI02">Westkanada und USA (02)</option>
+<option value="RGI03">Arktisches Kanada Nord (03)</option>
+<option value="RGI04">Arktisches Kanada Süd (04)</option>
+<option value="RGI05">Grönland Peripherie (05)</option>
+<option value="RGI06">Island (06)</option>
+<option value="RGI07">Svalbard (07)</option>
+<option value="RGI08">Skandinavien (08)</option>
+<option value="RGI09">Russische Arktis (09)</option>
+<option value="RGI10">Nordasien (10)</option>
+<option value="RGI12">Kaukasus und Naher Osten (12)</option>
+<option value="RGI13">Zentralasien (13)</option>
+<option value="RGI14">Südasien West (14)</option>
+<option value="RGI15">Südasien Ost (15)</option>
+<option value="RGI13-14-15">Hochgebirgsasien (13-14-15)</option>
+<option value="RGI16">Tropische Breiten (16)</option>
+<option value="RGI17">Südliche Anden (17)</option>
+<option value="RGI18">Neuseeland (18)</option>
+<option value="RGI19">Subantarktische und Antarktische Inseln (19)</option>
+</select>
 
-  <!-- Container für beide Abbildungen -->
-  <img id="worldmapImage" src="/assets/images/volume_evolution_regions/RGI11_worldmap_de.png" alt="Karte der ausgewählten Gletscher" />
-  <img id="complexImage" src="/assets/images/volume_evolution_regions/RGI11_complex_de.png" alt="Volumenentwicklung der Gletscher in Mitteleuropa für 1,5°C und 2,7°C." />
+<!-- Container für beide Abbildungen -->
+<img id="worldmapImage" src="/assets/images/volume_evolution_regions/RGI11_worldmap_de.png" alt="Karte der ausgewählten Gletscher" />
+<img id="complexImage" src="/assets/images/volume_evolution_regions/RGI11_complex_de.png" alt="Volumenentwicklung der Gletscher in Mitteleuropa für 1,5°C und 2,7°C." />
 
-  <!-- Füge responsives CSS hinzu -->
-  <style>
-    @media (max-width: 768px) {
-      div[style*="display: flex"] {
-        flex-direction: column; /* Elemente vertikal stapeln */
-      }
-      div[style*="margin-right: 20px"] {
-        margin-right: 0; /* Entfernt den rechten Rand für den Text */
-      }
-    }
-  </style>
+<!-- Füge responsives CSS hinzu -->
+<style>
+@media (max-width: 768px) {
+  div[style*="display: flex"] {
+    flex-direction: column; /* Elemente vertikal stapeln */
+  }
+  div[style*="margin-right: 20px"] {
+    margin-right: 0; /* Entfernt den rechten Rand für den Text */
+  }
+}
+</style>
 
-  <script>
-    document.getElementById("regionSelect").addEventListener("change", function() {
-      var selectedRegion = this.value;
-    
-      // Hole dir beide Bild-Elemente
-      var worldmapImage = document.getElementById("worldmapImage");
-      var complexImage = document.getElementById("complexImage");
-    
-      // Aktualisiere die Quelle des Weltkartenbildes
-      worldmapImage.src = "/assets/images/volume_evolution_regions/" + selectedRegion + "_worldmap_de.png";
-      worldmapImage.alt = "Karte der ausgewählten Gletscher in " + d_reg_num_name_de[selectedRegion];
+<script>
+document.getElementById("regionSelect").addEventListener("change", function() {
+  var selectedRegion = this.value;
 
-      // Aktualisiere die Quelle des komplexen Modellbildes
-      complexImage.src = "/assets/images/volume_evolution_regions/" + selectedRegion + "_complex_de.png";
-      complexImage.alt = "Volumenentwicklung der Gletscher in " + d_reg_num_name_de[selectedRegion] + " für 1,5°C und 2,7°C.";
-    });
-  </script>
+  // Hole dir beide Bild-Elemente
+  var worldmapImage = document.getElementById("worldmapImage");
+  var complexImage = document.getElementById("complexImage");
+
+  // Aktualisiere die Quelle des Weltkartenbildes
+  worldmapImage.src = "/assets/images/volume_evolution_regions/" + selectedRegion + "_worldmap_de.png";
+  worldmapImage.alt = "Karte der ausgewählten Gletscher in " + selectedRegion;
+
+  // Aktualisiere die Quelle des komplexen Modellbildes
+  complexImage.src = "/assets/images/volume_evolution_regions/" + selectedRegion + "_complex_de.png";
+  complexImage.alt = "Volumenentwicklung der Gletscher in " + selectedRegion + " für 1,5°C und 2,7°C.";
+});
+</script>
 </div>
 
 Möchtest du etwas Gletschereis bewahren? Finde Lösungen auf der <a href="{{ site.baseurl }}/preserve/">"Wie schützen?"</a> Seite.
@@ -96,4 +96,3 @@ Bist du noch mehr an der Zukunft der Gletscher interessiert? Auf den folgenden W
   polar oceans) are summarised in the [*State of the Cryosphere Report 2024*](https://iccinet.org/statecryo24/). "The report
   describes how a combination of melting polar ice sheets, vanishing glaciers, and thawing
   permafrost will have rapid, irreversible, and disastrous impacts worldwide."
-
