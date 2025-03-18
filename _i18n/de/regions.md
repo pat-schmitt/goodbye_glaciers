@@ -70,11 +70,11 @@
     
       // Aktualisiere die Quelle des Weltkartenbildes
       worldmapImage.src = "/assets/images/volume_evolution_regions/" + selectedRegion + "_worldmap_de.png";
-      worldmapImage.alt = "Karte der ausgewählten Gletscher in " + d_reg_num_name_de[selectedRegion];
+      worldmapImage.alt = "Karte der ausgewählten Gletscher in " + selectedRegion;
 
       // Aktualisiere die Quelle des komplexen Modellbildes
       complexImage.src = "/assets/images/volume_evolution_regions/" + selectedRegion + "_complex_de.png";
-      complexImage.alt = "Volumenentwicklung der Gletscher in " + d_reg_num_name_de[selectedRegion] + " für 1,5°C und 2,7°C.";
+      complexImage.alt = "Volumenentwicklung der Gletscher in " + selectedRegion + " für 1,5°C und 2,7°C.";
     });
   </script>
 </div>
