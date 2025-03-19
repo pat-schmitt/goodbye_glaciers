@@ -16,6 +16,15 @@
   {% assign image_description = page.title %}
 {% endif %}
 
+{% assign page_title = page.title %}
+{% if page.title_de %}
+  {% case site.lang %}
+    {% when "de" %}{% assign page_title = page.title_de %}
+    {% when "it" %}{% assign page_title = page.title_it %}
+    {% when "fr" %}{% assign page_title = page.title_fr %}
+  {% endcase %}
+{% endif %}
+
 {% assign image_description = image_description | markdownify | strip_html | strip_newlines | escape_once %}
 
 <div class="page__hero{% if page.header.overlay_color or page.header.overlay_image %}--overlay{% endif %}"
@@ -27,7 +36,7 @@
         {% if paginator and site.paginate_show_page_num %}
           {{ site.title }}{% unless paginator.page == 1 %} {{ site.data.ui-text[site.locale].page | default: "Page" }} {{ paginator.page }}{% endunless %}
         {% else %}
-          {{ page.title | default: site.title | markdownify | remove: "<p>" | remove: "</p>" }}
+          {{ page_title | default: site.title | markdownify | remove: "<p>" | remove: "</p>" }}
         {% endif %}
       </h1>
       {% if page.tagline %}

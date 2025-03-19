@@ -1,0 +1,23 @@
+---
+signpost_id: ahh_signpost
+title: The first signpost
+title_de: Der erste Wegweiser
+title_it: Il primo segnavia
+title_fr: Le premier panneau
+current_location: [47.26253, 11.38414]
+current_location_description: Ágnes Heller Haus, University of Innsbruck
+current_location_description_de: Ágnes Heller Haus, Universität Innsbruck
+current_location_description_it: Ágnes Heller Haus, Università di Innsbruck
+current_location_description_fr: Ágnes Heller Haus, Université d'Innsbruck
+current_country: Austria
+description: This is the first signpost we set up during the <a href="https://agm2025.info/">28th Alpine Glaciology Meeting</a> in February 2025 at the University of Innsbruck.
+description_de: Dies ist der erste Wegweiser, den wir während des <a href="https://agm2025.info/">28th Alpine Glaciology Meeting</a> im Februar 2025 an der Universität Innsbruck aufgestellt haben.
+description_it: Questo è il primo segnavia che abbiamo installato durante il <a href="https://agm2025.info/">28th Alpine Glaciology Meeting</a> nel febbraio 2025 presso l'Università di Innsbruck.
+description_fr: Ceci est le premier panneau que nous avons installé lors de la <a href="https://agm2025.info/">28th Alpine Glaciology Meeting</a> en février 2025 à l'Université d'Innsbruck.
+past_locations:
+    - none
+glaciers:
+    - RGI60-11.03887
+    - RGI60-11.00897
+    - RGI60-11.03671
+    - RGI60-11.01238

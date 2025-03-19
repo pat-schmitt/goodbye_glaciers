@@ -13,8 +13,16 @@
 
     var locations = [
       {% for item in map_items %}
+        {% assign item_title = item.title %}
+        {% if item.title_de %}
+          {% case site.lang %}
+            {% when 'de' %}{% assign item_title = item.title_de %}
+            {% when 'it' %}{% assign item_title = item.title_it %}
+            {% when 'fr' %}{% assign item_title = item.title_fr %}
+          {% endcase %}
+        {% endif %}
       {
-        title: "{{ item.title | escape }}",
+        title: "{{ item_title | escape }}",
         lat: {{ item.Lat | default: 0 }},
         lng: {{ item.Lon | default: 0 }},
         url: "{{ site.baseurl }}{{ item.url }}",

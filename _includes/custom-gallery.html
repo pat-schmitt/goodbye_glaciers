@@ -18,8 +18,16 @@
         </a>
         <!-- Caption below the image -->
         {% if image.title %}
+          {% assign image_title = image.title %}
+          {% if image.title_de %}
+            {% case site.lang %}
+              {% when "de" %}{% assign image_title = image.title_de %}
+              {% when "it" %}{% assign image_title = image.title_it %}
+              {% when "fr" %}{% assign image_title = image.title_fr %}
+            {% endcase %}
+          {% endif %}
           <div class="custom-carousel-caption">
-            <p>{{ image.title }}</p>
+            <p>{{ image_title }}</p>
           </div>
         {% endif %}
       </div>

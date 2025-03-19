@@ -1,7 +1,7 @@
 <p>
     Qui troverete una mappa e un elenco dei cartelli attualmente installati. 
     Se siete interessati a installare un cartello, inviate un'e-mail a: 
-    <a href="mailto:wolfgang.gurgiser@uibk.ac.at">wolfgang.gurgiser[at]uibk.ac.at</a>
+    <a href="mailto:patrick.schmitt@uibk.ac.at">patrick.schmitt[at]uibk.ac.at</a>
 </p>
 
 {% assign map_items = site.signposts %}
@@ -19,7 +19,7 @@
       <h3 id="{{ group.name }}">{{ group.name }}</h3> <!-- Country name -->
       <ul>
         {% for item in group.items %}
-          <li><a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a>, {{ item.location_description }}</li>
+          <li><a href="{{ site.baseurl }}{{ item.url }}">{{ item.title_it }}</a>, {{ item.location_description_it }}</li>
         {% endfor %}
       </ul>
   {% endfor %}

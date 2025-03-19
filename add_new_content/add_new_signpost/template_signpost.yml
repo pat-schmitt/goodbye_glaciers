@@ -1,10 +1,19 @@
 ---
 signpost_id: template_signpost_id
 title: Template Signpost Name
+title_de: Template Signpost Name
+title_it: Template Signpost Name
+title_fr: Template Signpost Name
 current_location: [template_latitude, template_longitude]
 current_location_description: Template Location
+current_location_description_de: Template Location
+current_location_description_it: Template Location
+current_location_description_fr: Template Location
 current_country: template_country
 description: Add here some text which should be displayed on the individual site of the signpost.
+description_de: Add here some text which should be displayed on the individual site of the signpost.
+description_it: Add here some text which should be displayed on the individual site of the signpost.
+description_fr: Add here some text which should be displayed on the individual site of the signpost.
 past_locations:
     - none
 glaciers:

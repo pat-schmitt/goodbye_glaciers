@@ -56,6 +56,7 @@ fp_signpost_md = os.path.join(base_dir, '_signposts')
 
 
 # # Function creating signpost markdown sites
+
 def create_signpost_markdown(signpost_yml):
 
     # start creating markdown
@@ -66,9 +67,15 @@ def create_signpost_markdown(signpost_yml):
     signpost_id = signpost_yml_dict['signpost_id']
     markdown_content += f"signpost_id: {signpost_id}\n"
     markdown_content += f"title: {signpost_yml_dict['title']}\n"
+    markdown_content += f"title_de: {signpost_yml_dict['title_de']}\n"
+    markdown_content += f"title_it: {signpost_yml_dict['title_it']}\n"
+    markdown_content += f"title_fr: {signpost_yml_dict['title_fr']}\n"
     markdown_content += f"Lat: {signpost_yml_dict['current_location'][0]}\n"
     markdown_content += f"Lon: {signpost_yml_dict['current_location'][1]}\n"
     markdown_content += f"location_description: {signpost_yml_dict['current_location_description']}\n"
+    markdown_content += f"location_description_de: {signpost_yml_dict['current_location_description_de']}\n"
+    markdown_content += f"location_description_it: {signpost_yml_dict['current_location_description_it']}\n"
+    markdown_content += f"location_description_fr: {signpost_yml_dict['current_location_description_fr']}\n"
     
     if signpost_yml_dict['current_country'] == 'Switzerland':
         signpost_yml_dict['country_de'] = 'Schweiz'
@@ -92,6 +99,9 @@ def create_signpost_markdown(signpost_yml):
     markdown_content += f"country_fr: {signpost_yml_dict['country_fr']}\n"
     
     markdown_content += f"description: {signpost_yml_dict['description']}\n"
+    markdown_content += f"description_de: {signpost_yml_dict['description_de']}\n"
+    markdown_content += f"description_it: {signpost_yml_dict['description_it']}\n"
+    markdown_content += f"description_fr: {signpost_yml_dict['description_fr']}\n"
     markdown_content += f"past_locations: {signpost_yml_dict['past_locations']}\n"
     markdown_content += f"glaciers: {signpost_yml_dict['glaciers']}\n"
 
@@ -126,6 +136,10 @@ def create_signpost_markdown(signpost_yml):
                              f"{photo_yml_dict[photo]['photo_date']}\n"
                             )
         markdown_content += f"    title: '{photo_yml_dict[photo]['photo_description']} {photo_credit}'\n"
+        if 'photo_description_de' in photo_yml_dict[photo]:
+            markdown_content += f"    title_de: '{photo_yml_dict[photo]['photo_description_de']} {photo_credit}'\n"
+            markdown_content += f"    title_it: '{photo_yml_dict[photo]['photo_description_it']} {photo_credit}'\n"
+            markdown_content += f"    title_fr: '{photo_yml_dict[photo]['photo_description_fr']} {photo_credit}'\n"
 
     filename_main_photo = f"{fp_signpost_photos}{photo_yml_dict[main_photo]['filename']}"
     main_photo_credit = (f"Photo credit: "
@@ -161,7 +175,6 @@ def create_signpost_markdown(signpost_yml):
         file.write(markdown_content)
     
     print(f"Markdown file {signpost_id} created.")
-
 
 
 # # Run all

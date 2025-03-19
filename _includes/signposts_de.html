@@ -1,6 +1,6 @@
-<p>DE: {{ page.description }}  </p>
+<p>{{ page.description_de }}  </p>
 
-<h1 id="featured-glaciers">Featured Glaciers</h1>
+<h1 id="featured-glaciers">Angezeigte Gletscher</h1>
 <ul>
   {% for glacier_featured in page.glaciers %}
       {% for glacier in site.glaciers %}
@@ -10,13 +10,13 @@
                        {{ site.url }}{{ glacier.url }}
                      {% else %}
                        {{ site.url }}/{{ site.lang }}{{ glacier.url }}
-                     {% endif %}">{{ glacier.title }}</a>, mostly gone by {{ glacier.deglac_yr_2_7deg_10perc_e-2km3_q50 | floor }}
+                     {% endif %}">{{ glacier.title }}</a>, fast verschwunden bis {{ glacier.deglac_yr_2_7deg_10perc_e-2km3_q50 | floor }}
           </li>
         {% endif %}
       {% endfor %}
   {% endfor %}
 </ul>
 
-<h1 id="photo-gallery">Photo Gallery</h1>
+<h1 id="photo-gallery">Fotogalerie</h1>
 {% assign gallery = page.gallery %}
 {% include custom-gallery.html gallery=gallery %}
