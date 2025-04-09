@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Redirecting...</title>
+    <script>
+      const path = window.location.pathname;
+      const isShortCode = /^\/[a-zA-Z0-9]{3,60}$/.test(path);
+      const isCodeImage = /^\/code\/[a-zA-Z0-9]{3,60}\.(png|svg)$/.test(path);
+      const redirectUrl = 'https://qr.at' + path;
+
+      if (isShortCode || isCodeImage) {
+        // Check if the destination exists
+        fetch(redirectUrl, { method: 'HEAD' })
+          .then(response => {
+            if (response.ok) {
+              // If it exists, redirect
+              window.location.href = redirectUrl;
+            } else {
+              showNotFound();
+            }
+          })
+          .catch(error => {
+            showNotFound();
+          });
+      } else {
+        showNotFound();
+      }
+
+      function showNotFound() {
+        document.body.innerHTML = `
+          <h1>404 - Not Found</h1>
+          <p>The resource you're looking for doesn’t exist.</p>
+        `;
+        document.title = "404 Not Found";
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Checking redirect...</h1>
+    <p>Please wait while we check your URL.</p>
+  </body>
+</html>
+
