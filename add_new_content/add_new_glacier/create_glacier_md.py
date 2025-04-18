@@ -55,11 +55,17 @@ def check_file_exist(fp, rgi_id):
 
 # ## filepaths used when deploying the website
 
+animation_source = 'fileshare'  # 'local', 'fileshare'
+
+# +
 fp_glacier_volume = '/assets/images/volume_evolution_glaciers/'
 fp_glacier_animations = '/assets/videos/glacier_animations/'
 fp_glacier_photos = '/assets/images/photos_glaciers/'
 fp_glacier_md = os.path.join(base_dir, '_glaciers')
 fp_glacier_list = '/assets/glaciers.json'
+
+fp_glacier_animations_fileshare = 'https://fileshare.uibk.ac.at/d/b1c8bdcb065c4ee5bf3e/files/?p=%2F'
+# -
 
 # # Open data needed by all
 
@@ -97,6 +103,10 @@ def create_glacier_markdown(glacier_yml, glacier_location_list):
         glacier_yml_dict['country_de'] = 'Österreich'
         glacier_yml_dict['country_it'] = 'Austria'
         glacier_yml_dict['country_fr'] = 'Autriche'
+    elif glacier_yml_dict['country'] == 'Germany':
+        glacier_yml_dict['country_de'] = 'Deutschland'
+        glacier_yml_dict['country_it'] = 'Germania'
+        glacier_yml_dict['country_fr'] = 'Allemagne'
     
     markdown_content += f"country: {glacier_yml_dict['country']}\n"
     markdown_content += f"country_de: {glacier_yml_dict['country_de']}\n"
@@ -137,15 +147,23 @@ def create_glacier_markdown(glacier_yml, glacier_location_list):
     markdown_content += f"volume_evolution_complex: {fp_file}\n"
 
     # add 3d animations
-    fp_file = f"{fp_glacier_animations}{rgi_id}_+1.5°C.mp4"
-    check_file_exist(fp_file, rgi_id)
-    markdown_content += f"animation_15: {fp_file}\n"
-    fp_file = f"{fp_glacier_animations}{rgi_id}_+2.7°C.mp4"
-    check_file_exist(fp_file, rgi_id)
-    markdown_content += f"animation_27: {fp_file}\n"
-    fp_file = f"{fp_glacier_animations}{rgi_id}_both.mp4"
-    check_file_exist(fp_file, rgi_id)
-    markdown_content += f"animation_both: {fp_file}\n"
+    if animation_source == 'fileshare':
+        fp_file = f"{fp_glacier_animations_fileshare}{rgi_id}_%2B1.5%C2%B0C.mp4&dl=1"
+        markdown_content += f"animation_15: {fp_file}\n"
+        fp_file = f"{fp_glacier_animations_fileshare}{rgi_id}_%2B2.7%C2%B0C.mp4&dl=1"
+        markdown_content += f"animation_27: {fp_file}\n"
+        fp_file = f"{fp_glacier_animations_fileshare}{rgi_id}_both.mp4&dl=1"
+        markdown_content += f"animation_both: {fp_file}\n"
+    elif animation_source == 'local':
+        fp_file = f"{fp_glacier_animations}{rgi_id}_+1.5°C.mp4"
+        check_file_exist(fp_file, rgi_id)
+        markdown_content += f"animation_15: {fp_file}\n"
+        fp_file = f"{fp_glacier_animations}{rgi_id}_+2.7°C.mp4"
+        check_file_exist(fp_file, rgi_id)
+        markdown_content += f"animation_27: {fp_file}\n"
+        fp_file = f"{fp_glacier_animations}{rgi_id}_both.mp4"
+        check_file_exist(fp_file, rgi_id)
+        markdown_content += f"animation_both: {fp_file}\n"
 
     # add photos
     photo_yml_dict = read_yml(os.path.join(fp_photo_yml, f'{rgi_id}_photos.yml'))

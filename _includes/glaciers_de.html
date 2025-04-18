@@ -39,16 +39,29 @@
 
 <p>
     {{ page.title }} hatte im Jahr 2020 ein geschätztes Volumen von {{ page.vol2020_km3 }} km³
-    und wird voraussichtlich bis
-    {{ page.deglac_yr_2_7deg_10perc_e-2km3_q50 | floor }}
-    (<a href="{{ site.baseurl }}/methods/#likely-range">Schwankungsbreite</a>:
-    {{ page.deglac_yr_2_7deg_10perc_e-2km3_q17 | floor }} -
-    {% if page.deglac_yr_2_7deg_10perc_e-2km3_q83 %}
-        {{ page.deglac_yr_2_7deg_10perc_e-2km3_q83 | default: 0 | floor }}
+    und wird voraussichtlich
+    {% assign deglac_year_2_7deg = page.deglac_yr_2_7deg_10perc_e-2km3_q50 | plus: 0 %}
+    {% if deglac_year_2_7deg > 0 %}
+        bis
+        {{ page.deglac_yr_2_7deg_10perc_e-2km3_q50 | floor }}
+        (<a href="{{ site.baseurl }}/methods/#likely-range">Schwankungsbreite</a>:
+        {{ page.deglac_yr_2_7deg_10perc_e-2km3_q17 | floor }} -
+        {% assign deglac_year_2_7deg_q83 = page.deglac_yr_2_7deg_10perc_e-2km3_q83 | plus: 0 %}
+        {% if deglac_year_2_7deg_q83 > 0 %}
+            {{ page.deglac_yr_2_7deg_10perc_e-2km3_q83 | default: 0 | floor }}
+        {% else %}
+            nach 2100
+        {% endif %})
     {% else %}
-        nach 2100
-    {% endif %})
-    unter einer globalen Erwärmung von 2,7°C fast verschwunden sein
+        {{ page.2100_perc_1_5deg_q50 | floor }}% dieses Volumens im Jahr 2100
+        behalten (<a href="{{ site.baseurl }}/methods/#likely-range">Schwankungsbreite</a>:
+        {{ page.2100_perc_1_5deg_q17 | floor }}% –
+        {{ page.2100_perc_1_5deg_q83 | floor }}%)
+    {% endif %}
+    unter einer globalen Erwärmung von 2,7°C
+    {% if deglac_year_2_7deg > 0 %}
+    fast verschwunden sein
+    {% endif %}
     (<a href="https://climateactiontracker.org/global/cat-thermometer/">aktuelle politische Entwicklung</a>).
     Wir definieren <b>'fast verschwunden'</b> als das Jahr, in dem entweder
     weniger als 10 % des Volumens von 2020 oder weniger als 0,01 km³ übrig bleibt – je nachdem,

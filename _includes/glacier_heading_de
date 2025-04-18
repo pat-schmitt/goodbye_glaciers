@@ -1,8 +1,21 @@
 Land: {{ page.country_de }} <br>
-2.7°C: Fast verschwunden in {{ page.deglac_yr_2_7deg_10perc_e-2km3_q50 | floor }} <br>
-{% assign deglac_year = page.deglac_yr_1_5deg_10perc_e-2km3_q50 | plus: 0 %}
-{% if deglac_year > 0 %}
-1.5°C: Fast verschwunden in {{ deglac_year | floor }} <br>
+
+{% assign deglac_year_2_7deg = page.deglac_yr_2_7deg_10perc_e-2km3_q50 | plus: 0 %}
+{% if deglac_year_2_7deg > 0 %}
+2.7°C: Fast verschwunden in {{ deglac_year_2_7deg | floor }}
 {% else %}
-1.5°C: Überlebt noch in 2100{% endif %} <br>
+2.7°C: {{ page.2100_perc_2_7deg_q50 | floor }}% überlebt bis 2100
+{% endif %}
+
+<br>
+
+{% assign deglac_year_1_5deg = page.deglac_yr_1_5deg_10perc_e-2km3_q50 | plus: 0 %}
+{% if deglac_year_1_5deg > 0 %}
+1.5°C: Fast verschwunden in {{ deglac_year_1_5deg | floor }}
+{% else %}
+1.5°C: {{ page.2100_perc_1_5deg_q50 | floor }}% überlebt bis 2100
+{% endif %}
+
+<br>
+
 <b>Jedes vermiedene 0,1° rettet Gletscher und begrenzt die Folgen!</b>

@@ -39,15 +39,26 @@
 
 <p>
     {{ page.title }} had an estimated volume of {{ page.vol2020_km3 }} km³ in
-    2020 and is expected to be mostly gone by
-    {{ page.deglac_yr_2_7deg_10perc_e-2km3_q50 | floor }}
-    (<a href="{{ site.baseurl }}/methods/#likely-range">likely range</a>:
-    {{ page.deglac_yr_2_7deg_10perc_e-2km3_q17 | floor }} -
-    {% if page.deglac_yr_2_7deg_10perc_e-2km3_q83 %}
-        {{ page.deglac_yr_2_7deg_10perc_e-2km3_q83 | default: 0 | floor }}
+    2020 and is expected to
+    {% assign deglac_year_2_7deg = page.deglac_yr_2_7deg_10perc_e-2km3_q50 | plus: 0 %}
+    {% if deglac_year_2_7deg > 0 %}
+        be mostly gone by
+        {{ page.deglac_yr_2_7deg_10perc_e-2km3_q50 | floor }}
+        (<a href="{{ site.baseurl }}/methods/#likely-range">likely range</a>:
+        {{ page.deglac_yr_2_7deg_10perc_e-2km3_q17 | floor }} -
+        {% assign deglac_year_2_7deg_q83 = page.deglac_yr_2_7deg_10perc_e-2km3_q83 | plus: 0 %}
+        {% if deglac_year_2_7deg_q83 > 0 %}
+            {{ page.deglac_yr_2_7deg_10perc_e-2km3_q83 | floor }}
+        {% else %}
+            after 2100
+        {% endif %})
     {% else %}
-        after 2100
-    {% endif %})
+        retain {{ page.2100_perc_2_7deg_q50 | floor }}% of this volume in 2100
+        (<a href="{{ site.baseurl }}/methods/#likely-range">likely range</a>:
+        {{ page.2100_perc_2_7deg_q17 | floor }}% –
+        {{ page.2100_perc_2_7deg_q83 | floor }}%)
+    {% endif %}
+
     under 2.7°C global warming
     (<a href="https://climateactiontracker.org/global/cat-thermometer/">current policy prediction</a>).
     We define <b>'mostly gone'</b> as the year when either less than 10% of the

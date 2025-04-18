@@ -34,7 +34,12 @@
         {% for item in group.items %}
           <li>
               <a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a>,
-              fast verschwunden bis {{ item.deglac_yr_2_7deg_10perc_e-2km3_q50 | floor }}
+                {% assign deglac_year_2_7deg = item.deglac_yr_2_7deg_10perc_e-2km3_q50 | plus: 0 %}
+                {% if deglac_year_2_7deg > 0 %}
+                fast verschwunden bis {{ deglac_year_2_7deg | floor }}
+                {% else %}
+                {{ item.2100_perc_2_7deg_q50 | floor }}% überlebt bis 2100
+                {% endif %}
           </li>
         {% endfor %}
       </ul>

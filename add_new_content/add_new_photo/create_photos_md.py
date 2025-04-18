@@ -93,9 +93,14 @@ def create_photo_markdown(fp_photo_yml, fp_photo):
                 check_file_exist(f"{fp_photo}{photo_settings[setting]}",
                                  photo_id)
                 markdown_content += f"{setting}: {fp_photo}{photo_settings[setting]}\n"
-            elif setting == 'photo_license' and photo_settings[setting]:
-                markdown_content += f'{setting}: "{photo_settings[setting]}"\n'
-                markdown_content += f'photo_license_url: "{photo_licenses[photo_settings[setting]]}"\n'
+            elif setting == 'photo_license':
+                if photo_settings[setting]:
+                    markdown_content += f'{setting}: "{photo_settings[setting]}"\n'
+                    markdown_content += f'photo_license_url: "{photo_licenses[photo_settings[setting]]}"\n'
+                else:
+                    license = 'All rights reserved'
+                    markdown_content += f'{setting}: "{license}"\n'
+                    markdown_content += f'photo_license_url: "{photo_licenses[license]}"\n'
             # ignore blank lines
             elif photo_settings[setting]:
                 markdown_content += f'{setting}: "{photo_settings[setting]}"\n'

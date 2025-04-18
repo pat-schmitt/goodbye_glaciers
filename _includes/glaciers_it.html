@@ -38,15 +38,25 @@
 
 <p>
     {{ page.title }} aveva un volume stimato di {{ page.vol2020_km3 }} km³ nel
-    2020 e si prevede che sarà quasi scomparso entro
-    {{ page.deglac_yr_2_7deg_10perc_e-2km3_q50 | floor }}
-    (<a href="{{ site.baseurl }}/methods/#likely-range">intervallo probabile</a>:
-    {{ page.deglac_yr_2_7deg_10perc_e-2km3_q17 | floor }} -
-    {% if page.deglac_yr_2_7deg_10perc_e-2km3_q83 %}
-        {{ page.deglac_yr_2_7deg_10perc_e-2km3_q83 | default: 0 | floor }}
+    2020 e si prevede che
+    {% assign deglac_year_2_7deg = page.deglac_yr_2_7deg_10perc_e-2km3_q50 | plus: 0 %}
+    {% if deglac_year_2_7deg  > 0 %}
+        sarà quasi scomparso entro
+        {{ page.deglac_yr_2_7deg_10perc_e-2km3_q50 | floor }}
+        (<a href="{{ site.baseurl }}/methods/#likely-range">intervallo probabile</a>:
+        {{ page.deglac_yr_2_7deg_10perc_e-2km3_q17 | floor }} -
+        {% assign deglac_year_2_7deg_q83 = page.deglac_yr_2_7deg_10perc_e-2km3_q83 | plus: 0 %}
+        {% if deglac_year_2_7deg_q83 > 0 %}
+            {{ page.deglac_yr_2_7deg_10perc_e-2km3_q83 | default: 0 | floor }}
+        {% else %}
+            dopo il 2100
+        {% endif %})
     {% else %}
-        dopo il 2100
-    {% endif %})
+        manterrà l'{{ page.2100_perc_2_7deg_q50 | floor }}% di questo volume nel
+        2100 (<a href="{{ site.baseurl }}/methods/#likely-range">intervallo probabile</a>:
+        {{ page.2100_perc_2_7deg_q17 | floor }}% –
+        {{ page.2100_perc_2_7deg_q83 | floor }}%)
+    {% endif %}
     sotto un riscaldamento globale di 2,7°C
     (<a href="https://climateactiontracker.org/global/cat-thermometer/">previsione attuale delle politiche</a>).
     Definiamo <b>'quasi scomparso'</b> come l'anno in cui ci si aspetta che rimanga meno del 10% del

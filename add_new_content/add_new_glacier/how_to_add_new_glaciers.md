@@ -7,7 +7,7 @@
 2. Create 3D animations:
 	- Showing +2.7°C: `{RGI_ID}_simple_{langauage}.mp4`
 	- Showing +1.5°C and +2.7°C: `{RGI_ID}_complex_{language}.mp4`
-  	- Save videos in `assets/videos/glacier_animations`
+  	- Save videos to fileshare
 3. Add a photo of the glacier which serves as the title picture ([see how to add a photo](../add_new_photo/how_to_add_new_photos.md))
 4. Create a yml file for glacier:
 	- Copy `template_glacier.yml` and adapt it (update `rgi_id`, `name` and `country`)
