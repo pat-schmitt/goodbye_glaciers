@@ -117,6 +117,24 @@ Le réchauffement moyen global au-dessus du niveau pré-industriel sur toutes le
         {% if photo.citation %}
           <br><b>Citation :</b> {{ photo.citation }}
         {% endif %}
+        {% if photo.copyright %}
+          {% assign copyright_text = photo.copyright %}
+          {% case site.lang %}
+            {% when "de" %}
+              {% if photo.copyright_de %}
+                {% assign copyright_text = photo.copyright_de %}
+              {% endif %}
+            {% when "it" %}
+              {% if photo.copyright_it %}
+                {% assign copyright_text = photo.copyright_it %}
+              {% endif %}
+            {% when "fr" %}
+              {% if photo.copyright_fr %}
+                {% assign copyright_text = photo.copyright_fr %}
+              {% endif %}
+          {% endcase %}
+          <br><b>Copyright:</b> {{ copyright_text }}
+        {% endif %}
         {% if photo.photo_license %}
           <br><b>Licence :</b> <a href="{{ photo.photo_license_url }}">{{ photo.photo_license }}</a>
         {% endif %}
