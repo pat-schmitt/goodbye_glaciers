@@ -118,6 +118,12 @@ def create_photo_markdown(fp_photo_yml, fp_photo):
 # # Run all
 
 def create_all_photo_md():
+    # first empty directory
+    for file in os.listdir(fp_photo_md):
+        file_path = os.path.join(fp_photo_md, file)
+        if os.path.isfile(file_path):
+            os.unlink(file_path)
+
     # glacier photos
     print('Glacier photos:')
     for photo_yml in get_all_photo_yml(fp_glacier_photos_yml):

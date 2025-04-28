@@ -259,6 +259,12 @@ def create_glacier_markdown(glacier_yml, glacier_location_list):
 # # Run all
 
 def create_all_glacier_md():
+    # clear folder before starting
+    for file in os.listdir(fp_glacier_md):
+        file_path = os.path.join(fp_glacier_md, file)
+        if os.path.isfile(file_path):
+            os.unlink(file_path)
+
     glacier_location_list = []
     for glacier_yml in get_all_glacier_yml():
         try:
@@ -271,5 +277,3 @@ def create_all_glacier_md():
 
 if __name__ == '__main__':
     create_all_glacier_md()
-
-

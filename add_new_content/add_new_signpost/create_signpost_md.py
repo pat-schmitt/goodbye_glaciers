@@ -180,6 +180,12 @@ def create_signpost_markdown(signpost_yml):
 # # Run all
 
 def create_all_signpost_md():
+    # first empty directory
+    for file in os.listdir(fp_signpost_md):
+        file_path = os.path.join(fp_signpost_md, file)
+        if os.path.isfile(file_path):
+            os.unlink(file_path)
+
     for signpost_yml in get_all_signpost_yml():
         try:
             create_signpost_markdown(signpost_yml)
