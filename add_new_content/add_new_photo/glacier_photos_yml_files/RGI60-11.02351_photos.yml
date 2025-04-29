@@ -1,10 +1,18 @@
 ---
 rgi_id: RGI60-11.02351
 photo1:
+  filename: GhiacciaioDelVentina_2021-scaled_R.Scotti.jpg
+  photo_date: '2021'
+  photographer_name: R. Scotti
+  photo_license: null
+  photo_link: 'https://www.servizioglaciologicolombardo.it/confronti-fotografici/'
+  citation: null
+  is_main_photo: true
+photo2:
   filename: ventina2007081302.jpg
   photo_date: '13.08.2007'
   photographer_name: Steiner, Christian
   photo_license: null
   photo_link: 'https://nsidc.org/data/glacier_photo/search/image_info/ventina2007081302'
   citation: 'Steiner, Christian. 2007. Ventina Glacier: From the Glacier Photograph Collection. Boulder, Colorado USA: National Snow and Ice Data Center. Digital media.'
-  is_main_photo: true
+  is_main_photo: false

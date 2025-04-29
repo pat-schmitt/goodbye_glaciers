@@ -1,10 +1,18 @@
 ---
 rgi_id: RGI60-11.02172
 photo1:
+  filename: ScerscenSup_2022_R.Ganassa.png
+  photo_date: '2022'
+  photographer_name: R. Ganassa
+  photo_license: null
+  photo_link: 'https://www.servizioglaciologicolombardo.it/confronti-fotografici/'
+  citation: null
+  is_main_photo: true
+photo2:
   filename: GhiacciaioDiScerscen__2011-scaled.jpg
   photo_date: '2011'
   photographer_name: C. Mazzoleni
   photo_license: null
   photo_link: 'https://www.servizioglaciologicolombardo.it/confronti-fotografici/'
   citation: null
-  is_main_photo: true
+  is_main_photo: false
