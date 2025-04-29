@@ -4,7 +4,7 @@ Paese: {{ page.country_it }} <br>
 {% if deglac_year_2_7deg  > 0 %}
 2.7°C: Quasi scomparso entro il {{ deglac_year_2_7deg  | floor }}
 {% else %}
-2.7°C: {{ page.2100_perc_2_7deg_q50 | floor }}% sopravvivono fino al 2100
+2.7°C: {{ page.2100_perc_2_7deg_q50 | floor }}% sopravviveranno fino al 2100
 {% endif %}
 
 <br>
@@ -13,7 +13,7 @@ Paese: {{ page.country_it }} <br>
 {% if deglac_year_1_5deg  > 0 %}
 1.5°C: Quasi scomparso entro il {{ deglac_year_1_5deg  | floor }}
 {% else %}
-1.5°C: {{ page.2100_perc_1_5deg_q50 | floor }}% sopravvivono fino al 2100
+1.5°C: {{ page.2100_perc_1_5deg_q50 | floor }}% sopravviveranno fino al 2100
 {% endif %}
 
 <br>
