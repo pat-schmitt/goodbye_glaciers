@@ -60,6 +60,11 @@ Haben Sie Feedback, Ideen oder Fragen? Kontaktiere uns!
     <img src="/assets/images/logos/logo_uibk.jpg" alt="Logo Innsbruck" style="width: auto; height: 50px;" />
   </a>
 
+- Rainer Prinz
+  <a href="https://www.uibk.ac.at/en/">
+    <img src="/assets/images/logos/logo_uibk.jpg" alt="Logo Innsbruck" style="width: auto; height: 50px;" />
+  </a>
+
 - Michael Zemp
   <a href="https://wgms.ch/">
     <img src="/assets/images/logos/wgms-logo.png" alt="Logo WGMS" style="height: 30px; width: auto;" />
