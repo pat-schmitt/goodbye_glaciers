@@ -4,7 +4,7 @@
 <div class="masthead">
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
-      <div style="display: flex; align-items: center; justify-content: space-between;">
+      <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: nowrap; gap: 0.1rem">
       <nav id="site-nav" class="greedy-nav" style="max-width: calc(100% - 30px);flex-grow: 1;
   min-width: 0;">
         {% unless logo_path == empty %}
@@ -56,7 +56,7 @@
         <ul class="hidden-links hidden"></ul>
       </nav>
       {% unless logo_path_right == empty %}
-        <div style="flex-shrink: 0">
+        <div style="flex-shrink: 1">
         <a class="site-logo" href="https://www.uibk.ac.at/"><img src="{{ logo_path_right | relative_url }}" alt="{{ site.masthead_title | default: site.title }}"></a>
         </div>
       {% endunless %}
