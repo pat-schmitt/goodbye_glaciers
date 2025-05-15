@@ -50,8 +50,8 @@
 <!-- Statistics for the Alps -->
 <h2 id="alps-statistic">Statistics for the Alps</h2>
 <p>
-<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start;">
-  <div style="flex: 1; padding-right: 20px; margin-bottom: 0;">
+<div id="textImageLayout" style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start;">
+  <div id="textBlock" style="flex: 1; padding-right: 20px; margin-bottom: 0;">
       Of the approximately 3,900 glaciers in the Alps in Central Europe, only
       around 635 have an estimated volume above 0.01 km³ as of 2020, equivalent
       to water stored in 4,000 Olympic-sized swimming pools.
@@ -74,43 +74,55 @@
   </div>
 
   <!-- Image on the right side -->
-  <div style="flex: 1; min-width: 200px; margin-top: 0;">
-    <img src="/assets/images/others/histogram_deglaciation_comparison_two_threshold_options_en.png" alt="Histogram visualising glacier volume distribution and years where glaciers are mostly gone in Central Europe" style="width: 100%; height: auto; max-width: 500px;" />
+  <div id="imageBlock" style="flex: 1; min-width: 200px; margin-top: 0;">
+    <img id="histogram-image" src="/assets/images/others/histogram_deglaciation_comparison_two_threshold_options_en.png" alt="Histogram visualising glacier volume distribution and years where glaciers are mostly gone in Central Europe" style="width: 100%; height: auto; max-width: 500px;" />
   </div>
 </div>
 </p>
 
 <!-- Make Image placement flexible -->
 <style>
+  #textImageLayout {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  #textBlock {
+    flex: 1;
+    padding-right: 20px;
+  }
+
+  #imageBlock {
+    flex: 1;
+    min-width: 200px;
+  }
+
   @media (max-width: 768px) {
-    div[style*="display: flex"] {
+    #textImageLayout {
       flex-direction: column; /* Stack items vertically on smaller screens */
-      align-items: flex-start; /* Keep the items aligned to the top */
+      align-items: flex-start;
     }
 
-    div[style*="padding-right: 20px"] {
-      padding-right: 5px; /* Remove padding for text when stacking vertically */
+    #textBlock {
+      padding-right: 5px; /* Reduce padding when stacked */
     }
 
-    div[style*="min-width: 200px"] {
-      margin-top: 5px; /* Remove space above the image when stacked vertically */
-    }
-
-    div[style*="flex: 1;"] {
-      margin-bottom: 0; /* Remove margin below the text */
+    #imageBlock {
+      margin-top: 5px; /* Add spacing above image */
     }
   }
 
-  /* For larger screens, adjust the alignment to top */
   @media (min-width: 769px) {
-    div[style*="display: flex"] {
-      align-items: flex-start; /* Align items to the top */
+    #textImageLayout {
+      align-items: flex-start;
     }
   }
 
-  /* For larger screens, you can set the max-width for the image */
   #histogram-image {
-    max-width: 450px; /* Limit the image size on wider screens */
+    max-width: 450px;
   }
 </style>
 

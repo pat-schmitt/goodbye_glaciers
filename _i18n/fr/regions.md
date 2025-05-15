@@ -44,18 +44,6 @@
 <img id="worldmapImage" src="/assets/images/volume_evolution_regions/RGI11_worldmap_fr.png" alt="Carte des glaciers sélectionnés" />
 <img id="complexImage" src="/assets/images/volume_evolution_regions/RGI11_complex_fr.png" alt="Évolution du volume des glaciers en Europe Centrale pour 1,5°C et 2,7°C." />
 
-<!-- Add responsive CSS -->
-<style>
-  @media (max-width: 768px) {
-    div[style*="display: flex"] {
-      flex-direction: column; /* Empile les éléments verticalement */
-    }
-    div[style*="margin-right: 20px"] {
-      margin-right: 0; /* Supprime la marge droite pour le texte */
-    }
-  }
-</style>
-
 <script>
   document.getElementById("regionSelect").addEventListener("change", function() {
     var selectedRegion = this.value;

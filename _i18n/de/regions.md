@@ -48,18 +48,6 @@
   <img id="worldmapImage" src="/assets/images/volume_evolution_regions/RGI11_worldmap_de.png" alt="Karte der ausgewählten Gletscher" />
   <img id="complexImage" src="/assets/images/volume_evolution_regions/RGI11_complex_de.png" alt="Volumenentwicklung der Gletscher in Mitteleuropa für 1,5°C und 2,7°C." />
 
-  <!-- Füge responsives CSS hinzu -->
-  <style>
-    @media (max-width: 768px) {
-      div[style*="display: flex"] {
-        flex-direction: column; /* Elemente vertikal stapeln */
-      }
-      div[style*="margin-right: 20px"] {
-        margin-right: 0; /* Entfernt den rechten Rand für den Text */
-      }
-    }
-  </style>
-
   <script>
     document.getElementById("regionSelect").addEventListener("change", function() {
       var selectedRegion = this.value;

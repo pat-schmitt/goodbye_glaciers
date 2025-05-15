@@ -48,18 +48,6 @@
 <img id="worldmapImage" src="/assets/images/volume_evolution_regions/RGI11_worldmap_en.png" alt="Map of selected glaciers" />
 <img id="complexImage" src="/assets/images/volume_evolution_regions/RGI11_complex_en.png" alt="Volume evolution of glaciers in Central Europe for 1.5°C and 2.7°C." />
 
-<!-- Add responsive CSS -->
-<style>
-  @media (max-width: 768px) {
-    div[style*="display: flex"] {
-      flex-direction: column; /* Stack items vertically */
-    }
-    div[style*="margin-right: 20px"] {
-      margin-right: 0; /* Remove the right margin for text */
-    }
-  }
-</style>
-
 <script>
   document.getElementById("regionSelect").addEventListener("change", function() {
     var selectedRegion = this.value;
@@ -77,7 +65,6 @@
     complexImage.alt = "Volume evolution of glaciers in " + selectedRegion + " for 1.5°C and 2.7°C.";
   });
 </script>
-
 
 </div>
 

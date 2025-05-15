@@ -50,8 +50,8 @@
 <!-- Statistics for the Alps -->
 <h2 id="alps-statistic">Statistiques pour les Alpes</h2>
 <p>
-<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start;">
-  <div style="flex: 1; padding-right: 20px; margin-bottom: 0;">
+<div id="textImageLayout" style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start;">
+  <div id="textBlock" style="flex: 1; padding-right: 20px; margin-bottom: 0;">
       Parmi les environ 3 900 glaciers des Alpes d'Europe centrale, uniquement
       635 ont un volume qui est estimé supérieur à 0,01 km³ en 2020, volume équivalent à l'eau
       stockée dans 4 000 piscines olympiques.
@@ -75,7 +75,7 @@
   </div>
 
   <!-- Image on the right side -->
-  <div style="flex: 1; min-width: 200px; margin-top: 0;">
+  <div id="imageBlock" style="flex: 1; min-width: 200px; margin-top: 0;">
     <img src="/assets/images/others/histogram_deglaciation_comparison_two_threshold_options_fr.png" alt="Histogramme visualisant la distribution des volumes des glaciers et les années où les glaciers sont presque disparus en Europe centrale" style="width: 100%; height: auto; max-width: 500px;" />
   </div>
 </div>
@@ -83,35 +83,47 @@
 
 <!-- Make Image placement flexible -->
 <style>
+  #textImageLayout {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  #textBlock {
+    flex: 1;
+    padding-right: 20px;
+  }
+
+  #imageBlock {
+    flex: 1;
+    min-width: 200px;
+  }
+
   @media (max-width: 768px) {
-    div[style*="display: flex"] {
-      flex-direction: column; /* Empiler les éléments sur les écrans plus petits */
-      align-items: flex-start; /* Garder les éléments alignés en haut */
+    #textImageLayout {
+      flex-direction: column; /* Stack items vertically on smaller screens */
+      align-items: flex-start;
     }
 
-    div[style*="padding-right: 20px"] {
-      padding-right: 5px; /* Retirer le padding pour le texte lors du passage en colonne */
+    #textBlock {
+      padding-right: 5px; /* Reduce padding when stacked */
     }
 
-    div[style*="min-width: 200px"] {
-      margin-top: 5px; /* Supprimer l'espace au-dessus de l'image lorsqu'elle est empilée */
-    }
-
-    div[style*="flex: 1;"] {
-      margin-bottom: 0; /* Retirer la marge sous le texte */
+    #imageBlock {
+      margin-top: 5px; /* Add spacing above image */
     }
   }
 
-  /* Pour les grands écrans, ajuster l'alignement */
   @media (min-width: 769px) {
-    div[style*="display: flex"] {
-      align-items: flex-start; /* Aligner les éléments en haut */
+    #textImageLayout {
+      align-items: flex-start;
     }
   }
 
-  /* Pour les grands écrans, vous pouvez définir la largeur maximale de l'image */
   #histogram-image {
-    max-width: 450px; /* Limiter la taille de l'image sur les écrans plus larges */
+    max-width: 450px;
   }
 </style>
 

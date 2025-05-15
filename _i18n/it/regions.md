@@ -44,18 +44,6 @@
 <img id="worldmapImage" src="/assets/images/volume_evolution_regions/RGI11_worldmap_it.png" alt="Mappa dei ghiacciai selezionati" />
 <img id="complexImage" src="/assets/images/volume_evolution_regions/RGI11_complex_it.png" alt="Evoluzione del volume dei ghiacciai in Europa Centrale per 1,5°C e 2,7°C." />
 
-<!-- Add responsive CSS -->
-<style>
-  @media (max-width: 768px) {
-    div[style*="display: flex"] {
-      flex-direction: column; /* Impila gli elementi verticalmente */
-    }
-    div[style*="margin-right: 20px"] {
-      margin-right: 0; /* Rimuove il margine destro per il testo */
-    }
-  }
-</style>
-
 <script>
   document.getElementById("regionSelect").addEventListener("change", function() {
     var selectedRegion = this.value;

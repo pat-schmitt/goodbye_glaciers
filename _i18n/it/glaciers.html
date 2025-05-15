@@ -50,8 +50,8 @@
 <!-- Statistics for the Alps -->
 <h2 id="alps-statistic">Statistiche per le Alpi</h2>
 <p>
-<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start;">
-  <div style="flex: 1; padding-right: 20px; margin-bottom: 0;">
+<div id="textImageLayout" style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start;">
+  <div id="textBlock" style="flex: 1; padding-right: 20px; margin-bottom: 0;">
       Dei circa 3.900 ghiacciai nelle Alpi in Europa centrale, solo
       circa 635 hanno un volume stimato superiore a 0,01 km³ nel 2020, equivalente all'acqua
       immagazzinata in 4.000 piscine olimpiche.
@@ -74,7 +74,7 @@
   </div>
 
   <!-- Image on the right side -->
-  <div style="flex: 1; min-width: 200px; margin-top: 0;">
+  <div id="imageBlock" style="flex: 1; min-width: 200px; margin-top: 0;">
     <img src="/assets/images/others/histogram_deglaciation_comparison_two_threshold_options_it.png" alt="Istogramma che visualizza la distribuzione del volume dei ghiacciai e gli anni in cui i ghiacciai sono quasi scomparsi in Europa centrale" style="width: 100%; height: auto; max-width: 500px;" />
   </div>
 </div>
@@ -82,35 +82,47 @@
 
 <!-- Make Image placement flexible -->
 <style>
+  #textImageLayout {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  #textBlock {
+    flex: 1;
+    padding-right: 20px;
+  }
+
+  #imageBlock {
+    flex: 1;
+    min-width: 200px;
+  }
+
   @media (max-width: 768px) {
-    div[style*="display: flex"] {
-      flex-direction: column; /* Impilare gli elementi su schermi più piccoli */
-      align-items: flex-start; /* Mantenere gli elementi allineati in alto */
+    #textImageLayout {
+      flex-direction: column; /* Stack items vertically on smaller screens */
+      align-items: flex-start;
     }
 
-    div[style*="padding-right: 20px"] {
-      padding-right: 5px; /* Rimuovere il padding per il testo quando impilato verticalmente */
+    #textBlock {
+      padding-right: 5px; /* Reduce padding when stacked */
     }
 
-    div[style*="min-width: 200px"] {
-      margin-top: 5px; /* Rimuovere lo spazio sopra l'immagine quando impilato verticalmente */
-    }
-
-    div[style*="flex: 1;"] {
-      margin-bottom: 0; /* Rimuovere il margine sotto il testo */
+    #imageBlock {
+      margin-top: 5px; /* Add spacing above image */
     }
   }
 
-  /* Per schermi più grandi, regolare l'allineamento */
   @media (min-width: 769px) {
-    div[style*="display: flex"] {
-      align-items: flex-start; /* Allineare gli elementi in alto */
+    #textImageLayout {
+      align-items: flex-start;
     }
   }
 
-  /* Per schermi più grandi, puoi limitare la larghezza dell'immagine */
   #histogram-image {
-    max-width: 450px; /* Limitare la dimensione dell'immagine su schermi più larghi */
+    max-width: 450px;
   }
 </style>
 
