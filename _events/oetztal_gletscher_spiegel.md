@@ -5,5 +5,5 @@ end_date: 2100-07-01 20:00:00 +0200
 location: "Online"
 website: https://www.alpenverein.at/portal/museum-archiv/ausstellung-oetztaler-gletscherwelt/rundgang/index.html
 language: "English"
-image: /assets/images/events/logo_oetztaler_gletscher_spiegel.png
+image: /assets/images/events/logo_oetztaler_gletscher_spiegel.jpg
 ---
