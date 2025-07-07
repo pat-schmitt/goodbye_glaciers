@@ -55,6 +55,9 @@
     });
 
     map.addLayer(markers); // Add the cluster group to the map
-    map.fitBounds(bounds, { padding: [15, 15] });
+
+    // add extra space around markers
+    bounds = bounds.pad(0.08); // 8% extra space
+    map.fitBounds(bounds);
   });
 </script>

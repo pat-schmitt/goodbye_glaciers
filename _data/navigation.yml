@@ -5,6 +5,12 @@ main:
       de: "Gletscher"
       it: "Ghiacciai"
       fr: "Glaciers"
+  - url: /signposts/
+    titles:
+      en: "Signposts"
+      de: "Wegweiser"
+      it: "Segnavia"
+      fr: "Panneaux de randonnée"
   - url: /regions/
     titles:
       en: "Regions"
