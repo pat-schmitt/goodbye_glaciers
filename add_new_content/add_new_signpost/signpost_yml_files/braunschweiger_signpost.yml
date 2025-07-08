@@ -1,0 +1,20 @@
+---
+signpost_id: braunschweiger_signpost
+title: Braunschweigerhütte
+title_de: Braunschweigerhütte
+title_it: Braunschweigerhütte
+title_fr: Braunschweigerhütte
+current_location: [46.935724, 10.909171]
+current_location_description: Braunschweigerhütte, Pitztal
+current_location_description_de: Braunschweigerhütte, Pitztal
+current_location_description_it: Braunschweigerhütte, Pitztal
+current_location_description_fr: Braunschweigerhütte, Pitztal
+current_country: Austria
+description: This sign is mounted next to the Braunschweigerhütte, pointing towards the nearby Mittelbergferner, which is also visible on <a href="https://www.braunschweiger-huette.at/de/home/webcam.html">their webcam</a>.
+description_de: Dieses Schild ist neben der Braunschweiger Hütte angebracht und zeigt in Richtung des nahegelegenen Mittelbergferners, der auch auf <a href="https://www.braunschweiger-huette.at/de/home/webcam.html">deren Webcam</a> sichtbar ist.
+description_it: Questo cartello è montato accanto alla Braunschweigerhütte e punta verso il vicino ghiacciaio Mittelbergferner, visibile anche sulla <a href="https://www.braunschweiger-huette.at/de/home/webcam.html">loro webcam</a>.
+description_fr: Ce panneau est installé à côté de la Braunschweigerhütte et indique la direction du Mittelbergferner tout proche, également visible sur <a href="https://www.braunschweiger-huette.at/de/home/webcam.html">leur webcam</a>.
+past_locations:
+    - none
+glaciers:
+    - RGI60-11.00666

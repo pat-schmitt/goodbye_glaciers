@@ -1,12 +1,14 @@
 <div id="gallery-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-touch="true" data-bs-interval="3000">
   <!-- Indicators -->
-  <div class="carousel-indicators">
-    {% for image in gallery %}
-      <button type="button" data-bs-target="#gallery-carousel" data-bs-slide-to="{{ forloop.index0 }}"
-        class="{% if forloop.first %}active{% endif %}"
-        aria-label="Slide {{ forloop.index }}"></button>
-    {% endfor %}
-  </div>
+  {% if gallery.size > 1 %}
+    <div class="carousel-indicators">
+      {% for image in gallery %}
+        <button type="button" data-bs-target="#gallery-carousel" data-bs-slide-to="{{ forloop.index0 }}"
+          class="{% if forloop.first %}active{% endif %}"
+          aria-label="Slide {{ forloop.index }}"></button>
+      {% endfor %}
+    </div>
+  {% endif %}
   
   <!-- Slides -->
   <div class="carousel-inner">
@@ -14,7 +16,7 @@
       <div class="carousel-item {% if forloop.first %}active{% endif %}">
         <!-- Image -->
         <a href="{{ image.url }}">
-          <img src="{{ image.url }}" class="d-block w-100" alt="{{ image.alt }}">
+          <img src="{{ image.url }}" class="d-block mx-auto carousel-image" alt="{{ image.alt }}">
         </a>
         <!-- Caption below the image -->
         {% if image.title %}
@@ -35,12 +37,14 @@
   </div>
   
   <!-- Navigation Arrows -->
-  <button class="carousel-control-prev" type="button" data-bs-target="#gallery-carousel" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#gallery-carousel" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
+  {% if gallery.size > 1 %}
+    <button class="carousel-control-prev" type="button" data-bs-target="#gallery-carousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#gallery-carousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  {% endif %}
 </div>

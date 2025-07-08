@@ -1,0 +1,27 @@
+---
+signpost_id: swissembassy_signpost
+photo1:  # give each photo a unique name
+  filename: schweizer_botschaft_Wegweiser_2.jpg  # should be saved in assets/images/photos_glaciers
+  photo_date: 30.06.2025  # day.month.year of month.year or year
+  photographer_name: Jonas Baumann
+  photo_license:  # leave blank if not applicable
+  photo_link:  # leave blank if not applicable
+  photo_description: Close-up of the a signpost at the Swiss Embassy in Vienna. # leave blank if not applicable
+  photo_description_de: Nahaufnahme eines Wegweisers bei der Schweizerischen Botschaft in Wien. # leave blank if not applicable
+  photo_description_it: Primo piano di un segnavia presso l’Ambasciata di Svizzera a Vienna. # leave blank if not applicable
+  photo_description_fr: Gros plan d’un panneau de randonnée à l’Ambassade de Suisse à Vienne. # leave blank if not applicable
+  citation:  # leave blank if not applicable
+  is_main_photo: true  # only one photo is allowed to be true, all others false
+photo2:  # give each photo a unique name
+  filename: schweizer_botschaft_Wegweiser_1.jpg  # should be saved in assets/images/photos_glaciers
+  photo_date: 30.06.2025  # day.month.year of month.year or year
+  photographer_name: Jonas Baumann
+  photo_license:  # leave blank if not applicable
+  photo_link:  # leave blank if not applicable
+  photo_description: Signpost in the garden of the Swiss Embassy in Vienna. # leave blank if not applicable
+  photo_description_de: Wegweiser im Garten der Schweizerischen Botschaft in Wien. # leave blank if not applicable
+  photo_description_it: Segnavia nel giardino dell’Ambasciata di Svizzera a Vienna. # leave blank if not applicable
+  photo_description_fr: Panneau de randonnée dans le jardin de l’Ambassade de Suisse à Vienne. # leave blank if not applicable
+  citation:  # leave blank if not applicable
+  is_main_photo: false  # only one photo is allowed to be true, all others false
+  

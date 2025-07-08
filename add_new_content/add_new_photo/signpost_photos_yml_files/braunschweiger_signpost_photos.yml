@@ -1,0 +1,15 @@
+---
+signpost_id: braunschweiger_signpost
+photo1:  # give each photo a unique name
+  filename: braunschweigerhütte.jpg  # should be saved in assets/images/photos_glaciers
+  photo_date: 01.07.2025  # day.month.year of month.year or year
+  photographer_name: Günter Gehrke
+  photo_license:  # leave blank if not applicable
+  photo_link:  # leave blank if not applicable
+  photo_description: Mittelbergferner sign near the Braunschweigerhütte. # leave blank if not applicable
+  photo_description_de: Mittelbergferner-Schild bei der Braunschweigerhütte. # leave blank if not applicable
+  photo_description_it: Cartello del Mittelbergferner presso la Braunschweigerhütte. # leave blank if not applicable
+  photo_description_fr: Panneau du Mittelbergferner près de la Braunschweigerhütte. # leave blank if not applicable
+  citation:  # leave blank if not applicable
+  is_main_photo: true  # only one photo is allowed to be true, all others false
+

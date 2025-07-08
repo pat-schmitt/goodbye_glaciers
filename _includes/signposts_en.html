@@ -5,12 +5,18 @@
   {% for glacier_featured in page.glaciers %}
       {% for glacier in site.glaciers %}
         {% if glacier_featured == glacier.rgi_id %}
+          {% assign deglac_year_2_7deg = glacier.deglac_yr_2_7deg_10perc_e-2km3_q50 | plus: 0 %}
           <li>
             <a href="{% if site.lang == site.default_lang %}
                        {{ site.url }}{{ glacier.url }}
                      {% else %}
                        {{ site.url }}/{{ site.lang }}{{ glacier.url }}
-                     {% endif %}">{{ glacier.title }}</a>, mostly gone by {{ glacier.deglac_yr_2_7deg_10perc_e-2km3_q50 | floor }}
+                     {% endif %}">{{ glacier.title }}</a>,
+                     {% if deglac_year_2_7deg > 0 %}
+                       mostly gone by {{ deglac_year_2_7deg | floor }}
+                     {% else %}
+                       {{ glacier.2100_perc_2_7deg_q50 | floor }}% surviving in 2100
+                     {% endif %}
           </li>
         {% endif %}
       {% endfor %}

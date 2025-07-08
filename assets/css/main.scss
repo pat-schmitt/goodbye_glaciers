@@ -125,13 +125,14 @@ h1[id]::before, h2[id]::before, h3[id]::before, li[id]::before {
   color: #000; /* Black text color */
   text-align: center; /* Center align the text */
   padding: 10px 0; /* Vertical padding */
-  margin-top: -5px; /* Small adjustment to reduce spacing */
-  border-top: 1px solid #ddd; /* Optional: Add a thin line above the caption */
+  /*margin-top: -5px;  Small adjustment to reduce spacing */
+  border-top: 0px solid #ddd; /* Optional: Add a thin line above the caption */
 }
 
 .carousel-inner img {
   display: block;
-  width: 100%; /* Ensures image takes full width */
+  max-width: 100%;
+  /* width: 100%; Ensures image takes full width */
   margin: 0; /* No extra margin */
   border-bottom: none; /* Prevent border overlap */
 }
