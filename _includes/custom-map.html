@@ -1,15 +1,19 @@
-<div id="map"></div>
+<div id="map-controls" style="margin-bottom: 10px;"></div>
+<div id="map" style="height: 500px;"></div>
 
 <script>
+  var map; // Global map object
+  var originalBounds = null;
+
   document.addEventListener("DOMContentLoaded", function() {
-    var map = L.map('map').setView([46.8, 10.0], 6);
+    map = L.map('map').setView([46.8, 10.0], 6);
 
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     }).addTo(map);
 
     var bounds = L.latLngBounds();
-    var markers = L.markerClusterGroup(); // Create a cluster group
+    var markers = L.markerClusterGroup();
 
     var locations = [
       {% for item in map_items %}
@@ -54,10 +58,44 @@
       }
     });
 
-    map.addLayer(markers); // Add the cluster group to the map
+      map.addLayer(markers);
+      bounds = bounds.pad(0.08);
+      originalBounds = bounds;
 
-    // add extra space around markers
-    bounds = bounds.pad(0.08); // 8% extra space
-    map.fitBounds(bounds);
+      {% if include.region_bounds %}
+        window.regionBounds = {{ include.region_bounds | raw }};
+
+      var firstRegionKey = Object.keys(regionBounds)[0];
+      if (firstRegionKey) {
+          map.fitBounds(regionBounds[firstRegionKey]);
+      }
+
+      var controlDiv = document.getElementById("map-controls");
+      var activeButton = null;
+
+      Object.keys(regionBounds).forEach(function(regionKey, index) {
+        var btn = document.createElement("button");
+        btn.textContent = regionKey;
+        btn.className = "tab-button map-tab-button";
+
+        btn.onclick = function() {
+          map.fitBounds(regionBounds[regionKey]);
+          if (activeButton) activeButton.classList.remove("active");
+          btn.classList.add("active");
+          activeButton = btn;
+        };
+
+        controlDiv.appendChild(btn);
+
+        // Auto-click the first region
+        if (index === 0) {
+          btn.click();
+        }
+      });
+
+      {% else %}
+      // Default: fit to data bounds
+      map.fitBounds(bounds);
+      {% endif %}
   });
 </script>

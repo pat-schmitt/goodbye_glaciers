@@ -17,8 +17,14 @@
 </p>
 
  <!-- Add map -->
+{% assign region_bounds = '{"Alps": [[44.9, 5.5], [47.9, 14.5]],
+                            "Scandinavia": [[58.0, 4.5], [70.0, 24]],
+                            "North America": [[46.0, -166.4], [83.0, -62.0]],
+                            "South America": [[-53.0, -73.6], [-21, -53]],
+                            "Central Asia": [[25.0, 56.0], [40.0, 97.0]],
+                            }' %}
 {% assign map_items = site.glaciers %}
-{% include custom-map.html %}
+{% include custom-map.html map_items=map_items region_bounds=region_bounds %}
 
 <!-- list by Country -->
 <br>

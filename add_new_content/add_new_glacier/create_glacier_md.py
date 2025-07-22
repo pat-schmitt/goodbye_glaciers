@@ -30,7 +30,7 @@ while base_dir.split('/')[-1] != 'goodbye_glaciers':
 
 fp_glacier_yml = os.path.join(base_dir, 'add_new_content', 'add_new_glacier', 'glacier_yml_files')
 fp_photo_yml = os.path.join(base_dir, 'add_new_content', 'add_new_photo', 'glacier_photos_yml_files')
-deglac_csv_file = os.path.join(base_dir, 'add_new_content', 'add_new_glacier', 'glacier_data_deglaciation.csv')
+deglac_csv_file = 'https://cluster.klima.uni-bremen.de/~pschmitt/goodby_glaciers/website/data_plots_for_website/deglaciation_csv/rgi_{}_glacier_data_deglaciation.csv'
 fp_signpost_yml = os.path.join(base_dir, 'add_new_content', 'add_new_signpost', 'signpost_yml_files')
 
 
@@ -67,16 +67,20 @@ fp_glacier_list = '/assets/glaciers.json'
 fp_glacier_animations_fileshare = 'https://fileshare.uibk.ac.at/d/b1c8bdcb065c4ee5bf3e/files/?p=%2F'
 # -
 
-# # Open data needed by all
-
-df_deglac = pd.read_csv(deglac_csv_file, index_col=0)
-
-
 # # Function creating glacier markdown sites
+
+# container to avoid multiple opening
+df_deglac_all = {}
+
 
 def create_glacier_markdown(glacier_yml, glacier_location_list):
 
     rgi_id = glacier_yml.replace('.yml', '')
+
+    rgi_reg = rgi_id.split('-')[1].split('.')[0]
+    if rgi_reg not in df_deglac_all:
+        df_deglac_all[rgi_reg] = pd.read_csv(deglac_csv_file.format(rgi_reg)).set_index('rgi_id')
+    df_deglac = df_deglac_all[rgi_reg]
 
     # start creating markdown
     markdown_content = "---\n"
@@ -107,6 +111,26 @@ def create_glacier_markdown(glacier_yml, glacier_location_list):
         glacier_yml_dict['country_de'] = 'Deutschland'
         glacier_yml_dict['country_it'] = 'Germania'
         glacier_yml_dict['country_fr'] = 'Allemagne'
+    elif glacier_yml_dict['country'] == 'Sweden':
+        glacier_yml_dict['country_de'] = 'Schweden'
+        glacier_yml_dict['country_it'] = 'Svezia'
+        glacier_yml_dict['country_fr'] = 'Suède'
+    elif glacier_yml_dict['country'] == 'Kyrgyzstan':
+        glacier_yml_dict['country_de'] = 'Kirgisistan'
+        glacier_yml_dict['country_it'] = 'Kirghizistan'
+        glacier_yml_dict['country_fr'] = 'Kirghizistan'
+    elif glacier_yml_dict['country'] == 'Canada':
+        glacier_yml_dict['country_de'] = 'Kanada'
+        glacier_yml_dict['country_it'] = 'Canada'
+        glacier_yml_dict['country_fr'] = 'Canada'
+    elif glacier_yml_dict['country'] == 'USA':
+        glacier_yml_dict['country_de'] = 'USA'
+        glacier_yml_dict['country_it'] = 'Stati Uniti'
+        glacier_yml_dict['country_fr'] = 'États-Unis'
+    elif glacier_yml_dict['country'] == 'Chile':
+        glacier_yml_dict['country_de'] = 'Chile'
+        glacier_yml_dict['country_it'] = 'Cile'
+        glacier_yml_dict['country_fr'] = 'Chili'
     
     markdown_content += f"country: {glacier_yml_dict['country']}\n"
     markdown_content += f"country_de: {glacier_yml_dict['country_de']}\n"
@@ -134,7 +158,7 @@ def create_glacier_markdown(glacier_yml, glacier_location_list):
         if csv_var == 'vol2020_km3':
             rgi_id_csv[csv_var] = rgi_id_csv[csv_var].round(2)
         if csv_var in ['Lon', 'Lat']:
-            markdown_content += f"{csv_var.replace('.', '_')}: {rgi_id_csv[f'Cen{csv_var}']}\n"
+            markdown_content += f"{csv_var.replace('.', '_')}: {rgi_id_csv[f'{csv_var}']}\n"
         else:
             markdown_content += f"{csv_var.replace('.', '_')}: {rgi_id_csv[csv_var]}\n"
 
@@ -250,8 +274,8 @@ def create_glacier_markdown(glacier_yml, glacier_location_list):
     glacier_location_list.append(
         {
             'name': glacier_yml_dict['name'],
-            'latitude': rgi_id_csv['CenLat'],
-            'longitude': rgi_id_csv['CenLon'],
+            'latitude': rgi_id_csv['Lat'],
+            'longitude': rgi_id_csv['Lon'],
         }
     )
 
@@ -277,3 +301,22 @@ def create_all_glacier_md():
 
 if __name__ == '__main__':
     create_all_glacier_md()
+
+do_debugging = False
+
+if do_debugging:
+    for file in os.listdir(fp_glacier_md):
+        file_path = os.path.join(fp_glacier_md, file)
+        if os.path.isfile(file_path):
+            os.unlink(file_path)
+    
+    glacier_location_list = []
+    #for glacier_yml in get_all_glacier_yml()
+
+if do_debugging:
+    print(get_all_glacier_yml())
+
+if do_debugging:
+    create_glacier_markdown(get_all_glacier_yml()[-2], glacier_location_list)
+
+
