@@ -1,0 +1,22 @@
+---
+signpost_id: sulzenau_signpost
+title: Sulzenauhütte
+title_de: Sulzenauhütte
+title_it: Sulzenauhütte
+title_fr: Sulzenauhütte
+current_location: [46.995775, 11.181748]
+current_location_description: Sulzenauhütte, Stubaital
+current_location_description_de: Sulzenauhütte, Stubaital
+current_location_description_it: Sulzenauhütte, Stubaital
+current_location_description_fr: Sulzenauhütte, Stubaital
+current_country: Austria
+description: This sign is located next to the <a href='https://www.sulzenauhuette.at/'>Sulzenauhütte</a> and points towards the nearby Sulzenau Ferner, as well as the Sulztal Ferner and the Marmolada.
+description_de: Dieses Schild befindet sich neben der <a href='https://www.sulzenauhuette.at/'>Sulzenauhütte</a> und weist auf den nahegelegenen Sulzenau Ferner sowie auf den Sulztal Ferner und die Marmolada hin.
+description_it: Questo cartello si trova accanto alla <a href='https://www.sulzenauhuette.at/'>Sulzenauhütte</a> e indica il vicino Sulzenau Ferner, così come il Sulztal Ferner e la Marmolada.
+description_fr: Ce panneau se trouve à côté de la <a href='https://www.sulzenauhuette.at/'>Sulzenauhütte</a> et indique le Sulzenau Ferner tout proche, ainsi que le Sulztal Ferner et la Marmolada.
+past_locations:
+    - none
+glaciers:
+    - RGI60-11.00541
+    - RGI60-11.00487
+    - RGI60-11.03887
