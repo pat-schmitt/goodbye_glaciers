@@ -2,6 +2,10 @@
 <div id="map" style="height: 500px;"></div>
 
 <script>
+  function getRegionFromHash() {
+    return window.location.hash ? decodeURIComponent(window.location.hash.substring(1)) : null;
+  }
+
   var map; // Global map object
   var originalBounds = null;
 
@@ -65,10 +69,7 @@
       {% if include.region_bounds %}
         window.regionBounds = {{ include.region_bounds | raw }};
 
-      var firstRegionKey = Object.keys(regionBounds)[0];
-      if (firstRegionKey) {
-          map.fitBounds(regionBounds[firstRegionKey]);
-      }
+      var selectedRegionKey = getRegionFromHash() || Object.keys(regionBounds)[0];
 
       var controlDiv = document.getElementById("map-controls");
       var activeButton = null;
@@ -83,13 +84,17 @@
           if (activeButton) activeButton.classList.remove("active");
           btn.classList.add("active");
           activeButton = btn;
+          // update the url hash
+          window.location.hash = encodeURIComponent(regionKey);
         };
 
         controlDiv.appendChild(btn);
 
         // Auto-click the first region
-        if (index === 0) {
-          btn.click();
+        if (regionKey === selectedRegionKey) {
+          btn.classList.add("active");
+          map.fitBounds(regionBounds[regionKey]);
+          activeButton = btn;
         }
       });
 
