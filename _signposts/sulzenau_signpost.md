@@ -23,22 +23,22 @@ glaciers: ['RGI60-11.00541', 'RGI60-11.00487', 'RGI60-11.03887']
 gallery:
   - url: /assets/images/photos_signposts/20250722_100652_resized.jpg
     image_path: /assets/images/photos_signposts/20250722_100652_resized.jpg
-    alt: Matthias Dierks, 22.07.2025
-    title: 'Signpost near the Sulzenauhütte. Photo credit: <a href="/methods/#sulzenau_signpost_photo1">Matthias Dierks, 22.07.2025</a>'
-    title_de: 'Wegweiser bei der Sulzenauhütte. Photo credit: <a href="/methods/#sulzenau_signpost_photo1">Matthias Dierks, 22.07.2025</a>'
-    title_it: 'Segnavia presso la Sulzenauhütte. Photo credit: <a href="/methods/#sulzenau_signpost_photo1">Matthias Dierks, 22.07.2025</a>'
-    title_fr: 'Panneau indicateur près de la Sulzenauhütte. Photo credit: <a href="/methods/#sulzenau_signpost_photo1">Matthias Dierks, 22.07.2025</a>'
+    alt: Jan Thiele, 22.07.2025
+    title: 'Signpost near the Sulzenauhütte. Photo credit: <a href="/methods/#sulzenau_signpost_photo1">Jan Thiele, 22.07.2025</a>'
+    title_de: 'Wegweiser bei der Sulzenauhütte. Photo credit: <a href="/methods/#sulzenau_signpost_photo1">Jan Thiele, 22.07.2025</a>'
+    title_it: 'Segnavia presso la Sulzenauhütte. Photo credit: <a href="/methods/#sulzenau_signpost_photo1">Jan Thiele, 22.07.2025</a>'
+    title_fr: 'Panneau indicateur près de la Sulzenauhütte. Photo credit: <a href="/methods/#sulzenau_signpost_photo1">Jan Thiele, 22.07.2025</a>'
   - url: /assets/images/photos_signposts/20250722_100713_resized.jpg
     image_path: /assets/images/photos_signposts/20250722_100713_resized.jpg
-    alt: Matthias Dierks, 22.07.2025
-    title: 'Signpost near the Sulzenauhütte. Photo credit: <a href="/methods/#sulzenau_signpost_photo2">Matthias Dierks, 22.07.2025</a>'
-    title_de: 'Wegweiser bei der Sulzenauhütte. Photo credit: <a href="/methods/#sulzenau_signpost_photo2">Matthias Dierks, 22.07.2025</a>'
-    title_it: 'Segnavia presso la Sulzenauhütte. Photo credit: <a href="/methods/#sulzenau_signpost_photo2">Matthias Dierks, 22.07.2025</a>'
-    title_fr: 'Panneau indicateur près de la Sulzenauhütte. Photo credit: <a href="/methods/#sulzenau_signpost_photo2">Matthias Dierks, 22.07.2025</a>'
+    alt: Jan Thiele, 22.07.2025
+    title: 'Signpost near the Sulzenauhütte. Photo credit: <a href="/methods/#sulzenau_signpost_photo2">Jan Thiele, 22.07.2025</a>'
+    title_de: 'Wegweiser bei der Sulzenauhütte. Photo credit: <a href="/methods/#sulzenau_signpost_photo2">Jan Thiele, 22.07.2025</a>'
+    title_it: 'Segnavia presso la Sulzenauhütte. Photo credit: <a href="/methods/#sulzenau_signpost_photo2">Jan Thiele, 22.07.2025</a>'
+    title_fr: 'Panneau indicateur près de la Sulzenauhütte. Photo credit: <a href="/methods/#sulzenau_signpost_photo2">Jan Thiele, 22.07.2025</a>'
 main_photo: /assets/images/photos_signposts/20250722_100652_resized.jpg
 header:
   overlay_image: /assets/images/photos_signposts/20250722_100652_resized.jpg
   teaser: /assets/images/photos_signposts/20250722_100652_resized.jpg
-  caption: 'Photo credit: <a href="/methods/#sulzenau_signpost_photo1">Matthias Dierks, 22.07.2025</a>'
+  caption: 'Photo credit: <a href="/methods/#sulzenau_signpost_photo1">Jan Thiele, 22.07.2025</a>'
 ---
 {% case site.lang %}{% when "de" %}{% include signpost_heading_de %}{% when "it" %}{% include signpost_heading_it %}{% when "fr" %}{% include signpost_heading_fr %}{% else %}{% include signpost_heading_en %}{% endcase %}

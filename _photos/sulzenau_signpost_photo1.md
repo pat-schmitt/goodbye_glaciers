@@ -2,7 +2,7 @@
 photo_id: sulzenau_signpost_photo1
 filename: /assets/images/photos_signposts/20250722_100652_resized.jpg
 photo_date: "22.07.2025"
-photographer_name: "Matthias Dierks"
+photographer_name: "Jan Thiele"
 photo_license: "All rights reserved"
 photo_license_url: "https://en.wikipedia.org/wiki/All_rights_reserved"
 photo_description: "Signpost near the Sulzenauhütte."

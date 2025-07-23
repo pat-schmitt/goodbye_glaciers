@@ -3,7 +3,7 @@ signpost_id: sulzenau_signpost
 photo1:  # give each photo a unique name
   filename: 20250722_100652_resized.jpg  # should be saved in assets/images/photos_glaciers
   photo_date: 22.07.2025  # day.month.year of month.year or year
-  photographer_name: Matthias Dierks
+  photographer_name: Jan Thiele
   photo_license:   # leave blank if not applicable
   photo_link:  # leave blank if not applicable
   photo_description: Signpost near the Sulzenauhütte. # leave blank if not applicable
@@ -15,7 +15,7 @@ photo1:  # give each photo a unique name
 photo2:  # give each photo a unique name
   filename: 20250722_100713_resized.jpg  # should be saved in assets/images/photos_glaciers
   photo_date: 22.07.2025  # day.month.year of month.year or year
-  photographer_name: Matthias Dierks
+  photographer_name: Jan Thiele
   photo_license:  # leave blank if not applicable
   photo_link:  # leave blank if not applicable
   photo_description: Signpost near the Sulzenauhütte. # leave blank if not applicable
