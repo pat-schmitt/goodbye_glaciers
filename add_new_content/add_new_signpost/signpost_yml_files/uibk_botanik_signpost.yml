@@ -1,0 +1,22 @@
+---
+signpost_id: uibk_botanik_signpost
+title: Botanical Garden UIBK
+title_de: Botanischer Garten UIBK
+title_it: Giardino Botanico UIBK
+title_fr: Jardin botanique UIBK
+current_location: [47.267909, 11.380479]
+current_location_description: Botanical Garden, University of Innsbruck
+current_location_description_de: Botanischer Garten, Universität Innsbruck
+current_location_description_it: Giardino Botanico, Università di Innsbruck
+current_location_description_fr: Jardin botanique, Université d’Innsbruck
+current_country: Austria
+description: This signpost is located in the Botanical Garden of the University of Innsbruck, surrounded by 7,000 plant species from the most diverse habitats on Earth.
+description_de: Dieser Wegweiser steht im Botanischen Garten der Universität Innsbruck, umgeben von 7000 Pflanzenarten aus den verschiedensten Lebensräumen der Erde.
+description_it: Questo segnavia si trova nel Giardino Botanico dell’Università di Innsbruck, circondato da 7.000 specie vegetali provenienti dagli habitat più diversi della Terra.
+description_fr: Ce panneau indicateur se trouve dans le Jardin botanique de l’Université d’Innsbruck, entouré de 7 000 espèces végétales provenant des habitats les plus variés de la planète.
+past_locations:
+    - none
+glaciers:
+    - RGI60-11.00887
+    - RGI60-11.00311
+    - RGI60-11.00746

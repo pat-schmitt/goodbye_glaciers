@@ -1,0 +1,38 @@
+---
+signpost_id: uibk_botanik_signpost
+photo1:  # give each photo a unique name
+  filename: IMG_4275.jpg  # should be saved in assets/images/photos_glaciers
+  photo_date: 17.07.2025  # day.month.year of month.year or year
+  photographer_name: Patrick Schmitt
+  photo_license:  CC BY-SA 4.0 # leave blank if not applicable
+  photo_link:  # leave blank if not applicable
+  photo_description: Signpost in the Botanical Garden of the University of Innsbruck. # leave blank if not applicable
+  photo_description_de: Wegweiser im Botanischen Garten der Universität Innsbruck. # leave blank if not applicable
+  photo_description_it: Segnavia nel Giardino Botanico dell’Università di Innsbruck. # leave blank if not applicable
+  photo_description_fr: Panneau indicateur dans le Jardin botanique de l’Université d’Innsbruck. # leave blank if not applicable
+  citation:  # leave blank if not applicable
+  is_main_photo: true  # only one photo is allowed to be true, all others false
+photo2:  # give each photo a unique name
+  filename: IMG_4276.jpg  # should be saved in assets/images/photos_glaciers
+  photo_date: 17.07.2025  # day.month.year of month.year or year
+  photographer_name: Patrick Schmitt
+  photo_license:  CC BY-SA 4.0 # leave blank if not applicable
+  photo_link:  # leave blank if not applicable
+  photo_description: Signpost in the Botanical Garden of the University of Innsbruck. # leave blank if not applicable
+  photo_description_de: Wegweiser im Botanischen Garten der Universität Innsbruck. # leave blank if not applicable
+  photo_description_it: Segnavia nel Giardino Botanico dell’Università di Innsbruck. # leave blank if not applicable
+  photo_description_fr: Panneau indicateur dans le Jardin botanique de l’Université d’Innsbruck. # leave blank if not applicable
+  citation:  # leave blank if not applicable
+  is_main_photo: false  # only one photo is allowed to be true, all others false
+photo3:  # give each photo a unique name
+  filename: IMG_4280.jpg  # should be saved in assets/images/photos_glaciers
+  photo_date: 17.07.2025  # day.month.year of month.year or year
+  photographer_name: Patrick Schmitt
+  photo_license:  CC BY-SA 4.0 # leave blank if not applicable
+  photo_link:  # leave blank if not applicable
+  photo_description: Signpost in the Botanical Garden of the University of Innsbruck. # leave blank if not applicable
+  photo_description_de: Wegweiser im Botanischen Garten der Universität Innsbruck. # leave blank if not applicable
+  photo_description_it: Segnavia nel Giardino Botanico dell’Università di Innsbruck. # leave blank if not applicable
+  photo_description_fr: Panneau indicateur dans le Jardin botanique de l’Université d’Innsbruck. # leave blank if not applicable
+  citation:  # leave blank if not applicable
+  is_main_photo: false  # only one photo is allowed to be true, all others false
