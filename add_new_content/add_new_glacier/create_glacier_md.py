@@ -131,6 +131,10 @@ def create_glacier_markdown(glacier_yml, glacier_location_list):
         glacier_yml_dict['country_de'] = 'Chile'
         glacier_yml_dict['country_it'] = 'Cile'
         glacier_yml_dict['country_fr'] = 'Chili'
+    elif glacier_yml_dict['country'] == 'New Zealand':
+        glacier_yml_dict['country_de'] = 'Neuseeland'
+        glacier_yml_dict['country_it'] = 'Nuova Zelanda'
+        glacier_yml_dict['country_fr'] = 'Nouvelle-Zélande'
     
     markdown_content += f"country: {glacier_yml_dict['country']}\n"
     markdown_content += f"country_de: {glacier_yml_dict['country_de']}\n"
