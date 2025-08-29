@@ -8,6 +8,9 @@
     <h2>{{ event.title }}</h2>
   {% endif %}
   <p>
+    {% if event.description %}
+      <strong>Description:</strong> <i>{{ event.description }}</i> <br>
+    {% endif %}
     {% if event.website %}
       <strong>Website:</strong> {{ event.website }} <br>
     {% endif %}
