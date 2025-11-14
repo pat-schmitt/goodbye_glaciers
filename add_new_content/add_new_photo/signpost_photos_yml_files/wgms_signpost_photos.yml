@@ -1,0 +1,14 @@
+---
+signpost_id: wgms_signpost
+photo1:  # give each photo a unique name
+  filename: wgms_signpost.jpg  # should be saved in assets/images/photos_glaciers
+  photo_date: 10.2025  # day.month.year of month.year or year
+  photographer_name: Michael Zemp
+  photo_license:  # leave blank if not applicable
+  photo_link:  # leave blank if not applicable
+  photo_description: Signpost located in front of the office of the World Glacier Monitoring Service (WGMS). # leave blank if not applicable
+  photo_description_de: Wegweiser vor dem Büro des World Glacier Monitoring Service (WGMS). # leave blank if not applicable
+  photo_description_it: Cartello situato davanti all’ufficio del World Glacier Monitoring Service (WGMS). # leave blank if not applicable
+  photo_description_fr: Panneau situé devant le bureau du World Glacier Monitoring Service (WGMS). # leave blank if not applicable
+  citation:  # leave blank if not applicable
+  is_main_photo: true  # only one photo is allowed to be true, all others false

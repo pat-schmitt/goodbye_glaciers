@@ -1,0 +1,23 @@
+---
+signpost_id: wgms_signpost
+title: WGMS
+title_de: WGMS
+title_it: WGMS
+title_fr: WGMS
+current_location: [47.397132, 8.548164]
+current_location_description: World Glacier Monitoring Service, University of Zurich
+current_location_description_de: World Glacier Monitoring Service Universität Zürich
+current_location_description_it: World Glacier Monitoring Service, Università di Zurigo
+current_location_description_fr: World Glacier Monitoring Service, Université de Zurich
+current_country: Switzerland
+description: This signpost is located in front of the office of the World Glacier Monitoring Service (WGMS) at the University of Zurich.
+description_de: Dieser Wegweiser befindet sich vor dem Büro des World Glacier Monitoring Service (WGMS) an der Universität Zürich.
+description_it: Questo cartello si trova davanti all’ufficio del World Glacier Monitoring Service (WGMS) presso l’Università di Zurigo."
+description_fr: Ce panneau se trouve devant le bureau du World Glacier Monitoring Service (WGMS) à l’Université de Zurich.
+past_locations:
+    - none
+glaciers:
+    - RGI60-11.01450
+    - RGI60-08.00213
+    - RGI60-13.18096
+    - RGI60-03.04539
