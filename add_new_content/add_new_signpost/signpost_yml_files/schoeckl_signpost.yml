@@ -1,0 +1,22 @@
+---
+signpost_id: schoeckl_signpost
+title: Am Schöckl
+title_de: Am Schöckl
+title_it: Am Schöckl
+title_fr: Am Schöckl
+current_location: [47.198036, 15.466852]
+current_location_description: Stubenberghaus, Schöckl
+current_location_description_de: Stubenberghaus, Schöckl
+current_location_description_it: Stubenberghaus, Schöckl
+current_location_description_fr: Stubenberghaus, Schöckl
+current_country: Austria
+description: This signpost is located close to the Stubenberghaus on the Schöckl.
+description_de: Dieser Wegweiser befindet sich in der Nähe des Stubenberghauses am Schöckl.
+description_it: Questo cartello si trova vicino allo Stubenberghaus sul Schöckl.
+description_fr: Ce panneau se trouve près du Stubenberghaus sur le Schöckl.
+past_locations:
+    - none
+glaciers:
+    - RGI60-11.00897
+    - RGI60-11.00106
+    - RGI60-11.00002

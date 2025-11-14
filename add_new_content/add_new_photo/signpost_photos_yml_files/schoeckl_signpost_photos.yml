@@ -1,0 +1,38 @@
+---
+signpost_id: schoeckl_signpost
+photo1:  # give each photo a unique name
+  filename: schoeckl_1.jpeg  # should be saved in assets/images/photos_glaciers
+  photo_date: 06.11.2025  # day.month.year of month.year or year
+  photographer_name: Jakob Abermann
+  photo_license:  # leave blank if not applicable
+  photo_link:  # leave blank if not applicable
+  photo_description: Signpost at the Stubenberghaus on the Schöckl. # leave blank if not applicable
+  photo_description_de: Wegweiser beim Stubenberghaus am Schöckl. # leave blank if not applicable
+  photo_description_it: Cartello presso lo Stubenberghaus sul Schöckl. # leave blank if not applicable
+  photo_description_fr: Panneau au Stubenberghaus sur le Schöckl. # leave blank if not applicable
+  citation:  # leave blank if not applicable
+  is_main_photo: false  # only one photo is allowed to be true, all others false
+photo2:  # give each photo a unique name
+  filename: schoeckl_2.jpeg  # should be saved in assets/images/photos_glaciers
+  photo_date: 06.11.2025  # day.month.year of month.year or year
+  photographer_name: Jakob Abermann
+  photo_license:  # leave blank if not applicable
+  photo_link:  # leave blank if not applicable
+  photo_description: Signpost at the Stubenberghaus on the Schöckl. # leave blank if not applicable
+  photo_description_de: Wegweiser beim Stubenberghaus am Schöckl. # leave blank if not applicable
+  photo_description_it: Cartello presso lo Stubenberghaus sul Schöckl. # leave blank if not applicable
+  photo_description_fr: Panneau au Stubenberghaus sur le Schöckl. # leave blank if not applicable
+  citation:  # leave blank if not applicable
+  is_main_photo: true  # only one photo is allowed to be true, all others false
+photo3:  # give each photo a unique name
+  filename: schoeckl_3.jpeg  # should be saved in assets/images/photos_glaciers
+  photo_date: 06.11.2025  # day.month.year of month.year or year
+  photographer_name: Jakob Abermann
+  photo_license:  # leave blank if not applicable
+  photo_link:  # leave blank if not applicable
+  photo_description: Signpost at the Stubenberghaus on the Schöckl. # leave blank if not applicable
+  photo_description_de: Wegweiser beim Stubenberghaus am Schöckl. # leave blank if not applicable
+  photo_description_it: Cartello presso lo Stubenberghaus sul Schöckl. # leave blank if not applicable
+  photo_description_fr: Panneau au Stubenberghaus sur le Schöckl. # leave blank if not applicable
+  citation:  # leave blank if not applicable
+  is_main_photo: false  # only one photo is allowed to be true, all others false

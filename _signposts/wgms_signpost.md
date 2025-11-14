@@ -16,7 +16,7 @@ country_it: Svizzera
 country_fr: Suisse
 description: This signpost is located in front of the office of the World Glacier Monitoring Service (WGMS) at the University of Zurich.
 description_de: Dieser Wegweiser befindet sich vor dem Büro des World Glacier Monitoring Service (WGMS) an der Universität Zürich.
-description_it: Questo cartello si trova davanti all’ufficio del World Glacier Monitoring Service (WGMS) presso l’Università di Zurigo."
+description_it: Questo cartello si trova davanti all’ufficio del World Glacier Monitoring Service (WGMS) presso l’Università di Zurigo.
 description_fr: Ce panneau se trouve devant le bureau du World Glacier Monitoring Service (WGMS) à l’Université de Zurich.
 past_locations: ['none']
 glaciers: ['RGI60-11.01450', 'RGI60-08.00213', 'RGI60-13.18096', 'RGI60-03.04539']
