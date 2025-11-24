@@ -1,0 +1,49 @@
+---
+namespace: glaciers_map
+permalink: /glaciers_map/
+layout: null
+---
+<!doctype html>
+{% include copyright.html %}
+<html lang="{{ site.locale | replace: "_", "-" | default: "en" }}" class="no-js">
+  <head>
+    {% include head.html %}
+    {% include head/custom.html %}
+
+    <!-- plausible -->
+    <script defer data-domain="goodbye-glaciers.info" src="https://plausible.io/js/script.file-downloads.outbound-links.js"></script>
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="{{ '/assets/css/leaflet.css' }}">
+    <link rel="stylesheet" href="{{ '/assets/css/MarkerCluster.css' }}" />
+    <link rel="stylesheet" href="{{ '/assets/css/MarkerCluster.Default.css' }}" />
+  </head>
+
+  <body class="layout--{{ page.layout | default: layout.layout }}
+    {% if page.classes or layout.classes %}
+      {{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}
+    {% endif %}" dir="{% if site.rtl %}rtl{% else %}ltr{% endif %}">
+    {% include_cached skip-links.html %}
+    <!-- {% include masthead.html %} -->
+
+    <div style="margin: 10px;" class="initial-content">
+      <!-- Add map -->
+      {% assign region_bounds = '{"Alps": [[44.9, 5.5], [47.9, 14.5]],
+                                  "Scandinavia": [[58.0, 4.5], [70.0, 24]],
+                                  "Central Asia": [[25.0, 56.0], [41.0, 97.0]],
+                                  "North America": [[46.0, -166.4], [83.0, -62.0]],
+                                  "South America": [[-53.0, -73.6], [-21, -53]],
+                                  "Oceania": [[-50.0, 150], [-28, 190]],
+                                  }' %}
+      {% assign map_items = site.glaciers %}
+      {% include custom-map.html map_items=map_items region_bounds=region_bounds %}
+      {% include after-content.html %}
+    </div>
+
+    {% include scripts.html %}
+
+    <!-- Leaflet JS -->
+    <script src="{{ '/assets/js/leaflet.js' }}"></script>
+    <script src="{{ '/assets/js/leaflet.markercluster.js' }}"></script>
+  </body>
+</html>
