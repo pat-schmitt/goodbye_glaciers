@@ -1,0 +1,14 @@
+---
+signpost_id: rotholz_signpost
+photo1:  # give each photo a unique name
+  filename: Rotholz-2026-03-19-12-56-52.jpg  # should be saved in assets/images/photos_glaciers
+  photo_date: 19.03.2026  # day.month.year of month.year or year
+  photographer_name: Peter Grünbichler
+  photo_license:  # leave blank if not applicable
+  photo_link:  # leave blank if not applicable
+  photo_description: Signpost located at the Landwirtschaftliche Landeslehranstalt Rotholz. # leave blank if not applicable
+  photo_description_de: Wegweiser bei der Landwirtschaftliche Landeslehranstalt Rotholz. # leave blank if not applicable
+  photo_description_it: Segnaletica situata presso la Landwirtschaftliche Landeslehranstalt Rotholz. # leave blank if not applicable
+  photo_description_fr: Panneau indicateur situé à la Landwirtschaftliche Landeslehranstalt Rotholz. # leave blank if not applicable
+  citation:  # leave blank if not applicable
+  is_main_photo: true  # only one photo is allowed to be true, all others false

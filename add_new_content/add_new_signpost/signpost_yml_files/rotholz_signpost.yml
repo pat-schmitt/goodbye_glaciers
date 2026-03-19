@@ -1,0 +1,22 @@
+---
+signpost_id: rotholz_signpost
+title: LLA Rotholz
+title_de: LLA Rotholz
+title_it: LLA Rotholz
+title_fr: LLA Rotholz
+current_location: [47.390597, 11.797150]
+current_location_description: Landwirtschaftliche Landeslehranstalt Rotholz
+current_location_description_de: Landwirtschaftliche Landeslehranstalt Rotholz
+current_location_description_it: Landwirtschaftliche Landeslehranstalt Rotholz
+current_location_description_fr: Landwirtschaftliche Landeslehranstalt Rotholz
+current_country: Austria
+description: This signpost is located at the Landwirtschaftliche Landeslehranstalt Rotholz.
+description_de: Dieser Wegweiser befindet sich bei der Landwirtschaftliche Landeslehranstalt Rotholz.
+description_it: Questo segnale si trova presso la Landwirtschaftliche Landeslehranstalt Rotholz.
+description_fr: Ce panneau indicateur se trouve à la Landwirtschaftliche Landeslehranstalt Rotholz.
+past_locations:
+    - none
+glaciers:
+    - RGI60-11.00459
+    - RGI60-11.00541
+    - RGI60-11.03887
