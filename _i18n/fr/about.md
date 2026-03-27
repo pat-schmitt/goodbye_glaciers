@@ -24,7 +24,15 @@ Une introduction au projet "Goodbye Glaciers !?" est disponible sur la
   <img src="/assets/images/logos/logo_mcc_ibk.png" alt="Logo Mountain Competence Center" style="height: 70px; width: auto;" />  
 </div>
 
-##### Contacts  
+##### Confidentialité
+
+Ce site web n'utilise pas de cookies et ne stocke aucune donnée personnelle.
+Pour comprendre comment le site est utilisé, nous nous appuyons sur
+<a href="https://plausible.io/">Plausible Analytics</a>, respectueux de la vie
+privée, qui collecte des données anonymes sur les tendances générales du trafic,
+pas sur les visiteurs individuels.
+
+##### Contacts
 
 Vous avez des remarques, des idées ou des questions ? N'hésitez pas à nous contacter !  
 

@@ -24,7 +24,15 @@ Un'introduzione all'iniziativa "Goodbye Glaciers!?" ("Addio ghiacciai!?") è dis
   <img src="/assets/images/logos/logo_mcc_ibk.png" alt="Logo Mountain Competence Center" style="height: 70px; width: auto;" />  
 </div>
 
-##### Contatto  
+##### Privacy
+
+Questo sito non utilizza cookie né memorizza dati personali. Per capire come
+viene utilizzato il sito, ci affidiamo a
+<a href="https://plausible.io/">Plausible Analytics</a>, rispettoso della
+privacy, che raccoglie dati anonimi sulle tendenze generali del traffico, non
+sui singoli visitatori.
+
+##### Contatto
 
 Hai domande, idee o feedback? Contattaci!  
 

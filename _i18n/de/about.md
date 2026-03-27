@@ -24,7 +24,15 @@ Eine Einleitung in die Initiative "Goodbye Glaciers!?" ("Pfiati Gletscher!?") fi
   <img src="/assets/images/logos/logo_mcc_ibk.png" alt="Logo Mountain Competence Center" style="height: 70px; width: auto;" />  
 </div>
 
-##### Kontakt  
+##### Datenschutz
+
+Diese Website verwendet keine Cookies und speichert keine personenbezogenen
+Daten. Um zu verstehen, wie die Website genutzt wird, setzen wir auf das 
+datenschutzfreundliche <a href="https://plausible.io/">Plausible Analytics</a>,
+das anonyme Daten zu allgemeinen Nutzungstrends erfasst, nicht zu einzelnen
+Besuchern.
+
+##### Kontakt
 
 Haben Sie Feedback, Ideen oder Fragen? Kontaktiere uns!  
 
