@@ -216,3 +216,25 @@ h1[id]::before, h2[id]::before, h3[id]::before, li[id]::before {
 .wrapper {
     margin-bottom: 0; /* Optional: Adjust spacing inside the overlay */
 }
+
+/* Press page: fixed background image with scrollable white text */
+.press-bg-wrapper {
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+  padding-top: 2em;
+}
+
+.press-text,
+.press-text p,
+.press-text li,
+.press-text h2,
+.press-text h3 {
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+.press-text a {
+  color: #add8e6;
+}

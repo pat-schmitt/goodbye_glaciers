@@ -1,0 +1,15 @@
+---
+layout: default
+---
+
+<div class="press-bg-wrapper" style="background-image: url('{{ page.header.overlay_image | relative_url }}');">
+  <div id="main" role="main">
+    <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+      <div class="page__inner-wrap">
+        <section class="page__content press-text" itemprop="text">
+          {{ content }}
+        </section>
+      </div>
+    </article>
+  </div>
+</div>
