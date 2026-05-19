@@ -55,7 +55,7 @@ def check_file_exist(fp, rgi_id):
 
 # ## filepaths used when deploying the website
 
-animation_source = 'fileshare'  # 'local', 'fileshare'
+animation_source = 'universe'  # 'local', 'fileshare', 'universe'
 
 # +
 fp_glacier_volume = '/assets/images/volume_evolution_glaciers/'
@@ -65,13 +65,28 @@ fp_glacier_md = os.path.join(base_dir, '_glaciers')
 fp_glacier_list = '/assets/glaciers.json'
 
 fp_glacier_animations_fileshare = 'https://fileshare.uibk.ac.at/d/b1c8bdcb065c4ee5bf3e/files/?p=%2F'
+fp_universe_csv = os.path.join(base_dir, 'add_new_content', 'add_new_glacier', 'universe_conversion.csv')
+
+
 # -
 
 # # Function creating glacier markdown sites
 
+# +
+def load_universe_csv(fp=fp_universe_csv):
+    """Returns dict: {filename: share_url} from universe_conversion.csv."""
+    df = pd.read_csv(fp, header=None, names=['filename', 'share_url'], skipinitialspace=True)
+    df['filename'] = df['filename'].str.strip()
+    df['share_url'] = df['share_url'].str.strip()
+    return dict(zip(df['filename'], df['share_url']))
+
+
 # container to avoid multiple opening
 df_deglac_all = {}
+_universe_dict = None
 
+
+# -
 
 def create_glacier_markdown(glacier_yml, glacier_location_list):
 
@@ -192,6 +207,18 @@ def create_glacier_markdown(glacier_yml, glacier_location_list):
         fp_file = f"{fp_glacier_animations}{rgi_id}_both.mp4"
         check_file_exist(fp_file, rgi_id)
         markdown_content += f"animation_both: {fp_file}\n"
+    elif animation_source == 'universe':
+        global _universe_dict
+        if _universe_dict is None:
+            _universe_dict = load_universe_csv()
+        for filename, field in [(f"{rgi_id}_+1.5°C.mp4", 'animation_15'),
+                                 (f"{rgi_id}_+2.7°C.mp4", 'animation_27'),
+                                 (f"{rgi_id}_both.mp4", 'animation_both')]:
+            share_url = _universe_dict.get(filename)
+            if share_url:
+                markdown_content += f"{field}: {share_url}/download\n"
+            else:
+                print(f"{rgi_id}: {filename} not found in universe_conversion.csv!")
 
     # add photos
     photo_yml_dict = read_yml(os.path.join(fp_photo_yml, f'{rgi_id}_photos.yml'))
@@ -287,6 +314,9 @@ def create_glacier_markdown(glacier_yml, glacier_location_list):
 # # Run all
 
 def create_all_glacier_md():
+    global _universe_dict
+    _universe_dict = None  # reload CSV on each full run
+
     # clear folder before starting
     for file in os.listdir(fp_glacier_md):
         file_path = os.path.join(fp_glacier_md, file)
