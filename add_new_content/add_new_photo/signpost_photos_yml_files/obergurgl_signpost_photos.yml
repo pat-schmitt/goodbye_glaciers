@@ -9,6 +9,6 @@ photo1:  # give each photo a unique name
   photo_description: Signpost at the University Centre Obergurgl. # leave blank if not applicable
   photo_description_de: Wegweiser beim Universitätszentrum Obergurgl. # leave blank if not applicable
   photo_description_it: Cartello segnaletico presso il Centro universitario di Obergurgl. # leave blank if not applicable
-  photo_description_fr: Panneau indicateur au Centre universitaire d'Obergurgl. # leave blank if not applicable
+  photo_description_fr: Panneau indicateur au Centre universitaire d’Obergurgl. # leave blank if not applicable
   citation:  # leave blank if not applicable
   is_main_photo: true  # only one photo is allowed to be true, all others false

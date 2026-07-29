@@ -8,6 +8,6 @@ photo_license_url: "https://en.wikipedia.org/wiki/All_rights_reserved"
 photo_description: "Signpost at the University Centre Obergurgl."
 photo_description_de: "Wegweiser beim Universitätszentrum Obergurgl."
 photo_description_it: "Cartello segnaletico presso il Centro universitario di Obergurgl."
-photo_description_fr: "Panneau indicateur au Centre universitaire d'Obergurgl."
+photo_description_fr: "Panneau indicateur au Centre universitaire d’Obergurgl."
 is_main_photo: "True"
 ---

@@ -1,0 +1,14 @@
+---
+signpost_id: nikkaluokta_signpost
+photo1:  # give each photo a unique name
+  filename: GoodbyeGlaciers_Nikka3_Lasse.jpeg  # should be saved in assets/images/photos_glaciers
+  photo_date: 13.07.2026  # day.month.year of month.year or year
+  photographer_name: Lars Kirchner
+  photo_license:  # leave blank if not applicable
+  photo_link:  # leave blank if not applicable
+  photo_description: Signpost at the Nikkaluokta fjällstation. # leave blank if not applicable
+  photo_description_de: Wegweiser bei der Nikkaluokta-Fjällstation # leave blank if not applicable
+  photo_description_it: Cartello segnaletico presso la fjällstation di Nikkaluokta. # leave blank if not applicable
+  photo_description_fr: Panneau indicateur à la fjällstation de Nikkaluokta. # leave blank if not applicable
+  citation:  # leave blank if not applicable
+  is_main_photo: true  # only one photo is allowed to be true, all others false
