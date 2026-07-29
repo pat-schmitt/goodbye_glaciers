@@ -1,0 +1,14 @@
+---
+signpost_id: tarfala_signpost
+photo1:  # give each photo a unique name
+  filename: SgGoodbyeVindskydd.jpeg  # should be saved in assets/images/photos_glaciers
+  photo_date: 09.07.2026  # day.month.year of month.year or year
+  photographer_name: Nina Kirchner
+  photo_license:  # leave blank if not applicable
+  photo_link:  # leave blank if not applicable
+  photo_description: Signpost at the Tarfala research station. # leave blank if not applicable
+  photo_description_de: Wegweiser bei der Tarfala-Forschungsstation. # leave blank if not applicable
+  photo_description_it: Cartello segnaletico presso la stazione di ricerca di Tarfala. # leave blank if not applicable
+  photo_description_fr: Panneau indicateur à la station de recherche de Tarfala. # leave blank if not applicable
+  citation:  # leave blank if not applicable
+  is_main_photo: true  # only one photo is allowed to be true, all others false

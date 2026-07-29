@@ -1,0 +1,20 @@
+---
+signpost_id: tarfala_signpost
+title: Tarfala research station
+title_de: Tarfala research station
+title_it: Tarfala research station
+title_fr: Tarfala research station
+current_location: [67.911116, 18.611109]
+current_location_description: Tarfala research station
+current_location_description_de: Tarfala research station
+current_location_description_it: Tarfala research station
+current_location_description_fr: Tarfala research station
+current_country: Sweden
+description: This signpost stands at the <a href="https://www.su.se/english/divisions/tarfala-research-station">Tarfala Research Station</a> at 1,135 m east of Kebnekaise, among Sweden's highest mountains and several glaciers. The station is Sweden's only research station located in an alpine arctic environment surrounded by glaciers.
+description_de: Dieser Wegweiser steht bei der <a href="https://www.su.se/english/divisions/tarfala-research-station">Tarfala-Forschungsstation</a> auf 1.135 m östlich des Kebnekaise, inmitten von Schwedens höchsten Bergen und mehreren Gletschern. Die Station ist Schwedens einzige Forschungsstation in einer alpin-arktischen Umgebung, umgeben von Gletschern.
+description_it: Questo cartello segnaletico si trova presso la <a href="https://www.su.se/english/divisions/tarfala-research-station">Stazione di ricerca di Tarfala</a>, a 1.135 m a est del Kebnekaise, tra le montagne più alte della Svezia e diversi ghiacciai. La stazione è l'unica stazione di ricerca svedese situata in un ambiente alpino-artico circondato da ghiacciai.
+description_fr: Ce panneau indicateur se trouve à la <a href="https://www.su.se/english/divisions/tarfala-research-station">station de recherche de Tarfala</a>, à 1 135 m à l'est du Kebnekaise, parmi les plus hautes montagnes de Suède et plusieurs glaciers. C'est la seule station de recherche suédoise située dans un environnement alpin-arctique entouré de glaciers.
+past_locations:
+    - none
+glaciers:
+    - RGI60-08.00213
