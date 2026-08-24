@@ -1,0 +1,37 @@
+---
+signpost_id: dynamic_earth_signpost
+title: Dynamic Earth
+title_de: Dynamic Earth
+title_it: Dynamic Earth
+title_fr: Dynamic Earth
+Lat: 55.950529
+Lon: -3.174429
+location_description: Dynamic Earth, Edinburgh
+location_description_de: Dynamic Earth, Edinburgh
+location_description_it: Dynamic Earth, Edinburgh
+location_description_fr: Dynamic Earth, Edinburgh
+country: Scotland
+country_de: Schottland
+country_it: Scozia
+country_fr: Écosse
+description: This signpost is part of Dynamic Earth, Edinburgh´s science centre and planetarium that tells the story of planet Earth through an interactive walk-through and planetarium experience. Visit their website for opening hours and exhibitions <a href="https://dynamicearth.org.uk/">https://dynamicearth.org.uk/</a>.
+description_de: Dieses Schild ist Teil von Dynamic Earth, Edinburghs Wissenschaftszentrum und Planetarium, das die Geschichte des Planeten Erde durch einen interaktiven Rundgang und ein Planetarium-Erlebnis erzählt. Besuchen Sie ihre Website für Öffnungszeiten und Ausstellungen <a href="https://dynamicearth.org.uk/">https://dynamicearth.org.uk/</a>.
+description_it: Questo cartello fa parte di Dynamic Earth, il centro scientifico e planetario di Edimburgo che racconta la storia del pianeta Terra attraverso un percorso interattivo e un'esperienza al planetario. Visita il loro sito web per orari di apertura e mostre <a href="https://dynamicearth.org.uk/">https://dynamicearth.org.uk/</a>.
+description_fr: Ce panneau fait partie de Dynamic Earth, le centre des sciences et planétarium d'Édimbourg qui raconte l'histoire de la planète Terre à travers un parcours interactif et une expérience de planétarium. Visitez leur site web pour connaître les horaires d'ouverture et les expositions <a href="https://dynamicearth.org.uk/">https://dynamicearth.org.uk/</a>.
+past_locations: ['none']
+glaciers: ['RGI60-08.00188', 'RGI60-01.00570', 'RGI60-18.01130', 'RGI60-17.13669', 'RGI60-11.01238']
+gallery:
+  - url: /assets/images/photos_signposts/dynamic_earth.jpg
+    image_path: /assets/images/photos_signposts/dynamic_earth.jpg
+    alt: Kirsty Wilson, 30.07.2026
+    title: 'Signpost at Dynamic Earth in Edinburgh. Photo credit: <a href="/methods/#dynamic_earth_signpost_photo1">Kirsty Wilson, 30.07.2026</a>'
+    title_de: 'Wegweiser bei Dynamic Earth in Edinburgh. Photo credit: <a href="/methods/#dynamic_earth_signpost_photo1">Kirsty Wilson, 30.07.2026</a>'
+    title_it: 'Cartello indicatore al Dynamic Earth di Edimburgo. Photo credit: <a href="/methods/#dynamic_earth_signpost_photo1">Kirsty Wilson, 30.07.2026</a>'
+    title_fr: 'Panneau indicateur à Dynamic Earth à Édimbourg. Photo credit: <a href="/methods/#dynamic_earth_signpost_photo1">Kirsty Wilson, 30.07.2026</a>'
+main_photo: /assets/images/photos_signposts/dynamic_earth.jpg
+header:
+  overlay_image: /assets/images/photos_signposts/dynamic_earth.jpg
+  teaser: /assets/images/photos_signposts/dynamic_earth.jpg
+  caption: 'Photo credit: <a href="/methods/#dynamic_earth_signpost_photo1">Kirsty Wilson, 30.07.2026</a>'
+---
+{% case site.lang %}{% when "de" %}{% include signpost_heading_de %}{% when "it" %}{% include signpost_heading_it %}{% when "fr" %}{% include signpost_heading_fr %}{% else %}{% include signpost_heading_en %}{% endcase %}

@@ -97,6 +97,10 @@ def create_signpost_markdown(signpost_yml):
         signpost_yml_dict['country_de'] = 'Schweden'
         signpost_yml_dict['country_it'] = 'Svezia'
         signpost_yml_dict['country_fr'] = 'Suède'
+    elif signpost_yml_dict['current_country'] == 'Scotland':
+        signpost_yml_dict['country_de'] = 'Schottland'
+        signpost_yml_dict['country_it'] = 'Scozia'
+        signpost_yml_dict['country_fr'] = 'Écosse'
     else:
         raise NotImplementedError(f"Country {glacier_yml_dict['urrent_country']}")
     markdown_content += f"country: {signpost_yml_dict['current_country']}\n"

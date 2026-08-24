@@ -1,0 +1,14 @@
+---
+signpost_id: dynamic_earth_signpost
+photo1:  # give each photo a unique name
+  filename: dynamic_earth.jpg  # should be saved in assets/images/photos_glaciers
+  photo_date: 30.07.2026  # day.month.year of month.year or year
+  photographer_name: Kirsty Wilson
+  photo_license:  # leave blank if not applicable
+  photo_link:  # leave blank if not applicable
+  photo_description: Signpost at Dynamic Earth in Edinburgh. # leave blank if not applicable
+  photo_description_de: Wegweiser bei Dynamic Earth in Edinburgh. # leave blank if not applicable
+  photo_description_it: Cartello indicatore al Dynamic Earth di Edimburgo. # leave blank if not applicable
+  photo_description_fr: Panneau indicateur à Dynamic Earth à Édimbourg. # leave blank if not applicable
+  citation:  # leave blank if not applicable
+  is_main_photo: true  # only one photo is allowed to be true, all others false
