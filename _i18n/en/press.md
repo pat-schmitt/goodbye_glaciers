@@ -47,4 +47,10 @@ via <a href="mailto:patrick.schmitt@uibk.ac.at">patrick.schmitt[at]uibk.ac.at</a
     </ul>
     
   </li>
+  <li>
+    Die Zeit, 16.09.2026: 
+    <a href="https://www.zeit.de/wissenschaft/2026-09/gletscher-schmelze-alpen-klimawandel-erderwaermung">
+      https://www.zeit.de/wissenschaft/2026-09/gletscher-schmelze-alpen-klimawandel-erderwaermung
+    </a>
+  </li>
 </ul>
